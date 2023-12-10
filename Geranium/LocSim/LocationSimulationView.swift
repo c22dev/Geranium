@@ -1,6 +1,6 @@
 //
 //  LocationSimulationView.swift
-//  TrollTools
+//  Geranium
 //
 //  Created by Constantin Clerc on 21.12.2022.
 //

@@ -1,8 +1,8 @@
 //
 //  LocSimManager.swift
-//  TrollTools
+//  Geranium
 //
-//  Created by exerhythm on 12.11.2022.
+//  Created by Constantin Clerc on 12.11.2022.
 //
 
 import Foundation
@@ -35,4 +35,3 @@ class LocSimManager {
         post_required_timezone_update();
     }
 }
-

@@ -1,6 +1,6 @@
 //
 //  Addon.swift
-//  TrollBox
+//  Geranium
 //
 //  Created by Constantin Clerc on 17/12/2022.
 //
@@ -170,10 +170,10 @@ extension UIApplication {
 
 func checkSandbox() -> Bool {
     let fileManager = FileManager.default
-    fileManager.createFile(atPath: "/var/mobile/tboxtemp", contents: nil)
-    if fileManager.fileExists(atPath: "/var/mobile/tboxtemp") {
+    fileManager.createFile(atPath: "/var/mobile/geraniumtemp", contents: nil)
+    if fileManager.fileExists(atPath: "/var/mobile/geraniumtemp") {
         do {
-            try fileManager.removeItem(atPath: "/var/mobile/tboxtemp")
+            try fileManager.removeItem(atPath: "/var/mobile/geraniumtemp")
         } catch {
             print("Failed to remove sandbox check file")
         }

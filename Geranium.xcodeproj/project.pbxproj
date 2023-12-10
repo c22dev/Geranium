@@ -14,6 +14,16 @@
 		FAA456E62B265FED00FC7287 /* GeraniumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456E52B265FED00FC7287 /* GeraniumTests.swift */; };
 		FAA456F02B265FED00FC7287 /* GeraniumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456EF2B265FED00FC7287 /* GeraniumUITests.swift */; };
 		FAA456F22B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */; };
+		FAA457022B26608900FC7287 /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457002B26607600FC7287 /* LocSimManager.swift */; };
+		FAA457032B26608900FC7287 /* LocationSimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457012B26608900FC7287 /* LocationSimulationView.swift */; };
+		FAA457122B2661E300FC7287 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA457102B2661E300FC7287 /* TSUtil.m */; };
+		FAA4571B2B26636D00FC7287 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = FAA4571A2B26636D00FC7287 /* ArgumentParser */; };
+		FAA457232B26654700FC7287 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457222B26654700FC7287 /* Addon.swift */; };
+		FAA457272B26667E00FC7287 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457262B26667E00FC7287 /* HomeView.swift */; };
+		FAA457292B26668900FC7287 /* DaemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457282B26668900FC7287 /* DaemonView.swift */; };
+		FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4572F2B2666F300FC7287 /* CleanerView.swift */; };
+		FAA457322B2667CB00FC7287 /* SuperviseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457312B2667CB00FC7287 /* SuperviseView.swift */; };
+		FAB321DF2B2678A80095E789 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = FAB321DE2B2678A80095E789 /* Map */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,19 @@
 		FAA456EB2B265FED00FC7287 /* GeraniumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeraniumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA456EF2B265FED00FC7287 /* GeraniumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumUITests.swift; sourceTree = "<group>"; };
 		FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAA457002B26607600FC7287 /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
+		FAA457012B26608900FC7287 /* LocationSimulationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSimulationView.swift; sourceTree = "<group>"; };
+		FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Geranium-Bringing-Header.h"; sourceTree = "<group>"; };
+		FAA457082B2661B600FC7287 /* RemoteLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteLog.h; sourceTree = "<group>"; };
+		FAA4570F2B2661E200FC7287 /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
+		FAA457102B2661E300FC7287 /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
+		FAA457112B2661E300FC7287 /* TSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUtil.h; sourceTree = "<group>"; };
+		FAA457222B26654700FC7287 /* Addon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
+		FAA457252B2665AA00FC7287 /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
+		FAA457262B26667E00FC7287 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FAA457282B26668900FC7287 /* DaemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonView.swift; sourceTree = "<group>"; };
+		FAA4572F2B2666F300FC7287 /* CleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerView.swift; sourceTree = "<group>"; };
+		FAA457312B2667CB00FC7287 /* SuperviseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperviseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA4571B2B26636D00FC7287 /* ArgumentParser in Frameworks */,
+				FAB321DF2B2678A80095E789 /* Map in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +120,14 @@
 			isa = PBXGroup;
 			children = (
 				FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */,
+				FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */,
+				FAA457052B2661AD00FC7287 /* Libs */,
 				FAA456D62B265FEA00FC7287 /* ContentView.swift */,
+				FAA457262B26667E00FC7287 /* HomeView.swift */,
+				FAA4572E2B2666E800FC7287 /* Cleaner */,
+				FAA4572B2B26669B00FC7287 /* The Supviser */,
+				FAA4572A2B26669100FC7287 /* DaemonMan */,
+				FAA456FE2B26605800FC7287 /* LocSim */,
 				FAA456D82B265FEC00FC7287 /* Assets.xcassets */,
 				FAA456DA2B265FEC00FC7287 /* Preview Content */,
 			);
@@ -127,6 +159,60 @@
 			path = GeraniumUITests;
 			sourceTree = "<group>";
 		};
+		FAA456FE2B26605800FC7287 /* LocSim */ = {
+			isa = PBXGroup;
+			children = (
+				FAA457002B26607600FC7287 /* LocSimManager.swift */,
+				FAA457012B26608900FC7287 /* LocationSimulationView.swift */,
+				FAA457252B2665AA00FC7287 /* LocSimPrivateHeaders.h */,
+			);
+			path = LocSim;
+			sourceTree = "<group>";
+		};
+		FAA457052B2661AD00FC7287 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FAA457222B26654700FC7287 /* Addon.swift */,
+				FAA4570E2B2661D200FC7287 /* TrollStore */,
+				FAA457082B2661B600FC7287 /* RemoteLog.h */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		FAA4570E2B2661D200FC7287 /* TrollStore */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4570F2B2661E200FC7287 /* CoreServices.h */,
+				FAA457112B2661E300FC7287 /* TSUtil.h */,
+				FAA457102B2661E300FC7287 /* TSUtil.m */,
+			);
+			path = TrollStore;
+			sourceTree = "<group>";
+		};
+		FAA4572A2B26669100FC7287 /* DaemonMan */ = {
+			isa = PBXGroup;
+			children = (
+				FAA457282B26668900FC7287 /* DaemonView.swift */,
+			);
+			path = DaemonMan;
+			sourceTree = "<group>";
+		};
+		FAA4572B2B26669B00FC7287 /* The Supviser */ = {
+			isa = PBXGroup;
+			children = (
+				FAA457312B2667CB00FC7287 /* SuperviseView.swift */,
+			);
+			path = "The Supviser";
+			sourceTree = "<group>";
+		};
+		FAA4572E2B2666E800FC7287 /* Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4572F2B2666F300FC7287 /* CleanerView.swift */,
+			);
+			path = Cleaner;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +229,10 @@
 			dependencies = (
 			);
 			name = Geranium;
+			packageProductDependencies = (
+				FAA4571A2B26636D00FC7287 /* ArgumentParser */,
+				FAB321DE2B2678A80095E789 /* Map */,
+			);
 			productName = Geranium;
 			productReference = FAA456D12B265FEA00FC7287 /* Geranium.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +305,10 @@
 				Base,
 			);
 			mainGroup = FAA456C82B265FEA00FC7287;
+			packageReferences = (
+				FAA457192B26636D00FC7287 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				FAB321DD2B2678A80095E789 /* XCRemoteSwiftPackageReference "Map" */,
+			);
 			productRefGroup = FAA456D22B265FEA00FC7287 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA457122B2661E300FC7287 /* TSUtil.m in Sources */,
+				FAA457272B26667E00FC7287 /* HomeView.swift in Sources */,
+				FAA457292B26668900FC7287 /* DaemonView.swift in Sources */,
+				FAA457032B26608900FC7287 /* LocationSimulationView.swift in Sources */,
+				FAA457232B26654700FC7287 /* Addon.swift in Sources */,
+				FAA457322B2667CB00FC7287 /* SuperviseView.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
+				FAA457022B26608900FC7287 /* LocSimManager.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
+				FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,19 +527,24 @@
 				DEVELOPMENT_TEAM = 7G89J82G2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Enabling location for Geranium makes it possible for the app to display your location on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.Geranium;
+				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.geranium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Geranium/Geranium-Bringing-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,19 +561,24 @@
 				DEVELOPMENT_TEAM = 7G89J82G2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Enabling location for Geranium makes it possible for the app to display your location on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.Geranium;
+				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.geranium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Geranium/Geranium-Bringing-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,6 +700,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAA457192B26636D00FC7287 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		FAB321DD2B2678A80095E789 /* XCRemoteSwiftPackageReference "Map" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pauljohanneskraft/Map";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAA4571A2B26636D00FC7287 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAA457192B26636D00FC7287 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		FAB321DE2B2678A80095E789 /* Map */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB321DD2B2678A80095E789 /* XCRemoteSwiftPackageReference "Map" */;
+			productName = Map;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAA456C92B265FEA00FC7287 /* Project object */;
 }
