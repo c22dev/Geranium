@@ -8,6 +8,7 @@ WORKING_LOCATION="$(pwd)"
 APPLICATION_NAME=Geranium
 CONFIGURATION=Debug
 
+rm -rf build
 if [ ! -d "build" ]; then
     mkdir build
 fi
