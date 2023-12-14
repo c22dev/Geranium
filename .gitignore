@@ -1,0 +1,7 @@
+Geranium/Geranium.xcodeproj/xcuserdata/*
+Geranium/Geranium.xcodeproj/project.xcworkspace/xcuserdata/*
+Geranium/Geranium.xcodeproj/xcuserdata/
+Geranium/Geranium.xcodeproj/project.xcworkspace/xcuserdata/
+**/.DS_Store
+build/*
+build/
