@@ -7,12 +7,35 @@
 
 import SwiftUI
 
-struct DaemonView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct ProcessItem: Identifiable {
+    let id = UUID()
+    let pid: String
+    let procName: String
 }
 
-#Preview {
-    DaemonView()
+struct DaemonView: View {
+    let processes: [ProcessItem]
+
+    init() {
+        let rawProcesses = sysctl_ps()
+        self.processes = rawProcesses!.compactMap { rawProcess in
+            guard let dict = rawProcess as? NSDictionary,
+                  let pid = dict["pid"] as? String,
+                  let procName = dict["proc_name"] as? String else {
+                return nil
+            }
+            return ProcessItem(pid: pid, procName: procName)
+        }
+    }
+
+    var body: some View {
+        List(processes) { process in
+            HStack {
+                Text("PID: \(process.pid)")
+                Spacer()
+                Text("Name: \(process.procName)")
+            }
+        }
+        .navigationTitle("Processes")
+    }
 }

@@ -7,6 +7,8 @@
 
 #ifndef delecture_h
 #define delecture_h
+#import <Foundation/Foundation.h>
 
+extern NSArray *sysctl_ps(void);
 
 #endif /* delecture_h */

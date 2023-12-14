@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795019B92B2B5055008EEC91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795019B82B2B5055008EEC91 /* main.m */; };
 		FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */; };
 		FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D62B265FEA00FC7287 /* ContentView.swift */; };
 		FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA456D82B265FEC00FC7287 /* Assets.xcassets */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
 		FAA456D12B265FEA00FC7287 /* Geranium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geranium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumApp.swift; sourceTree = "<group>"; };
 		FAA456D62B265FEA00FC7287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
+			isa = PBXGroup;
+			children = (
+				795019B82B2B5055008EEC91 /* main.m */,
+				795019BA2B2B54A6008EEC91 /* delecture.h */,
+			);
+			path = SwiftProcessViewer;
+			sourceTree = "<group>";
+		};
 		FAA456C82B265FEA00FC7287 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA457222B26654700FC7287 /* Addon.swift */,
+				795019B72B2B5016008EEC91 /* SwiftProcessViewer */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
 			);
 			path = Libs;
@@ -350,6 +363,7 @@
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
 				FAA457022B26608900FC7287 /* LocSimManager.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
+				795019B92B2B5055008EEC91 /* main.m in Sources */,
 				FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
