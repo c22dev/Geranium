@@ -14,7 +14,13 @@ struct ProcessItem: Identifiable {
 }
 
 struct DaemonView: View {
+    @State private var searchText = ""
     let processes: [ProcessItem]
+    var filteredProcesses: [ProcessItem] {
+        processes.filter {
+            searchText.isEmpty || $0.procName.localizedCaseInsensitiveContains(searchText)
+        }
+    }
 
     init() {
         let rawProcesses = sysctl_ps()
@@ -31,7 +37,9 @@ struct DaemonView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(processes) { process in
+                SearchBar(text: $searchText)
+
+                ForEach(filteredProcesses) { process in
                     HStack {
                         Text("PID: \(process.pid)")
                         Spacer()
@@ -40,12 +48,28 @@ struct DaemonView: View {
                 }
                 .onDelete { indexSet in
                     guard let index = indexSet.first else { return }
-                    let process = processes[index]
+                    let process = filteredProcesses[index]
                     killall(process.procName)
-                    //TODO : FETCH AFTER DELETE
+                    //TODO: FETCH AFTER DELETE
                 }
             }
             .navigationTitle("Processes")
         }
+    }
+}
+
+struct SearchBar: View {
+    @Binding var text: String
+
+    var body: some View {
+        HStack {
+            TextField("Search...", text: $text)
+                .padding(8)
+                .background(Color(.systemGray5))
+                .cornerRadius(8)
+                .padding(.horizontal, 15)
+        }
+        .padding(.top, 8)
+        .padding(.bottom, 4)
     }
 }
