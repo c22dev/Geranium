@@ -15,7 +15,9 @@ struct ProcessItem: Identifiable {
 
 struct DaemonView: View {
     @State private var searchText = ""
-    let processes: [ProcessItem]
+    @State private var processes: [ProcessItem] = []
+    @State private var timer: Timer?
+
     var filteredProcesses: [ProcessItem] {
         processes.filter {
             searchText.isEmpty || $0.procName.localizedCaseInsensitiveContains(searchText)
@@ -23,15 +25,7 @@ struct DaemonView: View {
     }
 
     init() {
-        let rawProcesses = sysctl_ps()
-        self.processes = rawProcesses?.compactMap { rawProcess in
-            guard let dict = rawProcess as? NSDictionary,
-                  let pid = dict["pid"] as? String,
-                  let procName = dict["proc_name"] as? String else {
-                return nil
-            }
-            return ProcessItem(pid: pid, procName: procName)
-        } ?? []
+        self.processes = []
     }
 
     var body: some View {
@@ -50,11 +44,41 @@ struct DaemonView: View {
                     guard let index = indexSet.first else { return }
                     let process = filteredProcesses[index]
                     killall(process.procName)
-                    //TODO: FETCH AFTER DELETE
+                    updateProcesses()
                 }
             }
-            .navigationTitle("Processes")
+            .navigationTitle("Daemons")
+            .onAppear {
+                startTimer()
+            }
+            .onDisappear {
+                stopTimer()
+            }
         }
+    }
+
+    private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+            updateProcesses()
+        }
+        updateProcesses()
+    }
+
+    private func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+
+    private func updateProcesses() {
+        let rawProcesses = sysctl_ps()
+        self.processes = rawProcesses?.compactMap { rawProcess in
+            guard let dict = rawProcess as? NSDictionary,
+                  let pid = dict["pid"] as? String,
+                  let procName = dict["proc_name"] as? String else {
+                return nil
+            }
+            return ProcessItem(pid: pid, procName: procName)
+        } ?? []
     }
 }
 
@@ -73,3 +97,4 @@ struct SearchBar: View {
         .padding(.bottom, 4)
     }
 }
+
