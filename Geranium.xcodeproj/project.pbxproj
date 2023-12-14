@@ -55,7 +55,6 @@
 		FAA457002B26607600FC7287 /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
 		FAA457012B26608900FC7287 /* LocationSimulationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSimulationView.swift; sourceTree = "<group>"; };
 		FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Geranium-Bringing-Header.h"; sourceTree = "<group>"; };
-		FAA457082B2661B600FC7287 /* RemoteLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteLog.h; sourceTree = "<group>"; };
 		FAA4570F2B2661E200FC7287 /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		FAA457102B2661E300FC7287 /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
 		FAA457112B2661E300FC7287 /* TSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUtil.h; sourceTree = "<group>"; };
@@ -170,7 +169,6 @@
 			children = (
 				FAA457222B26654700FC7287 /* Addon.swift */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
-				FAA457082B2661B600FC7287 /* RemoteLog.h */,
 			);
 			path = Libs;
 			sourceTree = "<group>";

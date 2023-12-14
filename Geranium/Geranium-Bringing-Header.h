@@ -7,4 +7,3 @@
 
 #import "LocSimPrivateHeaders.h"
 #import "TSUtil.h"
-#include "RemoteLog.h"
