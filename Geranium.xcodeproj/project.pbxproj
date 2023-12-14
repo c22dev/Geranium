@@ -17,13 +17,11 @@
 		FAA457022B26608900FC7287 /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457002B26607600FC7287 /* LocSimManager.swift */; };
 		FAA457032B26608900FC7287 /* LocationSimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457012B26608900FC7287 /* LocationSimulationView.swift */; };
 		FAA457122B2661E300FC7287 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA457102B2661E300FC7287 /* TSUtil.m */; };
-		FAA4571B2B26636D00FC7287 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = FAA4571A2B26636D00FC7287 /* ArgumentParser */; };
 		FAA457232B26654700FC7287 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457222B26654700FC7287 /* Addon.swift */; };
 		FAA457272B26667E00FC7287 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457262B26667E00FC7287 /* HomeView.swift */; };
 		FAA457292B26668900FC7287 /* DaemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457282B26668900FC7287 /* DaemonView.swift */; };
 		FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4572F2B2666F300FC7287 /* CleanerView.swift */; };
 		FAA457322B2667CB00FC7287 /* SuperviseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457312B2667CB00FC7287 /* SuperviseView.swift */; };
-		FAB321DF2B2678A80095E789 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = FAB321DE2B2678A80095E789 /* Map */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA4571B2B26636D00FC7287 /* ArgumentParser in Frameworks */,
-				FAB321DF2B2678A80095E789 /* Map in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +226,6 @@
 			);
 			name = Geranium;
 			packageProductDependencies = (
-				FAA4571A2B26636D00FC7287 /* ArgumentParser */,
-				FAB321DE2B2678A80095E789 /* Map */,
 			);
 			productName = Geranium;
 			productReference = FAA456D12B265FEA00FC7287 /* Geranium.app */;
@@ -306,8 +300,6 @@
 			);
 			mainGroup = FAA456C82B265FEA00FC7287;
 			packageReferences = (
-				FAA457192B26636D00FC7287 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
-				FAB321DD2B2678A80095E789 /* XCRemoteSwiftPackageReference "Map" */,
 			);
 			productRefGroup = FAA456D22B265FEA00FC7287 /* Products */;
 			projectDirPath = "";
@@ -700,38 +692,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FAA457192B26636D00FC7287 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.0;
-			};
-		};
-		FAB321DD2B2678A80095E789 /* XCRemoteSwiftPackageReference "Map" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pauljohanneskraft/Map";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FAA4571A2B26636D00FC7287 /* ArgumentParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FAA457192B26636D00FC7287 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
-			productName = ArgumentParser;
-		};
-		FAB321DE2B2678A80095E789 /* Map */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FAB321DD2B2678A80095E789 /* XCRemoteSwiftPackageReference "Map" */;
-			productName = Map;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAA456C92B265FEA00FC7287 /* Project object */;
 }

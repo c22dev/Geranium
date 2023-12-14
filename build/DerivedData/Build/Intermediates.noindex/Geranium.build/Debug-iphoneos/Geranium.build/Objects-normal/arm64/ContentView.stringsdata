@@ -1,0 +1,28 @@
+{
+  "source": "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home"
+      },
+      {
+        "comment": "",
+        "key": "Daemons"
+      },
+      {
+        "comment": "",
+        "key": "LocSim"
+      },
+      {
+        "comment": "",
+        "key": "Cleaner"
+      },
+      {
+        "comment": "",
+        "key": "Superviser"
+      }
+    ]
+  },
+  "version": 1
+}

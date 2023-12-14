@@ -1,0 +1,108 @@
+{
+  "" : {
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Geranium-master.dia",
+    "emit-module-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Geranium-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Geranium-master-emit-module.dia",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Geranium-master.swiftdeps"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/Cleaner/CleanerView.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/CleanerView~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/ContentView.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/DaemonMan/DaemonView.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/DaemonView~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/GeraniumApp.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/GeraniumApp~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/HomeView.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/Libs/Addon.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/Addon~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/LocSim/LocationSimulationView.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocationSimulationView~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/LocSim/LocSimManager.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/LocSimManager~partial.swiftmodule"
+  },
+  "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/The Supviser/SuperviseView.swift" : {
+    "const-values" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView.swiftconstvalues",
+    "dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView.d",
+    "diagnostics" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView.dia",
+    "index-unit-output-path" : "/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView.o",
+    "llvm-bc" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView.bc",
+    "object" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView.o",
+    "swift-dependencies" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView.swiftdeps",
+    "swiftmodule" : "/Users/etudiant/DocumentsAlt/Xcode/Geranium/build/DerivedData/Build/Intermediates.noindex/Geranium.build/Debug-iphoneos/Geranium.build/Objects-normal/arm64/SuperviseView~partial.swiftmodule"
+  }
+}

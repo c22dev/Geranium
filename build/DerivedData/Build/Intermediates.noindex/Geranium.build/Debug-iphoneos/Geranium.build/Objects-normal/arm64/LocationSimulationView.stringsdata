@@ -1,0 +1,16 @@
+{
+  "source": "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/LocSim/LocationSimulationView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Enter latitude"
+      },
+      {
+        "comment": "",
+        "key": "Enter longitude"
+      }
+    ]
+  },
+  "version": 1
+}

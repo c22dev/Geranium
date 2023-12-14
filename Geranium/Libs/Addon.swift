@@ -70,14 +70,40 @@ extension View {
     }
 }
 
-extension UIApplication {
-    func respring() {
-        let app = self
-        // Credit to Amy While for this respring bug
-        guard let window = app.windows.first else { return }
+func respring() {
+    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+    
+    let animator = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 1) {
+        let windows: [UIWindow] = UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap(\.windows)
+        
+        for window in windows {
+            window.alpha = 0
+            window.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }
+    }
+    
+    animator.addCompletion { _ in
+        #if targetEnvironment(simulator)
+        #else
+        guard let window = UIApplication.shared.windows.first else { return }
         while true {
             window.snapshotView(afterScreenUpdates: false)
         }
+        #endif
+        
+        sleep(2) // give the springboard some time to restart before exiting
+        exit(0)
+    }
+    
+    animator.startAnimation()
+}
+
+func exitGracefully() {
+    UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+    Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+        exit(0)
     }
 }
 
@@ -118,15 +144,22 @@ extension UIApplication {
             self.present(alert: currentUIAlertController!)
         }
     }
-    func confirmAlert(title: String = "Error", body: String, onOK: @escaping () -> (), noCancel: Bool) {
+    func confirmAlert(title: String = "Error", body: String, onOK: @escaping () -> (), noCancel: Bool, yes: Bool = false) {
         DispatchQueue.main.async {
             currentUIAlertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
             if !noCancel {
                 currentUIAlertController?.addAction(.init(title: "Cancel", style: .cancel))
             }
-            currentUIAlertController?.addAction(.init(title: "Yes", style: noCancel ? .cancel : .default, handler: { _ in
-                onOK()
-            }))
+            if !yes {
+                currentUIAlertController?.addAction(.init(title: "OK", style: noCancel ? .cancel : .default, handler: { _ in
+                    onOK()
+                }))
+            }
+            if yes {
+                currentUIAlertController?.addAction(.init(title: "Yes", style: noCancel ? .cancel : .default, handler: { _ in
+                    onOK()
+                }))
+            }
             self.present(alert: currentUIAlertController!)
         }
     }

@@ -1,0 +1,12 @@
+{
+  "source": "/Users/etudiant/DocumentsAlt/Xcode/Geranium/Geranium/Cleaner/CleanerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Hello, World!"
+      }
+    ]
+  },
+  "version": 1
+}
