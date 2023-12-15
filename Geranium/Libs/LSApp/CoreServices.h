@@ -1,3 +1,4 @@
+@import Foundation;
 extern NSString *LSInstallTypeKey;
 
 @interface LSBundleProxy
@@ -7,19 +8,32 @@ extern NSString *LSInstallTypeKey;
 -(NSString*)localizedName;
 @end
 
-@interface LSApplicationProxy : LSBundleProxy
-+ (instancetype)applicationProxyForIdentifier:(NSString*)identifier;
-+ (instancetype)applicationProxyForBundleURL:(NSURL*)bundleURL;
-@property NSURL* bundleURL;
-@property NSString* bundleType;
-@property NSString* canonicalExecutablePath;
-@property (nonatomic,readonly) NSDictionary* groupContainerURLs;
-@property (nonatomic,readonly) NSArray* plugInKitPlugins;
-@property (getter=isInstalled,nonatomic,readonly) BOOL installed; 
-@property (getter=isPlaceholder,nonatomic,readonly) BOOL placeholder; 
-@property (getter=isRestricted,nonatomic,readonly) BOOL restricted;
-@property (nonatomic,readonly) NSSet* claimedURLSchemes;
-@property (nonatomic,readonly) NSString* applicationType;
+@interface LSApplicationProxy : NSObject
+@property (readonly, nonatomic) NSString *applicationType;
+
+@property (getter=isBetaApp, readonly, nonatomic) BOOL betaApp;
+@property (getter=isDeletable, readonly, nonatomic) BOOL deletable;
+@property (getter=isRestricted, readonly, nonatomic) BOOL restricted;
+@property (getter=isContainerized, readonly, nonatomic) BOOL containerized;
+@property (getter=isAdHocCodeSigned, readonly, nonatomic) BOOL adHocCodeSigned;
+@property (getter=isAppStoreVendable, readonly, nonatomic) BOOL appStoreVendable;
+@property (getter=isLaunchProhibited, readonly, nonatomic) BOOL launchProhibited;
+
+@property (readonly, nonatomic) NSSet <NSString *> *claimedURLSchemes;
+@property (readonly, nonatomic) NSString *teamID;
+@property (copy, nonatomic) NSString *sdkVersion;
+@property (readonly, nonatomic) NSDictionary <NSString *, id> *entitlements;
+@property (readonly, nonatomic) NSURL* _Nullable bundleContainerURL;
+@property (nonatomic,readonly) NSString * bundleIdentifier;
+@property (nonatomic) NSURL* dataContainerURL;
+
++ (LSApplicationProxy*)applicationProxyForIdentifier:(id)identifier;
+- (NSString *)applicationIdentifier;
+- (NSURL *)containerURL;
+- (NSURL *)bundleURL;
+- (NSString *)localizedName;
+- (NSData *)iconDataForVariant:(id)variant;
+- (NSData *)iconDataForVariant:(id)variant withOptions:(id)options;
 @end
 
 @interface LSApplicationWorkspace : NSObject
@@ -33,6 +47,8 @@ extern NSString *LSInstallTypeKey;
 - (BOOL)uninstallApplication:(NSString*)appId withOptions:(NSDictionary*)options;
 - (void)addObserver:(id)arg1;
 - (void)removeObserver:(id)arg1;
+- (NSArray <LSApplicationProxy *> *)allInstalledApplications;
+- (NSArray <LSApplicationProxy *> *)allApplications;
 @end
 
 @protocol LSApplicationWorkspaceObserverProtocol <NSObject>

@@ -47,6 +47,7 @@
 /* Begin PBXFileReference section */
 		792845522B2C67910021E1FD /* FileCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCleaner.swift; sourceTree = "<group>"; };
 		792845592B2C80A40021E1FD /* DaemonDisabler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonDisabler.swift; sourceTree = "<group>"; };
+		792845742B2C92850021E1FD /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
 		FAA456D12B265FEA00FC7287 /* Geranium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geranium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792845732B2C92680021E1FD /* LSApp */ = {
+			isa = PBXGroup;
+			children = (
+				792845742B2C92850021E1FD /* CoreServices.h */,
+			);
+			path = LSApp;
+			sourceTree = "<group>";
+		};
 		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA457222B26654700FC7287 /* Addon.swift */,
+				792845732B2C92680021E1FD /* LSApp */,
 				795019B72B2B5016008EEC91 /* SwiftProcessViewer */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
 			);

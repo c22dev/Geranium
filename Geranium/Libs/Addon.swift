@@ -234,30 +234,65 @@ extension Bundle {
 }
 
 struct LinkCell: View {
-    var imageName: String
+    var imageLink: String
     var url: String
     var title: String
     var systemImage: Bool = false
     var circle: Bool = false
-    
+
     var body: some View {
         HStack(alignment: .center) {
             Group {
-                if systemImage {
-                    Image(systemName: imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                } else {
-                    Image(imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                }
+                
+                    if let imageURL = URL(string: imageLink) {
+                        AsyncImageView(url: imageURL)
+                            .frame(width: 30, height: 30)
+                            .cornerRadius(25)
+                    }
             }
-            .frame(width: 30, height: 30)
+            .aspectRatio(contentMode: .fit)
+
             Button(title) {
                 UIApplication.shared.open(URL(string: url)!)
             }
+            .foregroundColor(Color.accentColor)
             .padding(.horizontal, 4)
         }
+    }
+}
+
+
+struct AsyncImageView: View {
+    @StateObject private var imageLoader = ImageLoader()
+
+    var url: URL
+
+    var body: some View {
+        Group {
+            if let uiImage = imageLoader.image {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .scaledToFit()
+            } else {
+                ProgressView()
+            }
+        }
+        .onAppear {
+            imageLoader.loadImage(from: url)
+        }
+    }
+}
+
+class ImageLoader: ObservableObject {
+    @Published var image: UIImage?
+
+    func loadImage(from url: URL) {
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            if let data = data, let uiImage = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.image = uiImage
+                }
+            }
+        }.resume()
     }
 }

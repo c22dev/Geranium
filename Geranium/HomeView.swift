@@ -40,12 +40,13 @@ struct HomeView: View {
                 Text("")
                 List {
                     Section (header: Text("Credits")) {
-                        LinkCell(imageName: "mypage-icon", url: "https://github.com/c22dev", title: "c22dev")
-                        LinkCell(imageName: "lemin", url: "https://github.com/leminlimez", title: "leminlimez (dock hider, various fixes, and passcode themer)")
-                        LinkCell(imageName: "sourcelocation", url: "https://github.com/sourcelocation", title: "sourcelocation (Plugins and Tools/AirTroller)")
+                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish")
+                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/396496265430695947/0904860dfb31d8b1f39f0e7dc4832b1e.webp?size=160", url: "https://github.com/donato-fiore", title: "fiore")
+                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/412187004407775242/1df69ac879b9e5f98396553eeac80cec.webp?size=160", url: "https://github.com/sourcelocation", title: "sourcelocation")
                     }
                 }
-                .disabled(true)
+                // https://stackoverflow.com/a/75516471
+                .simultaneousGesture(DragGesture(minimumDistance: 0), including: .all)
             }
         }
         .navigationBarTitle("Geranium")
