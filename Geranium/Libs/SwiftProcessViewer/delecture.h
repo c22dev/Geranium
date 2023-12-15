@@ -10,5 +10,6 @@
 #import <Foundation/Foundation.h>
 
 extern NSArray *sysctl_ps(void);
+extern NSArray *sysctl_BDL(void);
 
 #endif /* delecture_h */

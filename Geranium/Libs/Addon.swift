@@ -85,15 +85,10 @@ func respring() {
     }
     
     animator.addCompletion { _ in
-        #if targetEnvironment(simulator)
-        #else
-        guard let window = UIApplication.shared.windows.first else { return }
-        while true {
-            window.snapshotView(afterScreenUpdates: false)
-        }
-        #endif
-        
-        sleep(2) // give the springboard some time to restart before exiting
+        killall("SpringBoard")
+        killall("FrontBoard")
+        killall("BackBoard")
+        sleep(2)
         exit(0)
     }
     
@@ -224,4 +219,45 @@ func impactVibrate() {
 func miniimpactVibrate() {
     let impact = UIImpactFeedbackGenerator(style: .light)
     impact.impactOccurred()
+}
+
+extension Bundle {
+    public var icon: UIImage? {
+        if let icons = infoDictionary?["CFBundleIcons"] as? [String: Any],
+            let primaryIcon = icons["CFBundlePrimaryIcon"] as? [String: Any],
+            let iconFiles = primaryIcon["CFBundleIconFiles"] as? [String],
+            let lastIcon = iconFiles.last {
+            return UIImage(named: lastIcon)
+        }
+        return nil
+    }
+}
+
+struct LinkCell: View {
+    var imageName: String
+    var url: String
+    var title: String
+    var systemImage: Bool = false
+    var circle: Bool = false
+    
+    var body: some View {
+        HStack(alignment: .center) {
+            Group {
+                if systemImage {
+                    Image(systemName: imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                } else {
+                    Image(imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+            }
+            .frame(width: 30, height: 30)
+            Button(title) {
+                UIApplication.shared.open(URL(string: url)!)
+            }
+            .padding(.horizontal, 4)
+        }
+    }
 }
