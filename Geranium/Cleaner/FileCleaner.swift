@@ -7,19 +7,29 @@
 
 import Foundation
 
-func cleanProcess(cleanPaths: CleanPaths,safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDat: Bool, progressHandler: @escaping (Double) -> Void) {
+func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDat: Bool, progressHandler: @escaping (Double) -> Void) {
+    let logmobileCachesPath = "/var/mobile/Library/Logs/"
+        let logCachesPath = "/var/log/"
+        let logsCachesPath = "/var/logs/"
+        let tmpCachesPath = "/var/tmp/"
+        let globalCachesPath = "/var/mobile/Library/Caches/com.apple.CacheDeleteAppContainerCaches.deathrow"
+        let phototmpCachePath = "/var/mobile/Media/PhotoData/CPL/storage/filecache/"
+        // Safari Caches
+        let safariCachePath = "/var/mobile/Containers/Data/Application/Safari/Library/Caches/"
+        // OTA Update
+        let OTAPath = "/var/MobileSoftwareUpdate/MobileAsset/AssetsV2/com_apple_MobileAsset_SoftwareUpdate/"
+    print("in the func")
+    print(safari, appCaches, otaCaches)
     DispatchQueue.global().async {
-        let totalProgressSteps = 9
-        
-        for step in 0..<totalProgressSteps {
-            let progress = Double(step + 1) / Double(totalProgressSteps)
-            DispatchQueue.main.async {
-                progressHandler(progress)
-            }
-            print(cleanPaths.safariCachePath)
-            usleep(50000)
-        }
-    }
+           let totalProgressSteps = 9
+           for step in 0..<totalProgressSteps {
+               let progress = Double(step + 1) / Double(totalProgressSteps)
+               DispatchQueue.main.async {
+                   progressHandler(progress)
+               }
+               usleep(50000)
+           }
+       }
 }
 
 // https://stackoverflow.com/a/59425817
@@ -57,17 +67,17 @@ func directorySize(url: URL) -> Int64 {
     return size
 }
 
+func deleteContentsOfDirectory(atPath path: String) {
+    do {
+        let contents = try FileManager.default.contentsOfDirectory(atPath: path)
 
-class CleanPaths: ObservableObject {
-    // Caches
-    @Published var logmobileCachesPath = "/var/mobile/Library/Logs/"
-    @Published var logCachesPath = "/var/log/"
-    @Published var logsCachesPath = "/var/logs/"
-    @Published var tmpCachesPath = "/var/tmp/"
-    @Published var globalCachesPath = "/var/mobile/Library/Caches/com.apple.CacheDeleteAppContainerCaches.deathrow"
-    @Published var phototmpCachePath = "/var/mobile/Media/PhotoData/CPL/storage/filecache/"
-    // Safari Caches
-    @Published var safariCachePath = "/var/mobile/Containers/Data/Application/Safari/Library/Caches/"
-    // OTA Update
-    @Published var OTAPath = "/var/MobileSoftwareUpdate/MobileAsset/AssetsV2/com_apple_MobileAsset_SoftwareUpdate/"
+        for content in contents {
+            let contentPath = (path as NSString).appendingPathComponent(content)
+            try FileManager.default.removeItem(atPath: contentPath)
+        }
+
+        print("Contents of directory \(path) deleted successfully.")
+    } catch {
+        print("Error deleting contents of directory \(path): \(error.localizedDescription)")
+    }
 }

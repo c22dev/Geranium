@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+
 struct CleanerView: View {
-    @EnvironmentObject var cleanPaths: CleanPaths
+    @Binding var isTabViewHidden: Bool
     @State var buttonAndSelection = true
     @State private var safariCacheSize: Double = 0
     @State private var GlobalCacheSize: Double = 0
@@ -18,6 +19,17 @@ struct CleanerView: View {
     @State var appCaches = false
     @State var otaCaches = false
     @State var batteryUsageDat = false
+    // Caches
+    @State public var logmobileCachesPath = "/var/mobile/Library/Logs/"
+    @State public var logCachesPath = "/var/log/"
+    @State public var logsCachesPath = "/var/logs/"
+    @State public var tmpCachesPath = "/var/tmp/"
+    @State public var globalCachesPath = "/var/mobile/Library/Caches/com.apple.CacheDeleteAppContainerCaches.deathrow"
+    @State public var phototmpCachePath = "/var/mobile/Media/PhotoData/CPL/storage/filecache/"
+    // Safari Caches
+    @State public var safariCachePath = "/var/mobile/Containers/Data/Application/Safari/Library/Caches/"
+    // OTA Update
+    @State public var OTAPath = "/var/MobileSoftwareUpdate/MobileAsset/AssetsV2/com_apple_MobileAsset_SoftwareUpdate/"
     var body: some View {
         NavigationView {
             VStack {
@@ -27,8 +39,13 @@ struct CleanerView: View {
                             .foregroundColor(.green)
                         Text("Done !")
                             .foregroundStyle(.green)
-                        Button("Retry...", action: {
+                        Button("Exit", action: {
                             withAnimation {
+                                isTabViewHidden.toggle()
+                                progressAmount = 0
+                                safariCacheSize = 0
+                                GlobalCacheSize = 0
+                                OTACacheSize = 0
                                 progressAmount = 0
                             }
                         })
@@ -40,10 +57,11 @@ struct CleanerView: View {
                     }
                     else {
                         Button("Clean !", action: {
-                            UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\n General Caches: \(truelyEnabled(appCaches)))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nBattery Usage Data: \(truelyEnabled(batteryUsageDat))\n Are you sure you want to permanently delete those files ?", onOK: {
+                            UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nBattery Usage Data: \(truelyEnabled(batteryUsageDat))\n Are you sure you want to permanently delete those files ?", onOK: {
                                 print("")
                                 withAnimation {
                                     buttonAndSelection.toggle()
+                                    isTabViewHidden.toggle()
                                 }
                             }, noCancel: false, yes: true)
                         })
@@ -60,7 +78,7 @@ struct CleanerView: View {
                         .toggleStyle(checkboxiOS())
                         .padding(2)
                         .onAppear {
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.safariCachePath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: safariCachePath)) { size in
                                 safariCacheSize = size
                             }
                         }
@@ -73,22 +91,22 @@ struct CleanerView: View {
                         .padding(2)
                         .onAppear {
                             // mess
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.logCachesPath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: logCachesPath)) { size in
                                 GlobalCacheSize += size
                             }
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.logmobileCachesPath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: logmobileCachesPath)) { size in
                                 GlobalCacheSize += size
                             }
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.tmpCachesPath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: tmpCachesPath)) { size in
                                 GlobalCacheSize += size
                             }
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.phototmpCachePath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: phototmpCachePath)) { size in
                                 GlobalCacheSize += size
                             }
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.logsCachesPath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: logsCachesPath)) { size in
                                 GlobalCacheSize += size
                             }
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.globalCachesPath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: globalCachesPath)) { size in
                                 GlobalCacheSize += size
                             }
                         }
@@ -101,7 +119,7 @@ struct CleanerView: View {
                         .toggleStyle(checkboxiOS())
                         .padding(2)
                         .onAppear {
-                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: cleanPaths.OTAPath)) { size in
+                            calculateDirectorySizeAsync(url: URL(fileURLWithPath: OTAPath)) { size in
                                 OTACacheSize = size
                             }
                         }
@@ -116,30 +134,36 @@ struct CleanerView: View {
                 }
                 
                 if !buttonAndSelection {
-                        ProgressBar(value: progressAmount)
-                            .padding(.leading, 50)
-                            .padding(.trailing, 50)
-                            .onAppear {
-//                                Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
-//                                    self.progressAmount += 0.1
-//                                    print(progressAmount)
-//                                    if (self.progressAmount >= 0.9) {
-//                                        timer.invalidate()
-//                                        withAnimation {
-//                                            buttonAndSelection.toggle()
-//                                            
-//                                        }
-//                                    }
-//                                }
-                                performCleanup()
+                    ProgressBar(value: progressAmount)
+                        .padding(.leading, 50)
+                        .padding(.trailing, 50)
+                        .onAppear {
+                            performCleanup()
+                            if safari {
+                                print("safari")
+                                deleteContentsOfDirectory(atPath: safariCachePath)
                             }
+                            if appCaches {
+                                print("appcaches")
+                                deleteContentsOfDirectory(atPath: logmobileCachesPath)
+                                deleteContentsOfDirectory(atPath: logCachesPath)
+                                deleteContentsOfDirectory(atPath: logsCachesPath)
+                                deleteContentsOfDirectory(atPath: tmpCachesPath)
+                                deleteContentsOfDirectory(atPath: phototmpCachePath)
+                                deleteContentsOfDirectory(atPath: globalCachesPath)
+                            }
+                            if otaCaches {
+                                print("otacaches")
+                                deleteContentsOfDirectory(atPath: OTAPath)
+                            }
+                        }
                 }
             }
         }
         .navigationBarTitle("Cleaner")
     }
     func performCleanup() {
-        cleanProcess(cleanPaths: cleanPaths, safari: safari, appCaches: appCaches, otaCaches: otaCaches, batteryUsageDat: batteryUsageDat) { progressHandler in
+        cleanProcess(safari: safari, appCaches: appCaches, otaCaches: otaCaches, batteryUsageDat: batteryUsageDat) { progressHandler in
             progressAmount = progressHandler
             if (progressAmount >= 0.9) {
                 withAnimation {
@@ -149,18 +173,13 @@ struct CleanerView: View {
         }
     }
     func calculateDirectorySizeAsync(url: URL, completion: @escaping (Double) -> Void) {
-            DispatchQueue.global().async {
-                let size = Double(directorySize(url: url))
-                DispatchQueue.main.async {
-                    completion(size)
-                }
+        DispatchQueue.global().async {
+            let size = Double(directorySize(url: url))
+            DispatchQueue.main.async {
+                completion(size)
             }
         }
-}
-
-
-#Preview {
-    CleanerView()
+    }
 }
 
 
