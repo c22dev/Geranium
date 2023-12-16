@@ -296,3 +296,12 @@ class ImageLoader: ObservableObject {
         }.resume()
     }
 }
+
+func truelyEnabled(_ inputBoolean: Bool) -> String {
+    if inputBoolean{
+        return "Enabled"
+    }
+    else {
+        return "Disabled"
+    }
+}
