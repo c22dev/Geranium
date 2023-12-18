@@ -8,16 +8,6 @@
 import Foundation
 
 func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDat: Bool, progressHandler: @escaping (Double) -> Void) {
-    let logmobileCachesPath = "/var/mobile/Library/Logs/"
-        let logCachesPath = "/var/log/"
-        let logsCachesPath = "/var/logs/"
-        let tmpCachesPath = "/var/tmp/"
-        let globalCachesPath = "/var/mobile/Library/Caches/com.apple.CacheDeleteAppContainerCaches.deathrow"
-        let phototmpCachePath = "/var/mobile/Media/PhotoData/CPL/storage/filecache/"
-        // Safari Caches
-        let safariCachePath = "/var/mobile/Containers/Data/Application/Safari/Library/Caches/"
-        // OTA Update
-        let OTAPath = "/var/MobileSoftwareUpdate/MobileAsset/AssetsV2/com_apple_MobileAsset_SoftwareUpdate/"
     print("in the func")
     print(safari, appCaches, otaCaches)
     DispatchQueue.global().async {
@@ -68,16 +58,18 @@ func directorySize(url: URL) -> Int64 {
 }
 
 func deleteContentsOfDirectory(atPath path: String) {
+    var RHOutput = ""
     do {
         let contents = try FileManager.default.contentsOfDirectory(atPath: path)
 
         for content in contents {
             let contentPath = (path as NSString).appendingPathComponent(content)
             try FileManager.default.removeItem(atPath: contentPath)
+            RHOutput = RootHelper.removeItem(at: URL(fileURLWithPath: content))
+            print("\(RHOutput)")
         }
-
-        print("Contents of directory \(path) deleted successfully.")
+        print("Contents of directory \(path) deleted")
     } catch {
-        print("Error deleting contents of directory \(path): \(error.localizedDescription)")
+        print("Error deleting contents of directory \(path): \(error.localizedDescription) and \(RHOutput)")
     }
 }

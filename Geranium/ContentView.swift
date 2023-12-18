@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isTabViewHidden = false
+    @Binding var tsBypass: Bool
+    @Binding var updBypass: Bool
     var body: some View {
         TabView {
             if !isTabViewHidden {
                 // TD : USERSPACE REBBOT IMPLEMENTATION
-                HomeView()
+                HomeView(tsBypass: $tsBypass, updBypass: $updBypass)
                     .tabItem {
                         Label("Home", systemImage: "house.fill")
                     }
@@ -38,11 +40,5 @@ struct ContentView: View {
                     }
             }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

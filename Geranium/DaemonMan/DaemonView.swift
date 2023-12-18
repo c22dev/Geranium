@@ -43,8 +43,11 @@ struct DaemonView: View {
                 .onDelete { indexSet in
                     guard let index = indexSet.first else { return }
                     let process = filteredProcesses[index]
+                    //MARK: Probably the WORST EVER WAY to define a daemon's bundle ID. I'll try over objc s0n
+                    daemonManagement(key: "com.apple.\(process.procName)",value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
                     killall(process.procName)
                     updateProcesses()
+                    UIApplication.shared.alert(title: "\(process.procName) was successfuly disabled in launchd database", body: "This daemon won't launch next startup.")
                 }
             }
             .navigationTitle("Daemons")

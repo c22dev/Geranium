@@ -11,6 +11,8 @@
 		7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845592B2C80A40021E1FD /* DaemonDisabler.swift */; };
 		795019B92B2B5055008EEC91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795019B82B2B5055008EEC91 /* main.m */; };
 		79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */; };
+		79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA95892B30D91600380D83 /* RootHelperMan.swift */; };
+		79BA958E2B30D9CA00380D83 /* GeraniumRootHelper in Resources */ = {isa = PBXBuildFile; fileRef = 79BA958D2B30D9CA00380D83 /* GeraniumRootHelper */; };
 		79D359942B2C9D91004C0FCF /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D359932B2C9D91004C0FCF /* LSApplicationProxy+AltList.m */; };
 		FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */; };
 		FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D62B265FEA00FC7287 /* ContentView.swift */; };
@@ -53,6 +55,8 @@
 		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
 		79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		79BA95892B30D91600380D83 /* RootHelperMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelperMan.swift; sourceTree = "<group>"; };
+		79BA958D2B30D9CA00380D83 /* GeraniumRootHelper */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = GeraniumRootHelper; path = ../../../../../Downloads/GeraniumRootHelper; sourceTree = "<group>"; };
 		79D359932B2C9D91004C0FCF /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
 		79D359952B2C9DAD004C0FCF /* LSApplicationProxy+AltList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSApplicationProxy+AltList.h"; sourceTree = "<group>"; };
 		FAA456D12B265FEA00FC7287 /* Geranium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geranium.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +205,8 @@
 			children = (
 				FAA457222B26654700FC7287 /* Addon.swift */,
 				79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */,
+				79BA95892B30D91600380D83 /* RootHelperMan.swift */,
+				79BA958D2B30D9CA00380D83 /* GeraniumRootHelper */,
 				792845732B2C92680021E1FD /* LSApp */,
 				795019B72B2B5016008EEC91 /* SwiftProcessViewer */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
@@ -353,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA456DC2B265FEC00FC7287 /* Preview Assets.xcassets in Resources */,
+				79BA958E2B30D9CA00380D83 /* GeraniumRootHelper in Resources */,
 				FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +399,7 @@
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
 				795019B92B2B5055008EEC91 /* main.m in Sources */,
 				79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */,
+				79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */,
 				FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
