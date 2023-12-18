@@ -90,6 +90,11 @@ struct CleanerView: View {
                         .toggleStyle(checkboxiOS())
                         .padding(2)
                         .onAppear {
+                            progressAmount = 0
+                            safariCacheSize = 0
+                            GlobalCacheSize = 0
+                            OTACacheSize = 0
+                            progressAmount = 0
                             // mess
                             calculateDirectorySizeAsync(url: URL(fileURLWithPath: logCachesPath)) { size in
                                 GlobalCacheSize += size
