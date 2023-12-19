@@ -177,7 +177,7 @@ struct CleanerView: View {
                     }
             }
         }
-        .navigationBarTitle("Cleaner")
+        .navigationTitle("Cleaner")
     }
     func performCleanup() {
         cleanProcess(safari: safari, appCaches: appCaches, otaCaches: otaCaches, batteryUsageDat: batteryUsageDat) { progressHandler in

@@ -243,15 +243,13 @@ struct LinkCell: View {
     var body: some View {
         HStack(alignment: .center) {
             Group {
-                
-                    if let imageURL = URL(string: imageLink) {
-                        AsyncImageView(url: imageURL)
-                            .frame(width: 30, height: 30)
-                            .cornerRadius(25)
-                    }
+                if let imageURL = URL(string: imageLink) {
+                    AsyncImageView(url: imageURL)
+                        .frame(width: 30, height: 30)
+                        .cornerRadius(25)
+                }
             }
             .aspectRatio(contentMode: .fit)
-
             Button(title) {
                 UIApplication.shared.open(URL(string: url)!)
             }

@@ -11,11 +11,14 @@ import SwiftUI
 struct GeraniumApp: App {
     @AppStorage("TSBypass") var tsBypass: Bool = false
     @AppStorage("UPDBypass") var updBypass: Bool = false
+    @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
+    @AppStorage("isFirstRun") var isFirstRun: Bool = true
+    @Environment(\.dismiss) var dismiss
     var body: some Scene {
         WindowGroup {
-            ContentView(tsBypass: $tsBypass, updBypass: $updBypass)
+            ContentView(tsBypass: $tsBypass, updBypass: $updBypass, loggingAllowed: $loggingAllowed)
                 .onAppear {
-                    if checkSandbox() && !tsBypass{
+                    if checkSandbox(), !tsBypass, !isFirstRun{
                         UIApplication.shared.alert(title:"Geranium wasn't installed with TrollStore", body:"Unable to create test file. The app cannot work without the correct entitlements. Please use TrollStore to install it.", withButton:true)
                     }
                     // thanks sourceloc again
@@ -32,6 +35,17 @@ struct GeraniumApp: App {
                             }
                         }
                         task.resume()
+                    }
+                }
+                .sheet(isPresented: $isFirstRun) {
+                    if #available(iOS 16.0, *) {
+                        NavigationStack {
+                            WelcomeView(loggingAllowed: $loggingAllowed, updBypass: $updBypass)
+                        }
+                    } else {
+                        NavigationView {
+                            WelcomeView(loggingAllowed: $loggingAllowed, updBypass: $updBypass)
+                        }
                     }
                 }
         }

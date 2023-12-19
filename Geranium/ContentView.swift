@@ -11,11 +11,12 @@ struct ContentView: View {
     @State private var isTabViewHidden = false
     @Binding var tsBypass: Bool
     @Binding var updBypass: Bool
+    @Binding var loggingAllowed: Bool
     var body: some View {
         TabView {
             if !isTabViewHidden {
                 // TD : USERSPACE REBBOT IMPLEMENTATION
-                HomeView(tsBypass: $tsBypass, updBypass: $updBypass)
+                HomeView(tsBypass: $tsBypass, updBypass: $updBypass, loggingAllowed: $loggingAllowed)
                     .tabItem {
                         Label("Home", systemImage: "house.fill")
                     }
