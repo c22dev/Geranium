@@ -33,7 +33,9 @@ struct CleanerView: View {
     // OTA Update
     @State public var OTAPath = "/var/MobileSoftwareUpdate/MobileAsset/AssetsV2/com_apple_MobileAsset_SoftwareUpdate/"
     var body: some View {
-        if #available(iOS 16.0, *), UIDevice.current.userInterfaceIdiom == .pad {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            // Here we remove NavigationStack for iPads. Why ? Cause pressing "Exit" button with NavigationStack would make a blank screen
+            // TODO: Fix .navigationBarTitle for iPads
                     cleanerViewMain()
             } else {
                 NavigationView {
