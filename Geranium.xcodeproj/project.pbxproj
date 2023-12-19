@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		79152B602B3105BC0022EEAF /* GeraniumRootHelper in Resources */ = {isa = PBXBuildFile; fileRef = 79152B5F2B3105BC0022EEAF /* GeraniumRootHelper */; };
+		7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820992B31F109007EEC24 /* LogHelper.swift */; };
 		792845532B2C67910021E1FD /* FileCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845522B2C67910021E1FD /* FileCleaner.swift */; };
 		7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845592B2C80A40021E1FD /* DaemonDisabler.swift */; };
 		795019B92B2B5055008EEC91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795019B82B2B5055008EEC91 /* main.m */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		79152B5F2B3105BC0022EEAF /* GeraniumRootHelper */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = GeraniumRootHelper; sourceTree = "<group>"; };
+		791820992B31F109007EEC24 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		792845522B2C67910021E1FD /* FileCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCleaner.swift; sourceTree = "<group>"; };
 		792845592B2C80A40021E1FD /* DaemonDisabler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonDisabler.swift; sourceTree = "<group>"; };
 		792845752B2C9CAE0021E1FD /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				792845732B2C92680021E1FD /* LSApp */,
 				795019B72B2B5016008EEC91 /* SwiftProcessViewer */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
+				791820992B31F109007EEC24 /* LogHelper.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				79D359942B2C9D91004C0FCF /* LSApplicationProxy+AltList.m in Sources */,
 				792845532B2C67910021E1FD /* FileCleaner.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
+				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
 				FAA457022B26608900FC7287 /* LocSimManager.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,

@@ -47,7 +47,7 @@ struct HomeView: View {
                 .padding()
                 Button("Rebuild Icon Cache", action: {
                     UIApplication.shared.alert(title:"Rebuilding Icon Cache...", body:"Please wait, your phone until your phone repsrings.", withButton: false)
-                    var output = RootHelper.rebuildIconCache()
+                    let output = RootHelper.rebuildIconCache()
                     print(output)
                 })
                 .padding(.bottom, 24)
