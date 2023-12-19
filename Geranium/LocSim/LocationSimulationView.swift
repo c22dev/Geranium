@@ -30,7 +30,19 @@ struct LocationSimulationView: View {
     @State private var tappedCoordinate: EquatableCoordinate? = nil
     @State private var selectedKey: String?
     var body: some View {
-        NavigationView{
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    LocSimMainView()
+                }
+            } else {
+                NavigationView {
+                    LocSimMainView()
+                }
+            }
+        }
+    
+    @ViewBuilder
+        private func LocSimMainView() -> some View {
             VStack {
                 TextField("Enter latitude", text: $lat)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -143,7 +155,6 @@ struct LocationSimulationView: View {
                     }
                 }
             }
-        }
             .onChange(of: tappedCoordinate) { newValue in
                 if let coordinate = newValue {
                     lat = String(coordinate.coordinate.latitude)

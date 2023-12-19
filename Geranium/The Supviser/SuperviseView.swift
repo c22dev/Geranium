@@ -12,7 +12,18 @@ struct SuperviseView: View {
     @State var plistContent = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>AllowPairing</key> <true/> <key>CloudConfigurationUIComplete</key> <true/> <key>ConfigurationSource</key> <integer>0</integer> <key>IsSupervised</key> <true/> <key>PostSetupProfileWasInstalled</key> <true/> </dict> </plist>"
     @State var supervisePath = "/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/CloudConfigurationDetails.plist"
     var body: some View {
-        NavigationView {
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    SuperviseMainView()
+                }
+            } else {
+                NavigationView {
+                    SuperviseMainView()
+                }
+            }
+        }
+    @ViewBuilder
+        private func SuperviseMainView() -> some View {
             VStack {
                 TextField("Enter organisation name...", text: $organisation_name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -68,9 +79,8 @@ struct SuperviseView: View {
                 .background(Color.accentColor)
                 .cornerRadius(8)
                 .foregroundColor(.black)
+                .navigationBarTitle("The Superviser")
             }
-            .navigationBarTitle("The Superviser")
-        }
     }
 }
 
