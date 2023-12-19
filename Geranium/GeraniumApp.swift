@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// TODO: test app on iPadOS 15 iPads
 @main
 struct GeraniumApp: App {
     @AppStorage("TSBypass") var tsBypass: Bool = false
