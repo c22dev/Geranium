@@ -312,3 +312,16 @@ func SuccessfulOrWhat(_ inputBoolean: Bool) -> String {
         return "Error"
     }
 }
+
+// https://stackoverflow.com/a/76762126
+extension View {
+@ViewBuilder
+func disableListScroll() -> some View {
+    if #available(iOS 16.0, *) {
+        self
+        .scrollDisabled(true)
+    } else {
+        self
+        .simultaneousGesture(DragGesture(minimumDistance: 0), including: .all)
+    }
+}}

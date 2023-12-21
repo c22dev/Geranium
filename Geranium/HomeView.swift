@@ -45,11 +45,6 @@ struct HomeView: View {
                     respring()
                 })
                 .padding()
-                Button("Reboot", action: {
-                    killall("com.apple.launchd")
-                    killall("launchd")
-                })
-                .padding()
                 Button("Rebuild Icon Cache", action: {
                     UIApplication.shared.alert(title:"Rebuilding Icon Cache...", body:"Please wait, your phone until your phone repsrings.", withButton: false)
                     let output = RootHelper.rebuildIconCache()
@@ -67,7 +62,7 @@ struct HomeView: View {
                         .ignoresSafeArea()
                 }
                 Text("")
-                List {
+                List() {
                     Section (header: Text("Credits")) {
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish")
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/396496265430695947/0904860dfb31d8b1f39f0e7dc4832b1e.webp?size=160", url: "https://github.com/donato-fiore", title: "fiore")
@@ -75,8 +70,10 @@ struct HomeView: View {
                         LinkCell(imageLink: "https://avatars.githubusercontent.com/u/85764897?s=160&v=4", url: "https://github.com/haxi0", title: "haxi0")
                     }
                 }
-                // https://stackoverflow.com/a/75516471
-                .simultaneousGesture(DragGesture(minimumDistance: 0), including: .all)
+                .disableListScroll()
+                .onAppear {
+                    UITableView.appearance().isScrollEnabled = false
+                }
             }
         }
         .toolbar{
