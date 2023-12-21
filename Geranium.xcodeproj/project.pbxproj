@@ -17,6 +17,7 @@
 		7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD072B34894400FBAB8D /* BookMarkSlider.swift */; };
 		7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */; };
 		799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799488A52B347E2C00AFFDCF /* LocSimManager.swift */; };
+		799615442B34A1930053558E /* DaemonWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799615432B34A1930053558E /* DaemonWelcomeView.swift */; };
 		79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */; };
 		79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA95892B30D91600380D83 /* RootHelperMan.swift */; };
 		79D359942B2C9D91004C0FCF /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D359932B2C9D91004C0FCF /* LSApplicationProxy+AltList.m */; };
@@ -68,6 +69,7 @@
 		7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkHelper.swift; sourceTree = "<group>"; };
 		799488A52B347E2C00AFFDCF /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
 		799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
+		799615432B34A1930053558E /* DaemonWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonWelcomeView.swift; sourceTree = "<group>"; };
 		79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		79BA95892B30D91600380D83 /* RootHelperMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelperMan.swift; sourceTree = "<group>"; };
 		79D359932B2C9D91004C0FCF /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA457282B26668900FC7287 /* DaemonView.swift */,
+				799615432B34A1930053558E /* DaemonWelcomeView.swift */,
 				792845592B2C80A40021E1FD /* DaemonDisabler.swift */,
 			);
 			path = DaemonMan;
@@ -423,6 +426,7 @@
 				792845532B2C67910021E1FD /* FileCleaner.swift in Sources */,
 				799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
+				799615442B34A1930053558E /* DaemonWelcomeView.swift in Sources */,
 				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
 				7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */,

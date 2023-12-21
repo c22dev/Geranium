@@ -20,6 +20,7 @@ struct BookMarkSlider: View {
     @Binding var long: Double
     @State private var name = ""
     @State private var result: Bool = false
+    @AppStorage("isMika") var isMika: Bool = false
     @State private var bookmarks: [Bookmark] = BookMarkRetrieve().map {
         Bookmark(name: $0["name"] as! String, lat: $0["lat"] as! Double, long: $0["long"] as! Double)
     }
@@ -96,6 +97,17 @@ struct BookMarkSlider: View {
                     }
                     , alignment: .center
                 )
+            .onAppear {
+                if isThereAnyMika(), !isMika {
+                    UIApplication.shared.confirmAlert(title:"Mika's LocSim bookmarks/records detected.", body: "Do you want to import them ?", onOK: {
+                        importMika()
+                        bookmarks = BookMarkRetrieve().map {
+                            Bookmark(name: $0["name"] as! String, lat: $0["lat"] as! Double, long: $0["long"] as! Double)
+                        }
+                        isMika.toggle()
+                    }, noCancel: false, yes: true)
+                }
+            }
         }
     }
 

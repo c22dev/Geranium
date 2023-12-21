@@ -41,13 +41,11 @@ struct WelcomeView: View {
             }
         }
         .navigationTitle("Welcome!")
+        .navigationBarItems(trailing: Button("Dismiss") {
+            close()
+        })
         .environment(\.defaultMinListRowHeight, 50)
         .interactiveDismissDisabled()
-        Button("Dismiss") {
-            close()
-        }
-        .buttonStyle(DangerButtonStyle())
-        .padding()
     }
 
     func close() {

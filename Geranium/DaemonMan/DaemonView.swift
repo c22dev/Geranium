@@ -17,6 +17,9 @@ struct DaemonView: View {
     @State private var searchText = ""
     @State private var processes: [ProcessItem] = []
     @State private var timer: Timer?
+    @State private var toDisable: [String] = []
+    @State private var toEnable: [String] = []
+    @AppStorage("isDaemonFirstRun") var isDaemonFirstRun: Bool = true
 
     var filteredProcesses: [ProcessItem] {
         processes.filter {
@@ -46,18 +49,23 @@ struct DaemonView: View {
             ForEach(filteredProcesses) { process in
                 HStack {
                     Text("PID: \(process.pid)")
+                        .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
                     Spacer()
                     Text("Name: \(process.procName)")
+                        .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
                 }
             }
             .onDelete { indexSet in
                 guard let index = indexSet.first else { return }
-                let process = filteredProcesses[index]
-                //MARK: Probably the WORST EVER WAY to define a daemon's bundle ID. I'll try over objc s0n
-                daemonManagement(key: "com.apple.\(process.procName)",value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
-                killall(process.procName)
-                updateProcesses()
-                UIApplication.shared.alert(title: "\(process.procName) was successfuly disabled in launchd database", body: "This daemon won't launch next startup.")
+                let process = processes[index]
+                
+                if let indexToRemove = toDisable.firstIndex(of: process.procName) {
+                    toDisable.remove(at: indexToRemove)
+                    updateProcesses()
+                } else {
+                    toDisable.append(process.procName)
+                    updateProcesses()
+                }
             }
         }
         .toolbar{
@@ -66,12 +74,41 @@ struct DaemonView: View {
                     .font(.title2)
                     .bold()
             }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    //MARK: Probably the WORST EVER WAY to define a daemon's bundle ID. I'll try over objc s0n
+                    for process in toDisable {
+                        UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can't undo this action. Your phone might bootloop.", onOK: {
+                        daemonManagement(key: "com.apple.\(process)", value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
+                        }, noCancel: false)
+                    }
+                    if toDisable == [] {
+                        UIApplication.shared.alert(title: "You didn't select any daemon", body: "Please swipe a running daemon to the left to disable it.")
+                    }
+                }) {
+                    Image(systemName: "checkmark")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                }
+            }
         }
         .onAppear {
             startTimer()
         }
         .onDisappear {
             stopTimer()
+        }
+        .sheet(isPresented: $isDaemonFirstRun) {
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    DaemonWelcomeView()
+                }
+            } else {
+                NavigationView {
+                    DaemonWelcomeView()
+                }
+            }
         }
     }
 
