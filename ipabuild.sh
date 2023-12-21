@@ -53,7 +53,7 @@ fi
 #cd $WORKING_LOCATION/RootHelper
 #make clean
 #make
-#cp $WORKING_LOCATION/RootHelper/.theos/obj/debug/trolltoolsroothelper $WORKING_LOCATION/build/Geranium.app/trolltoolsroothelper
+cp $WORKING_LOCATION/GeraniumRootHelper $WORKING_LOCATION/build/Geranium.app/GeraniumRootHelper
 #cd -
 
 #cp $WORKING_LOCATION/build/DerivedData/Build/Products/$CONFIGURATION-iphoneos/RootHelper $WORKING_LOCATION/build/Geranium.app/RootHelper
