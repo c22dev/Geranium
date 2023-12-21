@@ -10,20 +10,18 @@ import Foundation
 func daemonManagement(key: String, value: Bool, plistPath: String) {
     var result = ""
     // copy plist
-    // is that catgpt ?
-    let appTmpDirURL = FileManager.default.temporaryDirectory.appendingPathComponent(Bundle.main.bundleIdentifier ?? "")
-    let error = RootHelper.copy(from: URL(fileURLWithPath: plistPath), to: URL(fileURLWithPath: "\(appTmpDirURL)/disabled.plist"))
-    guard let plistData = FileManager.default.contents(atPath: "\(appTmpDirURL)/disabled.plist"),
+    let error = RootHelper.copy(from: URL(fileURLWithPath: plistPath), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+    guard let plistData = FileManager.default.contents(atPath: "/var/mobile/Documents/disabled.plist"),
           var plistDictionary = try? PropertyListSerialization.propertyList(from: plistData, options: [], format: nil) as? NSMutableDictionary
     else {
         print("Error")
         return
     }
     plistDictionary[key] = value
-    
+    print("new data being transmitted")
     if let newData = try? PropertyListSerialization.data(fromPropertyList: plistDictionary, format: .xml, options: 0) {
         do {
-            try newData.write(to: URL(fileURLWithPath: "\(appTmpDirURL)/disabled.plist"))
+            try newData.write(to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
         } catch {
             print("Error \(error)")
         }
@@ -31,7 +29,9 @@ func daemonManagement(key: String, value: Bool, plistPath: String) {
         print("Error data convert")
     }
     // we need to do shit with roothelper
+    print("roothelper")
     result = RootHelper.removeItem(at: URL(fileURLWithPath: plistPath))
     print(result)
-    result = RootHelper.move(from: URL(fileURLWithPath :"\(appTmpDirURL)/disabled.plist"), to: URL(fileURLWithPath: plistPath))
+    print("roothelper2")
+    result = RootHelper.move(from: URL(fileURLWithPath :"/var/mobile/Documents/disabled.plist"), to: URL(fileURLWithPath: plistPath))
 }
