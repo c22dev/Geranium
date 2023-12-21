@@ -58,7 +58,6 @@
 		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
 		7989FD022B347EEA00FBAB8D /* LocSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocSimView.swift; sourceTree = "<group>"; };
-		7989FD042B34834F00FBAB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7989FD052B3486B100FBAB8D /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 		7989FD072B34894400FBAB8D /* BookMarkSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkSlider.swift; sourceTree = "<group>"; };
 		7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkHelper.swift; sourceTree = "<group>"; };
@@ -174,7 +173,6 @@
 		FAA456D32B265FEA00FC7287 /* Geranium */ = {
 			isa = PBXGroup;
 			children = (
-				7989FD042B34834F00FBAB8D /* Info.plist */,
 				FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */,
 				FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */,
 				FAA457052B2661AD00FC7287 /* Libs */,
