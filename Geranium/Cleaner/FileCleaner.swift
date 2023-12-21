@@ -58,18 +58,11 @@ func directorySize(url: URL) -> Int64 {
 }
 
 func deleteContentsOfDirectory(atPath path: String) {
-    var RHOutput = ""
-    do {
-        let contents = try FileManager.default.contentsOfDirectory(atPath: path)
-
-        for content in contents {
-            let contentPath = (path as NSString).appendingPathComponent(content)
-            try FileManager.default.removeItem(atPath: contentPath)
-            RHOutput = RootHelper.removeItem(at: URL(fileURLWithPath: content))
-            print("\(RHOutput)")
-        }
+        var log = RootHelper.setPermission(url: URL(fileURLWithPath: path))
+        print(log)
+        log = RootHelper.removeItem(at: URL(fileURLWithPath: path))
+        print(log)
+        log = RootHelper.createDirectory(at: URL(fileURLWithPath: path))
+        print(log)
         print("Contents of directory \(path) deleted")
-    } catch {
-        print("Error deleting contents of directory \(path): \(error.localizedDescription) and \(RHOutput)")
-    }
 }
