@@ -25,9 +25,6 @@
 		FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D62B265FEA00FC7287 /* ContentView.swift */; };
 		FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA456D82B265FEC00FC7287 /* Assets.xcassets */; };
 		FAA456DC2B265FEC00FC7287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA456DB2B265FEC00FC7287 /* Preview Assets.xcassets */; };
-		FAA456E62B265FED00FC7287 /* GeraniumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456E52B265FED00FC7287 /* GeraniumTests.swift */; };
-		FAA456F02B265FED00FC7287 /* GeraniumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456EF2B265FED00FC7287 /* GeraniumUITests.swift */; };
-		FAA456F22B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */; };
 		FAA457122B2661E300FC7287 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA457102B2661E300FC7287 /* TSUtil.m */; };
 		FAA457232B26654700FC7287 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457222B26654700FC7287 /* Addon.swift */; };
 		FAA457272B26667E00FC7287 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457262B26667E00FC7287 /* HomeView.swift */; };
@@ -79,10 +76,7 @@
 		FAA456D82B265FEC00FC7287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA456DB2B265FEC00FC7287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAA456E12B265FED00FC7287 /* GeraniumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeraniumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAA456E52B265FED00FC7287 /* GeraniumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumTests.swift; sourceTree = "<group>"; };
 		FAA456EB2B265FED00FC7287 /* GeraniumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeraniumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAA456EF2B265FED00FC7287 /* GeraniumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumUITests.swift; sourceTree = "<group>"; };
-		FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Geranium-Bringing-Header.h"; sourceTree = "<group>"; };
 		FAA4570F2B2661E200FC7287 /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		FAA457102B2661E300FC7287 /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
@@ -163,8 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				FAA456D32B265FEA00FC7287 /* Geranium */,
-				FAA456E42B265FED00FC7287 /* GeraniumTests */,
-				FAA456EE2B265FED00FC7287 /* GeraniumUITests */,
 				FAA456D22B265FEA00FC7287 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -205,23 +197,6 @@
 				FAA456DB2B265FEC00FC7287 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FAA456E42B265FED00FC7287 /* GeraniumTests */ = {
-			isa = PBXGroup;
-			children = (
-				FAA456E52B265FED00FC7287 /* GeraniumTests.swift */,
-			);
-			path = GeraniumTests;
-			sourceTree = "<group>";
-		};
-		FAA456EE2B265FED00FC7287 /* GeraniumUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FAA456EF2B265FED00FC7287 /* GeraniumUITests.swift */,
-				FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */,
-			);
-			path = GeraniumUITests;
 			sourceTree = "<group>";
 		};
 		FAA457052B2661AD00FC7287 /* Libs */ = {
@@ -438,7 +413,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA456E62B265FED00FC7287 /* GeraniumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +420,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA456F22B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift in Sources */,
-				FAA456F02B265FED00FC7287 /* GeraniumUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
