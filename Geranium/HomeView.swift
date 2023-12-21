@@ -45,6 +45,11 @@ struct HomeView: View {
                     respring()
                 })
                 .padding()
+                Button("Reboot", action: {
+                    killall("com.apple.launchd")
+                    killall("launchd")
+                })
+                .padding()
                 Button("Rebuild Icon Cache", action: {
                     UIApplication.shared.alert(title:"Rebuilding Icon Cache...", body:"Please wait, your phone until your phone repsrings.", withButton: false)
                     let output = RootHelper.rebuildIconCache()
