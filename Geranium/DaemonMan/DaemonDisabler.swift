@@ -12,7 +12,7 @@ func daemonManagement(key: String, value: Bool, plistPath: String) {
     // copy plist
     // is that catgpt ?
     let appTmpDirURL = FileManager.default.temporaryDirectory.appendingPathComponent(Bundle.main.bundleIdentifier ?? "")
-    var error = RootHelper.copy(from: URL(fileURLWithPath: plistPath), to: URL(fileURLWithPath: "\(appTmpDirURL)/disabled.plist"))
+    let error = RootHelper.copy(from: URL(fileURLWithPath: plistPath), to: URL(fileURLWithPath: "\(appTmpDirURL)/disabled.plist"))
     guard let plistData = FileManager.default.contents(atPath: "\(appTmpDirURL)/disabled.plist"),
           var plistDictionary = try? PropertyListSerialization.propertyList(from: plistData, options: [], format: nil) as? NSMutableDictionary
     else {

@@ -79,7 +79,13 @@ struct SuperviseView: View {
                 .background(Color.accentColor)
                 .cornerRadius(8)
                 .foregroundColor(.black)
-                .navigationTitle("The Superviser")
+            }
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Superviser")
+                        .font(.title2)
+                        .bold()
+                }
             }
     }
 }

@@ -14,7 +14,6 @@
 
 #import <Foundation/Foundation.h>
 #import <stdint.h>
-
 @interface CLSimulationManager : NSObject
 @property (assign,nonatomic) uint8_t locationDeliveryBehavior;
 @property (assign,nonatomic) double locationDistance;

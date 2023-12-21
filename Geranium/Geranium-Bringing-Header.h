@@ -5,6 +5,6 @@
 //  Created by Constantin Clerc on 10/12/2023.
 //
 
-#import "LocSimPrivateHeaders.h"
+#import "LocSim/LocSimPrivateHeaders.h"
 #import "TSUtil.h"
 #import "Libs/SwiftProcessViewer/delecture.h"

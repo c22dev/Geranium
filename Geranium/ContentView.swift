@@ -26,7 +26,7 @@ struct ContentView: View {
                         Label("Daemons", systemImage: "flag.fill")
                     } 
                 // TOBEFIXED (idk if it actually works ?
-                LocationSimulationView()
+                LocSimView()
                     .tabItem {
                         Label("LocSim", systemImage: "mappin")
                     }

@@ -60,7 +60,13 @@ struct DaemonView: View {
                 UIApplication.shared.alert(title: "\(process.procName) was successfuly disabled in launchd database", body: "This daemon won't launch next startup.")
             }
         }
-        .navigationTitle("Daemons")
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading) {
+                Text("Daemons")
+                    .font(.title2)
+                    .bold()
+            }
+        }
         .onAppear {
             startTimer()
         }

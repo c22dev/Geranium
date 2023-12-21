@@ -12,6 +12,11 @@
 		792845532B2C67910021E1FD /* FileCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845522B2C67910021E1FD /* FileCleaner.swift */; };
 		7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845592B2C80A40021E1FD /* DaemonDisabler.swift */; };
 		795019B92B2B5055008EEC91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795019B82B2B5055008EEC91 /* main.m */; };
+		7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD022B347EEA00FBAB8D /* LocSimView.swift */; };
+		7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD052B3486B100FBAB8D /* CustomMapView.swift */; };
+		7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD072B34894400FBAB8D /* BookMarkSlider.swift */; };
+		7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */; };
+		799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799488A52B347E2C00AFFDCF /* LocSimManager.swift */; };
 		79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */; };
 		79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA95892B30D91600380D83 /* RootHelperMan.swift */; };
 		79D359942B2C9D91004C0FCF /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D359932B2C9D91004C0FCF /* LSApplicationProxy+AltList.m */; };
@@ -23,8 +28,6 @@
 		FAA456E62B265FED00FC7287 /* GeraniumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456E52B265FED00FC7287 /* GeraniumTests.swift */; };
 		FAA456F02B265FED00FC7287 /* GeraniumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456EF2B265FED00FC7287 /* GeraniumUITests.swift */; };
 		FAA456F22B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */; };
-		FAA457022B26608900FC7287 /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457002B26607600FC7287 /* LocSimManager.swift */; };
-		FAA457032B26608900FC7287 /* LocationSimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457012B26608900FC7287 /* LocationSimulationView.swift */; };
 		FAA457122B2661E300FC7287 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA457102B2661E300FC7287 /* TSUtil.m */; };
 		FAA457232B26654700FC7287 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457222B26654700FC7287 /* Addon.swift */; };
 		FAA457272B26667E00FC7287 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA457262B26667E00FC7287 /* HomeView.swift */; };
@@ -58,6 +61,13 @@
 		792845752B2C9CAE0021E1FD /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
+		7989FD022B347EEA00FBAB8D /* LocSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocSimView.swift; sourceTree = "<group>"; };
+		7989FD042B34834F00FBAB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7989FD052B3486B100FBAB8D /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		7989FD072B34894400FBAB8D /* BookMarkSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkSlider.swift; sourceTree = "<group>"; };
+		7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkHelper.swift; sourceTree = "<group>"; };
+		799488A52B347E2C00AFFDCF /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
+		799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
 		79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		79BA95892B30D91600380D83 /* RootHelperMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelperMan.swift; sourceTree = "<group>"; };
 		79D359932B2C9D91004C0FCF /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
@@ -73,14 +83,11 @@
 		FAA456EB2B265FED00FC7287 /* GeraniumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeraniumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA456EF2B265FED00FC7287 /* GeraniumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumUITests.swift; sourceTree = "<group>"; };
 		FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FAA457002B26607600FC7287 /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
-		FAA457012B26608900FC7287 /* LocationSimulationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSimulationView.swift; sourceTree = "<group>"; };
 		FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Geranium-Bringing-Header.h"; sourceTree = "<group>"; };
 		FAA4570F2B2661E200FC7287 /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		FAA457102B2661E300FC7287 /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
 		FAA457112B2661E300FC7287 /* TSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUtil.h; sourceTree = "<group>"; };
 		FAA457222B26654700FC7287 /* Addon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
-		FAA457252B2665AA00FC7287 /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
 		FAA457262B26667E00FC7287 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FAA457282B26668900FC7287 /* DaemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonView.swift; sourceTree = "<group>"; };
 		FAA4572F2B2666F300FC7287 /* CleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerView.swift; sourceTree = "<group>"; };
@@ -131,6 +138,27 @@
 			path = SwiftProcessViewer;
 			sourceTree = "<group>";
 		};
+		7989FD0B2B348A8600FBAB8D /* BookMark */ = {
+			isa = PBXGroup;
+			children = (
+				7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */,
+				7989FD072B34894400FBAB8D /* BookMarkSlider.swift */,
+			);
+			path = BookMark;
+			sourceTree = "<group>";
+		};
+		799488A42B347E1100AFFDCF /* LocSim */ = {
+			isa = PBXGroup;
+			children = (
+				799488A52B347E2C00AFFDCF /* LocSimManager.swift */,
+				7989FD022B347EEA00FBAB8D /* LocSimView.swift */,
+				7989FD0B2B348A8600FBAB8D /* BookMark */,
+				7989FD052B3486B100FBAB8D /* CustomMapView.swift */,
+				799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */,
+			);
+			path = LocSim;
+			sourceTree = "<group>";
+		};
 		FAA456C82B265FEA00FC7287 = {
 			isa = PBXGroup;
 			children = (
@@ -154,16 +182,17 @@
 		FAA456D32B265FEA00FC7287 /* Geranium */ = {
 			isa = PBXGroup;
 			children = (
+				7989FD042B34834F00FBAB8D /* Info.plist */,
 				FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */,
 				FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */,
 				FAA457052B2661AD00FC7287 /* Libs */,
 				FAA456D62B265FEA00FC7287 /* ContentView.swift */,
 				79DF26982B31C90C005D81D2 /* WelcomeView.swift */,
 				FAA457262B26667E00FC7287 /* HomeView.swift */,
+				799488A42B347E1100AFFDCF /* LocSim */,
 				FAA4572E2B2666E800FC7287 /* Cleaner */,
 				FAA4572B2B26669B00FC7287 /* The Supviser */,
 				FAA4572A2B26669100FC7287 /* DaemonMan */,
-				FAA456FE2B26605800FC7287 /* LocSim */,
 				FAA456D82B265FEC00FC7287 /* Assets.xcassets */,
 				FAA456DA2B265FEC00FC7287 /* Preview Content */,
 			);
@@ -193,16 +222,6 @@
 				FAA456F12B265FED00FC7287 /* GeraniumUITestsLaunchTests.swift */,
 			);
 			path = GeraniumUITests;
-			sourceTree = "<group>";
-		};
-		FAA456FE2B26605800FC7287 /* LocSim */ = {
-			isa = PBXGroup;
-			children = (
-				FAA457002B26607600FC7287 /* LocSimManager.swift */,
-				FAA457012B26608900FC7287 /* LocationSimulationView.swift */,
-				FAA457252B2665AA00FC7287 /* LocSimPrivateHeaders.h */,
-			);
-			path = LocSim;
 			sourceTree = "<group>";
 		};
 		FAA457052B2661AD00FC7287 /* Libs */ = {
@@ -391,19 +410,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */,
 				FAA457122B2661E300FC7287 /* TSUtil.m in Sources */,
+				7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */,
 				FAA457272B26667E00FC7287 /* HomeView.swift in Sources */,
 				FAA457292B26668900FC7287 /* DaemonView.swift in Sources */,
-				FAA457032B26608900FC7287 /* LocationSimulationView.swift in Sources */,
 				FAA457232B26654700FC7287 /* Addon.swift in Sources */,
 				79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */,
+				7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */,
 				FAA457322B2667CB00FC7287 /* SuperviseView.swift in Sources */,
 				79D359942B2C9D91004C0FCF /* LSApplicationProxy+AltList.m in Sources */,
 				792845532B2C67910021E1FD /* FileCleaner.swift in Sources */,
+				799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
 				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
-				FAA457022B26608900FC7287 /* LocSimManager.swift in Sources */,
+				7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
 				795019B92B2B5055008EEC91 /* main.m in Sources */,
 				79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */,
@@ -575,8 +597,10 @@
 				DEVELOPMENT_TEAM = 7G89J82G2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Geranium/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Enabling location for Geranium makes it possible for the app to display your location on the map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This will allow the app to display your location on the LocSim map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -609,8 +633,10 @@
 				DEVELOPMENT_TEAM = 7G89J82G2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Geranium/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Enabling location for Geranium makes it possible for the app to display your location on the map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This will allow the app to display your location on the LocSim map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

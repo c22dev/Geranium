@@ -303,3 +303,12 @@ func truelyEnabled(_ inputBoolean: Bool) -> String {
         return "Disabled"
     }
 }
+
+func SuccessfulOrWhat(_ inputBoolean: Bool) -> String {
+    if inputBoolean{
+        return "Success !"
+    }
+    else {
+        return "Error"
+    }
+}

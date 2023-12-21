@@ -35,7 +35,7 @@ struct CleanerView: View {
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
             // Here we remove NavigationStack for iPads. Why ? Cause pressing "Exit" button with NavigationStack would make a blank screen
-            // TODO: Fix .navigationBarTitle for iPads
+            // TODO: Fix .toolbar for iPads
                     cleanerViewMain()
             } else {
                 NavigationView {
@@ -177,7 +177,13 @@ struct CleanerView: View {
                     }
             }
         }
-        .navigationTitle("Cleaner")
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading) {
+                Text("Cleaner")
+                    .font(.title2)
+                    .bold()
+            }
+        }
     }
     func performCleanup() {
         cleanProcess(safari: safari, appCaches: appCaches, otaCaches: otaCaches, batteryUsageDat: batteryUsageDat) { progressHandler in
