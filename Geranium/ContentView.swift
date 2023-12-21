@@ -21,10 +21,10 @@ struct ContentView: View {
                         Label("Home", systemImage: "house.fill")
                     }
                 // TOBEDONE
-//                DaemonView()
-//                    .tabItem {
-//                        Label("Daemons", systemImage: "flag.fill")
-//                    } 
+                DaemonView()
+                    .tabItem {
+                        Label("Daemons", systemImage: "flag.fill")
+                    } 
                 // TOBEFIXED (idk if it actually works ?
                 LocSimView()
                     .tabItem {

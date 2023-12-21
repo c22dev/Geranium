@@ -18,7 +18,7 @@ struct DaemonView: View {
     @State private var processes: [ProcessItem] = []
     @State private var timer: Timer?
     @State private var toDisable: [String] = []
-    @State private var toEnable: [String] = []
+    @State private var manageSheet: Bool = false
     @AppStorage("isDaemonFirstRun") var isDaemonFirstRun: Bool = true
 
     var filteredProcesses: [ProcessItem] {
@@ -48,9 +48,6 @@ struct DaemonView: View {
             
             ForEach(filteredProcesses) { process in
                 HStack {
-                    Text("PID: \(process.pid)")
-                        .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
-                    Spacer()
                     Text("Name: \(process.procName)")
                         .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
                 }
@@ -58,14 +55,8 @@ struct DaemonView: View {
             .onDelete { indexSet in
                 guard let index = indexSet.first else { return }
                 let process = processes[index]
-                
-                if let indexToRemove = toDisable.firstIndex(of: process.procName) {
-                    toDisable.remove(at: indexToRemove)
-                    updateProcesses()
-                } else {
-                    toDisable.append(process.procName)
-                    updateProcesses()
-                }
+                toDisable.append(process.procName)
+                updateProcesses()
             }
         }
         .toolbar{
@@ -78,7 +69,7 @@ struct DaemonView: View {
                 Button(action: {
                     //MARK: Probably the WORST EVER WAY to define a daemon's bundle ID. I'll try over objc s0n
                     for process in toDisable {
-                        UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can't undo this action. Your phone might bootloop.", onOK: {
+                        UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can undo this action before you reboot by going to the manager icon.", onOK: {
                         daemonManagement(key: "com.apple.\(process)", value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
                         }, noCancel: false)
                     }
@@ -87,6 +78,19 @@ struct DaemonView: View {
                     }
                 }) {
                     Image(systemName: "checkmark")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    var error = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                    print(error)
+                    error = RootHelper.setPermission(url: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                    manageSheet.toggle()
+                }) {
+                    Image(systemName: "list.bullet")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24)
@@ -110,10 +114,13 @@ struct DaemonView: View {
                 }
             }
         }
+        .sheet(isPresented:$manageSheet) {
+            CurrentlyDisabledDaemonView()
+        }
     }
 
     private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
             updateProcesses()
         }
         updateProcesses()

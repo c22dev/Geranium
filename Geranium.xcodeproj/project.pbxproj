@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7916D9E42B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */; };
 		7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820992B31F109007EEC24 /* LogHelper.swift */; };
 		792845532B2C67910021E1FD /* FileCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845522B2C67910021E1FD /* FileCleaner.swift */; };
 		7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845592B2C80A40021E1FD /* DaemonDisabler.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentlyDisabledDaemonView.swift; sourceTree = "<group>"; };
 		791820992B31F109007EEC24 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		792845522B2C67910021E1FD /* FileCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCleaner.swift; sourceTree = "<group>"; };
 		792845592B2C80A40021E1FD /* DaemonDisabler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonDisabler.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA457282B26668900FC7287 /* DaemonView.swift */,
+				7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */,
 				799615432B34A1930053558E /* DaemonWelcomeView.swift */,
 				792845592B2C80A40021E1FD /* DaemonDisabler.swift */,
 			);
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */,
+				7916D9E42B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift in Sources */,
 				FAA457122B2661E300FC7287 /* TSUtil.m in Sources */,
 				7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */,
 				FAA457272B26667E00FC7287 /* HomeView.swift in Sources */,

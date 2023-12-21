@@ -21,7 +21,7 @@ struct DaemonWelcomeView: View {
                     .foregroundStyle(.red)
             }
             Section(header: Text("Please note")) {
-                Text("If you missclick and accidently remove a daemon, you can still re-enable it by swipping again (should still be Delete). Edit won't be applied until you hit the apply button top left.")
+                Text("If you want to revert any of your choice, you should go into the manager (list icon next to the apply icon), where you can toggle disabled daemons.")
                     .foregroundStyle(.green)
             }
         }

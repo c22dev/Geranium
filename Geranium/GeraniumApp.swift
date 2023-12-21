@@ -36,6 +36,7 @@ struct GeraniumApp: App {
                         }
                         task.resume()
                     }
+                    sendLog(RootHelper.loadMCM())
                 }
                 .sheet(isPresented: $isFirstRun) {
                     if #available(iOS 16.0, *) {
