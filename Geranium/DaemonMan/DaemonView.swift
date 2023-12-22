@@ -45,18 +45,22 @@ struct DaemonView: View {
         }
     @ViewBuilder
     private func DaemonMainView() -> some View {
+        SearchBar(text: $searchText)
         List {
-            SearchBar(text: $searchText)
             ForEach(filteredProcesses) { process in
                 HStack {
-                    Text("Name: \(process.procName)")
+                    Text("\(process.procName)")
                         .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
                 }
             }
             .onDelete { indexSet in
                 guard let index = indexSet.first else { return }
                 let process = processes[index]
-                toDisable.append(process.procPath)
+                if let existingIndex = toDisable.firstIndex(of: process.procName) {
+                    toDisable.remove(at: existingIndex)
+                } else {
+                    toDisable.append(process.procName)
+                }
                 updateProcesses()
             }
         }
