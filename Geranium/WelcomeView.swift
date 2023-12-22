@@ -17,7 +17,11 @@ struct WelcomeView: View {
             Section(header: Text("Setup")) {
                 Text("Welcome to Geranium, a toolbox for TrollStore that allows you to disable some daemons, simulate your location, clean your phone's storage and other. We need to configure a few things before you can use the app. This will only take a minute. You will still be able to change the settings later.")
             }
-            
+            if getDeviceCode() == "iPhone8,4" {
+                Section(header: Text("Hi ! SE 1 User")) {
+                    Text("It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI bugs. Please excuse me in advance.")
+                }
+            }
             Section(header: Text("Log Collection")) {
                 Text("We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server.")
                 Toggle(isOn: $loggingAllowed) {

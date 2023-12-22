@@ -21,17 +21,8 @@ struct CleanerView: View {
     @State var appCaches = false
     @State var otaCaches = false
     @State var batteryUsageDat = false
-    // Caches
-    @State public var logmobileCachesPath = "/var/mobile/Library/Logs/"
-    @State public var logCachesPath = "/var/log/"
-    @State public var logsCachesPath = "/var/logs/"
-    @State public var tmpCachesPath = "/var/tmp/"
-    @State public var globalCachesPath = "/var/mobile/Library/Caches/com.apple.CacheDeleteAppContainerCaches.deathrow"
-    @State public var phototmpCachePath = "/var/mobile/Media/PhotoData/CPL/storage/filecache/"
-    // Safari Caches
-    @State public var safariCachePath = "/var/mobile/Containers/Data/Application/Safari/Library/Caches/"
-    // OTA Update
-    @State public var OTAPath = "/var/MobileSoftwareUpdate/MobileAsset/AssetsV2/com_apple_MobileAsset_SoftwareUpdate/"
+    @State var RHResult = ""
+    @State var errorDetecteed = false
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
             // Here we remove NavigationStack for iPads. Why ? Cause pressing "Exit" button with NavigationStack would make a blank screen
@@ -47,9 +38,12 @@ struct CleanerView: View {
     private func cleanerViewMain() -> some View {
         VStack {
             if buttonAndSelection {
-                if progressAmount >= 0.9 {
+                if progressAmount >= 0.9, !errorDetecteed {
                     Image(systemName: "checkmark")
                         .foregroundColor(.green)
+                        .onAppear {
+                            successVibrate()
+                        }
                     Text("Done !")
                         .foregroundStyle(.green)
                     Button("Exit", action: {
@@ -68,37 +62,91 @@ struct CleanerView: View {
                     .foregroundColor(.black)
                     .transition(.scale)
                 }
-                else {
-                    Button("Clean !", action: {
-                        UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nBattery Usage Data: \(truelyEnabled(batteryUsageDat))\n Are you sure you want to permanently delete those files ?", onOK: {
-                            print("")
-                            withAnimation {
-                                buttonAndSelection.toggle()
-                                isTabViewHidden.toggle()
-                            }
-                        }, noCancel: false, yes: true)
+                else if errorDetecteed {
+                    Image(systemName: "x.circle")
+                        .foregroundColor(.red)
+                        .onAppear {
+                            progressAmount = 0.9
+                            errorVibrate()
+                        }
+                    Text("Error !")
+                        .foregroundStyle(.red)
+                    Text("An error occured with the RootHelper.")
+                                .foregroundColor(.secondary)
+                                .font(.footnote)
+                                .multilineTextAlignment(.center)
+                                                
+                    Button("Try again", action: {
+                        withAnimation {
+                            buttonAndSelection = true
+                            isTabViewHidden.toggle()
+                            errorDetecteed.toggle()
+                            progressAmount = 0
+                            safariCacheSize = 0
+                            GlobalCacheSize = 0
+                            OTACacheSize = 0
+                            progressAmount = 0
+                        }
                     })
+                    .padding(10)
+                    .background(.red)
+                    .cornerRadius(8)
+                    .foregroundColor(.black)
+                    .transition(.scale)
+                }
+                else {
+                    if safari || appCaches || otaCaches || batteryUsageDat {
+                        Button("Clean !", action: {
+                            UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nBattery Usage Data: \(truelyEnabled(batteryUsageDat))\n Are you sure you want to permanently delete those files ?", onOK: {
+                                print("")
+                                withAnimation {
+                                    buttonAndSelection.toggle()
+                                    isTabViewHidden.toggle()
+                                }
+                            }, noCancel: false, yes: true)
+                        })
                     .padding(10)
                     .background(Color.accentColor)
                     .cornerRadius(8)
                     .foregroundColor(.black)
                     .transition(.scale)
+                    }
+                    else {
+                        Button("Clean !", action: {
+                            UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nBattery Usage Data: \(truelyEnabled(batteryUsageDat))\n Are you sure you want to permanently delete those files ?", onOK: {
+                                print("")
+                                withAnimation {
+                                    buttonAndSelection.toggle()
+                                    isTabViewHidden.toggle()
+                                }
+                            }, noCancel: false, yes: true)
+                        })
+                    .padding(10)
+                    .background(Color.accentColor)
+                    .cornerRadius(8)
+                    .foregroundColor(.black)
+                    .transition(.scale)
+                    .disabled(true)
+                    }
                     Toggle(isOn: $safari) {
                         Image(systemName: "safari")
                         Text("Safari Caches")
-                        Text(String(format: "%.2f MB", safariCacheSize / (1024 * 1024)))
+                        Text(">"+String(format: "%.2f MB", safariCacheSize / (1024 * 1024)))
                     }
                     .toggleStyle(checkboxiOS())
                     .padding(2)
                     .onAppear {
-                        calculateDirectorySizeAsync(url: URL(fileURLWithPath: safariCachePath)) { size in
-                            safariCacheSize = size
+                        calculateDirectorySizeAsync(url: URL(fileURLWithPath: removeFilePrefix(safariCachePath))) { size in
+                            safariCacheSize += size
+                        }
+                        calculateDirectorySizeAsync(url: URL(fileURLWithPath: removeFilePrefix(safariImgCachePath))) { size in
+                            safariCacheSize += size
                         }
                     }
                     Toggle(isOn: $appCaches) {
                         Image(systemName: "app.dashed")
                         Text("General Caches")
-                        Text(String(format: "%.2f MB", GlobalCacheSize / (1024 * 1024)))
+                        Text(">" + String(format: "%.2f MB", GlobalCacheSize / (1024 * 1024)))
                     }
                     .toggleStyle(checkboxiOS())
                     .padding(2)
@@ -132,7 +180,6 @@ struct CleanerView: View {
                     Toggle(isOn: $otaCaches) {
                         Image(systemName: "restart.circle")
                         Text("OTA Update Caches")
-                        Text(String(format: "%.2f MB", OTACacheSize / (1024 * 1024)))
                     }
                     .toggleStyle(checkboxiOS())
                     .padding(2)
@@ -150,7 +197,6 @@ struct CleanerView: View {
                     .padding(2)
                 }
             }
-            
             if !buttonAndSelection {
                 ProgressBar(value: progressAmount)
                     .padding(.leading, 50)
@@ -159,30 +205,63 @@ struct CleanerView: View {
                         performCleanup()
                         if safari {
                             print("safari")
-                            deleteContentsOfDirectory(atPath: safariCachePath)
+                            RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix((safariCachePath)))
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
+                            RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix((safariImgCachePath)))
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
                         }
                         if appCaches {
                             print("appcaches")
-                            deleteContentsOfDirectory(atPath: logmobileCachesPath)
-                            deleteContentsOfDirectory(atPath: logCachesPath)
-                            deleteContentsOfDirectory(atPath: logsCachesPath)
-                            deleteContentsOfDirectory(atPath: tmpCachesPath)
-                            deleteContentsOfDirectory(atPath: phototmpCachePath)
-                            deleteContentsOfDirectory(atPath: globalCachesPath)
+                            RHResult = deleteContentsOfDirectory(atPath: logmobileCachesPath)
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
+                            RHResult = deleteContentsOfDirectory(atPath: logCachesPath)
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
+                            RHResult = deleteContentsOfDirectory(atPath: logsCachesPath)
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
+                            RHResult = deleteContentsOfDirectory(atPath: tmpCachesPath)
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
+                            RHResult = deleteContentsOfDirectory(atPath: phototmpCachePath)
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
+                            RHResult = deleteContentsOfDirectory(atPath: globalCachesPath)
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
                         }
                         if otaCaches {
                             print("otacaches")
-                            deleteContentsOfDirectory(atPath: OTAPath)
+                            RHResult = deleteContentsOfDirectory(atPath: OTAPath)
+                            if RHResult != "0" {
+                                errorDetecteed = true
+                            }
                         }
                     }
             }
         }
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading) {
-                Text("Cleaner")
-                    .font(.title2)
-                    .bold()
+                if !isTabViewHidden {
+                    Text("Cleaner")
+                        .font(.title2)
+                        .bold()
+                }
             }
+        }
+        .onAppear {
+            RootHelper.setPermission(url: URL(fileURLWithPath:OTAPath))
         }
     }
     func performCleanup() {

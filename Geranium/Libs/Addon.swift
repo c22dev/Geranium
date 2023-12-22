@@ -220,6 +220,14 @@ func miniimpactVibrate() {
     let impact = UIImpactFeedbackGenerator(style: .light)
     impact.impactOccurred()
 }
+func successVibrate() {
+    let generator = UINotificationFeedbackGenerator()
+    generator.notificationOccurred(.success)
+}
+func errorVibrate() {
+    let generator = UINotificationFeedbackGenerator()
+    generator.notificationOccurred(.error)
+}
 
 extension Bundle {
     public var icon: UIImage? {

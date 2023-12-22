@@ -16,6 +16,7 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
                let progress = Double(step + 1) / Double(totalProgressSteps)
                DispatchQueue.main.async {
                    progressHandler(progress)
+                   miniimpactVibrate()
                }
                usleep(50000)
            }
@@ -57,12 +58,15 @@ func directorySize(url: URL) -> Int64 {
     return size
 }
 
-func deleteContentsOfDirectory(atPath path: String) {
+func deleteContentsOfDirectory(atPath path: String) -> String {
         var log = RootHelper.setPermission(url: URL(fileURLWithPath: path))
         print(log)
-        log = RootHelper.removeItem(at: URL(fileURLWithPath: path))
-        print(log)
+        let log2 = RootHelper.removeItem(at: URL(fileURLWithPath: path))
         log = RootHelper.createDirectory(at: URL(fileURLWithPath: path))
         print(log)
+    // set perms again else things won't work properly for mobile registered paths
+        log = RootHelper.setPermission(url: URL(fileURLWithPath: path))
+        print(log)
         print("Contents of directory \(path) deleted")
+        return(log2)
 }

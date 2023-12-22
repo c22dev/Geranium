@@ -4,13 +4,15 @@
 //
 //  Created by cclerc on 14.12.23.
 //
+// Credit goes to bomberfish for proc path
+
+// objc (womp womp)
 
 #import <Foundation/Foundation.h>
-#import <stdint.h>
 #import <sys/sysctl.h>
 #import <mach-o/dyld_images.h>
 #import <libgen.h>
-#import "delecture.h"
+
 #define PROC_PIDPATHINFO                11
 #define PROC_PIDPATHINFO_SIZE           (MAXPATHLEN)
 #define PROC_PIDPATHINFO_MAXSIZE        (4 * MAXPATHLEN)
@@ -34,12 +36,18 @@ NSArray *sysctl_ps(void) {
 
         if (strlen(pathBuffer) > 0) {
             NSString *processID = [[NSString alloc] initWithFormat:@"%d", pids[i]];
+            NSString *processPath = [[NSString stringWithUTF8String:pathBuffer] stringByResolvingSymlinksInPath];
             NSString *processName = [[NSString stringWithUTF8String:pathBuffer] lastPathComponent];
-            NSDictionary *dict = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:processID, processName, nil] forKeys:[NSArray arrayWithObjects:@"pid", @"proc_name", nil]];
+            NSDictionary *dict = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:processID, processPath, processName, nil] forKeys:[NSArray arrayWithObjects:@"pid", @"proc_path", @"proc_name", nil]];
             
             [array addObject:dict];
         }
     }
 
     return [array copy];
+}
+
+NSArray *getLoadedModules(pid_t pid) {
+    // i have officially given up on this
+    return NULL;
 }

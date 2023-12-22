@@ -36,6 +36,7 @@ struct HomeView: View {
                     .cornerRadius(10)
                 Text("Geranium")
                     .font(.title2)
+                    .bold()
                 
                 Text("made by c22dev")
                     .font(.footnote)
@@ -52,6 +53,9 @@ struct HomeView: View {
                 })
                 .padding(.bottom, 24)
             }
+            // thanks sourcelocation x bomberfish for helping me
+            .background(Color(UIColor.systemGroupedBackground))
+            .frame(maxWidth: .infinity)
             ZStack {
                 if colorScheme == .dark {
                     Color.black
@@ -76,6 +80,7 @@ struct HomeView: View {
                 }
             }
         }
+        .background(Color(UIColor.systemGroupedBackground))
         .toolbar{
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
@@ -108,6 +113,7 @@ struct HomeView: View {
                             else {
                                 Text("Is the user running an iPad on iPadOS 16 : no")
                             }
+                            Text("Safari Cache Path : \(removeFilePrefix(safariCachePath))")
                         }
                     }
                     Section(header:
