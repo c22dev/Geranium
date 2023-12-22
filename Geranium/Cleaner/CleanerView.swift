@@ -9,20 +9,24 @@ import SwiftUI
 
 
 struct CleanerView: View {
+    // view stuff
     @Binding var isTabViewHidden: Bool
     @State var exitStatus = false
     @State var loadingBarStatus = false
     @State var buttonAndSelection = true
+    @State var errorDetecteed = false
+    // sizes
     @State private var safariCacheSize: Double = 0
     @State private var GlobalCacheSize: Double = 0
     @State private var OTACacheSize: Double = 0
     @State private var progressAmount:CGFloat = 0
+    // user selection
     @State var safari = false
     @State var appCaches = false
     @State var otaCaches = false
     @State var batteryUsageDat = false
+    // roothelper output
     @State var RHResult = ""
-    @State var errorDetecteed = false
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
             // Here we remove NavigationStack for iPads. Why ? Cause pressing "Exit" button with NavigationStack would make a blank screen

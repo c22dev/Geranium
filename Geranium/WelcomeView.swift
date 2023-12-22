@@ -19,7 +19,7 @@ struct WelcomeView: View {
             }
             if getDeviceCode() == "iPhone8,4" {
                 Section(header: Text("Hi ! SE 1 User")) {
-                    Text("It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI bugs. Please excuse me in advance.")
+                    Text("It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI issues. Please excuse me in advance.")
                 }
             }
             Section(header: Text("Log Collection")) {
