@@ -320,15 +320,6 @@ func truelyEnabled(_ inputBoolean: Bool) -> String {
     }
 }
 
-func SuccessfulOrWhat(_ inputBoolean: Bool) -> String {
-    if inputBoolean{
-        return "Success !"
-    }
-    else {
-        return "Error"
-    }
-}
-
 // https://stackoverflow.com/a/76762126
 extension View {
 @ViewBuilder
