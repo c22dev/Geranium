@@ -11,6 +11,7 @@ struct ProcessItem: Identifiable {
     let id = UUID()
     let pid: String
     let procName: String
+    let procPath: String
 }
 
 struct DaemonView: View {
@@ -19,6 +20,7 @@ struct DaemonView: View {
     @State private var timer: Timer?
     @State private var toDisable: [String] = []
     @State private var manageSheet: Bool = false
+    @State private var processBundle: String = ""
     @AppStorage("isDaemonFirstRun") var isDaemonFirstRun: Bool = true
 
     var filteredProcesses: [ProcessItem] {
@@ -54,7 +56,7 @@ struct DaemonView: View {
             .onDelete { indexSet in
                 guard let index = indexSet.first else { return }
                 let process = processes[index]
-                toDisable.append(process.procName)
+                toDisable.append(process.procPath)
                 updateProcesses()
             }
         }
@@ -68,6 +70,7 @@ struct DaemonView: View {
                 Button(action: {
                     //MARK: Probably the WORST EVER WAY to define a daemon's bundle ID. I'll try over objc s0n
                     for process in toDisable {
+                        processBundle = getDaemonBundleFromPath(path: process)
                         UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can undo this action before you reboot by going to the manager icon.", onOK: {
                             daemonManagement(key: "com.apple.\(process)", value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
                         }, noCancel: false)
@@ -135,10 +138,11 @@ struct DaemonView: View {
         self.processes = rawProcesses?.compactMap { rawProcess in
             guard let dict = rawProcess as? NSDictionary,
                   let pid = dict["pid"] as? String,
+                  let procPath = dict["proc_path"] as? String,
                   let procName = dict["proc_name"] as? String else {
                 return nil
             }
-            return ProcessItem(pid: pid, procName: procName)
+            return ProcessItem(pid: pid, procName: procName, procPath: procPath)
         } ?? []
     }
 }

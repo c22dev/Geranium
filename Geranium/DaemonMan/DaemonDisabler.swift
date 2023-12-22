@@ -39,3 +39,7 @@ func daemonManagement(key: String, value: Bool, plistPath: String) {
     result = RootHelper.move(from: URL(fileURLWithPath :"/var/mobile/Documents/disabled.plist"), to: URL(fileURLWithPath: plistPath))
     print(result)
 }
+
+func getDaemonBundleFromPath(path: String) -> String {
+    return "hey"
+}

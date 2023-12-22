@@ -12,6 +12,7 @@
 #import <sys/sysctl.h>
 #import <mach-o/dyld_images.h>
 #import <libgen.h>
+#import "delecture.h"
 
 #define PROC_PIDPATHINFO                11
 #define PROC_PIDPATHINFO_SIZE           (MAXPATHLEN)
