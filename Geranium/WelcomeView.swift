@@ -41,6 +41,9 @@ struct WelcomeView: View {
                     Text("1. Open TrollStore")
                     Text("2. Go to Settings")
                     Text("3. Enable URL Scheme")
+                    if let imageURL = URL(string: "https://gist.github.com/c22dev/31323e337f37a8b954d602c6c3a10750/raw/116fc4cd831d75efca5235e80100783da0e7523e/e.png") {
+                        AsyncImageView(url: imageURL)
+                    }
                 }
             }
         }
