@@ -15,22 +15,20 @@ struct ContentView: View {
     var body: some View {
         TabView {
             if !isTabViewHidden {
-                // TD : USERSPACE REBBOT IMPLEMENTATION
                 HomeView(tsBypass: $tsBypass, updBypass: $updBypass, loggingAllowed: $loggingAllowed)
                     .tabItem {
                         Label("Home", systemImage: "house.fill")
                     }
-                // TOBEDONE
+                // TODO: Stability improvements
                 DaemonView()
                     .tabItem {
                         Label("Daemons", systemImage: "flag.fill")
-                    } 
-                // TOBEFIXED (idk if it actually works ?
+                    }
                 LocSimView()
                     .tabItem {
                         Label("LocSim", systemImage: "mappin")
                     }
-                // TOBEDONE
+                // TODO: Find Battery Usage path
                 CleanerView(isTabViewHidden: $isTabViewHidden)
                     .tabItem {
                         Label("Cleaner", systemImage: "trash.fill")

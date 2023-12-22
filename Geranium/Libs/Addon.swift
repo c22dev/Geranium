@@ -245,28 +245,36 @@ struct LinkCell: View {
     var imageLink: String
     var url: String
     var title: String
+    var description: String
     var systemImage: Bool = false
     var circle: Bool = false
 
     var body: some View {
-        HStack(alignment: .center) {
-            Group {
-                if let imageURL = URL(string: imageLink) {
-                    AsyncImageView(url: imageURL)
-                        .frame(width: 30, height: 30)
-                        .cornerRadius(25)
+        VStack(alignment: .leading) {
+            HStack(alignment: .center) {
+                Group {
+                    if let imageURL = URL(string: imageLink) {
+                        AsyncImageView(url: imageURL)
+                            .frame(width: 30, height: 30)
+                            .cornerRadius(25)
+                    }
+                }
+                .aspectRatio(contentMode: .fit)
+                
+                Button(action: {
+                    UIApplication.shared.open(URL(string: url)!)
+                }) {
+                    Text(title)
+                        .font(.headline)
+                        .foregroundColor(Color.accentColor)
                 }
             }
-            .aspectRatio(contentMode: .fit)
-            Button(title) {
-                UIApplication.shared.open(URL(string: url)!)
-            }
-            .foregroundColor(Color.accentColor)
-            .padding(.horizontal, 4)
+            Text(description)
+                .font(.caption)
+                .foregroundColor(.gray)
         }
     }
 }
-
 
 struct AsyncImageView: View {
     @StateObject private var imageLoader = ImageLoader()

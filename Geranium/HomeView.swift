@@ -68,10 +68,9 @@ struct HomeView: View {
                 Text("")
                 List() {
                     Section (header: Text("Credits")) {
-                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish")
-                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/396496265430695947/0904860dfb31d8b1f39f0e7dc4832b1e.webp?size=160", url: "https://github.com/donato-fiore", title: "fiore")
-                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/412187004407775242/1df69ac879b9e5f98396553eeac80cec.webp?size=160", url: "https://github.com/sourcelocation", title: "sourcelocation")
-                        LinkCell(imageLink: "https://avatars.githubusercontent.com/u/85764897?s=160&v=4", url: "https://github.com/haxi0", title: "haxi0")
+                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish", description: "Daemon Listing")
+                        LinkCell(imageLink: "https://cdn.discordapp.com/avatars/412187004407775242/1df69ac879b9e5f98396553eeac80cec.webp?size=160", url: "https://github.com/sourcelocation", title: "sourcelocation", description: "Swift UI Functions")
+                        LinkCell(imageLink: "https://avatars.githubusercontent.com/u/85764897?s=160&v=4", url: "https://github.com/haxi0", title: "haxi0", description: "Welcome Page source")
                     }
                 }
                 .disableListScroll()
@@ -97,10 +96,8 @@ struct HomeView: View {
             NavigationView {
                 List {
                     Section(header:
-                                HStack {
-                        Image(systemName: "chevron.left.forwardslash.chevron.right")
-                        Text("Debug Stuff")
-                    }, footer: Text("This setting allows you to see experimental values from some app variables.")
+                        Label("Debug Stuff", systemImage: "chevron.left.forwardslash.chevron.right")
+                    , footer: Text("This setting allows you to see experimental values from some app variables.")
                     ) {
                         Toggle(isOn: $DebugStuff) {
                             Text("Debug Info")
@@ -116,11 +113,7 @@ struct HomeView: View {
                             Text("Safari Cache Path : \(removeFilePrefix(safariCachePath))")
                         }
                     }
-                    Section(header:
-                                HStack {
-                        Image(systemName: "play")
-                        Text("Startup Settings")
-                    }, footer: Text("This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas.")
+                    Section(header: Label("Startup Settings", systemImage: "play"), footer: Text("This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas.")
                     ) {
                         Toggle(isOn: $tsBypass) {
                             Text("Bypass TrollStore Pop Up")
@@ -129,11 +122,7 @@ struct HomeView: View {
                             Text("Bypass App Update Pop Up")
                         }
                     }
-                    Section(header:
-                                HStack {
-                        Image(systemName: "cloud")
-                        Text("Logging Settings")
-                    }, footer: Text("We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server.")
+                    Section(header: Label("Logging Settings", systemImage: "cloud"), footer: Text("We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server.")
                     ) {
                         Toggle(isOn: $loggingAllowed) {
                             Text("Enable logging")

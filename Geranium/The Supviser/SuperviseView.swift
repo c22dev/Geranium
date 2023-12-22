@@ -44,7 +44,7 @@ struct SuperviseView: View {
                     }
                     catch {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                        UIApplication.shared.confirmAlert(title: "Error", body: "We encountered an error while writing to file. Respring anyway ?", onOK: {respring()}, noCancel: false, yes: true)
+                        UIApplication.shared.confirmAlert(title: "Error", body: "The app encountered an error while writing to file. Respring anyway ?", onOK: {respring()}, noCancel: false, yes: true)
                     }
                     if !organisation_name.isEmpty {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
@@ -71,7 +71,7 @@ struct SuperviseView: View {
                         }
                         catch {
                             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                            UIApplication.shared.confirmAlert(title: "Error", body: "We encountered an error while writing to file. Respring anyway ?", onOK: {respring()}, noCancel: false, yes: true)
+                            UIApplication.shared.confirmAlert(title: "Error", body: "The app encountered an error while writing to file. Respring anyway ?", onOK: {respring()}, noCancel: false, yes: true)
                         }
                     }, noCancel: false)
                 })

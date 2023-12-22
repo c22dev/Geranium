@@ -115,8 +115,8 @@
 		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
 			isa = PBXGroup;
 			children = (
-				795019B82B2B5055008EEC91 /* main.m */,
 				795019BA2B2B54A6008EEC91 /* delecture.h */,
+				795019B82B2B5055008EEC91 /* main.m */,
 			);
 			path = SwiftProcessViewer;
 			sourceTree = "<group>";
@@ -133,11 +133,11 @@
 		799488A42B347E1100AFFDCF /* LocSim */ = {
 			isa = PBXGroup;
 			children = (
-				799488A52B347E2C00AFFDCF /* LocSimManager.swift */,
-				7989FD022B347EEA00FBAB8D /* LocSimView.swift */,
 				7989FD0B2B348A8600FBAB8D /* BookMark */,
 				7989FD052B3486B100FBAB8D /* CustomMapView.swift */,
+				799488A52B347E2C00AFFDCF /* LocSimManager.swift */,
 				799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */,
+				7989FD022B347EEA00FBAB8D /* LocSimView.swift */,
 			);
 			path = LocSim;
 			sourceTree = "<group>";
@@ -167,8 +167,8 @@
 				FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */,
 				FAA457052B2661AD00FC7287 /* Libs */,
 				FAA456D62B265FEA00FC7287 /* ContentView.swift */,
-				79DF26982B31C90C005D81D2 /* WelcomeView.swift */,
 				FAA457262B26667E00FC7287 /* HomeView.swift */,
+				79DF26982B31C90C005D81D2 /* WelcomeView.swift */,
 				799488A42B347E1100AFFDCF /* LocSim */,
 				FAA4572E2B2666E800FC7287 /* Cleaner */,
 				FAA4572B2B26669B00FC7287 /* The Supviser */,
@@ -191,11 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				FAA457222B26654700FC7287 /* Addon.swift */,
-				79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */,
+				791820992B31F109007EEC24 /* LogHelper.swift */,
 				79BA95892B30D91600380D83 /* RootHelperMan.swift */,
 				795019B72B2B5016008EEC91 /* SwiftProcessViewer */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
-				791820992B31F109007EEC24 /* LogHelper.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -213,10 +212,10 @@
 		FAA4572A2B26669100FC7287 /* DaemonMan */ = {
 			isa = PBXGroup;
 			children = (
-				FAA457282B26668900FC7287 /* DaemonView.swift */,
 				7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */,
-				799615432B34A1930053558E /* DaemonWelcomeView.swift */,
 				792845592B2C80A40021E1FD /* DaemonDisabler.swift */,
+				FAA457282B26668900FC7287 /* DaemonView.swift */,
+				799615432B34A1930053558E /* DaemonWelcomeView.swift */,
 			);
 			path = DaemonMan;
 			sourceTree = "<group>";
@@ -233,8 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				FAA4572F2B2666F300FC7287 /* CleanerView.swift */,
-				7916D9E52B34FC06008E88F2 /* Paths.swift */,
 				792845522B2C67910021E1FD /* FileCleaner.swift */,
+				7916D9E52B34FC06008E88F2 /* Paths.swift */,
+				79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */,
 			);
 			path = Cleaner;
 			sourceTree = "<group>";
