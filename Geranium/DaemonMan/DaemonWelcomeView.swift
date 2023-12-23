@@ -13,7 +13,7 @@ struct DaemonWelcomeView: View {
         List {
             
             Section(header: Text("Purpose")) {
-                Text("By adding some rules to iOS internals, we prevent the daemon from launching when you boot your phone. The app list every running daemon, and you can swipe left to remove them.")
+                Text("By adding some rules to iOS internals, this software prevents the daemon from launching when you boot your phone. The app lists every running daemon, and you can swipe to the left to remove one of them.")
             }
             
             Section(header: Text("WARNING")) {

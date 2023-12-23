@@ -53,7 +53,7 @@ struct DaemonView: View {
                 HStack {
                     Text(process.procName)
                         .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
-                    Text("\n")
+                    Spacer()
                     Text("PID: \(process.pid)")
                         .font(.caption)
                         .foregroundColor(.gray)
