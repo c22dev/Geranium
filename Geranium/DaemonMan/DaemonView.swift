@@ -21,10 +21,12 @@ struct DaemonView: View {
     @State private var toDisable: [String] = []
     @State private var manageSheet: Bool = false
     @State private var processBundle: String = ""
+    @State private var isAlphabeticalOrder: Bool = false
     @AppStorage("isDaemonFirstRun") var isDaemonFirstRun: Bool = true
 
     var filteredProcesses: [ProcessItem] {
-        processes.filter {
+        let sortedProcesses = isAlphabeticalOrder ? processes.sorted { $0.procName < $1.procName } : processes
+        return sortedProcesses.filter {
             searchText.isEmpty || $0.procName.localizedCaseInsensitiveContains(searchText)
         }
     }
@@ -49,8 +51,12 @@ struct DaemonView: View {
         List {
             ForEach(filteredProcesses) { process in
                 HStack {
-                    Text("\(process.procName)")
+                    Text(process.procName)
                         .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
+                    Text("\n")
+                    Text("PID: \(process.pid)")
+                        .font(.caption)
+                        .foregroundColor(.gray)
                 }
                 .swipeActions {
                     if let existingIndex = toDisable.firstIndex(of: process.procName) {
@@ -80,6 +86,24 @@ struct DaemonView: View {
                     .bold()
             }
             ToolbarItem(placement: .navigationBarTrailing) {
+                Toggle(isOn: $isAlphabeticalOrder) {
+                    Label("Alphabetical", systemImage: "textformat")
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    var error = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                    print(error)
+                    error = RootHelper.setPermission(url: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                    manageSheet.toggle()
+                }) {
+                    Image(systemName: "list.bullet")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
                     //MARK: Probably the WORST EVER WAY to define a daemon's bundle ID. I'll try over objc s0n
                     for process in toDisable {
@@ -93,19 +117,6 @@ struct DaemonView: View {
                     }
                 }) {
                     Image(systemName: "checkmark")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24, height: 24)
-                }
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    var error = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
-                    print(error)
-                    error = RootHelper.setPermission(url: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
-                    manageSheet.toggle()
-                }) {
-                    Image(systemName: "list.bullet")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24)
@@ -165,7 +176,8 @@ struct SearchBar: View {
 
     var body: some View {
         HStack {
-            TextField("Search...", text: $text)
+            TextField("Search a currently running daemon...", text: $text)
+                .disableAutocorrection(true)
                 .padding(8)
                 .background(Color(.systemGray5))
                 .cornerRadius(8)
