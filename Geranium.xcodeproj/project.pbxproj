@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		790301BB2B37747A0044E30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790301BA2B37747A0044E30A /* Foundation.framework */; };
 		790301BD2B3774F90044E30A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790301BC2B3774F90044E30A /* CoreServices.framework */; };
+		790301C12B377EA70044E30A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 790301C02B377EA70044E30A /* Localizable.xcstrings */; };
+		790301C32B378EFE0044E30A /* TranslationsCreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790301C22B378EFE0044E30A /* TranslationsCreditView.swift */; };
+		790301C52B3794480044E30A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790301C42B3794480044E30A /* SettingsView.swift */; };
+		790301C72B3794FF0044E30A /* DaemonWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790301C62B3794FF0044E30A /* DaemonWelcomeView.swift */; };
 		7916D9E42B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */; };
 		7916D9E62B34FC06008E88F2 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916D9E52B34FC06008E88F2 /* Paths.swift */; };
 		7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820992B31F109007EEC24 /* LogHelper.swift */; };
@@ -20,7 +24,6 @@
 		7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD072B34894400FBAB8D /* BookMarkSlider.swift */; };
 		7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */; };
 		799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799488A52B347E2C00AFFDCF /* LocSimManager.swift */; };
-		799615442B34A1930053558E /* DaemonWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799615432B34A1930053558E /* DaemonWelcomeView.swift */; };
 		79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */; };
 		79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA95892B30D91600380D83 /* RootHelperMan.swift */; };
 		79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF26982B31C90C005D81D2 /* WelcomeView.swift */; };
@@ -56,6 +59,10 @@
 /* Begin PBXFileReference section */
 		790301BA2B37747A0044E30A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		790301BC2B3774F90044E30A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		790301C02B377EA70044E30A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		790301C22B378EFE0044E30A /* TranslationsCreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationsCreditView.swift; sourceTree = "<group>"; };
+		790301C42B3794480044E30A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		790301C62B3794FF0044E30A /* DaemonWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaemonWelcomeView.swift; sourceTree = "<group>"; };
 		7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentlyDisabledDaemonView.swift; sourceTree = "<group>"; };
 		7916D9E52B34FC06008E88F2 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		791820992B31F109007EEC24 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
@@ -69,7 +76,6 @@
 		7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkHelper.swift; sourceTree = "<group>"; };
 		799488A52B347E2C00AFFDCF /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
 		799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
-		799615432B34A1930053558E /* DaemonWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonWelcomeView.swift; sourceTree = "<group>"; };
 		79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		79BA95892B30D91600380D83 /* RootHelperMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelperMan.swift; sourceTree = "<group>"; };
 		79DF26982B31C90C005D81D2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -125,6 +131,15 @@
 				790301BA2B37747A0044E30A /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		790301BF2B377E850044E30A /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				790301C02B377EA70044E30A /* Localizable.xcstrings */,
+				790301C22B378EFE0044E30A /* TranslationsCreditView.swift */,
+			);
+			path = Translations;
 			sourceTree = "<group>";
 		};
 		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
@@ -184,10 +199,12 @@
 				FAA457052B2661AD00FC7287 /* Libs */,
 				FAA456D62B265FEA00FC7287 /* ContentView.swift */,
 				FAA457262B26667E00FC7287 /* HomeView.swift */,
+				790301C42B3794480044E30A /* SettingsView.swift */,
 				79DF26982B31C90C005D81D2 /* WelcomeView.swift */,
 				799488A42B347E1100AFFDCF /* LocSim */,
 				FAA4572E2B2666E800FC7287 /* Cleaner */,
 				FAA4572B2B26669B00FC7287 /* The Supviser */,
+				790301BF2B377E850044E30A /* Translations */,
 				FAA4572A2B26669100FC7287 /* DaemonMan */,
 				FAA456D82B265FEC00FC7287 /* Assets.xcassets */,
 				FAA456DA2B265FEC00FC7287 /* Preview Content */,
@@ -231,7 +248,7 @@
 				7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */,
 				792845592B2C80A40021E1FD /* DaemonDisabler.swift */,
 				FAA457282B26668900FC7287 /* DaemonView.swift */,
-				799615432B34A1930053558E /* DaemonWelcomeView.swift */,
+				790301C62B3794FF0044E30A /* DaemonWelcomeView.swift */,
 			);
 			path = DaemonMan;
 			sourceTree = "<group>";
@@ -343,6 +360,12 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				sk,
+				"zh-Hans",
+				de,
+				"es-419",
+				ja,
 			);
 			mainGroup = FAA456C82B265FEA00FC7287;
 			packageReferences = (
@@ -365,6 +388,7 @@
 			files = (
 				FAA456DC2B265FEC00FC7287 /* Preview Assets.xcassets in Resources */,
 				FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */,
+				790301C12B377EA70044E30A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,14 +420,16 @@
 				7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */,
 				FAA457272B26667E00FC7287 /* HomeView.swift in Sources */,
 				FAA457292B26668900FC7287 /* DaemonView.swift in Sources */,
+				790301C72B3794FF0044E30A /* DaemonWelcomeView.swift in Sources */,
+				790301C32B378EFE0044E30A /* TranslationsCreditView.swift in Sources */,
 				FAA457232B26654700FC7287 /* Addon.swift in Sources */,
+				790301C52B3794480044E30A /* SettingsView.swift in Sources */,
 				79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */,
 				7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */,
 				FAA457322B2667CB00FC7287 /* SuperviseView.swift in Sources */,
 				792845532B2C67910021E1FD /* FileCleaner.swift in Sources */,
 				799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
-				799615442B34A1930053558E /* DaemonWelcomeView.swift in Sources */,
 				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
 				7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */,

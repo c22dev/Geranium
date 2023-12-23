@@ -66,7 +66,7 @@ struct HomeView: View {
                         .ignoresSafeArea()
                 }
                 Text("")
-                List() {
+                List {
                     Section (header: Text("Credits")) {
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish", description: "Daemon Listing")
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/412187004407775242/1df69ac879b9e5f98396553eeac80cec.webp?size=160", url: "https://github.com/sourcelocation", title: "sourcelocation", description: "Swift UI Functions")
@@ -74,9 +74,6 @@ struct HomeView: View {
                     }
                 }
                 .disableListScroll()
-                .onAppear {
-                    UITableView.appearance().isScrollEnabled = false
-                }
             }
         }
         .background(Color(UIColor.systemGroupedBackground))
@@ -93,44 +90,7 @@ struct HomeView: View {
             }
         }
         .sheet(isPresented: $isDebugSheetOn) {
-            NavigationView {
-                List {
-                    Section(header:
-                        Label("Debug Stuff", systemImage: "chevron.left.forwardslash.chevron.right")
-                    , footer: Text("This setting allows you to see experimental values from some app variables.")
-                    ) {
-                        Toggle(isOn: $DebugStuff) {
-                            Text("Debug Info")
-                        }
-                        if DebugStuff {
-                            Text("RootHelper Path : \(RootHelper.whatsthePath())")
-                            if UIDevice.current.userInterfaceIdiom == .pad {
-                                Text("Is the user running an iPad on iPadOS 16 : yes")
-                            }
-                            else {
-                                Text("Is the user running an iPad on iPadOS 16 : no")
-                            }
-                            Text("Safari Cache Path : \(removeFilePrefix(safariCachePath))")
-                        }
-                    }
-                    Section(header: Label("Startup Settings", systemImage: "play"), footer: Text("This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas.")
-                    ) {
-                        Toggle(isOn: $tsBypass) {
-                            Text("Bypass TrollStore Pop Up")
-                        }
-                        Toggle(isOn: $updBypass) {
-                            Text("Bypass App Update Pop Up")
-                        }
-                    }
-                    Section(header: Label("Logging Settings", systemImage: "cloud"), footer: Text("We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server.")
-                    ) {
-                        Toggle(isOn: $loggingAllowed) {
-                            Text("Enable logging")
-                        }
-                    }
-                }
-                .navigationTitle("Settings")
-            }
+            SettingsView(DebugStuff: $DebugStuff, tsBypass: $tsBypass, updBypass: $updBypass, loggingAllowed: $loggingAllowed)
         }
     }
 }

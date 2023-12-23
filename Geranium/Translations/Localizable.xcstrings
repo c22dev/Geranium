@@ -658,6 +658,9 @@
         }
       }
     },
+    "Thanks to all those amazing translators !" : {
+
+    },
     "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
       "localizations" : {
         "fr" : {
@@ -697,6 +700,9 @@
           }
         }
       }
+    },
+    "Translators" : {
+
     },
     "Try again" : {
       "localizations" : {
