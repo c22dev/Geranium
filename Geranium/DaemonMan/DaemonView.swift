@@ -52,16 +52,25 @@ struct DaemonView: View {
                     Text("\(process.procName)")
                         .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
                 }
-            }
-            .onDelete { indexSet in
-                guard let index = indexSet.first else { return }
-                let process = processes[index]
-                if let existingIndex = toDisable.firstIndex(of: process.procName) {
-                    toDisable.remove(at: existingIndex)
-                } else {
-                    toDisable.append(process.procName)
+                .swipeActions {
+                    if let existingIndex = toDisable.firstIndex(of: process.procName) {
+                        Button(role: .destructive) {
+                            toDisable.remove(at: existingIndex)
+                            updateProcesses()
+                        } label: {
+                            Label("Enable", systemImage: "hand.thumbsup")
+                        }
+                        .tint(.green)
+                    }
+                    else {
+                        Button(role: .destructive) {
+                            toDisable.append(process.procName)
+                            updateProcesses()
+                        } label: {
+                            Label("Disable", systemImage: "hand.thumbsdown")
+                        }
+                    }
                 }
-                updateProcesses()
             }
         }
         .toolbar{
