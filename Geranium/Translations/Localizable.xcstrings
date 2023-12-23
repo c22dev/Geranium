@@ -28,6 +28,12 @@
             "state" : "translated",
             "value" : "1. Ouvrez TrollStore"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.打开TrollStore"
+          }
         }
       }
     },
@@ -37,6 +43,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "2. Rendez vous dans Settings"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2.转到设置"
           }
         }
       }
@@ -48,6 +60,12 @@
             "state" : "translated",
             "value" : "3. Activez l'URL Scheme"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. 激活 \"URL SCHEME\"。"
+          }
         }
       }
     },
@@ -57,6 +75,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alphabétique"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "按字母顺序的"
           }
         }
       }
@@ -68,6 +92,12 @@
             "state" : "translated",
             "value" : "Une erreur s'est produite avec le RootHelper"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelper出现错误。"
+          }
         }
       }
     },
@@ -77,6 +107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Données Batterie"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池使用数据"
           }
         }
       }
@@ -88,6 +124,12 @@
             "state" : "translated",
             "value" : "Favoris"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "书签"
+          }
         }
       }
     },
@@ -97,6 +139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En ajoutant des règles à iOS, cette application empêche le daemon de démarrer quand votre iPhone se lance. Cette application liste tous les daemons en cours, et vous pouvez les glisser vers la droite pour en enlever."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通过在iOS内部添加一些规则，该软件可以防止守护进程在您启动手机时启动。该应用程序列出了每个正在运行的守护进程，您可以向左滑动以删除其中一个。"
           }
         }
       }
@@ -108,6 +156,12 @@
             "state" : "translated",
             "value" : "Contourner le Pop Up de Mise à Jour de l'App"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旁路应用程序更新弹出窗口"
+          }
         }
       }
     },
@@ -117,6 +171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contourner le Pop Up TrollStore"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "避开 TrollStore 弹出窗口"
           }
         }
       }
@@ -128,6 +188,12 @@
             "state" : "translated",
             "value" : "Nettoyer !"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "干净！"
+          }
         }
       }
     },
@@ -138,6 +204,12 @@
             "state" : "translated",
             "value" : "Nettoyeur"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清洁工"
+          }
         }
       }
     },
@@ -147,6 +219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crédits"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "学分"
           }
         }
       }
@@ -168,6 +246,12 @@
             "state" : "translated",
             "value" : "Info de déboggage"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调试信息"
+          }
         }
       }
     },
@@ -177,6 +261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paramètres de Déboggage"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调试东西"
           }
         }
       }
@@ -188,6 +278,12 @@
             "state" : "translated",
             "value" : "Suppression... %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除... %@"
+          }
         }
       }
     },
@@ -197,6 +293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désactiver"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用"
           }
         }
       }
@@ -208,6 +310,12 @@
             "state" : "translated",
             "value" : "Désactiver le pop-up de mise à jour"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "禁用更新弹出窗口"
+          }
         }
       }
     },
@@ -217,6 +325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gestionnaire de démons désactivés"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "禁用守护程序管理器"
           }
         }
       }
@@ -228,6 +342,12 @@
             "state" : "translated",
             "value" : "DESACTIVER DES DAEMONS SYSTÈME PEUT-ÊTRE DANGEREUX. VOUS POURREZ BRIQUER VOTRE APPAREIL. PROCEDEZ AVEC PRUDENCE. JE NE SUIS PAS RESPONSABLE POUR N'IMPORTE QUEL PROBLÈME SUR VOTRE APPAREIL."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "禁用系统进程很危险。请谨慎操作。我对您的设备出现的任何问题概不负责。"
+          }
         }
       }
     },
@@ -238,6 +358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "DESACTIVER DES DAEMONS SYSTEMES N'EST PAS RECOMMENDÉ. BOOTLOOP RISK."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不建议禁用系统守护系统。您可以引导您的设备。谨慎进行。对于您设备上的任何问题，我概不负责。"
           }
         }
       }
@@ -259,6 +385,12 @@
             "state" : "translated",
             "value" : "Terminé !"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成！"
+          }
         }
       }
     },
@@ -268,6 +400,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activer"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启动"
           }
         }
       }
@@ -279,6 +417,12 @@
             "state" : "translated",
             "value" : "Activer la collection de logs"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用日志收集"
+          }
         }
       }
     },
@@ -288,6 +432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activer le logging"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用日志记录"
           }
         }
       }
@@ -299,6 +449,12 @@
             "state" : "translated",
             "value" : "Entrez un nom d'organisation..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入组织名称..."
+          }
         }
       }
     },
@@ -308,6 +464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erreur !"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误！"
           }
         }
       }
@@ -319,6 +481,12 @@
             "state" : "translated",
             "value" : "Quitter"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "退出"
+          }
         }
       }
     },
@@ -328,6 +496,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Caches Généraux"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般缓存"
           }
         }
       }
@@ -349,6 +523,12 @@
             "state" : "translated",
             "value" : "Bonjour, utilisateur d'iPhone SE 1 !"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "嗨！SE 1 用户"
+          }
         }
       }
     },
@@ -358,6 +538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主页"
           }
         }
       }
@@ -369,6 +555,12 @@
             "state" : "translated",
             "value" : "Si vous souhaitez activer la mise à jour auto de l'app, vous devez activer l'URL Scheme Magnifier dans TrollStore."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果您想启用自动更新，您需要在TrollStore中打开URLScheme方案。"
+          }
         }
       }
     },
@@ -378,6 +570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Si vous souhaitez revenir sur l'un de vos choix, vous devez aller dans le gestionnaire (icône de liste à côté de l'icône de validation), où vous pouvez ré-activer les démons désactivés."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果您想恢复任何选择，您应该进入管理器（应用图标旁边的列表图标），在那里您可以切换禁用的守护程序。"
           }
         }
       }
@@ -389,6 +587,12 @@
             "state" : "translated",
             "value" : "Cet utilisateur est-il un iPad sur iPadOS 16 : non"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用户是否在iPadOS 16上运行iPad：否"
+          }
         }
       }
     },
@@ -399,6 +603,12 @@
             "state" : "translated",
             "value" : "Cet utilisateur est-il un iPad sur iPadOS 16 : oui"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用户是否在iPadOS 16上运行iPad：是的"
+          }
         }
       }
     },
@@ -408,6 +618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Il semble que vous utilisez un iPhone SE 2016 (1ere génération). Vous pourrez rencontrer des problèmes d'interface. Veuillez m'en excuser."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "看起来您正在iPhone SE 2016（第1代）上使用该应用程序。您可能会遇到严重的用户界面问题。请提前原谅我。"
           }
         }
       }
@@ -424,6 +640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Latitude: %1$lf Longitude: %2$lf"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "纬度：%1$lf 经度：%2$lf"
           }
         }
       }
@@ -445,6 +667,12 @@
             "state" : "translated",
             "value" : "Collection de Logs"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日志收集"
+          }
         }
       }
     },
@@ -454,6 +682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paramètres de Logging"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日志记录设置"
           }
         }
       }
@@ -465,6 +699,12 @@
             "state" : "translated",
             "value" : "créé par c22dev"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由c22dev制作"
+          }
         }
       }
     },
@@ -474,6 +714,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gérer"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理"
           }
         }
       }
@@ -485,6 +731,12 @@
             "state" : "translated",
             "value" : "Aucun favori sauvegardé."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有保存书签。"
+          }
         }
       }
     },
@@ -495,6 +747,12 @@
             "state" : "translated",
             "value" : "Notice"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正式通知"
+          }
         }
       }
     },
@@ -504,6 +762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Caches de MàJ OTA"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OTA更新缓存"
           }
         }
       }
@@ -525,6 +789,12 @@
             "state" : "translated",
             "value" : "A noter"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请注意"
+          }
         }
       }
     },
@@ -535,6 +805,12 @@
             "state" : "translated",
             "value" : "Objectif"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标"
+          }
         }
       }
     },
@@ -544,6 +820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reconstruir le cache d'icônes"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重建图标缓存"
           }
         }
       }
@@ -565,6 +847,12 @@
             "state" : "translated",
             "value" : "Path du RootHelper : %@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelper路径：%@"
+          }
         }
       }
     },
@@ -574,6 +862,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Path des caches de Safari : %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safari 浏览器缓存路径：%@"
           }
         }
       }
@@ -585,6 +879,12 @@
             "state" : "translated",
             "value" : "Caches Safari"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safari 浏览器缓存"
+          }
         }
       }
     },
@@ -594,6 +894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sauvegarder"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存文件"
           }
         }
       }
@@ -605,6 +911,12 @@
             "state" : "translated",
             "value" : "Recherchez un daemon..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索当前正在运行的守护进程..."
+          }
         }
       }
     },
@@ -614,6 +926,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paramètres"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
           }
         }
       }
@@ -625,6 +943,12 @@
             "state" : "translated",
             "value" : "Configuration"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安装"
+          }
         }
       }
     },
@@ -634,6 +958,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paramètres de démarrage"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启动设置"
           }
         }
       }
@@ -659,7 +989,14 @@
       }
     },
     "Thanks to all those amazing translators !" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "感谢我们所有的贡献者！"
+          }
+        }
+      }
     },
     "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
       "localizations" : {
@@ -667,6 +1004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceci est une liste de tous les daemons désactivés. Ne changez pas les choses que vous n'avez pas changé de base. Ceux activés sont ceux qui sont désactivés pour le système."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这是当前禁用的所有守护进程的列表。不要改变那些你没有改变的事情。被切换的是被禁用的。"
           }
         }
       }
@@ -678,6 +1021,12 @@
             "state" : "translated",
             "value" : "Cette paramètre vous permet de voir les données expérimentales de certaines variables de l'app."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此设置允许您从某些应用程序变量中查看实验值。"
+          }
         }
       }
     },
@@ -687,6 +1036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceci personnalisera les pop-ups au démarrage de l'app. Utile pour débogguer sur le simulateur ou pour les betas."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这将个性化应用程序启动弹出窗口。适用于模拟器或测试版的调试。"
           }
         }
       }
@@ -698,11 +1053,24 @@
             "state" : "translated",
             "value" : "Pour ajouter un favori, sélectionnez une localisation personnalisée et tapez sur le bouton +."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要添加书签，请选择一个自定义位置，然后点击+按钮。"
+          }
         }
       }
     },
     "Translators" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "翻译人员"
+          }
+        }
+      }
     },
     "Try again" : {
       "localizations" : {
@@ -710,6 +1078,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réessayer"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再试一次"
           }
         }
       }
@@ -720,6 +1094,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compris"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "理解"
           }
         }
       }
@@ -751,6 +1131,12 @@
             "state" : "translated",
             "value" : "ATTENTION"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
         }
       }
     },
@@ -760,6 +1146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nous collectons certains logs qui sont envoyés sur notre serveur afin de corriger les bogues et d'adresser les crashs. Ces logs ne contiennent jamais d'informations personnelles, seulement le type d'appareil et le problème en lui même. Nous recueillons également des informations de mesure pour savoir ce qui a été le plus utilisé dans l'application. Vous pouvez choisir d'empêcher l'envoi de TOUTES les données à notre serveur."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们收集一些上传到服务器的日志，用于修复错误和处理崩溃日志。日志从不包含您的任何个人信息，只包含您的设备类型和崩溃日志本身。我们还收集测量信息，以查看应用程序中最常用的内容。您可以选择是否要阻止任何数据发送到我们的服务器。"
           }
         }
       }
@@ -771,6 +1163,12 @@
             "state" : "translated",
             "value" : "Bienvenue sur Geranium, un véritable couteau suisse pour TrollStore qui vous permet de désactiver certains daemons, simuler une fausse localisation, nettoyer votre stockage et plus. Nous devons configurer plusieurs choses ensembles avant que vous puissiez utiliser l'app. Cela ne prendra qu'une minute. Vous pourrez toujours changer ces paramètres plus tard."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "欢迎来到Geranium，这是一个TrollStore的工具箱，允许您禁用一些守护进程，模拟您的位置，清理手机的存储空间等。在您使用该应用程序之前，我们需要配置一些东西。这只需要一分钟。以后可以随时更改。"
+          }
         }
       }
     },
@@ -781,6 +1179,12 @@
             "state" : "translated",
             "value" : "Bienvenue !"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "欢迎！"
+          }
         }
       }
     },
@@ -790,6 +1194,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lors-qu'une nouvelle mise à jour de l'app est publiée, vous recevrez un pop up au démarrage de l'app qui vous demandera si vous souhaitez mettre à jour. Vous pouvez configurer cela à votre guise."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当发布新的更新时，您将在应用程序启动时收到一个弹出窗口，询问您是否要更新。你可以防止这种情况发生"
           }
         }
       }

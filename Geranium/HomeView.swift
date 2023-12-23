@@ -68,9 +68,9 @@ struct HomeView: View {
                 Text("")
                 List {
                     Section (header: Text("Credits")) {
-                        if !isMiniDevice() {
-                            LinkCell(imageLink: "https://cdn.discordapp.com/avatars/614377175608459264/b8e0af930e0af44b72943ad4f839cf53.webp?size=160", url: "https://github.com/c22dev", title: "c22dev", description: "Main Developer")
-                        }
+//                        if !isMiniDevice() {
+//                            LinkCell(imageLink: "https://cdn.discordapp.com/avatars/614377175608459264/b8e0af930e0af44b72943ad4f839cf53.webp?size=160", url: "https://github.com/c22dev", title: "c22dev", description: "Main Developer")
+//                        }
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish", description: "Daemon Listing")
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/412187004407775242/1df69ac879b9e5f98396553eeac80cec.webp?size=160", url: "https://github.com/sourcelocation", title: "sourcelocation", description: "Swift UI Functions")
                         LinkCell(imageLink: "https://avatars.githubusercontent.com/u/85764897?s=160&v=4", url: "https://github.com/haxi0", title: "haxi0", description: "Welcome Page source")
