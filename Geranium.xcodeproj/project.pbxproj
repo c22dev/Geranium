@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790301B82B3774110044E30A /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 790301B72B3774100044E30A /* LSApplicationProxy+AltList.m */; };
+		790301BB2B37747A0044E30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790301BA2B37747A0044E30A /* Foundation.framework */; };
+		790301BD2B3774F90044E30A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790301BC2B3774F90044E30A /* CoreServices.framework */; };
 		7916D9E42B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */; };
 		7916D9E62B34FC06008E88F2 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916D9E52B34FC06008E88F2 /* Paths.swift */; };
 		7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820992B31F109007EEC24 /* LogHelper.swift */; };
@@ -52,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790301B62B37740C0044E30A /* LSApplicationProxy+AltList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSApplicationProxy+AltList.h"; sourceTree = "<group>"; };
+		790301B72B3774100044E30A /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
+		790301BA2B37747A0044E30A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		790301BC2B3774F90044E30A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		790301BE2B3775340044E30A /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoreServices.h; path = ../../../../../../../Downloads/CoreServices.h; sourceTree = "<group>"; };
 		7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentlyDisabledDaemonView.swift; sourceTree = "<group>"; };
 		7916D9E52B34FC06008E88F2 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		791820992B31F109007EEC24 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
@@ -92,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790301BD2B3774F90044E30A /* CoreServices.framework in Frameworks */,
+				790301BB2B37747A0044E30A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +122,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		790301B12B3773B90044E30A /* LSApp */ = {
+			isa = PBXGroup;
+			children = (
+				790301B62B37740C0044E30A /* LSApplicationProxy+AltList.h */,
+				790301BE2B3775340044E30A /* CoreServices.h */,
+				790301B72B3774100044E30A /* LSApplicationProxy+AltList.m */,
+			);
+			path = LSApp;
+			sourceTree = "<group>";
+		};
+		790301B92B37747A0044E30A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				790301BC2B3774F90044E30A /* CoreServices.framework */,
+				790301BA2B37747A0044E30A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
 			isa = PBXGroup;
 			children = (
+				790301B12B3773B90044E30A /* LSApp */,
 				795019BA2B2B54A6008EEC91 /* delecture.h */,
 				795019B82B2B5055008EEC91 /* main.m */,
 			);
@@ -147,6 +177,7 @@
 			children = (
 				FAA456D32B265FEA00FC7287 /* Geranium */,
 				FAA456D22B265FEA00FC7287 /* Products */,
+				790301B92B37747A0044E30A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -393,6 +424,7 @@
 				7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
 				795019B92B2B5055008EEC91 /* main.m in Sources */,
+				790301B82B3774110044E30A /* LSApplicationProxy+AltList.m in Sources */,
 				79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */,
 				79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */,
 				FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */,
