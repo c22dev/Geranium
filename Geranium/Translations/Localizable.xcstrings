@@ -1,0 +1,793 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "1. Open TrollStore" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Ouvrez TrollStore"
+          }
+        }
+      }
+    },
+    "2. Go to Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Rendez vous dans Settings"
+          }
+        }
+      }
+    },
+    "3. Enable URL Scheme" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Activez l'URL Scheme"
+          }
+        }
+      }
+    },
+    "Alphabetical" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alphabétique"
+          }
+        }
+      }
+    },
+    "An error occured with the RootHelper." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur s'est produite avec le RootHelper"
+          }
+        }
+      }
+    },
+    "Battery Usage Data" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Données Batterie"
+          }
+        }
+      }
+    },
+    "Bookmarks" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoris"
+          }
+        }
+      }
+    },
+    "By adding some rules to iOS internals, this software prevents the daemon from launching when you boot your phone. The app lists every running daemon, and you can swipe to the left to remove one of them." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En ajoutant des règles à iOS, cette application empêche le daemon de démarrer quand votre iPhone se lance. Cette application liste tous les daemons en cours, et vous pouvez les glisser vers la droite pour en enlever."
+          }
+        }
+      }
+    },
+    "Bypass App Update Pop Up" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contourner le Pop Up de Mise à Jour de l'App"
+          }
+        }
+      }
+    },
+    "Bypass TrollStore Pop Up" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contourner le Pop Up TrollStore"
+          }
+        }
+      }
+    },
+    "Clean !" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nettoyer !"
+          }
+        }
+      }
+    },
+    "Cleaner" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nettoyeur"
+          }
+        }
+      }
+    },
+    "Credits" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crédits"
+          }
+        }
+      }
+    },
+    "Daemons" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        }
+      }
+    },
+    "Debug Info" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info de déboggage"
+          }
+        }
+      }
+    },
+    "Debug Stuff" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres de Déboggage"
+          }
+        }
+      }
+    },
+    "Deleting... %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suppression... %@"
+          }
+        }
+      }
+    },
+    "Disable" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver"
+          }
+        }
+      }
+    },
+    "Disable update pop-up" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver le pop-up de mise à jour"
+          }
+        }
+      }
+    },
+    "Disabled Daemons Manager" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestionnaire de démons désactivés"
+          }
+        }
+      }
+    },
+    "DISABLING SYSTEM DAEMONS IS DANGEROUS. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DESACTIVER DES DAEMONS SYSTÈME PEUT-ÊTRE DANGEREUX. VOUS POURREZ BRIQUER VOTRE APPAREIL. PROCEDEZ AVEC PRUDENCE. JE NE SUIS PAS RESPONSABLE POUR N'IMPORTE QUEL PROBLÈME SUR VOTRE APPAREIL."
+          }
+        }
+      }
+    },
+    "DISABLING SYSTEM DAEMONS IS NOT RECOMMENDED. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DESACTIVER DES DAEMONS SYSTEMES N'EST PAS RECOMMENDÉ. BOOTLOOP RISK."
+          }
+        }
+      }
+    },
+    "Dismiss" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer"
+          }
+        }
+      }
+    },
+    "Done !" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé !"
+          }
+        }
+      }
+    },
+    "Enable" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer"
+          }
+        }
+      }
+    },
+    "Enable log collection" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer la collection de logs"
+          }
+        }
+      }
+    },
+    "Enable logging" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer le logging"
+          }
+        }
+      }
+    },
+    "Enter organisation name..." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrez un nom d'organisation..."
+          }
+        }
+      }
+    },
+    "Error !" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreur !"
+          }
+        }
+      }
+    },
+    "Exit" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quitter"
+          }
+        }
+      }
+    },
+    "General Caches" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caches Généraux"
+          }
+        }
+      }
+    },
+    "Geranium" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        }
+      }
+    },
+    "Hi ! SE 1 User" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bonjour, utilisateur d'iPhone SE 1 !"
+          }
+        }
+      }
+    },
+    "Home" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menu"
+          }
+        }
+      }
+    },
+    "If you want to enable auto-update, you need to turn on Magnifier URL Scheme in TrollStore." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si vous souhaitez activer la mise à jour auto de l'app, vous devez activer l'URL Scheme Magnifier dans TrollStore."
+          }
+        }
+      }
+    },
+    "If you want to revert any of your choice, you should go into the manager (list icon next to the apply icon), where you can toggle disabled daemons." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si vous souhaitez revenir sur l'un de vos choix, vous devez aller dans le gestionnaire (icône de liste à côté de l'icône de validation), où vous pouvez ré-activer les démons désactivés."
+          }
+        }
+      }
+    },
+    "Is the user running an iPad on iPadOS 16 : no" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cet utilisateur est-il un iPad sur iPadOS 16 : non"
+          }
+        }
+      }
+    },
+    "Is the user running an iPad on iPadOS 16 : yes" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cet utilisateur est-il un iPad sur iPadOS 16 : oui"
+          }
+        }
+      }
+    },
+    "It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI issues. Please excuse me in advance." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il semble que vous utilisez un iPhone SE 2016 (1ere génération). Vous pourrez rencontrer des problèmes d'interface. Veuillez m'en excuser."
+          }
+        }
+      }
+    },
+    "Latitude: %lf Longitude: %lf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Latitude: %1$lf Longitude: %2$lf"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitude: %1$lf Longitude: %2$lf"
+          }
+        }
+      }
+    },
+    "LocSim" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        }
+      }
+    },
+    "Log Collection" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collection de Logs"
+          }
+        }
+      }
+    },
+    "Logging Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres de Logging"
+          }
+        }
+      }
+    },
+    "made by c22dev" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "créé par c22dev"
+          }
+        }
+      }
+    },
+    "Manage" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gérer"
+          }
+        }
+      }
+    },
+    "No bookmarks saved." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun favori sauvegardé."
+          }
+        }
+      }
+    },
+    "Notice" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice"
+          }
+        }
+      }
+    },
+    "OTA Update Caches" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caches de MàJ OTA"
+          }
+        }
+      }
+    },
+    "PID: %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        }
+      }
+    },
+    "Please note" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A noter"
+          }
+        }
+      }
+    },
+    "Purpose" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectif"
+          }
+        }
+      }
+    },
+    "Rebuild Icon Cache" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconstruir le cache d'icônes"
+          }
+        }
+      }
+    },
+    "Respring" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        }
+      }
+    },
+    "RootHelper Path : %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Path du RootHelper : %@"
+          }
+        }
+      }
+    },
+    "Safari Cache Path : %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Path des caches de Safari : %@"
+          }
+        }
+      }
+    },
+    "Safari Caches" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caches Safari"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauvegarder"
+          }
+        }
+      }
+    },
+    "Search a currently running daemon..." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherchez un daemon..."
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
+        }
+      }
+    },
+    "Setup" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuration"
+          }
+        }
+      }
+    },
+    "Startup Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres de démarrage"
+          }
+        }
+      }
+    },
+    "Supervise" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superviser"
+          }
+        }
+      }
+    },
+    "Superviser" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superviser"
+          }
+        }
+      }
+    },
+    "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ceci est une liste de tous les daemons désactivés. Ne changez pas les choses que vous n'avez pas changé de base. Ceux activés sont ceux qui sont désactivés pour le système."
+          }
+        }
+      }
+    },
+    "This setting allows you to see experimental values from some app variables." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette paramètre vous permet de voir les données expérimentales de certaines variables de l'app."
+          }
+        }
+      }
+    },
+    "This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ceci personnalisera les pop-ups au démarrage de l'app. Utile pour débogguer sur le simulateur ou pour les betas."
+          }
+        }
+      }
+    },
+    "To add a bookmark, select a custom location then tap the + button." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour ajouter un favori, sélectionnez une localisation personnalisée et tapez sur le bouton +."
+          }
+        }
+      }
+    },
+    "Try again" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réessayer"
+          }
+        }
+      }
+    },
+    "Understood" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compris"
+          }
+        }
+      }
+    },
+    "Unsupervise" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désuperviser"
+          }
+        }
+      }
+    },
+    "Update Warnings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avertissements de Mise à Jour"
+          }
+        }
+      }
+    },
+    "WARNING" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ATTENTION"
+          }
+        }
+      }
+    },
+    "We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nous collectons certains logs qui sont envoyés sur notre serveur afin de corriger les bogues et d'adresser les crashs. Ces logs ne contiennent jamais d'informations personnelles, seulement le type d'appareil et le problème en lui même. Nous recueillons également des informations de mesure pour savoir ce qui a été le plus utilisé dans l'application. Vous pouvez choisir d'empêcher l'envoi de TOUTES les données à notre serveur."
+          }
+        }
+      }
+    },
+    "Welcome to Geranium, a toolbox for TrollStore that allows you to disable some daemons, simulate your location, clean your phone's storage and other. We need to configure a few things before you can use the app. This will only take a minute. You will still be able to change the settings later." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenue sur Geranium, un véritable couteau suisse pour TrollStore qui vous permet de désactiver certains daemons, simuler une fausse localisation, nettoyer votre stockage et plus. Nous devons configurer plusieurs choses ensembles avant que vous puissiez utiliser l'app. Cela ne prendra qu'une minute. Vous pourrez toujours changer ces paramètres plus tard."
+          }
+        }
+      }
+    },
+    "Welcome!" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenue !"
+          }
+        }
+      }
+    },
+    "When a new update is published, you will receive a pop-up on app launch asking you if you want to update. You can prevent this from hapenning" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lors-qu'une nouvelle mise à jour de l'app est publiée, vous recevrez un pop up au démarrage de l'app qui vous demandera si vous souhaitez mettre à jour. Vous pouvez configurer cela à votre guise."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

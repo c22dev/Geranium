@@ -17,7 +17,7 @@ struct DaemonWelcomeView: View {
             }
             
             Section(header: Text("WARNING")) {
-                Text("DISABLING SYSTEM DAEMONS IS NOT RECOMMENDED. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE.")
+                Text("DISABLING SYSTEM DAEMONS IS DANGEROUS. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE.")
                     .foregroundStyle(.red)
             }
             Section(header: Text("Please note")) {
