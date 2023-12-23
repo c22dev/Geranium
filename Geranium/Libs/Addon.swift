@@ -332,3 +332,12 @@ func disableListScroll() -> some View {
         .simultaneousGesture(DragGesture(minimumDistance: 0), including: .all)
     }
 }}
+
+func isMiniDevice() -> Bool {
+    if getDeviceCode() != "iPhone14,6", getDeviceCode() != "iPhone12,8", #available(iOS 16.0, *), getDeviceCode() != "iPhone13,1", getDeviceCode() != "iPhone14,4", getDeviceCode() != "iPhone10,1", getDeviceCode() != "iPhone10,4", getDeviceCode() != "iPhone10,2", getDeviceCode() != "iPhone10,5" {
+        return false
+    }
+    else {
+        return false
+    }
+}
