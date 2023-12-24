@@ -23,6 +23,12 @@
     },
     "1. Open TrollStore" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Abri TrollStore"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -39,6 +45,12 @@
     },
     "2. Go to Settings" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Ir a Ajustes"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55,6 +67,12 @@
     },
     "3. Enable URL Scheme" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Habilitar esquema de URL"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -71,6 +89,12 @@
     },
     "Alphabetical" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por orden alfabético"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -87,6 +111,12 @@
     },
     "An error occured with the RootHelper." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se ha producido un error con  RootHelper."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -103,6 +133,12 @@
     },
     "Battery Usage Data" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datos de uso de la batería"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -135,6 +171,12 @@
     },
     "By adding some rules to iOS internals, this software prevents the daemon from launching when you boot your phone. The app lists every running daemon, and you can swipe to the left to remove one of them." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadiendo algunas reglas a los componentes internos de iOS, este software impide que el daemon se ejecute al arrancar el teléfono. La aplicación muestra una lista de todos los daemons en ejecución y puedes deslizar el dedo hacia la izquierda para eliminarlos."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -151,6 +193,12 @@
     },
     "Bypass App Update Pop Up" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Evitar la ventana emergente de actualización de la aplicación"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -167,6 +215,12 @@
     },
     "Bypass TrollStore Pop Up" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Evitar la ventana emergente de TrollStore"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -183,6 +237,12 @@
     },
     "Clean !" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Limpio!"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -199,6 +259,12 @@
     },
     "Cleaner" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Limpiar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -215,6 +281,12 @@
     },
     "Credits" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creditos"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -241,6 +313,12 @@
     },
     "Debug Info" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Información de depuración"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -257,6 +335,12 @@
     },
     "Debug Stuff" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depurar cosas"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -273,6 +357,12 @@
     },
     "Deleting... %@" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrando... %@"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -289,6 +379,12 @@
     },
     "Disable" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -305,6 +401,12 @@
     },
     "Disable update pop-up" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar la ventana emergente de actualización"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -321,6 +423,12 @@
     },
     "Disabled Daemons Manager" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Administrador de daemons desactivados"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -337,6 +445,12 @@
     },
     "DISABLING SYSTEM DAEMONS IS DANGEROUS. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DESACTIVAR LOS DAEMONS DEL SISTEMA ES PELIGROSO. PODRÍA HACER BOOTLOOP EN SU DISPOSITIVO. PROCEDA CON PRECAUCIÓN. NO ME HAGO RESPONSABLE DE CUALQUIER PROBLEMA EN SU DISPOSITIVO."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -354,6 +468,12 @@
     "DISABLING SYSTEM DAEMONS IS NOT RECOMMENDED. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE." : {
       "extractionState" : "stale",
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NO SE RECOMIENDA DESHABILITAR LOS DAEMONS DEL SISTEMA. PODRÍA HACER BOOTLOOP EN SU DISPOSITIVO. PROCEDA CON PRECAUCIÓN. NO ME HAGO RESPONSABLE DE CUALQUIER PROBLEMA EN SU DISPOSITIVO."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -370,6 +490,12 @@
     },
     "Dismiss" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descartar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -380,6 +506,12 @@
     },
     "Done !" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Hecho!"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -396,6 +528,12 @@
     },
     "Enable" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -412,6 +550,12 @@
     },
     "Enable log collection" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar la recogida de registros"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -428,6 +572,12 @@
     },
     "Enable logging" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar el registro"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -444,6 +594,12 @@
     },
     "Enter organisation name..." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introduzca el nombre de la organización..."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -460,6 +616,12 @@
     },
     "Error !" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error !"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -476,6 +638,12 @@
     },
     "Exit" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -492,6 +660,12 @@
     },
     "General Caches" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachés generales"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -518,6 +692,12 @@
     },
     "Hi ! SE 1 User" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hola ! SE 1 Usuario"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -550,6 +730,12 @@
     },
     "If you want to enable auto-update, you need to turn on Magnifier URL Scheme in TrollStore." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si desea activar la actualización automática, debe activar el esquema de URL Magnifier en TrollStore."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -566,6 +752,12 @@
     },
     "If you want to revert any of your choice, you should go into the manager (list icon next to the apply icon), where you can toggle disabled daemons." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si quieres revertir alguna de tus elecciones, debes ir al gestor (icono de lista junto al icono de aplicar), donde puedes alternar los daemons deshabilitados."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -582,6 +774,12 @@
     },
     "Is the user running an iPad on iPadOS 16 : no" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El usuario tiene un iPad con iPadOS 16 : no"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -598,6 +796,12 @@
     },
     "Is the user running an iPad on iPadOS 16 : yes" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El usuario tiene un iPad con iPadOS 16 : sí"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -614,6 +818,12 @@
     },
     "It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI issues. Please excuse me in advance." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parece que estás utilizando la aplicación en un iPhone SE 2016 (1ª generación). Podrías encontrarte con serios problemas de interfaz de usuario. Discúlpame de antemano."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -636,6 +846,12 @@
             "value" : "Latitude: %1$lf Longitude: %2$lf"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitud: %1$lf Longitud: %2$lf"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -652,6 +868,12 @@
     },
     "LocSim" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -662,6 +884,12 @@
     },
     "Log Collection" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colección de logs"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -678,6 +906,12 @@
     },
     "Logging Settings" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración de logging"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -694,6 +928,12 @@
     },
     "made by c22dev" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hecho por c22dev"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -710,6 +950,12 @@
     },
     "Manage" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestionar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -726,6 +972,12 @@
     },
     "No bookmarks saved." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No hay marcadores guardados."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -742,6 +994,12 @@
     },
     "Notice" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aviso"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -758,6 +1016,12 @@
     },
     "OTA Update Caches" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachés de actualización OTA"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -774,6 +1038,12 @@
     },
     "PID: %@" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -782,8 +1052,17 @@
         }
       }
     },
+    "Please copy your UUID bellow and send it to a developer in charge." : {
+
+    },
     "Please note" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atención"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -800,6 +1079,12 @@
     },
     "Purpose" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Propósito"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -816,6 +1101,12 @@
     },
     "Rebuild Icon Cache" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconstruir la caché de iconos"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -842,6 +1133,12 @@
     },
     "RootHelper Path : %@" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruta RootHelper : %@"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -858,6 +1155,12 @@
     },
     "Safari Cache Path : %@" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruta de la caché de Safari : %@"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -874,6 +1177,12 @@
     },
     "Safari Caches" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachés de Safari"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -890,6 +1199,12 @@
     },
     "Save" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -906,6 +1221,12 @@
     },
     "Search a currently running daemon..." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar un daemon en ejecución..."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -922,6 +1243,12 @@
     },
     "Settings" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -938,6 +1265,12 @@
     },
     "Setup" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurar"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -954,6 +1287,12 @@
     },
     "Startup Settings" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes de inicio"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -980,6 +1319,12 @@
     },
     "Superviser" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervisor"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -990,6 +1335,18 @@
     },
     "Thanks to all those amazing translators !" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Gracias a todos estos increíbles traductores!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci à tous ces incroyables contributeurs !"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1000,6 +1357,12 @@
     },
     "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta es una lista de todos los daemons actualmente desactivados. No cambies lo que no has cambiado. Los cambiados son los deshabilitados."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1016,6 +1379,12 @@
     },
     "This setting allows you to see experimental values from some app variables." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este ajuste te permite ver valores experimentales de algunas variables de la app."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1032,6 +1401,12 @@
     },
     "This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esto personalizará las ventanas emergentes de inicio de la aplicación. Útil para depurar en el simulador o para betas."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1048,6 +1423,12 @@
     },
     "To add a bookmark, select a custom location then tap the + button." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para añadir un marcador, seleccione una ubicación personalizada y, a continuación, pulse el botón +."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1064,6 +1445,18 @@
     },
     "Translators" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traductores"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traducteurs"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1074,6 +1467,12 @@
     },
     "Try again" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inténtalo de nuevo"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1090,6 +1489,12 @@
     },
     "Understood" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entendido"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1116,6 +1521,12 @@
     },
     "Update Warnings" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar advertencias"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1126,6 +1537,12 @@
     },
     "WARNING" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡ADVERTENCIA¡"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1142,6 +1559,12 @@
     },
     "We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recopilamos algunos registros que se cargan en nuestro servidor para corregir errores y hacer frente a los registros de accidentes. Los registros nunca contienen información personal, sólo el tipo de dispositivo y el registro de fallos. También recopilamos información de medición para ver qué es lo que más se utiliza en la aplicación. Puedes elegir si quieres evitar que se envíe CUALQUIER dato a nuestro servidor."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1156,8 +1579,17 @@
         }
       }
     },
+    "Welcome to Geranium Beta Testing Program" : {
+
+    },
     "Welcome to Geranium, a toolbox for TrollStore that allows you to disable some daemons, simulate your location, clean your phone's storage and other. We need to configure a few things before you can use the app. This will only take a minute. You will still be able to change the settings later." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido a Geranium, una caja de herramientas para TrollStore que te permite desactivar algunos daemons, simular tu ubicación, limpiar el almacenamiento de tu teléfono y otras cosas. Necesitamos configurar algunas cosas antes de que puedas usar la aplicación. Esto sólo te llevará un minuto. Podrás cambiar la configuración más tarde."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1174,6 +1606,12 @@
     },
     "Welcome!" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Bienvenido!"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1190,6 +1628,12 @@
     },
     "When a new update is published, you will receive a pop-up on app launch asking you if you want to update. You can prevent this from hapenning" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando se publique una nueva actualización, aparecerá una ventana emergente al iniciar la aplicación preguntándole si desea actualizarla. Puedes evitar que esto ocurra."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1203,6 +1647,9 @@
           }
         }
       }
+    },
+    "You might want to quit and go back in the app." : {
+
     }
   },
   "version" : "1.0"

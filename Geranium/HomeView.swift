@@ -56,6 +56,7 @@ struct HomeView: View {
             // thanks sourcelocation x bomberfish for helping me
             .background(Color(UIColor.systemGroupedBackground))
             .frame(maxWidth: .infinity)
+            
             ZStack {
                 if colorScheme == .dark {
                     Color.black

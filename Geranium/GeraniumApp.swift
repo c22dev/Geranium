@@ -9,6 +9,7 @@ import SwiftUI
 // TODO: test app on iPadOS 15 iPads
 @main
 struct GeraniumApp: App {
+    @State var isInBetaProgram = true
     @AppStorage("TSBypass") var tsBypass: Bool = false
     @AppStorage("UPDBypass") var updBypass: Bool = false
     @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
@@ -18,7 +19,7 @@ struct GeraniumApp: App {
         WindowGroup {
             ContentView(tsBypass: $tsBypass, updBypass: $updBypass, loggingAllowed: $loggingAllowed)
                 .onAppear {
-                    if checkSandbox(), !tsBypass, !isFirstRun{
+                    if checkSandbox(), !tsBypass, !isFirstRun, !isInBetaProgram{
                         UIApplication.shared.alert(title:"Geranium wasn't installed with TrollStore", body:"Unable to create test file. The app cannot work without the correct entitlements. Please use TrollStore to install it.", withButton:true)
                     }
                     // thanks sourceloc again
@@ -51,6 +52,9 @@ struct GeraniumApp: App {
                             WelcomeView(loggingAllowed: $loggingAllowed, updBypass: $updBypass)
                         }
                     }
+                }
+                .sheet(isPresented: $isInBetaProgram) {
+                    BetaView()
                 }
         }
     }
