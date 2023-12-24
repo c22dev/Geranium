@@ -14,6 +14,7 @@ struct BetaView: View {
         @State var textPlaceHorder = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
         @State var validation = ""
         @State var isEnrolled = false
+        var timer: Timer?
         VStack {
             Image(uiImage: Bundle.main.icon!)
                 .cornerRadius(10)
@@ -21,7 +22,7 @@ struct BetaView: View {
                 .font(.title2)
                 .bold()
                 .multilineTextAlignment(.center)
-            Text("Please copy your UUID bellow and send it to a developer in charge.")
+            Text("Please copy your UUID and send it to a developer in charge.")
                 .padding()
                 .multilineTextAlignment(.center)
             Text(textPlaceHorder)
@@ -45,15 +46,21 @@ struct BetaView: View {
         }
         .interactiveDismissDisabled()
         .onAppear {
-            isDeviceEnrolled { isPresent in
-                if isPresent {
-                    print("user is in beta program")
-                    isEnrolled = true
+            if isDeviceEnrolled() {
+                print("should quit ?")
+                isEnrolled.toggle()
+                close()
+            }
+            timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
+                if isDeviceEnrolled() {
+                    print("should quit ?")
+                    isEnrolled.toggle()
                     close()
-                } else {
-                    validation = "Your device isn't in the beta program."
                 }
             }
+        }
+        .onDisappear {
+            timer?.invalidate()
         }
     }
     func close() {
@@ -61,28 +68,41 @@ struct BetaView: View {
     }
 }
 
-func isDeviceEnrolled(completion: @escaping (Bool) -> Void) {
+func isDeviceEnrolled() -> Bool {
+    var result = false
+    let semaphore = DispatchSemaphore(value: 0)
+
     let url = URL(string: "https://cclerc.ch/db/geranium/enrolement.txt")!
-    let task = URLSession.shared.dataTask(with: url) { data, response, error in
+    var request = URLRequest(url: url)
+    request.cachePolicy = .reloadIgnoringLocalCacheData
+
+    let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        defer {
+            semaphore.signal()
+        }
+
         if let error = error {
             print("Error: \(error)")
-            completion(false)
             return
         }
+
         guard let data = data else {
             print("No data received")
-            completion(false)
             return
         }
+
         if let fileContent = String(data: data, encoding: .utf8) {
             let vendorID = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
-            let isPresent = fileContent.contains(vendorID)
-            print("user is in beta program")
-            completion(isPresent)
+            result = fileContent.contains(vendorID)
+            if result {
+                print("User is in the beta program")
+            }
         } else {
             print("Failed to convert data to string")
-            completion(false)
         }
     }
+
     task.resume()
+    semaphore.wait()
+    return result
 }
