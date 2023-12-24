@@ -15,6 +15,7 @@ struct CleanerView: View {
     @State var loadingBarStatus = false
     @State var buttonAndSelection = true
     @State var errorDetecteed = false
+    @State var isInfoSheetOn = false
     // sizes
     @State private var safariCacheSize: Double = 0
     @State private var GlobalCacheSize: Double = 0
@@ -207,51 +208,6 @@ struct CleanerView: View {
                     .padding(.trailing, 50)
                     .onAppear {
                         performCleanup()
-                        if safari {
-                            print("safari")
-                            RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix((safariCachePath)))
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                            RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix((safariImgCachePath)))
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                        }
-                        if appCaches {
-                            print("appcaches")
-                            RHResult = deleteContentsOfDirectory(atPath: logmobileCachesPath)
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                            RHResult = deleteContentsOfDirectory(atPath: logCachesPath)
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                            RHResult = deleteContentsOfDirectory(atPath: logsCachesPath)
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                            RHResult = deleteContentsOfDirectory(atPath: tmpCachesPath)
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                            RHResult = deleteContentsOfDirectory(atPath: phototmpCachePath)
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                            RHResult = deleteContentsOfDirectory(atPath: globalCachesPath)
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                        }
-                        if otaCaches {
-                            print("otacaches")
-                            RHResult = deleteContentsOfDirectory(atPath: OTAPath)
-                            if RHResult != "0" {
-                                errorDetecteed = true
-                            }
-                        }
                     }
             }
         }
@@ -264,9 +220,6 @@ struct CleanerView: View {
                 }
             }
         }
-        .onAppear {
-            RootHelper.setPermission(url: URL(fileURLWithPath:OTAPath))
-        }
     }
     func performCleanup() {
         cleanProcess(safari: safari, appCaches: appCaches, otaCaches: otaCaches, batteryUsageDat: batteryUsageDat) { progressHandler in
@@ -276,7 +229,7 @@ struct CleanerView: View {
                     buttonAndSelection.toggle()
                 }
             }
-            if progressAmount < 0 {
+            if (progressAmount < -5) {
                 errorDetecteed = true
             }
         }
