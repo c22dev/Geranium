@@ -17,7 +17,7 @@
 		7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820992B31F109007EEC24 /* LogHelper.swift */; };
 		792845532B2C67910021E1FD /* FileCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845522B2C67910021E1FD /* FileCleaner.swift */; };
 		7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845592B2C80A40021E1FD /* DaemonDisabler.swift */; };
-		793E3D6F2B37AA1300A72671 /* Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E3D6E2B37AA1300A72671 /* Checker.swift */; };
+		793E3D6F2B37AA1300A72671 /* BetaChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E3D6E2B37AA1300A72671 /* BetaChecker.swift */; };
 		795019B92B2B5055008EEC91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795019B82B2B5055008EEC91 /* main.m */; };
 		7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD022B347EEA00FBAB8D /* LocSimView.swift */; };
 		7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD052B3486B100FBAB8D /* CustomMapView.swift */; };
@@ -67,7 +67,7 @@
 		791820992B31F109007EEC24 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		792845522B2C67910021E1FD /* FileCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCleaner.swift; sourceTree = "<group>"; };
 		792845592B2C80A40021E1FD /* DaemonDisabler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonDisabler.swift; sourceTree = "<group>"; };
-		793E3D6E2B37AA1300A72671 /* Checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checker.swift; sourceTree = "<group>"; };
+		793E3D6E2B37AA1300A72671 /* BetaChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaChecker.swift; sourceTree = "<group>"; };
 		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
 		7989FD022B347EEA00FBAB8D /* LocSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocSimView.swift; sourceTree = "<group>"; };
@@ -141,14 +141,6 @@
 			path = Translations;
 			sourceTree = "<group>";
 		};
-		793E3D6D2B37AA0800A72671 /* BetaTest */ = {
-			isa = PBXGroup;
-			children = (
-				793E3D6E2B37AA1300A72671 /* Checker.swift */,
-			);
-			path = BetaTest;
-			sourceTree = "<group>";
-		};
 		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,11 +196,11 @@
 				FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */,
 				FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */,
 				FAA457052B2661AD00FC7287 /* Libs */,
+				793E3D6E2B37AA1300A72671 /* BetaChecker.swift */,
 				FAA456D62B265FEA00FC7287 /* ContentView.swift */,
 				FAA457262B26667E00FC7287 /* HomeView.swift */,
 				790301C42B3794480044E30A /* SettingsView.swift */,
 				79DF26982B31C90C005D81D2 /* WelcomeView.swift */,
-				793E3D6D2B37AA0800A72671 /* BetaTest */,
 				799488A42B347E1100AFFDCF /* LocSim */,
 				FAA4572E2B2666E800FC7287 /* Cleaner */,
 				FAA4572B2B26669B00FC7287 /* The Supviser */,
@@ -422,7 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793E3D6F2B37AA1300A72671 /* Checker.swift in Sources */,
+				793E3D6F2B37AA1300A72671 /* BetaChecker.swift in Sources */,
 				7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */,
 				7916D9E62B34FC06008E88F2 /* Paths.swift in Sources */,
 				7916D9E42B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift in Sources */,

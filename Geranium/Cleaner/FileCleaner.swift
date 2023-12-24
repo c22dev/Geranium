@@ -63,7 +63,7 @@ func deleteContentsOfDirectory(atPath path: String) -> String {
         print(log)
         let log2 = RootHelper.removeItem(at: URL(fileURLWithPath: path))
         log = RootHelper.createDirectory(at: URL(fileURLWithPath: path))
-        print(log)
+        print(log2)
     // set perms again else things won't work properly for mobile registered paths
         log = RootHelper.setPermission(url: URL(fileURLWithPath: path))
         print(log)

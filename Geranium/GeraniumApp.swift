@@ -9,7 +9,7 @@ import SwiftUI
 // TODO: test app on iPadOS 15 iPads
 @main
 struct GeraniumApp: App {
-    @State var isInBetaProgram = true
+    @State var isInBetaProgram = true // MARK: change this value if the build isn't Beta
     @AppStorage("TSBypass") var tsBypass: Bool = false
     @AppStorage("UPDBypass") var updBypass: Bool = false
     @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
@@ -22,11 +22,10 @@ struct GeraniumApp: App {
                     if checkSandbox(), !tsBypass, !isFirstRun, !isInBetaProgram{
                         UIApplication.shared.alert(title:"Geranium wasn't installed with TrollStore", body:"Unable to create test file. The app cannot work without the correct entitlements. Please use TrollStore to install it.", withButton:true)
                     }
-                    // thanks sourceloc again
+                    
                     if !updBypass, let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, let url = URL(string: "https://api.github.com/repos/c22dev/Geranium/releases/latest") {
                         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                             guard let data = data else { return }
-                            
                             if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                                 if (json["tag_name"] as? String)?.replacingOccurrences(of: "v", with: "").compare(version, options: .numeric) == .orderedDescending {
                                     UIApplication.shared.confirmAlert(title: "Update available", body: "Geranium \(json["tag_name"] as? String ?? "update") is available, do you want to install it (you might need to enable Magnifier URL Scheme in TrollStore Settings)?", onOK: {

@@ -276,6 +276,9 @@ struct CleanerView: View {
                     buttonAndSelection.toggle()
                 }
             }
+            if progressAmount < 0 {
+                errorDetecteed = true
+            }
         }
     }
     func calculateDirectorySizeAsync(url: URL, completion: @escaping (Double) -> Void) {

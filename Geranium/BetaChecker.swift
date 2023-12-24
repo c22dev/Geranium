@@ -1,7 +1,8 @@
 //
-//  File.swift
+//  BetaChecker.swift
 //  Geranium
 //
+//  This is used to check if current device is enrolled onto my db.
 //  Created by cclerc on 24.12.23.
 //
 
