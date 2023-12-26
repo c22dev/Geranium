@@ -51,7 +51,16 @@ Want to supervise your device with a custom organization name but don't have a c
 - [sourcelocation](https://github.com/sourcelocation) for his beautiful SwiftUI extensions and functions, helped me a lot ! - My source of information in icon and video editing !
 - [haxi0](https://github.com/haxi0) for his Welcome Page code, copied the part for the disabling. - Always funny
 ### Translators
+- [CySxL](https://twitter.com/CySxL) - 🇨🇳 Chinese (Traditional) - Here from the beginning, even if on iOS 14, thanks !
 - [Defflix](https://twitter.com/Defflix19) - 🇨🇿/🇸🇰 Czech & Slovak - But also one of my greatest friend in the jailbreak community :)
+- [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (Latin America) - Bu t also bug hunter
+- [LeonardoIz](https://twitter.com/penetranteinc) - 🇪🇸 Spanish / 🇮🇹 Italian / Catalan - Casually speak 3 languages
+- [Loy64](https://twitter.com/loy64_) - 🇦🇱 Albanian / 🇮🇹 Italian - Answers faster than light
+- [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - Was locked out of translator group :(
+- [Speedyfriend67](https://twitter.com/speedyfriend67) - 🇰🇷 Korean - Actually speedrunned the translation
+- [Spy_G](https://twitter.com/IshanSharm33634) - 🇸🇪 Swedish - Funny nickname
 - [Straight Tamago](https://twitter.com/straight_tamago) - 🇯🇵 Japenese - Lovely friend that always helps in code !
-- [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (419) - But also bug hunter
-- [ting0441](https://discordapp.com/users/1183594247929208874) - 🇨🇳 Chinese - UI Bug Reporter
+- [ting0441](https://twitter.com/Ting2021) - 🇨🇳 Chinese (Simplified) - UI Bug Reporter
+- [ur.za](https://twitter.com/ChromiumCandy) - 🇯🇵 Japenese - Helped for cleaning terms
+- [W$D$B](https://twitter.com/Alz971) - 🇮🇹 Italian - First to accomplish 100% in translation
+- [yyyywaiwai](https://twitter.com/yyyyyy_public) - 🇯🇵 Japenese - Reviewer but also filled the gaps !
