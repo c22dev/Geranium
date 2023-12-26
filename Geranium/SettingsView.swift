@@ -58,6 +58,7 @@ struct SettingsView: View {
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/1108416506716508190/f89568468ab1d14c781f21c7e7ebf183.webp?size=160", url: "https://twitter.com/straight_tamago", title: "Straight Tamago", description: "🇯🇵 Japanese")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/1183594247929208874/8569adcbd36c70a7578c017bf5604ea5.webp?size=160", url: "https://twitter.com/Ting2021", title: "ting0441", description: "🇨🇳 Chinese (Simplified)")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/795556607445696533/4133219a23c5c19fb69f8805bbd04efd.webp?size=160", url: "https://twitter.com/ChromiumCandy", title: "ur.za", description: "🇯🇵 Japanese")
+                    LinkCell(imageLink: "https://cdn.discordapp.com/avatars/795556607445696533/4133219a23c5c19fb69f8805bbd04efd.webp?size=160", url: "https://twitter.com/Alz971", title: "W$D$B", description: "🇮🇹 Italian")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/709644128685916185/51c2ef8ff5c774f27662753208fa0f67.webp?size=160", url: "https://twitter.com/yyyyyy_public", title: "yyyywaiwai", description: "🇯🇵 Japanese")
                 }
             }
