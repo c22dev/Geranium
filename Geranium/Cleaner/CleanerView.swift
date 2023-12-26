@@ -10,7 +10,8 @@ import SwiftUI
 
 struct CleanerView: View {
     // view stuff
-    @Binding var isTabViewHidden: Bool
+//    @Binding var isTabViewHidden: Bool
+    @State var cleanerTitle = true
     @State var exitStatus = false
     @State var loadingBarStatus = false
     @State var buttonAndSelection = true
@@ -53,7 +54,8 @@ struct CleanerView: View {
                         .foregroundStyle(.green)
                     Button("Exit", action: {
                         withAnimation {
-                            isTabViewHidden.toggle()
+//                            isTabViewHidden = false
+                            cleanerTitle = true
                             progressAmount = 0
                             safariCacheSize = 0
                             GlobalCacheSize = 0
@@ -84,7 +86,8 @@ struct CleanerView: View {
                     Button("Try again", action: {
                         withAnimation {
                             buttonAndSelection = true
-                            isTabViewHidden.toggle()
+//                            isTabViewHidden = false
+                            cleanerTitle = true
                             errorDetecteed.toggle()
                             progressAmount = 0
                             safariCacheSize = 0
@@ -106,7 +109,8 @@ struct CleanerView: View {
                                 print("")
                                 withAnimation {
                                     buttonAndSelection.toggle()
-                                    isTabViewHidden.toggle()
+//                                    isTabViewHidden = true
+                                    cleanerTitle = false
                                 }
                             }, noCancel: false, yes: true)
                         })
@@ -122,7 +126,8 @@ struct CleanerView: View {
                                 print("")
                                 withAnimation {
                                     buttonAndSelection.toggle()
-                                    isTabViewHidden.toggle()
+//                                    isTabViewHidden = true
+                                    cleanerTitle = false
                                 }
                             }, noCancel: false, yes: true)
                         })
@@ -213,7 +218,7 @@ struct CleanerView: View {
         }
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading) {
-                if !isTabViewHidden {
+                if cleanerTitle {
                     Text("Cleaner")
                         .font(.title2)
                         .bold()
