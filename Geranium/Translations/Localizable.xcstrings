@@ -3,6 +3,18 @@
   "strings" : {
     "" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14,11 +26,35 @@
             "state" : "translated",
             "value" : ""
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
         }
       }
     },
     "%@" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30,11 +66,29 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
     "1. Open TrollStore" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Abre TrollStore"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +113,12 @@
             "value" : "1. TrollStoreを開く"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Trollstore 열기"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -81,6 +141,12 @@
     },
     "2. Go to Settings" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Ve a Ajustes"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -105,6 +171,12 @@
             "value" : "2. 設定を開く"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. 설정 열기"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -127,6 +199,12 @@
     },
     "3. Enable URL Scheme" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Activa el esquema de URL"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -151,6 +229,12 @@
             "value" : "3. URL スキームを有効にする"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. URL Schemes 활성화"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -173,6 +257,12 @@
     },
     "Alphabetical" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alphabetical"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -197,6 +287,12 @@
             "value" : "アルファベット順"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "가나다순"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -219,6 +315,12 @@
     },
     "An error occured with the RootHelper." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha habido un error con el RootHelper."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -243,6 +345,12 @@
             "value" : "RootHelperでエラーが発生しました。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelper에서 오류가 발생했습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -265,6 +373,12 @@
     },
     "Battery Usage Data" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datos de uso de la batería"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -289,6 +403,12 @@
             "value" : "バッテリー使用量データ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "배터리 사용량"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -311,6 +431,18 @@
     },
     "Bookmarks" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Marcadores"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bookmarks"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -327,6 +459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ブックマーク"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "북마크"
           }
         },
         "sv" : {
@@ -351,6 +489,12 @@
     },
     "By adding some rules to iOS internals, this software prevents the daemon from launching when you boot your phone. The app lists every running daemon, and you can swipe to the left to remove one of them." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadiendo algunas reglas a los componentes internos de iOS, este software impide que el ”daemon” se ejecute al arrancar el teléfono. La app muestra una lista de todos los ”daemons” en ejecución y puedes deslizar el dedo hacia la izquierda para eliminarlos."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -375,6 +519,12 @@
             "value" : "このソフトウェアは、iOS の内部にいくつかのルールを追加することで、端末の起動時にデーモンが起動するのを防ぎます。 アプリには実行中のすべてのデーモンがリストされ、左にスワイプしてデーモンの 1 つを削除できます。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " iOS 내부에 몇 가지 규칙을 추가함으로써, 이 소프트웨어는 휴대폰을 부팅할 때 데몬이 실행되는 것을 방지합니다. 이 앱은 실행 중인 모든 데몬을 나열하며, 왼쪽으로 스와이프하여 그 중 하나를 제거할 수 있습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -397,6 +547,12 @@
     },
     "Bypass App Update Pop Up" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloquea la ventana de actualización de la aplicación"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -421,6 +577,12 @@
             "value" : "アプリ更新ポップアップを無効化する"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 업데이트 우회"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -443,6 +605,12 @@
     },
     "Bypass TrollStore Pop Up" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloquea la ventana de TrollStore"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -467,6 +635,12 @@
             "value" : "TrollStoreポップアップを無効化する"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trollstore 팝업 우회"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -489,6 +663,12 @@
     },
     "Clean !" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Limpio !"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -513,6 +693,12 @@
             "value" : "クリーン！"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "청소!"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -529,6 +715,12 @@
     },
     "Cleaner" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Limpiador"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -553,6 +745,12 @@
             "value" : "クリーナー"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "클리너"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -569,6 +767,12 @@
     },
     "Credits" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créditos"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -593,6 +797,12 @@
             "value" : "クレジット"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "크레딧"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -615,6 +825,12 @@
     },
     "Daemons" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -627,6 +843,18 @@
             "value" : "Daemons"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "데몬"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -637,6 +865,12 @@
     },
     "Debug Info" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Información de depuración"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -661,6 +895,12 @@
             "value" : "デバッグ情報"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "디버그 정보"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -683,6 +923,12 @@
     },
     "Debug Stuff" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosas de depuración"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -707,6 +953,12 @@
             "value" : "デバッグ関連"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "디버그 장비"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -729,6 +981,12 @@
     },
     "Deleting... %@" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrando… %@"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -753,6 +1011,12 @@
             "value" : "削除中... %@"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "삭제중... %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -775,6 +1039,12 @@
     },
     "Disable" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactiva"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -799,6 +1069,12 @@
             "value" : "無効にする"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비활성화"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -821,6 +1097,12 @@
     },
     "Disable update pop-up" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactiva la ventana de actualización"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -845,6 +1127,12 @@
             "value" : "更新ポップアップを無効にする"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "업데이트 팝업 비활성화"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -867,6 +1155,12 @@
     },
     "Disabled Daemons Manager" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestor de “daemons” desactivado"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -891,6 +1185,12 @@
             "value" : " 無効化されたデーモンの管理"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "데몬 매니저 비활상화"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -913,6 +1213,12 @@
     },
     "DISABLING SYSTEM DAEMONS IS DANGEROUS. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DESACTIVAR LOS ”DAEMONS” DEL SISTEMA ES PELIGROSO. PODRÍA CAUSAR UN BOOTLOOP EN SU DISPOSITIVO. PROCEDA CON PRECAUCIÓN. NO ME HAGO RESPONSABLE DE CUALQUIER PROBLEMA EN SU DISPOSITIVO."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -935,6 +1241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "システムデーモンを無効にするのは危険です。デバイスをブートループさせる可能性があります。注意して作業を進めてください。 私はあなたのデバイスのいかなる問題にも責任を負いません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시스템 데몬을 비활성화할 경우 기기가 부트루프할 수 있습니다. 이에 발생하는 문제에 대해 책임지지 않습니다."
           }
         },
         "sv" : {
@@ -960,6 +1272,12 @@
     "DISABLING SYSTEM DAEMONS IS NOT RECOMMENDED. YOU COULD BOOTLOOP YOUR DEVICE. PROCEED WITH CAUTION. I AM NOT RESPONSIBLE FOR ANY PROBLEM ON YOUR DEVICE." : {
       "extractionState" : "stale",
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NO SE RECOMIENDA DESACTIVAR LOS ”DAEMONS” DEL SISTEMA. PODRÍA CAUSAR BOOTLOOP EN SU DISPOSITIVO. PROCEDA CON PRECAUCIÓN. NO ME HAGO RESPONSABLE DE CUALQUIER PROBLEMA EN SU DISPOSITIVO."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -984,6 +1302,12 @@
             "value" : "システムデーモンを無効にすることはお勧めしません。デバイスをブートループさせる可能性があります。注意して作業を進めてください。 私はあなたのデバイスのいかなる問題にも責任を負いません。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기기가 부트루프할 수 있기 때문에, 시스템 데몬을 비활성화하는 것을 권장하지 않습니다. 비활성화함으로써 발생하는 문제에 대해 책임지지 않습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1006,6 +1330,12 @@
     },
     "Dismiss" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desestimar"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1030,6 +1360,12 @@
             "value" : "閉じる"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1046,6 +1382,12 @@
     },
     "Done !" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo !"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1070,6 +1412,12 @@
             "value" : "完了！"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "완료 !"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1092,6 +1440,12 @@
     },
     "Enable" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1116,6 +1470,12 @@
             "value" : "有効にする"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "활성화"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1138,6 +1498,12 @@
     },
     "Enable log collection" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar la recopilación de registros"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1162,6 +1528,12 @@
             "value" : "ログ保存を有効にする"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "로그 수집 활성화"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1184,6 +1556,12 @@
     },
     "Enable logging" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar el registro"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1208,6 +1586,12 @@
             "value" : "ログ収集を有効にする"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "로깅 활성화"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1230,6 +1614,12 @@
     },
     "Enter organisation name..." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introducir el nombre de la organización..."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1254,6 +1644,12 @@
             "value" : "組織名を入力"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "조직 이름 입력..."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1276,6 +1672,12 @@
     },
     "Error !" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error !"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1300,6 +1702,12 @@
             "value" : "エラー！"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오류 !"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1322,6 +1730,12 @@
     },
     "Exit" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1346,6 +1760,12 @@
             "value" : "終了"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "나가기"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1368,6 +1788,12 @@
     },
     "General Caches" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachés generales"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1392,6 +1818,12 @@
             "value" : "一般的なキャッシュ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일반 캐시"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1414,6 +1846,12 @@
     },
     "Geranium" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1427,6 +1865,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geranium"
@@ -1448,6 +1892,12 @@
     },
     "Hi ! SE 1 User" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hola ! SE 1 Usuario"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1472,6 +1922,12 @@
             "value" : "こんにちは！SE 1ユーザー"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "안녕하세요! SE 1 사용자"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1494,6 +1950,12 @@
     },
     "Home" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1510,6 +1972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ホーム"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "홈"
           }
         },
         "sv" : {
@@ -1534,6 +2002,12 @@
     },
     "If you want to enable auto-update, you need to turn on Magnifier URL Scheme in TrollStore." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si quieres activar las actualizaciones automáticas, necesitas activar el esquema de URL Magnifier en TrollStore."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1558,6 +2032,12 @@
             "value" : "自動更新を有効にするには、TrollStoreのMagnifier URL Schemeをオンにする必要があります。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자동 업데이트를 활성화하려면, TrollStore에서 Magnifier URL Scheme을 켜야 합니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1580,6 +2060,12 @@
     },
     "If you want to revert any of your choice, you should go into the manager (list icon next to the apply icon), where you can toggle disabled daemons." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si quieres revertir alguna de tus elecciones, debes ir al gestor (icono de lista junto al icono de aplicar), donde puedes alterar los ”daemons” deshabilitados."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1604,6 +2090,12 @@
             "value" : "選択したデーモンを元に戻したい場合は、マネージャー（適用アイコンの隣にあるリストアイコン）を開き、そこで無効化されたデーモンを切り替えることができます。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정을 되돌리고 싶다면, 비활성화된 데몬을 전환할 수 있는 관리자(적용 아이콘 옆의 목록 아이콘)로 이동해야 합니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1626,6 +2118,12 @@
     },
     "Is the user running an iPad on iPadOS 16 : no" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El usuario tiene un iPad con iPadOS 16 : no"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1650,6 +2148,12 @@
             "value" : "iPadOS 16のiPadを使用していますか？：いいえ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용자가 iPadOS 16에서 iPad를 실행하고 있나요? : 아니요"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1672,6 +2176,12 @@
     },
     "Is the user running an iPad on iPadOS 16 : yes" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El usuario tiene un iPad con iPadOS 16 : si"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1696,6 +2206,12 @@
             "value" : "iPadOS 16のiPadを使用していますか？：はい"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용자가 iPadOS 16에서 iPad를 실행하고 있나요? : 예"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1718,6 +2234,12 @@
     },
     "It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI issues. Please excuse me in advance." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parece que estás utilizando la aplicación en un iPhone SE 2016 (1ª generación). Podrías encontrarte con serios problemas de interfaz de usuario. Perdon de antemano."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1740,6 +2262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "iPhone SE 2016（第1世代）でアプリを使用しているようです。重大なUIの問題が発生する可能性があります。 あらかじめご了承ください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone SE 2016(1세대)에서 앱을 사용하고 있는 것으로 확인됩니다. 심각한 UI 문제가 발생할 수 있습니다. 미리 양해 부탁드립니다."
           }
         },
         "sv" : {
@@ -1770,6 +2298,12 @@
             "value" : "Latitude: %1$lf Longitude: %2$lf"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitud: %1$lf Longitud: %2$lf"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1794,6 +2328,12 @@
             "value" : "緯度: %1$lf 経度: %2$lf"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "위도: %1$lf 경도: %2$lf"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1816,6 +2356,12 @@
     },
     "LocSim" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1840,6 +2386,12 @@
             "value" : "LocSim"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1856,6 +2408,12 @@
     },
     "Log Collection" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colección de logs"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1880,6 +2438,12 @@
             "value" : "ログ保存"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "로그 수집"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1902,6 +2466,12 @@
     },
     "Logging Settings" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes de logging"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1926,6 +2496,12 @@
             "value" : "ログ収集設定"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "로깅 설정"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1948,6 +2524,12 @@
     },
     "made by c22dev" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hecho por c22dev"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1972,6 +2554,12 @@
             "value" : "c22devによって作成されました"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제작자 : c22dev"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1994,6 +2582,12 @@
     },
     "Manage" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestionar"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2018,6 +2612,12 @@
             "value" : "管理"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "관리"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2040,6 +2640,12 @@
     },
     "No bookmarks saved." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin marcadores guardados."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2064,6 +2670,12 @@
             "value" : "ブックマークは保存されていません。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저장된 북마크가 없습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2086,6 +2698,12 @@
     },
     "Notice" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aviso"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2110,6 +2728,12 @@
             "value" : "お知らせ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "안내"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2132,6 +2756,12 @@
     },
     "OTA Update Caches" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachés de actualización OTA"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2156,6 +2786,12 @@
             "value" : "OTAアップデートキャッシュ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OTA 업데이트 캐시"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2178,6 +2814,12 @@
     },
     "PID: %@" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2202,6 +2844,12 @@
             "value" : "PID: %@"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2218,6 +2866,12 @@
     },
     "Please copy your UUID and send it to a developer in charge." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, copie su UUID y envíelo a un desarrollador."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2236,6 +2890,12 @@
             "value" : "あなたのUUIDをコピーし、開発者に送ってください。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기기 UUID를 복사해서 담당 개발자에게 보내주세요."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2252,6 +2912,12 @@
     },
     "Please note" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atención"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2276,6 +2942,12 @@
             "value" : "注意"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "참고하세요"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2298,6 +2970,12 @@
     },
     "Purpose" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objetivo"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2322,6 +3000,12 @@
             "value" : "目的"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "목적"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2344,6 +3028,12 @@
     },
     "Rebuild Icon Cache" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconstruir caché de iconos"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2368,6 +3058,12 @@
             "value" : "アイコンキャッシュの再構築"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아이콘 캐시 재구축"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2390,6 +3086,12 @@
     },
     "Respring" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2403,6 +3105,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Respring"
@@ -2424,6 +3132,12 @@
     },
     "RootHelper Path : %@" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruta de RootHelper : %@"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2448,6 +3162,12 @@
             "value" : "RootHelperパス : %@"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelper 경로 : %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2470,6 +3190,12 @@
     },
     "Safari Cache Path : %@" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruta de la caché de Safari : %@"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2494,6 +3220,12 @@
             "value" : "Safariキャッシュパス : %@"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safari 캐시 경로 : %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2516,6 +3248,12 @@
     },
     "Safari Caches" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachés de Safari"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2540,6 +3278,12 @@
             "value" : "Safariキャッシュ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safari 캐시"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2562,6 +3306,12 @@
     },
     "Save" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2586,6 +3336,12 @@
             "value" : "保存"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저장"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2608,6 +3364,12 @@
     },
     "Search a currently running daemon..." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar un “daemon” en ejecución..."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2632,6 +3394,12 @@
             "value" : "現在実行中のデーモンを検索..."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "현재 실행 중인 데몬을 검색하세요..."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2654,6 +3422,12 @@
     },
     "Settings" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2678,6 +3452,12 @@
             "value" : "設定"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2700,6 +3480,12 @@
     },
     "Setup" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurar"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2724,6 +3510,12 @@
             "value" : "セットアップ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "셋업"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2746,6 +3538,12 @@
     },
     "Startup Settings" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes iniciales"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2770,6 +3568,12 @@
             "value" : "スタートアップ設定"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시작 설정"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2792,6 +3596,18 @@
     },
     "Supervise" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar supervisión"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervise"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2803,11 +3619,29 @@
             "state" : "translated",
             "value" : "Supervise"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervise"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervise"
+          }
         }
       }
     },
     "Superviser" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervisor"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2825,11 +3659,29 @@
             "state" : "translated",
             "value" : "Supervisore"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superviser"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "감독자"
+          }
         }
       }
     },
     "Thanks to all those amazing translators !" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Gracias a todos esos increíbles traductores!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2854,6 +3706,12 @@
             "value" : "素晴らしい翻訳者の方々に感謝します！"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "번역에 도움 주신 모든 분께 감사드립니다 !"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2876,6 +3734,12 @@
     },
     "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta es una lista de todos los “daemons” actualmente desactivados. No modifiques lo que no hayas cambiado tu. Los cambiados son los deshabilitados."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2900,6 +3764,12 @@
             "value" : "これは、現在無効になっているすべてのデーモンのリストです。 変更していないものはそのままにしてください。 切り替えられたものは無効になっています。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "현재 비활성화된 모든 데몬의 목록입니다. 바꾸지 않은 것을 바꾸지 마십시오. 토글된 것은 비활성화된 것입니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2922,6 +3792,12 @@
     },
     "This setting allows you to see experimental values from some app variables." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este ajuste te permite ver valores experimentales de algunas variables de la app."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2946,6 +3822,12 @@
             "value" : "この設定により、一部のアプリ変数の実験値を確認できるようになります。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 설정은 일부 앱 변수에서 실험 값을 볼 수 있습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2968,6 +3850,12 @@
     },
     "This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esto personalizará las ventanas emergentes de inicio de la aplicación. Útil para depurar en el simulador o para betas."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2992,6 +3880,12 @@
             "value" : "これにより、アプリの起動ポップアップがパーソナライズされます。 シミュレータまたはベータ版でのデバッグに役立ちます。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 시작 팝업을 개인화합니다. 시뮬레이터나 베타 디버깅할 때 유용합니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3014,6 +3908,12 @@
     },
     "To add a bookmark, select a custom location then tap the + button." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para añadir un marcador, seleccione una ubicación personalizada y, a continuación, pulse el botón +."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3038,6 +3938,12 @@
             "value" : "ブックマークを追加するには、追加したい場所を選択して、+ ボタンをタップします。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "북마크를 추가하려면, 사용자 지정 위치를 선택한 다음 + 버튼을 누르세요."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3060,6 +3966,12 @@
     },
     "Translators" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traductores"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3084,6 +3996,12 @@
             "value" : "翻訳者"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "번역가"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3106,6 +4024,12 @@
     },
     "Try again" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inténtalo de nuevo"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3130,6 +4054,12 @@
             "value" : "再試行"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다시 시도하세요"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3152,6 +4082,12 @@
     },
     "Understood" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entendido"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3176,6 +4112,12 @@
             "value" : "理解しました"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "확인함"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3198,6 +4140,12 @@
     },
     "Unsupervise" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quitar supervisión"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3209,11 +4157,29 @@
             "state" : "translated",
             "value" : "Unsupervise"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unsupervise"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unsupervise"
+          }
         }
       }
     },
     "Update Warnings" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar avisos"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3238,6 +4204,12 @@
             "value" : "アップデートの警告"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "업데이트 경고"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3254,6 +4226,12 @@
     },
     "WARNING" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRECAUCIÓN"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3278,6 +4256,12 @@
             "value" : "警告"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "경고"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3300,6 +4284,12 @@
     },
     "We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recopilamos algunos registros que se cargan en nuestro servidor para corregir errores y hacer frente a los registros de accidentes. Los registros nunca contienen información personal, sólo el tipo de dispositivo y el registro de fallos. También recopilamos información de medición para ver qué es lo que más se utiliza en la aplicación. Puedes elegir si quieres evitar que se envíe CUALQUIER dato a nuestro servidor."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3324,6 +4314,12 @@
             "value" : "私たちは、バグを修正し、クラッシュログに対処するためにいくつかのログを収集し、サーバーに送信します。このログには、あなたの個人情報は一切含まれず、デバイスの種類とクラッシュログのみが含まれます。また、アプリ内で何が最も使用されたかを確認するための利用状況も収集します。サーバーに送信されるデータは自分で選択することができます。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "버그를 수정하고 충돌 로그를 해결하기 위해 서버에 업로드된 로그를 수집합니다. 로그에는 개인 정보가 포함되지 않으며, 기종 정보와 충돌 로그 자체만 포함됩니다. 또한 앱에서 가장 많이 사용되는 기능을 확인하기 위해 측정 정보를 수집합니다. 데이터가 서버로 전송되는 것을 원치 않으면 거절할 수 있습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3346,6 +4342,12 @@
     },
     "Welcome to Geranium Beta Testing Program" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido al programa de pruebas beta de Geranium"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3364,6 +4366,12 @@
             "value" : "Geraniumのベータテストへようこそ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium 베타 테스트 프로그램에 오신 것을 환영합니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3380,6 +4388,12 @@
     },
     "Welcome to Geranium, a toolbox for TrollStore that allows you to disable some daemons, simulate your location, clean your phone's storage and other. We need to configure a few things before you can use the app. This will only take a minute. You will still be able to change the settings later." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido a Geranium, una toolbox para TrollStore que te permite desactivar algunos ”daemons”, simular tu ubicación, limpiar el almacenamiento de tu teléfono y otras cosas. Necesitamos configurar algunas cosas antes de que puedas usar la aplicación. Esto sólo te llevará un minuto. Podrás cambiar la configuración más tarde."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3404,6 +4418,12 @@
             "value" : "Geranium へようこそ。これは、一部のデーモンを無効にしたり、位置情報をシミュレートしたり、携帯電話のストレージをクリーンアップしたりできる TrollStore のツールボックスです。 アプリを使用する前に、いくつかの設定を行う必要があります。 これには 1 分しかかかりません。 設定は後で変更することもできます。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "데몬을 비활성화하고, 모의 위치를 설정하고, 휴대폰의 저장 공간을 청소할 수 있는 TrollStore의 도구 상자인 Geranium에 오신 것을 환영합니다. 앱을 사용하기 전에 몇 가지를 구성해야 합니다. 1분밖에 걸리지 않습니다. 추후에도 설정을 변경할 수 있습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3426,6 +4446,12 @@
     },
     "Welcome!" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3450,6 +4476,12 @@
             "value" : "ようこそ！"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "환영합니다!"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3472,6 +4504,12 @@
     },
     "When a new update is published, you will receive a pop-up on app launch asking you if you want to update. You can prevent this from hapenning" : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando se publique una nueva actualización, aparecerá una ventana emergente al iniciar la aplicación preguntándole si desea actualizarla. Puedes evitar que esto ocurra."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3496,6 +4534,12 @@
             "value" : "新しいアップデートが公開されると、アプリの起動時にアップデートするかどうかを尋ねるポップアップが表示されます。 表示しないようにすることもできます"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새 업데이트가 출시되면, 앱 실행 시 업데이트 팝업이 표시됩니다. 이것을 비활성화할 수 있습니다."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3518,6 +4562,12 @@
     },
     "You might want to quit and go back in the app." : {
       "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puede que quieras salir y volver a la aplicación."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3534,6 +4584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一度アプリを終了し、再度開いてみてください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "종료하고 앱으로 돌아가고 싶을 수도 있습니다."
           }
         },
         "sv" : {
