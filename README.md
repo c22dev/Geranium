@@ -53,7 +53,7 @@ Want to supervise your device with a custom organization name but don't have a c
 ### Translators
 - [CySxL](https://twitter.com/CySxL) - 🇨🇳 Chinese (Traditional) - Here from the beginning, even if on iOS 14, thanks !
 - [Defflix](https://twitter.com/Defflix19) - 🇨🇿/🇸🇰 Czech & Slovak - But also one of my greatest friend in the jailbreak community :)
-- [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (Latin America) - Bu t also bug hunter
+- [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (Latin America) - Also bug hunter
 - [LeonardoIz](https://twitter.com/penetranteinc) - 🇪🇸 Spanish / 🇮🇹 Italian / Catalan - Casually speak 3 languages
 - [Loy64](https://twitter.com/loy64_) - 🇦🇱 Albanian / 🇮🇹 Italian - Answers faster than light
 - [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - Was locked out of translator group :(
