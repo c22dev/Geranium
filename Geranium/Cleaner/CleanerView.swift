@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct CleanerView: View {
+    // TODO: rewrite.
     // view stuff
 //    @Binding var isTabViewHidden: Bool
     @State var cleanerTitle = true
