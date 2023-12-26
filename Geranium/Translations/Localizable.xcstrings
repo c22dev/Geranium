@@ -8,6 +8,12 @@
             "state" : "translated",
             "value" : ""
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
         }
       }
     },
@@ -17,6 +23,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : ""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
           }
         }
       }
@@ -35,10 +47,34 @@
             "value" : "1. Ouvrez TrollStore"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Apri TrollStore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. TrollStoreを開く"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Öppna TrollStore"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1.打开TrollStore"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. 打開您的TrollStore app"
           }
         }
       }
@@ -57,10 +93,34 @@
             "value" : "2. Rendez vous dans Settings"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Vai nelle impostazioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. 設定を開く"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Gå till Inställningar"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "2.转到设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. 點擊右下角的Settings頁籤"
           }
         }
       }
@@ -79,10 +139,34 @@
             "value" : "3. Activez l'URL Scheme"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Abilita lo schema URL"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. URL スキームを有効にする"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Aktivera URL-schema"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "3. 激活 \"URL SCHEME\"。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. 將URL Scheme Enabled的開關設為：開啟"
           }
         }
       }
@@ -101,10 +185,34 @@
             "value" : "Alphabétique"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alfabetico"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アルファベット順"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alfabetisk"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "按字母顺序的"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "依照字母順序排列"
           }
         }
       }
@@ -123,10 +231,34 @@
             "value" : "Une erreur s'est produite avec le RootHelper"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si è verificato un errore con RootHelper"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelperでエラーが発生しました。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett fel uppstod med RootHelper."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RootHelper出现错误。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelper花生錯誤了!!"
           }
         }
       }
@@ -145,10 +277,34 @@
             "value" : "Données Batterie"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dati utilizzo batteria"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バッテリー使用量データ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data om batterianvändning"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "电池使用数据"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "電池使用數據"
           }
         }
       }
@@ -161,10 +317,34 @@
             "value" : "Favoris"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segnalibri"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブックマーク"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bokmärken"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "书签"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已儲存的地點"
           }
         }
       }
@@ -183,10 +363,34 @@
             "value" : "En ajoutant des règles à iOS, cette application empêche le daemon de démarrer quand votre iPhone se lance. Cette application liste tous les daemons en cours, et vous pouvez les glisser vers la droite pour en enlever."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungendo alcune regole alle funzionalità interne di iOS, questo software impedisce l'avvio del daemon all'avvio del telefono. L'app elenca tutti i daemon in esecuzione e puoi scorrere verso sinistra per rimuoverne uno."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このソフトウェアは、iOS の内部にいくつかのルールを追加することで、端末の起動時にデーモンが起動するのを防ぎます。 アプリには実行中のすべてのデーモンがリストされ、左にスワイプしてデーモンの 1 つを削除できます。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genom att lägga till några regler i iOS interna funktioner förhindrar programvaran att daemonen startas när du startar telefonen. Appen listar alla daemon som körs och du kan svepa åt vänster för att ta bort en av dem."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "通过在iOS内部添加一些规则，该软件可以防止守护进程在您启动手机时启动。该应用程序列出了每个正在运行的守护进程，您可以向左滑动以删除其中一个。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "藉由在iOS內部加入一些規則，此軟體能夠避免特定進程(Daemon)在開機時自動執行。下方列出了所有正在運行的進程，您可以從右向左滑來停用。"
           }
         }
       }
@@ -205,10 +409,34 @@
             "value" : "Contourner le Pop Up de Mise à Jour de l'App"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggira il pop up dell'aggiornamento dell'app"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリ更新ポップアップを無効化する"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bypass popup-fönster för app-uppdatering"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "旁路应用程序更新弹出窗口"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用當App有新版本時的提示"
           }
         }
       }
@@ -227,10 +455,34 @@
             "value" : "Contourner le Pop Up TrollStore"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggira il pop up di TrollStore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TrollStoreポップアップを無効化する"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kringgå TrollStore popup-fönster"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "避开 TrollStore 弹出窗口"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止提示此App並非由TrollStore安裝"
           }
         }
       }
@@ -249,10 +501,28 @@
             "value" : "Nettoyer !"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulisci!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリーン！"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "干净！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始清理！"
           }
         }
       }
@@ -271,10 +541,28 @@
             "value" : "Nettoyeur"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulitore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリーナー"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "清洁工"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理器"
           }
         }
       }
@@ -293,10 +581,34 @@
             "value" : "Crédits"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crediti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クレジット"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krediter"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "学分"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鳴謝"
           }
         }
       }
@@ -307,6 +619,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daemons"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進程"
           }
         }
       }
@@ -325,10 +649,34 @@
             "value" : "Info de déboggage"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni di debug"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デバッグ情報"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felsökningsinformation"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "调试信息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "除錯資訊"
           }
         }
       }
@@ -347,10 +695,34 @@
             "value" : "Paramètres de Déboggage"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Materiale Debug"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デバッグ関連"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felsökningsinformation"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "调试东西"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "除錯工具"
           }
         }
       }
@@ -369,10 +741,34 @@
             "value" : "Suppression... %@"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancellando...%@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除中... %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera... %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "删除... %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在清理中... %@"
           }
         }
       }
@@ -391,7 +787,31 @@
             "value" : "Désactiver"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabilita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無効にする"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inaktivera"
+          }
+        },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "停用"
@@ -413,10 +833,34 @@
             "value" : "Désactiver le pop-up de mise à jour"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabilita il pop up dell'aggiornamento"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新ポップアップを無効にする"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inaktivera pop-up för uppdatering"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "禁用更新弹出窗口"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用當App有新版本時的提示"
           }
         }
       }
@@ -435,10 +879,34 @@
             "value" : "Gestionnaire de démons désactivés"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestore daemons disabilitati"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " 無効化されたデーモンの管理"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inaktiverad Daemons-hanterare"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "禁用守护程序管理器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已停用進程管理器"
           }
         }
       }
@@ -457,10 +925,34 @@
             "value" : "DESACTIVER DES DAEMONS SYSTÈME PEUT-ÊTRE DANGEREUX. VOUS POURREZ BRIQUER VOTRE APPAREIL. PROCEDEZ AVEC PRUDENCE. JE NE SUIS PAS RESPONSABLE POUR N'IMPORTE QUEL PROBLÈME SUR VOTRE APPAREIL."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DISABILITARE I DAEMON DI SISTEMA È PERICOLOSO. POTRESTI BOOTLOOPARE IL TUO DISPOSITIVO. PROCEDI CON CAUTELA. NON SONO RESPONSABILE PER ALCUN PROBLEMA SUL TUO DISPOSITIVO."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システムデーモンを無効にするのは危険です。デバイスをブートループさせる可能性があります。注意して作業を進めてください。 私はあなたのデバイスのいかなる問題にも責任を負いません。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ATT INAKTIVERA SYSTEMDAEMONER ÄR FARLIGT. DU KAN STARTA UPP DIN ENHET. FORTSÄTT MED FÖRSIKTIGHET. JAG ÄR INTE ANSVARIG FÖR EVENTUELLA PROBLEM PÅ DIN ENHET."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "禁用系统进程很危险。请谨慎操作。我对您的设备出现的任何问题概不负责。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️停用系統進程非常危險⚠️\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
           }
         }
       }
@@ -480,10 +972,34 @@
             "value" : "DESACTIVER DES DAEMONS SYSTEMES N'EST PAS RECOMMENDÉ. BOOTLOOP RISK."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DISABILITARE I DAEMON DI SISTEMA NON È CONSIGLIATO. POTRESTI BOOTLOOPARE IL TUO DISPOSITIVO. PROCEDI CON CAUTELA. NON SONO RESPONSABILE PER ALCUN PROBLEMA SUL TUO DISPOSITIVO."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システムデーモンを無効にすることはお勧めしません。デバイスをブートループさせる可能性があります。注意して作業を進めてください。 私はあなたのデバイスのいかなる問題にも責任を負いません。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DET REKOMMENDERAS INTE ATT INAKTIVERA SYSTEMDAEMONER. DU KAN STARTA UPP DIN ENHET. FORTSÄTT MED FÖRSIKTIGHET. JAG ÄR INTE ANSVARIG FÖR EVENTUELLA PROBLEM PÅ DIN ENHET."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "不建议禁用系统守护系统。您可以引导您的设备。谨慎进行。对于您设备上的任何问题，我概不负责。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "若您並非進階使用者，強烈建議您不要停用任何進程。\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
           }
         }
       }
@@ -500,6 +1016,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarta"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avskeda"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
           }
         }
       }
@@ -518,7 +1058,31 @@
             "value" : "Terminé !"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fatto!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了！"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klar"
+          }
+        },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成！"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "完成！"
@@ -540,10 +1104,34 @@
             "value" : "Activer"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abilita"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有効にする"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivera"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "启动"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用"
           }
         }
       }
@@ -562,10 +1150,34 @@
             "value" : "Activer la collection de logs"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abilita il collezionamento dei log"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログ保存を有効にする"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivera insamling av loggar"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "启用日志收集"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用收集Log紀錄"
           }
         }
       }
@@ -584,10 +1196,34 @@
             "value" : "Activer le logging"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autorizzare la logging"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログ収集を有効にする"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivera loggning"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "启用日志记录"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用Log紀錄"
           }
         }
       }
@@ -606,10 +1242,34 @@
             "value" : "Entrez un nom d'organisation..."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci il nome dell'organizzazione..."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "組織名を入力"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ange organisationens namn..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "输入组织名称..."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在此輸入客製化機構名稱..."
           }
         }
       }
@@ -628,10 +1288,34 @@
             "value" : "Erreur !"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Errore!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー！"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fel!"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "错误！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錯誤！"
           }
         }
       }
@@ -650,10 +1334,34 @@
             "value" : "Quitter"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esci"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "終了"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utgång"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "退出"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "離開"
           }
         }
       }
@@ -672,10 +1380,34 @@
             "value" : "Caches Généraux"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cache generali"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般的なキャッシュ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allmänna cacher"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "一般缓存"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常規緩存"
           }
         }
       }
@@ -683,6 +1415,30 @@
     "Geranium" : {
       "localizations" : {
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geranium"
@@ -704,10 +1460,34 @@
             "value" : "Bonjour, utilisateur d'iPhone SE 1 !"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciao! Utente SE 1"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "こんにちは！SE 1ユーザー"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hej ! SE 1 Användare"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "嗨！SE 1 用户"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "嗨！我是SE 1代(2016)的使用者"
           }
         }
       }
@@ -720,10 +1500,34 @@
             "value" : "Menu"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hem"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "主页"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首頁"
           }
         }
       }
@@ -742,10 +1546,34 @@
             "value" : "Si vous souhaitez activer la mise à jour auto de l'app, vous devez activer l'URL Scheme Magnifier dans TrollStore."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se desideri abilitare l'aggiornamento automatico, devi attivare lo schema URL Magnifier in TrollStore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動更新を有効にするには、TrollStoreのMagnifier URL Schemeをオンにする必要があります。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du vill aktivera automatisk uppdatering måste du aktivera Magnifier URL Scheme i TrollStore."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "如果您想启用自动更新，您需要在TrollStore中打开URLScheme方案。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "若您想要啟用自動更新本App，請至TrollStore中啟用Magnifier URL Scheme。"
           }
         }
       }
@@ -764,10 +1592,34 @@
             "value" : "Si vous souhaitez revenir sur l'un de vos choix, vous devez aller dans le gestionnaire (icône de liste à côté de l'icône de validation), où vous pouvez ré-activer les démons désactivés."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se desideri ripristinare una delle tue scelte, dovresti andare nel gestore (icona dell'elenco accanto all'icona di applicazione), dove puoi attivare/disattivare i daemons disabilitati."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択したデーモンを元に戻したい場合は、マネージャー（適用アイコンの隣にあるリストアイコン）を開き、そこで無効化されたデーモンを切り替えることができます。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du vill ångra något av dina val bör du gå in i hanteraren (listikonen bredvid tillämpningsikonen), där du kan växla till inaktiverade daemons."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "如果您想恢复任何选择，您应该进入管理器（应用图标旁边的列表图标），在那里您可以切换禁用的守护程序。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "若您想要恢復已做更動，請至右上方的「清單」按鈕（於打勾按鈕的左側）內，便可以管理您已停用的進程。"
           }
         }
       }
@@ -786,10 +1638,34 @@
             "value" : "Cet utilisateur est-il un iPad sur iPadOS 16 : non"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'utente utilizza un iPad su iPadOS 16: no"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPadOS 16のiPadを使用していますか？：いいえ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kör användaren en iPad med iPadOS 16: nej"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "用户是否在iPadOS 16上运行iPad：否"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "當前使用者正在使用iPadOS 16：否"
           }
         }
       }
@@ -808,10 +1684,34 @@
             "value" : "Cet utilisateur est-il un iPad sur iPadOS 16 : oui"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'utente utilizza un iPad su iPadOS 16: si"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPadOS 16のiPadを使用していますか？：はい"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kör användaren en iPad med iPadOS 16: ja"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "用户是否在iPadOS 16上运行iPad：是的"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "當前使用者正在使用iPadOS 16：是"
           }
         }
       }
@@ -830,10 +1730,34 @@
             "value" : "Il semble que vous utilisez un iPhone SE 2016 (1ere génération). Vous pourrez rencontrer des problèmes d'interface. Veuillez m'en excuser."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sembra che tu stia utilizzando l'app su un iPhone SE 2016 (1a generazione). Potresti riscontrare seri problemi di interfaccia utente. Per favore, scusatemi in anticipo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone SE 2016（第1世代）でアプリを使用しているようです。重大なUIの問題が発生する可能性があります。 あらかじめご了承ください。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det verkar som om du använder appen på en iPhone SE 2016 (1:a generationen). Du kan stöta på allvarliga problem med användargränssnittet. Vänligen ursäkta mig i förväg."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "看起来您正在iPhone SE 2016（第1代）上使用该应用程序。您可能会遇到严重的用户界面问题。请提前原谅我。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "若您使用的是iPhone SE 2016(一代)，您可能會遇到一些介面上的小問題，非常抱歉。"
           }
         }
       }
@@ -858,10 +1782,34 @@
             "value" : "Latitude: %1$lf Longitude: %2$lf"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitudine: %1$lf Longitudine: %2$lf"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緯度: %1$lf 経度: %2$lf"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitud: %1$lf Longitud: %2$lf"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "纬度：%1$lf 经度：%2$lf"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緯度: %1$lf 經度: %2$lf"
           }
         }
       }
@@ -875,6 +1823,30 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "LocSim"
@@ -896,10 +1868,34 @@
             "value" : "Collection de Logs"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collezione dei log"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログ保存"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logsamling"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "日志收集"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log紀錄收集"
           }
         }
       }
@@ -918,10 +1914,34 @@
             "value" : "Paramètres de Logging"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parametri di logging"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログ収集設定"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar för loggning"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "日志记录设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "記錄收集設定"
           }
         }
       }
@@ -940,10 +1960,34 @@
             "value" : "créé par c22dev"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "creato da c22dev"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "c22devによって作成されました"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillverkad av c22dev"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "由c22dev制作"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "c22dev 傾心製作❤️"
           }
         }
       }
@@ -962,7 +2006,31 @@
             "value" : "Gérer"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestisci"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hantera"
+          }
+        },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "管理"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "管理"
@@ -984,10 +2052,34 @@
             "value" : "Aucun favori sauvegardé."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun segnalibro salvato."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブックマークは保存されていません。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga bokmärken sparade."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "没有保存书签。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未有已儲存的地點"
           }
         }
       }
@@ -1006,10 +2098,34 @@
             "value" : "Notice"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お知らせ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meddelande"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "正式通知"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注意"
           }
         }
       }
@@ -1028,10 +2144,34 @@
             "value" : "Caches de MàJ OTA"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cache aggiornamento OTA"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OTAアップデートキャッシュ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cacher för OTA-uppdatering"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OTA更新缓存"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OTA更新緩存"
           }
         }
       }
@@ -1049,11 +2189,66 @@
             "state" : "translated",
             "value" : "PID: %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
         }
       }
     },
     "Please copy your UUID and send it to a developer in charge." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez copier votre UUID et l'envoyer à un développeur responsable."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per favore, copia il tuo UUID e invialo al tuo svilippatore incaricato."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたのUUIDをコピーし、開発者に送ってください。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vänligen kopiera ditt UUID och skicka det till en ansvarig utvecklare."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請複製您的UUID並傳送給開發者其中之一"
+          }
+        }
+      }
     },
     "Please note" : {
       "localizations" : {
@@ -1069,10 +2264,34 @@
             "value" : "A noter"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per favore, nota che"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注意"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vänligen notera"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "请注意"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請謹記"
           }
         }
       }
@@ -1091,10 +2310,34 @@
             "value" : "Objectif"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scopo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目的"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Syfte"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "目标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目的"
           }
         }
       }
@@ -1113,10 +2356,34 @@
             "value" : "Reconstruir le cache d'icônes"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricostruisci Icon Cache"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイコンキャッシュの再構築"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återuppbygga ikoncache"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "重建图标缓存"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重建圖標緩存"
           }
         }
       }
@@ -1127,6 +2394,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Respring"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新載入主畫面"
           }
         }
       }
@@ -1145,10 +2436,34 @@
             "value" : "Path du RootHelper : %@"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Percorso RootHelper : %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelperパス : %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelper sökväg : %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RootHelper路径：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RootHelper 路徑 : %@"
           }
         }
       }
@@ -1167,10 +2482,34 @@
             "value" : "Path des caches de Safari : %@"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Percorso cache Safari : %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safariキャッシュパス : %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sökväg till Safari-cache : %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Safari 浏览器缓存路径：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safari 緩存 路徑 : %@"
           }
         }
       }
@@ -1189,10 +2528,34 @@
             "value" : "Caches Safari"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cache Safari"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safariキャッシュ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safari-cacher"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Safari 浏览器缓存"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safari 緩存"
           }
         }
       }
@@ -1211,10 +2574,34 @@
             "value" : "Sauvegarder"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "保存文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "維護"
           }
         }
       }
@@ -1233,10 +2620,34 @@
             "value" : "Recherchez un daemon..."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca un daemon attualmente avviato..."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在実行中のデーモンを検索..."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sök efter en pågående daemon..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "搜索当前正在运行的守护进程..."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "點此搜尋正在運行的進程..."
           }
         }
       }
@@ -1255,10 +2666,34 @@
             "value" : "Paramètres"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
           }
         }
       }
@@ -1277,10 +2712,34 @@
             "value" : "Configuration"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installazione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セットアップ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställning"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "安装"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設置"
           }
         }
       }
@@ -1299,10 +2758,34 @@
             "value" : "Paramètres de démarrage"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni di avvio"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スタートアップ設定"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startinställningar"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "启动设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初始設定"
           }
         }
       }
@@ -1313,6 +2796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Superviser"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervise"
           }
         }
       }
@@ -1329,6 +2818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Superviser"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervisore"
           }
         }
       }
@@ -1347,10 +2842,34 @@
             "value" : "Merci à tous ces incroyables contributeurs !"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grazie a tutti questi sorprendenti traduttori!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "素晴らしい翻訳者の方々に感謝します！"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tack till alla fantastiska översättare!"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "感谢我们所有的贡献者！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "感謝所有絕讚的翻譯者！"
           }
         }
       }
@@ -1369,10 +2888,34 @@
             "value" : "Ceci est une liste de tous les daemons désactivés. Ne changez pas les choses que vous n'avez pas changé de base. Ceux activés sont ceux qui sont désactivés pour le système."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo è un elenco di tutti i daemon attualmente disabilitati. Non cambiare le cose che non hai cambiato. Quelli attivati ​​sono quelli disabilitati."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これは、現在無効になっているすべてのデーモンのリストです。 変更していないものはそのままにしてください。 切り替えられたものは無効になっています。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detta är en lista över alla för närvarande inaktiverade daemons. Ändra inte saker som du inte har ändrat. De som är växlade är de som är inaktiverade."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "这是当前禁用的所有守护进程的列表。不要改变那些你没有改变的事情。被切换的是被禁用的。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此為當前所有已停用的進程清單。請勿更動任何您未更動過的部分。開關為開啟者為已被您停用的進程。"
           }
         }
       }
@@ -1391,10 +2934,34 @@
             "value" : "Cette paramètre vous permet de voir les données expérimentales de certaines variables de l'app."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa impostazione ti consente di visualizzare valori sperimentali da alcune variabili dell'app."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この設定により、一部のアプリ変数の実験値を確認できるようになります。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med denna inställning kan du se experimentella värden från vissa appvariabler."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "此设置允许您从某些应用程序变量中查看实验值。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通過此設置，您可以查看某些App變數的實驗值。"
           }
         }
       }
@@ -1413,10 +2980,34 @@
             "value" : "Ceci personnalisera les pop-ups au démarrage de l'app. Utile pour débogguer sur le simulateur ou pour les betas."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo personalizzerà i popup di avvio dell'app. Utile per il debug sul simulatore o per le beta."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これにより、アプリの起動ポップアップがパーソナライズされます。 シミュレータまたはベータ版でのデバッグに役立ちます。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detta anpassar popup-fönster vid appstart. Användbart för felsökning i simulatorn eller för betaversioner."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "这将个性化应用程序启动弹出窗口。适用于模拟器或测试版的调试。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "這將客製化App啟動時的彈出視窗。對於在模擬器或測試版上除錯很有幫助。"
           }
         }
       }
@@ -1435,10 +3026,34 @@
             "value" : "Pour ajouter un favori, sélectionnez une localisation personnalisée et tapez sur le bouton +."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per aggiungere un segnalibro, seleziona una posizione personalizzata quindi tocca il pulsante +."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブックマークを追加するには、追加したい場所を選択して、+ ボタンをタップします。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du vill lägga till ett bokmärke väljer du en anpassad plats och trycker sedan på +-knappen."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "要添加书签，请选择一个自定义位置，然后点击+按钮。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再選擇一個地點後按下＋按鈕，便能儲存此位置。"
           }
         }
       }
@@ -1457,10 +3072,34 @@
             "value" : "Traducteurs"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traduttori"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "翻訳者"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Översättare"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "翻译人员"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "翻譯者"
           }
         }
       }
@@ -1479,10 +3118,34 @@
             "value" : "Réessayer"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riprova"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再試行"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Försök igen"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "再试一次"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請再試一次"
           }
         }
       }
@@ -1501,10 +3164,34 @@
             "value" : "Compris"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capito"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "理解しました"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förstått"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "理解"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已理解"
           }
         }
       }
@@ -1515,6 +3202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désuperviser"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unsupervise"
           }
         }
       }
@@ -1531,6 +3224,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avertissements de Mise à Jour"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avviso aggiornamento"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデートの警告"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppdatera varningar"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "升級警示"
           }
         }
       }
@@ -1549,7 +3266,31 @@
             "value" : "ATTENTION"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ATTENZIONE"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VARNING"
+          }
+        },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "警告"
@@ -1571,16 +3312,71 @@
             "value" : "Nous collectons certains logs qui sont envoyés sur notre serveur afin de corriger les bogues et d'adresser les crashs. Ces logs ne contiennent jamais d'informations personnelles, seulement le type d'appareil et le problème en lui même. Nous recueillons également des informations de mesure pour savoir ce qui a été le plus utilisé dans l'application. Vous pouvez choisir d'empêcher l'envoi de TOUTES les données à notre serveur."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raccogliamo alcuni registri che vengono caricati sul nostro server per correggere bug e risolvere i registri di arresti anomali. I registri non contengono mai le tue informazioni personali, solo il tipo di dispositivo e il registro degli arresti anomali. Raccogliamo anche informazioni sulle misurazioni per vedere quale è stato il più utilizzato nell'app. Puoi scegliere se vuoi impedire che QUALSIASI dato venga inviato al nostro server."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "私たちは、バグを修正し、クラッシュログに対処するためにいくつかのログを収集し、サーバーに送信します。このログには、あなたの個人情報は一切含まれず、デバイスの種類とクラッシュログのみが含まれます。また、アプリ内で何が最も使用されたかを確認するための利用状況も収集します。サーバーに送信されるデータは自分で選択することができます。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vi samlar in vissa loggar som laddas upp till vår server för att åtgärda buggar och hantera kraschloggar. Loggarna innehåller aldrig någon personlig information om dig, bara din enhetstyp och själva kraschloggen. Vi samlar också in mätinformation för att se vad som användes mest i appen. Du kan välja om du vill förhindra att ALL data skickas till vår server."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "我们收集一些上传到服务器的日志，用于修复错误和处理崩溃日志。日志从不包含您的任何个人信息，只包含您的设备类型和崩溃日志本身。我们还收集测量信息，以查看应用程序中最常用的内容。您可以选择是否要阻止任何数据发送到我们的服务器。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我們收集一些上傳到我們伺服器的日誌，用於修復錯誤和解決崩潰日誌。日誌絕不包含您的任何個人訊息，僅包含您的裝置類型和崩潰日誌本身。我們還收集測量信息，以了解應用程式中最常使用的內容。您可以選擇是否要阻止任何資料發送到我們的伺服器。"
+          }
         }
       }
     },
     "Welcome to Geranium Beta Testing Program" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenue sur le programme de test beta de Geranium"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benvenuti nel programma di beta testing di Geranium"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geraniumのベータテストへようこそ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välkommen till betatestprogrammet för Geranium"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歡迎使用 Geranium(天竺葵) Beta 計畫"
+          }
+        }
+      }
     },
     "Welcome to Geranium, a toolbox for TrollStore that allows you to disable some daemons, simulate your location, clean your phone's storage and other. We need to configure a few things before you can use the app. This will only take a minute. You will still be able to change the settings later." : {
       "localizations" : {
@@ -1596,10 +3392,34 @@
             "value" : "Bienvenue sur Geranium, un véritable couteau suisse pour TrollStore qui vous permet de désactiver certains daemons, simuler une fausse localisation, nettoyer votre stockage et plus. Nous devons configurer plusieurs choses ensembles avant que vous puissiez utiliser l'app. Cela ne prendra qu'une minute. Vous pourrez toujours changer ces paramètres plus tard."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benvenuto in Geranium, un toolbox per TrollStore che ti permette di disabilitare alcuni daemon, simulare la tua posizione, pulire la memoria del tuo telefono e altro. Dobbiamo configurare alcune cose prima di poter utilizzare l'app. Ci vorrà solo un minuto. Potrai comunque modificare le impostazioni in seguito."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium へようこそ。これは、一部のデーモンを無効にしたり、位置情報をシミュレートしたり、携帯電話のストレージをクリーンアップしたりできる TrollStore のツールボックスです。 アプリを使用する前に、いくつかの設定を行う必要があります。 これには 1 分しかかかりません。 設定は後で変更することもできます。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välkommen till Geranium, en verktygslåda för TrollStore som låter dig inaktivera vissa daemons, simulera din plats, rensa din telefons lagring och annat. Vi behöver konfigurera några saker innan du kan använda appen. Detta tar bara en minut. Du kommer fortfarande att kunna ändra inställningarna"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "欢迎来到Geranium，这是一个TrollStore的工具箱，允许您禁用一些守护进程，模拟您的位置，清理手机的存储空间等。在您使用该应用程序之前，我们需要配置一些东西。这只需要一分钟。以后可以随时更改。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歡迎使用 Geranium：一個 TrollStore 的工具箱。Geranium 可讓您停用某些進程、模擬您的定位、清理手機儲存空間等。\n\n在您使用應用程式之前，我們需要先設置一些東西。這只需要一分鐘。您稍後仍然可以更改這些設定。"
           }
         }
       }
@@ -1618,10 +3438,34 @@
             "value" : "Bienvenue !"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benvenuto!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ようこそ！"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välkommen!"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "欢迎！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歡迎！"
           }
         }
       }
@@ -1640,16 +3484,71 @@
             "value" : "Lors-qu'une nouvelle mise à jour de l'app est publiée, vous recevrez un pop up au démarrage de l'app qui vous demandera si vous souhaitez mettre à jour. Vous pouvez configurer cela à votre guise."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quando viene pubblicato un nuovo aggiornamento, riceverai un pop-up all'avvio dell'app che ti chiederà se desideri aggiornare. Puoi evitare che ciò accada"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいアップデートが公開されると、アプリの起動時にアップデートするかどうかを尋ねるポップアップが表示されます。 表示しないようにすることもできます"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När en ny uppdatering publiceras får du ett popup-fönster när appen startas där du tillfrågas om du vill uppdatera. Du kan förhindra att detta händer"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "当发布新的更新时，您将在应用程序启动时收到一个弹出窗口，询问您是否要更新。你可以防止这种情况发生"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "當有更新發佈時，您將在應用程式啟動時收到一個詢問您是否要更新App的彈窗。您可以停用此彈窗功能。"
+          }
         }
       }
     },
     "You might want to quit and go back in the app." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous devriez peut-être quitter et retourner sur l'app."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorresti uscire e tornare nell'app."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一度アプリを終了し、再度開いてみてください。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kanske vill avsluta och gå tillbaka till appen."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請關閉後再開啟此App一次。"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

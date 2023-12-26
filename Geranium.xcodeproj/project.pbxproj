@@ -201,11 +201,11 @@
 				FAA457262B26667E00FC7287 /* HomeView.swift */,
 				790301C42B3794480044E30A /* SettingsView.swift */,
 				79DF26982B31C90C005D81D2 /* WelcomeView.swift */,
-				799488A42B347E1100AFFDCF /* LocSim */,
 				FAA4572E2B2666E800FC7287 /* Cleaner */,
+				FAA4572A2B26669100FC7287 /* DaemonMan */,
+				799488A42B347E1100AFFDCF /* LocSim */,
 				FAA4572B2B26669B00FC7287 /* The Supviser */,
 				790301BF2B377E850044E30A /* Translations */,
-				FAA4572A2B26669100FC7287 /* DaemonMan */,
 				FAA456D82B265FEC00FC7287 /* Assets.xcassets */,
 				FAA456DA2B265FEC00FC7287 /* Preview Content */,
 			);
@@ -367,6 +367,14 @@
 				"es-419",
 				ja,
 				cs,
+				"zh-Hant",
+				sv,
+				vi,
+				it,
+				es,
+				ca,
+				sq,
+				ko,
 			);
 			mainGroup = FAA456C82B265FEA00FC7287;
 			packageReferences = (
