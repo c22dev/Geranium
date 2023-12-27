@@ -55,8 +55,10 @@ struct CleanerView: View {
                         .foregroundStyle(.green)
                     Button("Exit", action: {
                         withAnimation {
+                            buttonAndSelection = true
 //                            isTabViewHidden = false
                             cleanerTitle = true
+                            errorDetecteed = false
                             progressAmount = 0
                             safariCacheSize = 0
                             GlobalCacheSize = 0
