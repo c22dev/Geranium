@@ -79,22 +79,26 @@ struct CleanerView: View {
                 Toggle(isOn: $safari) {
                     Image(systemName: "safari")
                     Text("Safari Caches")
-                    Text(">"+String(format: "%.2f MB", safariCacheSize / (1024 * 1024)))
+                    Text("> "+String(format: "%.2f MB", safariCacheSize / (1024 * 1024)))
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
                 .onAppear {
-                    safariCacheSize = getSizeForSafariCaches()
+                    getSizeForSafariCaches { size in
+                        self.safariCacheSize = size
+                    }
                 }
                 Toggle(isOn: $appCaches) {
                     Image(systemName: "app.dashed")
                     Text("General Caches")
-                    Text(">" + String(format: "%.2f MB", GlobalCacheSize / (1024 * 1024)))
+                    Text("> " + String(format: "%.2f MB", GlobalCacheSize / (1024 * 1024)))
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
                 .onAppear {
-                    GlobalCacheSize = getSizeForGeneralCaches()
+                    getSizeForGeneralCaches { size in
+                        self.GlobalCacheSize = size
+                    }
                 }
                 
                 Toggle(isOn: $otaCaches) {
@@ -104,7 +108,9 @@ struct CleanerView: View {
                 .toggleStyle(checkboxiOS())
                 .padding(2)
                 .onAppear {
-                    OTACacheSize = getSizeForOTA()
+                    getSizeForOTA { size in
+                        self.OTACacheSize = size
+                    }
                 }
                 
                 Toggle(isOn: $batteryUsageDat) {
@@ -200,7 +206,6 @@ struct CleanerView: View {
                 errorDetected.toggle()
                 resultView.toggle()
             }
-            print(progressAmount)
         }
     }
 }

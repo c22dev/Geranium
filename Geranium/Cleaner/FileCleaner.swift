@@ -17,15 +17,14 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
     
     DispatchQueue.global().async {
         let totalProgressSteps = 9
-        let stepIncrement = 1.0 / Double(totalProgressSteps)
 
         func updateProgress(step: Int) {
-            let progress = Double(step + 1) * stepIncrement
+            let progress = Double(step) / 10.0
             progressHandler(progress)
             miniimpactVibrate()
         }
 
-        for step in 0..<totalProgressSteps {
+        for step in 1...totalProgressSteps {
             if safari, !safariCleanedUp {
                 print("safari")
                 RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariCachePath))
@@ -85,43 +84,47 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
 }
 
 
-// https://stackoverflow.com/a/59425817
-func directorySize(url: URL) -> Int64 {
-    DispatchQueue.global().async {
-        RootHelper.setPermission(url: url)
+// Adapted from https://stackoverflow.com/a/59425817
+func directorySize(at url: URL) -> Int64 {
+    let fileManager = FileManager.default
+    var isDirectory: ObjCBool = false
+    guard fileManager.fileExists(atPath: url.path, isDirectory: &isDirectory) else {
+        return 22
     }
-    let contents: [URL]
+
+    if !isDirectory.boolValue {
+        return 26
+    }
+
+    var totalSize: Int64 = 0
+
     do {
-        contents = try FileManager.default.contentsOfDirectory(at: url, includingPropertiesForKeys: [.fileSizeKey, .isDirectoryKey])
-    } catch {
-        return 0
-    }
-
-    var size: Int64 = 0
-
-    for url in contents {
-        let isDirectoryResourceValue: URLResourceValues
-        do {
-            isDirectoryResourceValue = try url.resourceValues(forKeys: [.isDirectoryKey])
-        } catch {
-            continue
-        }
-    
-        if isDirectoryResourceValue.isDirectory == true {
-            size += directorySize(url: url)
-        } else {
-            let fileSizeResourceValue: URLResourceValues
-            do {
-                fileSizeResourceValue = try url.resourceValues(forKeys: [.fileSizeKey])
-            } catch {
+        let contents = try fileManager.contentsOfDirectory(at: url, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
+        for item in contents {
+            var isDir: ObjCBool = false
+            guard fileManager.fileExists(atPath: item.path, isDirectory: &isDir) else {
                 continue
             }
-        
-            size += Int64(fileSizeResourceValue.fileSize ?? 0)
+
+            if isDir.boolValue {
+                RootHelper.setPermission(url: item)
+                totalSize += directorySize(at: item)
+            } else {
+                RootHelper.setPermission(url: item)
+                
+                if let fileSize = (try? fileManager.attributesOfItem(atPath: item.path)[.size]) as? Int64 {
+                    totalSize += fileSize
+                }
+            }
         }
+    } catch {
+        print("Error calculating folder size: \(error.localizedDescription)")
     }
-    return size
+
+    return totalSize
 }
+
+
 
 func deleteContentsOfDirectory(atPath path: String) -> String {
         var log = RootHelper.setPermission(url: URL(fileURLWithPath: path))
