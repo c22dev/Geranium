@@ -12,108 +12,78 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
     var safariCleanedUp = false
     var appCleanedUp = false
     var otaCleanedUp = false
-    print(safari, appCaches, otaCaches)
     var RHResult = ""
+    print(safari, appCaches, otaCaches)
+    
     DispatchQueue.global().async {
         let totalProgressSteps = 9
+        let stepIncrement = 1.0 / Double(totalProgressSteps)
+
+        func updateProgress(step: Int) {
+            let progress = Double(step + 1) * stepIncrement
+            progressHandler(progress)
+            miniimpactVibrate()
+        }
+
         for step in 0..<totalProgressSteps {
-            let progress = Double(step + 1) / Double(totalProgressSteps)
             if safari, !safariCleanedUp {
                 print("safari")
-                RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix((safariCachePath)))
+                RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariCachePath))
                 if RHResult != "0" {
                     progressHandler(-99)
+                    return
                 }
-                progressHandler(0.1)
-                RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix((safariImgCachePath)))
+                updateProgress(step: step)
+                
+                RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariImgCachePath))
                 if RHResult != "0" {
                     progressHandler(-99)
-                }
-                else {
+                    return
+                } else {
                     safariCleanedUp = true
-                    progressHandler(0.3)
-                    miniimpactVibrate()
+                    updateProgress(step: step + 2)
                 }
+            } else {
+                updateProgress(step: step + 2)
             }
-            else {
-                progressHandler(0.3)
-                miniimpactVibrate()
-            }
+
             if appCaches, !appCleanedUp {
                 print("appcaches")
-                RHResult = deleteContentsOfDirectory(atPath: logmobileCachesPath)
-                if RHResult != "0" {
-                    progressHandler(-99)
+                let paths = [logmobileCachesPath, logCachesPath, logsCachesPath, tmpCachesPath, phototmpCachePath, globalCachesPath]
+
+                for path in paths {
+                    RHResult = deleteContentsOfDirectory(atPath: path)
+                    if RHResult != "0" {
+                        progressHandler(-99)
+                        return
+                    } else {
+                        updateProgress(step: step + 3)
+                    }
                 }
-                else {
-                    progressHandler(0.35)
-                    miniimpactVibrate()
-                }
-                RHResult = deleteContentsOfDirectory(atPath: logCachesPath)
-                if RHResult != "0" {
-                    progressHandler(-99)
-                }
-                else {
-                    progressHandler(0.4)
-                    miniimpactVibrate()
-                }
-                RHResult = deleteContentsOfDirectory(atPath: logsCachesPath)
-                if RHResult != "0" {
-                    progressHandler(-99)
-                }
-                else {
-                    progressHandler(0.45)
-                    miniimpactVibrate()
-                }
-                RHResult = deleteContentsOfDirectory(atPath: tmpCachesPath)
-                if RHResult != "0" {
-                    progressHandler(-99)
-                }
-                else {
-                    progressHandler(0.5)
-                    miniimpactVibrate()
-                }
-                RHResult = deleteContentsOfDirectory(atPath: phototmpCachePath)
-                if RHResult != "0" {
-                    progressHandler(-99)
-                }
-                else {
-                    progressHandler(0.55)
-                    miniimpactVibrate()
-                }
-                RHResult = deleteContentsOfDirectory(atPath: globalCachesPath)
-                if RHResult != "0" {
-                    progressHandler(-99)
-                }
-                else {
-                    appCleanedUp = true
-                    progressHandler(0.6)
-                    miniimpactVibrate()
-                }
+                appCleanedUp = true
+                updateProgress(step: step + 4)
+            } else {
+                updateProgress(step: step + 4)
             }
-            else {
-                progressHandler(0.6)
-                miniimpactVibrate()
-            }
+
             if otaCaches, !otaCleanedUp {
                 print("otacaches")
                 RHResult = deleteContentsOfDirectory(atPath: OTAPath)
-                progressHandler(0.75)
-                miniimpactVibrate()
                 if RHResult != "0" {
                     progressHandler(-99)
+                    return
+                } else {
+                    updateProgress(step: step + 5)
                 }
-                progressHandler(0.9)
-                miniimpactVibrate()
                 otaCleanedUp = true
-            }
-            else {
-                progressHandler(0.9)
-                miniimpactVibrate()
+                updateProgress(step: step + 6)
+            } else {
+                updateProgress(step: step + 6)
             }
         }
     }
 }
+
 
 // https://stackoverflow.com/a/59425817
 func directorySize(url: URL) -> Int64 {

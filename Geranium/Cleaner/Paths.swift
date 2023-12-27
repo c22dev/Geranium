@@ -70,3 +70,53 @@ func removeFilePrefix(_ urlString: String) -> String {
     }
     return urlString
 }
+func calculateDirectorySizeAsync(url: URL, completion: @escaping (Double) -> Void) {
+    DispatchQueue.global().async {
+        let size = Double(directorySize(url: url))
+        DispatchQueue.main.async {
+            completion(size)
+        }
+    }
+}
+
+func getSizeForGeneralCaches() -> Double {
+    var GlobalCacheSize: Double = 0
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: logCachesPath)) { size in
+        GlobalCacheSize += size
+    }
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: logmobileCachesPath)) { size in
+        GlobalCacheSize += size
+    }
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: tmpCachesPath)) { size in
+        GlobalCacheSize += size
+    }
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: phototmpCachePath)) { size in
+        GlobalCacheSize += size
+    }
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: logsCachesPath)) { size in
+        GlobalCacheSize += size
+    }
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: globalCachesPath)) { size in
+        GlobalCacheSize += size
+    }
+    return GlobalCacheSize
+}
+
+func getSizeForSafariCaches() -> Double  {
+    var safariCacheSize: Double = 0
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: removeFilePrefix(safariCachePath))) { size in
+        safariCacheSize += size
+    }
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: removeFilePrefix(safariImgCachePath))) { size in
+        safariCacheSize += size
+    }
+    return safariCacheSize
+}
+
+func getSizeForOTA() -> Double {
+    var OTACacheSize: Double = 0
+    calculateDirectorySizeAsync(url: URL(fileURLWithPath: OTAPath)) { size in
+        OTACacheSize = size
+    }
+    return OTACacheSize
+}

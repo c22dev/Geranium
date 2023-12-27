@@ -9,7 +9,7 @@ import SwiftUI
 // TODO: test app on iPadOS 15 iPads
 @main
 struct GeraniumApp: App {
-    @State var isInBetaProgram = true // MARK: change this value if the build isn't Beta
+    @State var isInBetaProgram = false // MARK: change this value if the build isn't Beta
     @AppStorage("TSBypass") var tsBypass: Bool = false
     @AppStorage("UPDBypass") var updBypass: Bool = false
     @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
