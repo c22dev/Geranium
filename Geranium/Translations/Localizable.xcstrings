@@ -38,6 +38,18 @@
             "state" : "translated",
             "value" : ""
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
         }
       }
     },
@@ -74,6 +86,18 @@
           }
         },
         "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@"
@@ -119,10 +143,22 @@
             "value" : "1. Trollstore 열기"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Откройте TrollStore"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1. Öppna TrollStore"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Mở TrollStore"
           }
         },
         "zh-Hans" : {
@@ -177,10 +213,22 @@
             "value" : "2. 설정 열기"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Зайдите в настройки"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "2. Gå till Inställningar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Đi đến Cài đặt"
           }
         },
         "zh-Hans" : {
@@ -235,10 +283,22 @@
             "value" : "3. URL Schemes 활성화"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Включите URL Scheme"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "3. Aktivera URL-schema"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Kích hoạt URL Scheme"
           }
         },
         "zh-Hans" : {
@@ -293,10 +353,22 @@
             "value" : "가나다순"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Алфавитный"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alfabetisk"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo thứ tự ABC"
           }
         },
         "zh-Hans" : {
@@ -351,10 +423,22 @@
             "value" : "RootHelper에서 오류가 발생했습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Произошла ошибка с RootHelper."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ett fel uppstod med RootHelper."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã xảy ra lỗi với Root Helper."
           }
         },
         "zh-Hans" : {
@@ -409,10 +493,22 @@
             "value" : "배터리 사용량"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данные об использовании батареи"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data om batterianvändning"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dữ liệu sử dụng pin"
           }
         },
         "zh-Hans" : {
@@ -467,10 +563,22 @@
             "value" : "북마크"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закладки"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bokmärken"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dấu trang"
           }
         },
         "zh-Hans" : {
@@ -525,10 +633,22 @@
             "value" : " iOS 내부에 몇 가지 규칙을 추가함으로써, 이 소프트웨어는 휴대폰을 부팅할 때 데몬이 실행되는 것을 방지합니다. 이 앱은 실행 중인 모든 데몬을 나열하며, 왼쪽으로 스와이프하여 그 중 하나를 제거할 수 있습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавляя определенные правила к внутренним компонентам iOS, это программное обеспечение предотвращает запуск определенных процессов при включении устройства. Приложение отображает каждый запущенный демон, и вы можете провести пальцем влево, чтобы удалить его."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Genom att lägga till några regler i iOS interna funktioner förhindrar programvaran att daemonen startas när du startar telefonen. Appen listar alla daemon som körs och du kan svepa åt vänster för att ta bort en av dem."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bằng cách thêm một số quy tắc vào nội bộ iOS, phần mềm này ngăn không cho daemon khởi chạy khi bạn khởi động điện thoại. Ứng dụng đưa ra tất cả daemon đang chạy và bạn có thể vuốt sang trái để xóa một trong số chúng."
           }
         },
         "zh-Hans" : {
@@ -583,10 +703,22 @@
             "value" : "앱 업데이트 우회"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход всплывающего окна обновления приложения"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bypass popup-fönster för app-uppdatering"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bỏ qua thông báo cập nhật ứng dụng"
           }
         },
         "zh-Hans" : {
@@ -641,10 +773,22 @@
             "value" : "Trollstore 팝업 우회"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обход всплывающего окна TrollStore"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kringgå TrollStore popup-fönster"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bỏ qua thông báo TrollStore"
           }
         },
         "zh-Hans" : {
@@ -699,6 +843,18 @@
             "value" : "청소!"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очистить !"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dọn dẹp !"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -749,6 +905,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "클리너"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очиститель"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trình dọn dẹp"
           }
         },
         "zh-Hans" : {
@@ -803,10 +971,22 @@
             "value" : "크레딧"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Благодарности"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krediter"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tín dụng"
           }
         },
         "zh-Hans" : {
@@ -853,6 +1033,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "데몬"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
           }
         },
         "zh-Hant" : {
@@ -905,6 +1097,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Felsökningsinformation"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông tin gỡ lỗi"
           }
         },
         "zh-Hans" : {
@@ -965,6 +1163,12 @@
             "value" : "Felsökningsinformation"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công cụ gỡ lỗi"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1017,10 +1221,22 @@
             "value" : "삭제중... %@"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удаление… %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Radera... %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang xoá... %@"
           }
         },
         "zh-Hans" : {
@@ -1075,10 +1291,22 @@
             "value" : "비활성화"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Деактивировать"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inaktivera"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô hiệu hóa"
           }
         },
         "zh-Hans" : {
@@ -1133,10 +1361,22 @@
             "value" : "업데이트 팝업 비활성화"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключить всплывающие окна обновления"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inaktivera pop-up för uppdatering"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô hiệu hoá thông báo cập nhật"
           }
         },
         "zh-Hans" : {
@@ -1197,6 +1437,12 @@
             "value" : "Inaktiverad Daemons-hanterare"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trình quản lý Daemon bị vô hiệu hóa"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1253,6 +1499,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ATT INAKTIVERA SYSTEMDAEMONER ÄR FARLIGT. DU KAN STARTA UPP DIN ENHET. FORTSÄTT MED FÖRSIKTIGHET. JAG ÄR INTE ANSVARIG FÖR EVENTUELLA PROBLEM PÅ DIN ENHET."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VÔ HIỆU HOÁ CÁC DAEMONS HỆ THỐNG LÀ ĐIỀU NGUY HIỂM. THIẾT BỊ CỦA BẠN CÓ THỂ RƠI VÀO TRẠNG THÁI BOOTLOOP. HÃY TIẾN HÀNH THẬN TRỌNG. TÔI KHÔNG CHỊU TRÁCH NHIỆM VỀ BẤT KỲ VẤN ĐỀ NÀO TRÊN THIẾT BỊ CỦA BẠN."
           }
         },
         "zh-Hans" : {
@@ -1314,6 +1566,12 @@
             "value" : "DET REKOMMENDERAS INTE ATT INAKTIVERA SYSTEMDAEMONER. DU KAN STARTA UPP DIN ENHET. FORTSÄTT MED FÖRSIKTIGHET. JAG ÄR INTE ANSVARIG FÖR EVENTUELLA PROBLEM PÅ DIN ENHET."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VÔ HIỆU HOÁ CÁC DAEMONS HỆ THỐNG LÀ ĐIỀU KHÔNG ĐƯỢC KHUYẾN NGHỊ. THIẾT BỊ CỦA BẠN CÓ THỂ RƠI VÀO TRẠNG THÁI BOOTLOOP. HÃY TIẾN HÀNH THẬN TRỌNG. TÔI KHÔNG CHỊU TRÁCH NHIỆM VỀ BẤT KỲ VẤN ĐỀ NÀO TRÊN THIẾT BỊ CỦA BẠN."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1372,6 +1630,12 @@
             "value" : "Avskeda"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bỏ qua"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1418,10 +1682,22 @@
             "value" : "완료 !"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завершено !"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoàn thành !"
           }
         },
         "zh-Hans" : {
@@ -1476,10 +1752,22 @@
             "value" : "활성화"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktivera"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt"
           }
         },
         "zh-Hans" : {
@@ -1534,10 +1822,22 @@
             "value" : "로그 수집 활성화"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить сбор логов"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktivera insamling av loggar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt thu thập nhật ký"
           }
         },
         "zh-Hans" : {
@@ -1592,10 +1892,22 @@
             "value" : "로깅 활성화"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить ведение логов"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktivera loggning"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt ghi nhật ký"
           }
         },
         "zh-Hans" : {
@@ -1650,10 +1962,22 @@
             "value" : "조직 이름 입력..."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите название организации…"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ange organisationens namn..."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập tên tổ chức..."
           }
         },
         "zh-Hans" : {
@@ -1708,10 +2032,22 @@
             "value" : "오류 !"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка !"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fel!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lỗi !"
           }
         },
         "zh-Hans" : {
@@ -1766,10 +2102,22 @@
             "value" : "나가기"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выйти"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utgång"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thoát"
           }
         },
         "zh-Hans" : {
@@ -1824,10 +2172,22 @@
             "value" : "일반 캐시"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Основные кэши"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Allmänna cacher"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bộ nhớ đệm chung"
           }
         },
         "zh-Hans" : {
@@ -1876,7 +2236,19 @@
             "value" : "Geranium"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geranium"
@@ -1928,10 +2300,22 @@
             "value" : "안녕하세요! SE 1 사용자"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Привет ! Пользователь SE 1"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hej ! SE 1 Användare"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xin chào ! Người dùng SE 1"
           }
         },
         "zh-Hans" : {
@@ -1986,6 +2370,12 @@
             "value" : "Hem"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trang chủ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2038,10 +2428,22 @@
             "value" : "자동 업데이트를 활성화하려면, TrollStore에서 Magnifier URL Scheme을 켜야 합니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если ты хочешь включить авто-обновление, тебе нужно включить Magnifier URL Scheme в TrollStore."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om du vill aktivera automatisk uppdatering måste du aktivera Magnifier URL Scheme i TrollStore."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu muốn bật tính năng tự động cập nhật, bạn cần bật Magnifier URL Scheme trong TrollStore."
           }
         },
         "zh-Hans" : {
@@ -2102,6 +2504,12 @@
             "value" : "Om du vill ångra något av dina val bör du gå in i hanteraren (listikonen bredvid tillämpningsikonen), där du kan växla till inaktiverade daemons."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu bạn muốn hoàn tác bất kỳ lựa chọn nào, bạn nên vào trình quản lý (biểu tượng danh sách bên cạnh biểu tượng áp dụng), nơi bạn có thể chuyển đổi các daemons bị vô hiệu hóa."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2154,10 +2562,22 @@
             "value" : "사용자가 iPadOS 16에서 iPad를 실행하고 있나요? : 아니요"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользователь использует iPad на iPadOS 16: нет"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kör användaren en iPad med iPadOS 16: nej"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Người dùng đang chạy iPad trên iPadOS 16: không"
           }
         },
         "zh-Hans" : {
@@ -2212,10 +2632,22 @@
             "value" : "사용자가 iPadOS 16에서 iPad를 실행하고 있나요? : 예"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользователь использует iPad на iPadOS 16: да"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kör användaren en iPad med iPadOS 16: ja"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Người dùng đang chạy iPad trên iPadOS 16: có"
           }
         },
         "zh-Hans" : {
@@ -2270,10 +2702,22 @@
             "value" : "iPhone SE 2016(1세대)에서 앱을 사용하고 있는 것으로 확인됩니다. 심각한 UI 문제가 발생할 수 있습니다. 미리 양해 부탁드립니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выглядит так как будто ты используешь приложение на iPhone SE 2016 (1-е поколение). Ты можешь столкнуться с серьезными проблемами интерфейса. Пожалуйста, извините меня заранее."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det verkar som om du använder appen på en iPhone SE 2016 (1:a generationen). Du kan stöta på allvarliga problem med användargränssnittet. Vänligen ursäkta mig i förväg."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có vẻ như bạn đang sử dụng ứng dụng này trên iPhone SE 2016 (thế hệ 1). Bạn có thể gặp phải sự cố giao diện nghiêm trọng. Xin thứ lỗi cho sự bất tiện này."
           }
         },
         "zh-Hans" : {
@@ -2334,10 +2778,22 @@
             "value" : "위도: %1$lf 경도: %2$lf"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Широта: %1$lf Долгота: %2$lf"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Latitud: %1$lf Longitud: %2$lf"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vĩ độ: %1$lf Kinh độ: %2$lf"
           }
         },
         "zh-Hans" : {
@@ -2392,7 +2848,19 @@
             "value" : "LocSim"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "LocSim"
@@ -2444,10 +2912,22 @@
             "value" : "로그 수집"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Коллекция логов"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Logsamling"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thu thập nhật ký"
           }
         },
         "zh-Hans" : {
@@ -2502,10 +2982,22 @@
             "value" : "로깅 설정"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки логов"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inställningar för loggning"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt ghi nhật ký"
           }
         },
         "zh-Hans" : {
@@ -2560,10 +3052,22 @@
             "value" : "제작자 : c22dev"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сделано c22dev"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tillverkad av c22dev"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "phát triển bởi c22dev"
           }
         },
         "zh-Hans" : {
@@ -2618,10 +3122,22 @@
             "value" : "관리"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Управлять"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hantera"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quản lý"
           }
         },
         "zh-Hans" : {
@@ -2682,6 +3198,12 @@
             "value" : "Inga bokmärken sparade."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có dấu trang nào được lưu."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2740,6 +3262,12 @@
             "value" : "Meddelande"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chú ý"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2792,10 +3320,22 @@
             "value" : "OTA 업데이트 캐시"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кэши OTA обновлений"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cacher för OTA-uppdatering"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bộ nhớ đệm cập nhật OTA"
           }
         },
         "zh-Hans" : {
@@ -2850,7 +3390,19 @@
             "value" : "PID: %@"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PID: %@"
@@ -2896,10 +3448,22 @@
             "value" : "기기 UUID를 복사해서 담당 개발자에게 보내주세요."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, скопируйте свой UUID и отправьте его ответственному разработчику."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vänligen kopiera ditt UUID och skicka det till en ansvarig utvecklare."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng sao chép UUID của bạn và gửi cho nhà phát triển phụ trách."
           }
         },
         "zh-Hant" : {
@@ -2948,10 +3512,22 @@
             "value" : "참고하세요"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, обратите внимание"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vänligen notera"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xin lưu ý"
           }
         },
         "zh-Hans" : {
@@ -3006,10 +3582,22 @@
             "value" : "목적"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цель"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Syfte"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mục đích"
           }
         },
         "zh-Hans" : {
@@ -3064,10 +3652,22 @@
             "value" : "아이콘 캐시 재구축"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Восстановить кэш иконок"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Återuppbygga ikoncache"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rebuild Icon Cache"
           }
         },
         "zh-Hans" : {
@@ -3116,7 +3716,19 @@
             "value" : "Respring"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Respring"
@@ -3168,10 +3780,22 @@
             "value" : "RootHelper 경로 : %@"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Путь RootHelper : %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RootHelper sökväg : %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đường dẫn RootHelper : %@"
           }
         },
         "zh-Hans" : {
@@ -3226,10 +3850,22 @@
             "value" : "Safari 캐시 경로 : %@"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Путь кэша Safari : %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sökväg till Safari-cache : %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đường dẫn bộ nhớ đệm Safari : %@"
           }
         },
         "zh-Hans" : {
@@ -3284,10 +3920,22 @@
             "value" : "Safari 캐시"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кэши Safari"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Safari-cacher"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bộ nhớ đệm Safari"
           }
         },
         "zh-Hans" : {
@@ -3342,10 +3990,22 @@
             "value" : "저장"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spara"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu"
           }
         },
         "zh-Hans" : {
@@ -3400,10 +4060,22 @@
             "value" : "현재 실행 중인 데몬을 검색하세요..."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск запущенного процесса....."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sök efter en pågående daemon..."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm kiếm một daemon hiện đang chạy..."
           }
         },
         "zh-Hans" : {
@@ -3458,10 +4130,22 @@
             "value" : "설정"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inställningar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt"
           }
         },
         "zh-Hans" : {
@@ -3516,10 +4200,22 @@
             "value" : "셋업"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Установщик"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inställning"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thiết lập"
           }
         },
         "zh-Hans" : {
@@ -3574,10 +4270,22 @@
             "value" : "시작 설정"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки запуска"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Startinställningar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt khởi động"
           }
         },
         "zh-Hans" : {
@@ -3631,6 +4339,18 @@
             "state" : "translated",
             "value" : "Supervise"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супервайз"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervise"
+          }
         }
       }
     },
@@ -3670,6 +4390,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "감독자"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Супервайзер"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superviser"
           }
         }
       }
@@ -3712,10 +4444,22 @@
             "value" : "번역에 도움 주신 모든 분께 감사드립니다 !"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спасибо всем этим прекрасным переводчикам !"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tack till alla fantastiska översättare!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảm ơn tất cả những dịch giả tuyệt vời!"
           }
         },
         "zh-Hans" : {
@@ -3776,6 +4520,12 @@
             "value" : "Detta är en lista över alla för närvarande inaktiverade daemons. Ändra inte saker som du inte har ändrat. De som är växlade är de som är inaktiverade."
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đây là danh sách tất cả các daemon hiện đang bị vô hiệu hóa. Đừng thay đổi những điều bạn chưa từng thay đổi. Những thứ bị thay đổi là những thứ bị vô hiệu hoá."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3828,10 +4578,22 @@
             "value" : "이 설정은 일부 앱 변수에서 실험 값을 볼 수 있습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это настройка разрешит тебе видеть экспериментальные значения из нескольких переменных приложения."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med denna inställning kan du se experimentella värden från vissa appvariabler."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt này cho phép bạn xem các giá trị thử nghiệm từ một số biến ứng dụng."
           }
         },
         "zh-Hans" : {
@@ -3886,10 +4648,22 @@
             "value" : "앱 시작 팝업을 개인화합니다. 시뮬레이터나 베타 디버깅할 때 유용합니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это будет персонализировать всплывающие окна при запуске приложения. Полезно для откладки на симуляторе или для бета-версий."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Detta anpassar popup-fönster vid appstart. Användbart för felsökning i simulatorn eller för betaversioner."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Điều này sẽ cá nhân hóa thông báo bật lên khi khởi động ứng dụng. Hữu ích cho việc gỡ lỗi trên Trình mô phỏng (Simulator) hoặc cho các phiên bản thử nghiệm (beta)."
           }
         },
         "zh-Hans" : {
@@ -3944,10 +4718,22 @@
             "value" : "북마크를 추가하려면, 사용자 지정 위치를 선택한 다음 + 버튼을 누르세요."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чтобы добавить закладку, выделите любую локацию а затем тапните на кнопку +."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om du vill lägga till ett bokmärke väljer du en anpassad plats och trycker sedan på +-knappen."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để thêm dấu trang, hãy chọn vị trí tùy chỉnh rồi nhấn vào nút +."
           }
         },
         "zh-Hans" : {
@@ -4002,10 +4788,22 @@
             "value" : "번역가"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переводчики"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Översättare"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các dịch giả"
           }
         },
         "zh-Hans" : {
@@ -4060,10 +4858,22 @@
             "value" : "다시 시도하세요"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Попробуйте еще раз"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Försök igen"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thử lại"
           }
         },
         "zh-Hans" : {
@@ -4118,10 +4928,22 @@
             "value" : "확인함"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Понял"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Förstått"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã hiểu"
           }
         },
         "zh-Hans" : {
@@ -4169,6 +4991,18 @@
             "state" : "translated",
             "value" : "Unsupervise"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключить Супервайз"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unsupervise"
+          }
         }
       }
     },
@@ -4210,10 +5044,22 @@
             "value" : "업데이트 경고"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предупреждения об обновлении"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uppdatera varningar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảnh báo cập nhật"
           }
         },
         "zh-Hant" : {
@@ -4262,10 +5108,22 @@
             "value" : "경고"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ПРЕДУПРЕЖДЕНИЕ"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VARNING"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CẢNH BÁO"
           }
         },
         "zh-Hans" : {
@@ -4320,10 +5178,22 @@
             "value" : "버그를 수정하고 충돌 로그를 해결하기 위해 서버에 업로드된 로그를 수집합니다. 로그에는 개인 정보가 포함되지 않으며, 기종 정보와 충돌 로그 자체만 포함됩니다. 또한 앱에서 가장 많이 사용되는 기능을 확인하기 위해 측정 정보를 수집합니다. 데이터가 서버로 전송되는 것을 원치 않으면 거절할 수 있습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мы собираем некоторые логи которые загружаются на наш сервер для фикса багов и  изучения краш логов. Логи никогда не содержат любую вашу личную информацию, ваше устройство просто пишет краш лог само. Мы также собираем информацию о том что вы использовали чаще всего чтобы увидеть что наиболее используемое в приложении. Вы можете выбрать, хотите ли вы запретить отправку ЛЮБЫХ данных на наш сервер."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vi samlar in vissa loggar som laddas upp till vår server för att åtgärda buggar och hantera kraschloggar. Loggarna innehåller aldrig någon personlig information om dig, bara din enhetstyp och själva kraschloggen. Vi samlar också in mätinformation för att se vad som användes mest i appen. Du kan välja om du vill förhindra att ALL data skickas till vår server."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chúng tôi thu thập một số nhật ký được tải lên máy chủ của chúng tôi để sửa lỗi và giải quyết các nhật ký sự cố (crash logs). Nhật ký không bao giờ chứa bất kỳ thông tin cá nhân nào của bạn, chỉ loại thiết bị của bạn và nhật ký sự cố. Chúng tôi cũng thu thập thông tin đo lường để xem nội dung nào được sử dụng nhiều nhất trong ứng dụng. Bạn có thể chọn nếu bạn muốn ngăn BẤT KỲ dữ liệu nào được gửi đến máy chủ của chúng tôi."
           }
         },
         "zh-Hans" : {
@@ -4378,6 +5248,12 @@
             "value" : "Välkommen till betatestprogrammet för Geranium"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chào mừng đến với Chương trình thử nghiệm Geranium Beta"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4424,10 +5300,22 @@
             "value" : "데몬을 비활성화하고, 모의 위치를 설정하고, 휴대폰의 저장 공간을 청소할 수 있는 TrollStore의 도구 상자인 Geranium에 오신 것을 환영합니다. 앱을 사용하기 전에 몇 가지를 구성해야 합니다. 1분밖에 걸리지 않습니다. 추후에도 설정을 변경할 수 있습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать в Geranium - toolbox для TrollStore, позволяющий отключать определенные процессы, симулировать твою локацию, очищать лишнее место на твоем телефоне и много еще чего. Мы должны настроить несколько вещей прежде ты сможешь использовать приложение. Это займет только минуту. Ты также сможешь поменять настройки позже"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välkommen till Geranium, en verktygslåda för TrollStore som låter dig inaktivera vissa daemons, simulera din plats, rensa din telefons lagring och annat. Vi behöver konfigurera några saker innan du kan använda appen. Detta tar bara en minut. Du kommer fortfarande att kunna ändra inställningarna"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chào mừng bạn đến với Geranium, một công cụ dành cho TrollStore cho phép bạn vô hiệu hóa một số daemon, mô phỏng vị trí của bạn, dọn dẹp bộ nhớ điện thoại của bạn và các thứ khác. Chúng tôi cần định cấu hình một số thứ trước khi bạn có thể sử dụng ứng dụng. Việc này sẽ chỉ mất một phút. Bạn vẫn có thể thay đổi các cài đặt sau."
           }
         },
         "zh-Hans" : {
@@ -4482,10 +5370,22 @@
             "value" : "환영합니다!"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать!"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välkommen!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chào mừng!"
           }
         },
         "zh-Hans" : {
@@ -4540,10 +5440,22 @@
             "value" : "새 업데이트가 출시되면, 앱 실행 시 업데이트 팝업이 표시됩니다. 이것을 비활성화할 수 있습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Когда новое обновление будет опубликовано, ты получишь всплывающее окно при запуске приложения, которое спросит тебя хочешь ли ты установить обновление. Вы можете запретить это."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "När en ny uppdatering publiceras får du ett popup-fönster när appen startas där du tillfrågas om du vill uppdatera. Du kan förhindra att detta händer"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi một bản cập nhật mới được xuất bản, bạn sẽ nhận được một thông báo bật lên khi khởi chạy ứng dụng để xác định rằng bạn có muốn cập nhật hay không. Bạn có thể ngăn điều này xảy ra."
           }
         },
         "zh-Hans" : {
@@ -4592,10 +5504,22 @@
             "value" : "종료하고 앱으로 돌아가고 싶을 수도 있습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ты может быть захочешь выйти и вернуться обратно в приложение."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du kanske vill avsluta och gå tillbaka till appen."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có thể thoát và quay lại ứng dụng."
           }
         },
         "zh-Hant" : {

@@ -376,6 +376,7 @@
 				sq,
 				ko,
 				ru,
+				fa,
 			);
 			mainGroup = FAA456C82B265FEA00FC7287;
 			packageReferences = (

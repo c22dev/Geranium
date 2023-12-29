@@ -18,8 +18,8 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
     DispatchQueue.global().async {
         let totalProgressSteps = 9
 
-        func updateProgress(step: Int) {
-            let progress = Double(step) / 10.0
+        func updateProgress(currentStep: Int) {
+            let progress = Double(currentStep) / Double(totalProgressSteps)
             progressHandler(progress)
             miniimpactVibrate()
         }
@@ -32,18 +32,18 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
                     progressHandler(-99)
                     return
                 }
-                updateProgress(step: step)
-                
+                updateProgress(currentStep: step)
+
                 RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariImgCachePath))
                 if RHResult != "0" {
                     progressHandler(-99)
                     return
                 } else {
                     safariCleanedUp = true
-                    updateProgress(step: step + 2)
+                    updateProgress(currentStep: step + 2)
                 }
             } else {
-                updateProgress(step: step + 2)
+                updateProgress(currentStep: step + 2)
             }
 
             if appCaches, !appCleanedUp {
@@ -56,13 +56,13 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
                         progressHandler(-99)
                         return
                     } else {
-                        updateProgress(step: step + 3)
+                        updateProgress(currentStep: step + 3)
                     }
                 }
                 appCleanedUp = true
-                updateProgress(step: step + 4)
+                updateProgress(currentStep: step + 4)
             } else {
-                updateProgress(step: step + 4)
+                updateProgress(currentStep: step + 4)
             }
 
             if otaCaches, !otaCleanedUp {
@@ -72,12 +72,12 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
                     progressHandler(-99)
                     return
                 } else {
-                    updateProgress(step: step + 5)
+                    updateProgress(currentStep: step + 5)
                 }
                 otaCleanedUp = true
-                updateProgress(step: step + 6)
+                updateProgress(currentStep: step + 6)
             } else {
-                updateProgress(step: step + 6)
+                updateProgress(currentStep: step + 6)
             }
         }
     }
