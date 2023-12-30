@@ -7,4 +7,5 @@
 
 #import "LocSim/LocSimPrivateHeaders.h"
 #import "TSUtil.h"
-#import "Libs/SwiftProcessViewer/delecture.h"
+#import "delecture.h"
+int userspaceReboot(void);

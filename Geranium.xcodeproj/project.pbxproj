@@ -26,6 +26,10 @@
 		799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799488A52B347E2C00AFFDCF /* LocSimManager.swift */; };
 		79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */; };
 		79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA95892B30D91600380D83 /* RootHelperMan.swift */; };
+		79C28EF72B3F5C7100050A42 /* ByeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EF62B3F5C7100050A42 /* ByeTimeView.swift */; };
+		79C28EF92B3F5ED800050A42 /* ByeTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */; };
+		79C28EFC2B3F61F300050A42 /* userspaceReboot.c in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EFB2B3F61F200050A42 /* userspaceReboot.c */; };
+		79C28F6F2B3FA32300050A42 /* XPC.apinotes in Resources */ = {isa = PBXBuildFile; fileRef = 79C28F6D2B3FA32300050A42 /* XPC.apinotes */; };
 		79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF26982B31C90C005D81D2 /* WelcomeView.swift */; };
 		FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */; };
 		FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D62B265FEA00FC7287 /* ContentView.swift */; };
@@ -78,6 +82,22 @@
 		799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
 		79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		79BA95892B30D91600380D83 /* RootHelperMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelperMan.swift; sourceTree = "<group>"; };
+		79C28EF62B3F5C7100050A42 /* ByeTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeTimeView.swift; sourceTree = "<group>"; };
+		79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeTimeHelper.swift; sourceTree = "<group>"; };
+		79C28EFB2B3F61F200050A42 /* userspaceReboot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = userspaceReboot.c; sourceTree = "<group>"; };
+		79C28F642B3FA32300050A42 /* connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connection.h; sourceTree = "<group>"; };
+		79C28F652B3FA32300050A42 /* rich_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rich_error.h; sourceTree = "<group>"; };
+		79C28F662B3FA32300050A42 /* availability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = availability.h; sourceTree = "<group>"; };
+		79C28F672B3FA32300050A42 /* session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = session.h; sourceTree = "<group>"; };
+		79C28F682B3FA32300050A42 /* xpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpc.h; sourceTree = "<group>"; };
+		79C28F692B3FA32300050A42 /* activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activity.h; sourceTree = "<group>"; };
+		79C28F6A2B3FA32300050A42 /* endpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endpoint.h; sourceTree = "<group>"; };
+		79C28F6B2B3FA32300050A42 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		79C28F6C2B3FA32300050A42 /* listener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listener.h; sourceTree = "<group>"; };
+		79C28F6D2B3FA32300050A42 /* XPC.apinotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.apinotes; path = XPC.apinotes; sourceTree = "<group>"; };
+		79C28F6E2B3FA32300050A42 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		79C28F702B3FA35600050A42 /* launch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = launch.h; sourceTree = "<group>"; };
+		79C28F712B3FA38900050A42 /* bootstrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bootstrap.h; sourceTree = "<group>"; };
 		79DF26982B31C90C005D81D2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		FAA456D12B265FEA00FC7287 /* Geranium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geranium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumApp.swift; sourceTree = "<group>"; };
@@ -144,7 +164,6 @@
 		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
 			isa = PBXGroup;
 			children = (
-				795019BA2B2B54A6008EEC91 /* delecture.h */,
 				795019B82B2B5055008EEC91 /* main.m */,
 			);
 			path = SwiftProcessViewer;
@@ -169,6 +188,44 @@
 				7989FD022B347EEA00FBAB8D /* LocSimView.swift */,
 			);
 			path = LocSim;
+			sourceTree = "<group>";
+		};
+		79C28EF52B3F5C5700050A42 /* ByeTime */ = {
+			isa = PBXGroup;
+			children = (
+				79C28EF62B3F5C7100050A42 /* ByeTimeView.swift */,
+				79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */,
+			);
+			path = ByeTime;
+			sourceTree = "<group>";
+		};
+		79C28EFA2B3F61C600050A42 /* userspaceReboot */ = {
+			isa = PBXGroup;
+			children = (
+				79C28EFB2B3F61F200050A42 /* userspaceReboot.c */,
+				79C28F632B3FA31400050A42 /* xpc */,
+			);
+			path = userspaceReboot;
+			sourceTree = "<group>";
+		};
+		79C28F632B3FA31400050A42 /* xpc */ = {
+			isa = PBXGroup;
+			children = (
+				79C28F692B3FA32300050A42 /* activity.h */,
+				79C28F662B3FA32300050A42 /* availability.h */,
+				79C28F6B2B3FA32300050A42 /* base.h */,
+				79C28F712B3FA38900050A42 /* bootstrap.h */,
+				79C28F642B3FA32300050A42 /* connection.h */,
+				79C28F6E2B3FA32300050A42 /* debug.h */,
+				79C28F6A2B3FA32300050A42 /* endpoint.h */,
+				79C28F6C2B3FA32300050A42 /* listener.h */,
+				79C28F652B3FA32300050A42 /* rich_error.h */,
+				79C28F672B3FA32300050A42 /* session.h */,
+				79C28F6D2B3FA32300050A42 /* XPC.apinotes */,
+				79C28F682B3FA32300050A42 /* xpc.h */,
+				79C28F702B3FA35600050A42 /* launch.h */,
+			);
+			path = xpc;
 			sourceTree = "<group>";
 		};
 		FAA456C82B265FEA00FC7287 = {
@@ -204,6 +261,7 @@
 				FAA4572E2B2666E800FC7287 /* Cleaner */,
 				FAA4572A2B26669100FC7287 /* DaemonMan */,
 				799488A42B347E1100AFFDCF /* LocSim */,
+				79C28EF52B3F5C5700050A42 /* ByeTime */,
 				FAA4572B2B26669B00FC7287 /* The Supviser */,
 				790301BF2B377E850044E30A /* Translations */,
 				FAA456D82B265FEC00FC7287 /* Assets.xcassets */,
@@ -224,7 +282,9 @@
 			isa = PBXGroup;
 			children = (
 				FAA457222B26654700FC7287 /* Addon.swift */,
+				795019BA2B2B54A6008EEC91 /* delecture.h */,
 				791820992B31F109007EEC24 /* LogHelper.swift */,
+				79C28EFA2B3F61C600050A42 /* userspaceReboot */,
 				79BA95892B30D91600380D83 /* RootHelperMan.swift */,
 				795019B72B2B5016008EEC91 /* SwiftProcessViewer */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
@@ -397,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C28F6F2B3FA32300050A42 /* XPC.apinotes in Resources */,
 				FAA456DC2B265FEC00FC7287 /* Preview Assets.xcassets in Resources */,
 				FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */,
 				790301C12B377EA70044E30A /* Localizable.xcstrings in Resources */,
@@ -440,6 +501,8 @@
 				FAA457322B2667CB00FC7287 /* SuperviseView.swift in Sources */,
 				792845532B2C67910021E1FD /* FileCleaner.swift in Sources */,
 				799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */,
+				79C28EFC2B3F61F300050A42 /* userspaceReboot.c in Sources */,
+				79C28EF72B3F5C7100050A42 /* ByeTimeView.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
 				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
@@ -449,6 +512,7 @@
 				79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */,
 				79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */,
 				FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */,
+				79C28EF92B3F5ED800050A42 /* ByeTimeHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

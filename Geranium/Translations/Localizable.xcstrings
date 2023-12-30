@@ -665,6 +665,18 @@
         }
       }
     },
+    "Bye ScreenTime !" : {
+
+    },
+    "ByeTime" : {
+
+    },
+    "ByeTime allows you to completly disable Screen Time, iCloud or not." : {
+
+    },
+    "ByeTime Settings" : {
+
+    },
     "Bypass App Update Pop Up" : {
       "localizations" : {
         "es" : {
@@ -1323,6 +1335,12 @@
         }
       }
     },
+    "Disable Homed" : {
+
+    },
+    "Disable Screen Time Agent" : {
+
+    },
     "Disable update pop-up" : {
       "localizations" : {
         "es" : {
@@ -1392,6 +1410,9 @@
           }
         }
       }
+    },
+    "Disable Usage Tracking Agent" : {
+
     },
     "Disabled Daemons Manager" : {
       "localizations" : {
@@ -2389,6 +2410,12 @@
           }
         }
       }
+    },
+    "Homed" : {
+
+    },
+    "Homed is in charge of HomeKit accessories and products, for instance HomePods, connected light bulbs and other, that you are managing from the 'Home' app on your phone. Don't disable this if you are using those accessories." : {
+
     },
     "If you want to enable auto-update, you need to turn on Magnifier URL Scheme in TrollStore." : {
       "localizations" : {
@@ -3615,6 +3642,7 @@
       }
     },
     "Rebuild Icon Cache" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -4021,6 +4049,12 @@
           }
         }
       }
+    },
+    "Screen Time Agent" : {
+
+    },
+    "Screen Time Agent is responsible for managing all of ScreenTime preferences. Disabling this process only might at best disable Screen Time partially." : {
+
     },
     "Search a currently running daemon..." : {
       "localizations" : {
@@ -5069,6 +5103,12 @@
           }
         }
       }
+    },
+    "Usage Tracking Agent" : {
+
+    },
+    "Usage Tracking Agent monitors and reports usage budgets set by Health, Parental Controls (= Screen Time) or Device Management. Disabling this might also disable some other features on your iPhone." : {
+
     },
     "WARNING" : {
       "localizations" : {

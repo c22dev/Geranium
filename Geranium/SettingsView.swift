@@ -15,8 +15,14 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List {
-                Section(header: Label("Debug Stuff", systemImage: "chevron.left.forwardslash.chevron.right"), footer: Text("This setting allows you to see experimental values from some app variables.")
-                ) {
+                Section(header: Label("ByeTime", systemImage: "hourglass"), footer: Text("ByeTime allows you to completly disable Screen Time, iCloud or not.")) {
+                    NavigationLink(destination: ByeTimeView(DebugStuff: $DebugStuff)) {
+                        HStack {
+                            Text("ByeTime Settings")
+                        }
+                    }
+                }
+                Section(header: Label("Debug Stuff", systemImage: "chevron.left.forwardslash.chevron.right"), footer: Text("This setting allows you to see experimental values from some app variables.")) {
                     Toggle(isOn: $DebugStuff) {
                         Text("Debug Info")
                     }

@@ -45,12 +45,6 @@ struct HomeView: View {
                 Button("Respring", action: {
                     respring()
                 })
-                .padding()
-                Button("Rebuild Icon Cache", action: {
-                    UIApplication.shared.alert(title:"Rebuilding Icon Cache...", body:"Please wait, your phone until your phone repsrings.", withButton: false)
-                    let output = RootHelper.rebuildIconCache()
-                    print(output)
-                })
                 .padding(.bottom, 24)
             }
             .background(Color(UIColor.systemGroupedBackground))
