@@ -14,12 +14,22 @@ public var logCachesPath = "/var/log/"
 public var logsCachesPath = "/var/logs/"
 public var tmpCachesPath = "/var/tmp/"
 public var globalCachesPath = "/var/mobile/Library/Caches/com.apple.CacheDeleteAppContainerCaches.deathrow"
+public var mailmessdat = "/var/mobile/Library/Mail/MessageData"
+public var mailattach = "/var/mobile/Library/Mail/AttachmentData"
+public var deletedVideos = "/var/mobile/Media/PhotoData/Thumbnails/VideoKeyFrames/DCIM"
+public var deletedPhotos = "/var/mobile/Media/PhotoData/Thumbnails/V2/PhotoData/CPLAssets"
 public var phototmpCachePath = "/var/mobile/Media/PhotoData/CPL/storage/filecache/"
+public var photoOther = "/var/mobile/Media/PhotoData/Thumbnails/V2/DCIM"
 // Safari Caches
 public var safariCachePath = "\(getBundleDir(bundleID: "com.apple.mobilesafari"))Library/Caches/"
 public var safariImgCachePath = "\(getBundleDir(bundleID: "com.apple.mobilesafari"))Library/Image Cache/"
 // OTA Update
 public var OTAPath = "/var/MobileSoftwareUpdate/MobileAsset/AssetsV2/com_apple_MobileAsset_SoftwareUpdate/"
+// Leftovers
+public var leftovYT = "\(getBundleDir(bundleID: "com.google.ios.youtube"))Documents/Carida_Files/"
+public var leftovTikTok = "\(getBundleDir(bundleID: "com.zhiliaoapp.musically"))/Documents/drafts/"
+public var leftovTwitter = "\(getBundleDir(bundleID: "com.atebits.Tweetie2"))/Caches/"
+public var leftovSpotify = "\(getBundleDir(bundleID: "com.spotify.client"))/Caches/"
 
 // credit to bomberfish
 public func getBundleDir(bundleID: String) -> URL {
@@ -88,7 +98,12 @@ func getSizeForGeneralCaches(completion: @escaping (Double) -> Void) {
         tmpCachesPath,
         phototmpCachePath,
         logsCachesPath,
-        globalCachesPath
+        globalCachesPath,
+        mailmessdat,
+        mailattach,
+        deletedVideos,
+        deletedPhotos,
+        photoOther
     ]
     
     var remainingPaths = paths.count
@@ -119,5 +134,38 @@ func getSizeForSafariCaches(completion: @escaping (Double) -> Void) {
 func getSizeForOTA(completion: @escaping (Double) -> Void) {
     calculateDirectorySizeAsync(url: URL(fileURLWithPath: OTAPath)) { size in
         completion(size)
+    }
+}
+
+func getSizeForAppLeftover(completion: @escaping (Double) -> Void) {
+    var leftOverCacheSize: Double = 0
+    
+    let paths = [
+        leftovYT,
+        leftovTikTok,
+        leftovTwitter,
+        leftovSpotify
+    ]
+    
+    var remainingPaths = paths.count
+    
+    for path in paths {
+        calculateDirectorySizeAsync(url: URL(fileURLWithPath: path)) { size in
+            leftOverCacheSize += size
+            remainingPaths -= 1
+            
+            if remainingPaths == 0 {
+                completion(leftOverCacheSize)
+            }
+        }
+    }
+}
+
+func draftWarning(isEnabled: Bool = false)-> String {
+    if isEnabled {
+        return "\nThe options you selected will clean your Drafts in some apps (e.g. TikTok)"
+    }
+    else {
+        return ""
     }
 }

@@ -458,7 +458,11 @@
     "App Icon" : {
 
     },
+    "Apps Leftover Caches" : {
+
+    },
     "Battery Usage Data" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -3661,6 +3665,9 @@
           }
         }
       }
+    },
+    "Reboot" : {
+
     },
     "Rebuild Icon Cache" : {
       "extractionState" : "stale",

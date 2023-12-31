@@ -102,6 +102,29 @@ func exitGracefully() {
     }
 }
 
+func rebootUSR() {
+    UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+    
+    let animator = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 1) {
+        let windows: [UIWindow] = UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap(\.windows)
+        
+        for window in windows {
+            window.alpha = 0
+            window.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }
+    }
+    
+    animator.addCompletion { _ in
+        userspaceReboot()
+        sleep(2)
+        exit(0)
+    }
+    
+    animator.startAnimation()
+}
+
 
 extension UIColor {
     var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {

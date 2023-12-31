@@ -10,17 +10,19 @@ struct CleanerView: View {
     @State var defaultView: Bool = true
     @State var progressView: Bool = false
     @State var resultView: Bool = false
+    @State var wannaReboot: Bool = false
     
     // User Selection
     @State var safari = false
     @State var appCaches = false
     @State var otaCaches = false
-    @State var batteryUsageDat = false
+    @State var leftoverCaches = false
     
     // Sizes
     @State private var safariCacheSize: Double = 0
     @State private var GlobalCacheSize: Double = 0
     @State private var OTACacheSize: Double = 0
+    @State private var leftOverCacheSize: Double = 0
     
     // Results
     @State private var progressAmount:CGFloat = 0
@@ -45,14 +47,26 @@ struct CleanerView: View {
         VStack {
             // Default View if nothing is being done
             if defaultView {
+                if wannaReboot {
+                    Button("Reboot", action: {
+                        rebootUSR()
+                        userspaceReboot()
+                    })
+                    .padding(10)
+                    .background(Color.accentColor)
+                    .cornerRadius(8)
+                    .foregroundColor(.black)
+                    .transition(.scale)
+                }
                 // check if smth is selected
-                if safari || appCaches || otaCaches || batteryUsageDat {
+                else if safari || appCaches || otaCaches || leftoverCaches {
                     Button("Clean !", action: {
-                        UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nBattery Usage Data: \(truelyEnabled(batteryUsageDat))\n Are you sure you want to permanently delete those files ?", onOK: {
+                        UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nApps Leftover Caches: \(truelyEnabled(leftoverCaches))\n Are you sure you want to permanently delete those files ? \(draftWarning(isEnabled: leftoverCaches))", onOK: {
                             print("")
                             withAnimation {
                                 defaultView.toggle()
                                 progressView.toggle()
+                                wannaReboot = false
                             }
                         }, noCancel: false, yes: true)
                     })
@@ -64,7 +78,7 @@ struct CleanerView: View {
                 }
                 else {
                     Button("Clean !", action: {
-                        UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nBattery Usage Data: \(truelyEnabled(batteryUsageDat))\n Are you sure you want to permanently delete those files ?", onOK: {
+                        UIApplication.shared.confirmAlert(title: "Selected options", body: "watefuk", onOK: {
                             print("nothing selected ?")
                         }, noCancel: false, yes: true)
                     })
@@ -113,12 +127,18 @@ struct CleanerView: View {
                     }
                 }
                 
-                Toggle(isOn: $batteryUsageDat) {
-                    Image(systemName: "battery.100percent")
-                    Text("Battery Usage Data")
+                Toggle(isOn: $leftoverCaches) {
+                    Image(systemName: "app.badge.checkmark")
+                    Text("Apps Leftover Caches")
+                    Text("> " + String(format: "%.2f MB", leftOverCacheSize / (1024 * 1024)))
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
+                .onAppear {
+                    getSizeForAppLeftover { size in
+                        self.leftOverCacheSize = size
+                    }
+                }
             }
             // View being in progress
             else if progressView {
@@ -143,6 +163,7 @@ struct CleanerView: View {
                         successDetected.toggle()
                         resultView.toggle()
                         defaultView.toggle()
+                        wannaReboot.toggle()
                     }
                 })
                 .padding(10)
@@ -191,7 +212,8 @@ struct CleanerView: View {
         }
     }
     func performCleanup() {
-        cleanProcess(safari: safari, appCaches: appCaches, otaCaches: otaCaches, batteryUsageDat: batteryUsageDat) { progressHandler in
+        cleanProcess(safari: safari, appCaches: appCaches, otaCaches: otaCaches, leftOverCaches:
+                        leftoverCaches) { progressHandler in
             progressAmount = progressHandler
             if (progressAmount >= 0.9) {
                 withAnimation {

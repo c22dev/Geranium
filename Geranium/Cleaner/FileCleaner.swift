@@ -7,11 +7,12 @@
 
 import Foundation
 
-func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDat: Bool, progressHandler: @escaping (Double) -> Void) {
+func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, leftOverCaches: Bool, progressHandler: @escaping (Double) -> Void) {
     print("in the func")
     var safariCleanedUp = false
     var appCleanedUp = false
     var otaCleanedUp = false
+    var leftCleanedUp = false
     var RHResult = ""
     print(safari, appCaches, otaCaches)
     
@@ -48,7 +49,19 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
 
             if appCaches, !appCleanedUp {
                 print("appcaches")
-                let paths = [logmobileCachesPath, logCachesPath, logsCachesPath, tmpCachesPath, phototmpCachePath, globalCachesPath]
+                let paths = [
+                    logCachesPath,
+                    logmobileCachesPath,
+                    tmpCachesPath,
+                    phototmpCachePath,
+                    logsCachesPath,
+                    globalCachesPath,
+                    mailmessdat,
+                    mailattach,
+                    deletedVideos,
+                    deletedPhotos,
+                    photoOther
+                ]
 
                 for path in paths {
                     RHResult = deleteContentsOfDirectory(atPath: path)
@@ -78,6 +91,25 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, batteryUsageDa
                 updateProgress(currentStep: step + 6)
             } else {
                 updateProgress(currentStep: step + 6)
+            }
+            
+            if leftOverCaches, !leftCleanedUp {
+                let paths = [leftovYT, leftovTikTok, leftovTwitter, leftovSpotify]
+                print("leftOv")
+                for path in paths {
+                    RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(path))
+                    if RHResult != "0" {
+                        progressHandler(-99)
+                        return
+                    } else {
+                        updateProgress(currentStep: step + 8)
+                    }
+                }
+                leftCleanedUp = true
+                updateProgress(currentStep: step + 9)
+            }
+            else {
+                updateProgress(currentStep: step + 9)
             }
         }
     }
