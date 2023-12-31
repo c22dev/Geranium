@@ -79,6 +79,7 @@ struct DaemonView: View {
                 }
             }
         }
+        .zIndex(0)
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading) {
                 Text("Daemons")
