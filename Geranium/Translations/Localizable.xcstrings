@@ -455,6 +455,9 @@
         }
       }
     },
+    "App Icon" : {
+
+    },
     "Battery Usage Data" : {
       "localizations" : {
         "es" : {
@@ -524,6 +527,9 @@
           }
         }
       }
+    },
+    "Beta" : {
+
     },
     "Bookmarks" : {
       "localizations" : {
@@ -595,6 +601,9 @@
         }
       }
     },
+    "Bouquet" : {
+
+    },
     "By adding some rules to iOS internals, this software prevents the daemon from launching when you boot your phone. The app lists every running daemon, and you can swipe to the left to remove one of them." : {
       "localizations" : {
         "es" : {
@@ -664,6 +673,12 @@
           }
         }
       }
+    },
+    "by c22dev" : {
+
+    },
+    "by PhucDo" : {
+
     },
     "Bye ScreenTime !" : {
 
@@ -1194,6 +1209,9 @@
           }
         }
       }
+    },
+    "Default" : {
+
     },
     "Deleting... %@" : {
       "localizations" : {
@@ -2154,6 +2172,9 @@
           }
         }
       }
+    },
+    "Flore" : {
+
     },
     "General Caches" : {
       "localizations" : {
@@ -5511,6 +5532,9 @@
           }
         }
       }
+    },
+    "You can choose and define a custom icon proposed by the community." : {
+
     },
     "You might want to quit and go back in the app." : {
       "localizations" : {
