@@ -76,6 +76,5 @@ func DisableScreenTime(screentimeagentd: Bool, usagetrackingd: Bool, homed: Bool
     // UserSpace Reboot
     successVibrate()
     rebootUSR()
-    userspaceReboot()
     return "done"
 }

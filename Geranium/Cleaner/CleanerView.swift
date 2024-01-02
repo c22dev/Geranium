@@ -49,19 +49,8 @@ struct CleanerView: View {
         VStack {
             // Default View if nothing is being done
             if defaultView {
-                if wannaReboot {
-                    Button("Reboot", action: {
-                        rebootUSR()
-                        userspaceReboot()
-                    })
-                    .padding(10)
-                    .background(Color.accentColor)
-                    .cornerRadius(8)
-                    .foregroundColor(.black)
-                    .transition(.scale)
-                }
                 // check if smth is selected
-                else if safari || appCaches || otaCaches || leftoverCaches {
+                if safari || appCaches || otaCaches || leftoverCaches {
                     Button("Clean !", action: {
                         UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nApps Leftover Caches: \(truelyEnabled(leftoverCaches))\n Are you sure you want to permanently delete those files ? \(draftWarning(isEnabled: leftoverCaches))", onOK: {
                             print("")
@@ -104,6 +93,7 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
+                .transition(.scale)
                 .onAppear {
                     getSizeForSafariCaches { size in
                         self.safariCacheSize = size
@@ -116,6 +106,7 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
+                .transition(.scale)
                 .onAppear {
                     getSizeForGeneralCaches { size in
                         self.GlobalCacheSize = size
@@ -129,6 +120,7 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
+                .transition(.scale)
                 .onAppear {
                     getSizeForOTA { size in
                         self.OTACacheSize = size
@@ -142,10 +134,20 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
+                .transition(.scale)
                 .onAppear {
                     getSizeForAppLeftover { size in
                         self.leftOverCacheSize = size
                     }
+                }
+                if wannaReboot {
+                    Button("Reboot", action: {
+                        rebootUSR()
+                    })
+                    .font(.headline.bold())
+                    .foregroundColor(Color.accentColor)
+                    .transition(.scale)
+                    .padding(.top, 10)
                 }
             }
             // View being in progress
@@ -168,6 +170,7 @@ struct CleanerView: View {
                     .foregroundStyle(.green)
                 Button("Exit", action: {
                     withAnimation {
+                        progressAmount = 0
                         if !appSettings.keepCheckBoxesC {
                             safari = false
                             appCaches = false
@@ -204,6 +207,7 @@ struct CleanerView: View {
                 
                 Button("Try again", action: {
                     withAnimation {
+                        progressAmount = 0
                         if !appSettings.keepCheckBoxesC {
                             safari = false
                             appCaches = false
@@ -214,6 +218,7 @@ struct CleanerView: View {
                         errorDetected.toggle()
                         resultView.toggle()
                         defaultView.toggle()
+                        wannaReboot = true
                     }
                 })
                 .padding(10)

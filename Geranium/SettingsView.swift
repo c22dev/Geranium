@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     @State var DebugStuff: Bool = false
     @State var MinimCal: String = ""
+    @State var LocSimTries: String = ""
     @StateObject private var appSettings = AppSettings()
     var body: some View {
         NavigationView {
@@ -44,14 +45,14 @@ struct SettingsView: View {
                     }
                     if DebugStuff {
                         HStack {
-                            Text("Minimal Size:")
+                            Text("Minimum Size:")
                             Spacer()
                             TextField("50.0 MB", text: $MinimCal)
                                 .keyboardType(.decimalPad)
                                 .multilineTextAlignment(.trailing)
                         }
                         .onAppear {
-                            var MinimCal = "\(appSettings.minimSizeC)"
+                            MinimCal = "\(appSettings.minimSizeC)"
                         }
                         .onChange(of: MinimCal) { newValue in
                             if MinimCal == "" {
@@ -59,6 +60,31 @@ struct SettingsView: View {
                             }
                             else {
                                 appSettings.minimSizeC = Double(MinimCal) ?? 50.0
+                            }
+                        }
+                    }
+                }
+                Section(header: Label("LocSim Settings", systemImage: "location.fill.viewfinder"), footer: Text("Various settings for LocSim. Sometimes, users can encounter issues with stopping LocSim. Those settings will allow you to attempt to stop LocSim multiple time.")) {
+                    Toggle(isOn: $appSettings.locSimMultipleAttempts) {
+                        Text("Try stopping LocSim multiple times")
+                    }
+                    if appSettings.locSimMultipleAttempts {
+                        HStack {
+                            Text("Minimum Attempts:")
+                            Spacer()
+                            TextField("3", text: $LocSimTries)
+                                .keyboardType(.numberPad)
+                                .multilineTextAlignment(.trailing)
+                        }
+                        .onAppear {
+                            LocSimTries = "\(appSettings.locSimAttemptNB)"
+                        }
+                        .onChange(of: LocSimTries) { newValue in
+                            if LocSimTries == "" {
+                                appSettings.locSimAttemptNB = 1
+                            }
+                            else {
+                                appSettings.locSimAttemptNB = Int(LocSimTries) ?? 1
                             }
                         }
                     }

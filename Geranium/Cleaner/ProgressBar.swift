@@ -39,12 +39,27 @@ struct ProgressBar: View {
     
     func getProgressBarWidth(geometry: GeometryProxy) -> CGFloat {
         let frame = geometry.frame(in: .global)
-        return frame.size.width * value
+        if value == 0.9 {
+            return frame.size.width * 1
+        }
+        else {
+            return frame.size.width * value
+        }
     }
     
     func getPercentage(_ value: CGFloat) -> String {
         let intValue = Int(ceil(value * 100))
-        return "\(intValue) %"
+        // in case roothelper fucks up!
+        if intValue == -9900 {
+            return "99 %"
+        }
+        // it's done
+        if intValue == 90 {
+            return "100 %"
+        }
+        else {
+            return "\(intValue) %"
+        }
     }
 }
 

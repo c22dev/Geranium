@@ -63,4 +63,6 @@ class AppSettings: ObservableObject {
     @AppStorage("isFirstRun") var isFirstRun: Bool = true
     @AppStorage("minimSizeC") var minimSizeC: Double = 50.0
     @AppStorage("keepCheckBoxesC") var keepCheckBoxesC: Bool = true
+    @AppStorage("LocSimAttempts") var locSimAttemptNB: Int = 1
+    @AppStorage("locSimMultipleAttempts") var locSimMultipleAttempts: Bool = false
 }

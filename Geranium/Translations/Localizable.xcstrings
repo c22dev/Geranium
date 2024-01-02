@@ -257,6 +257,9 @@
         }
       }
     },
+    "3" : {
+
+    },
     "3. Enable URL Scheme" : {
       "localizations" : {
         "es" : {
@@ -3487,6 +3490,9 @@
         }
       }
     },
+    "LocSim Settings" : {
+
+    },
     "Log Collection" : {
       "localizations" : {
         "es" : {
@@ -3767,7 +3773,10 @@
         }
       }
     },
-    "Minimal Size:" : {
+    "Minimum Attempts:" : {
+
+    },
+    "Minimum Size:" : {
 
     },
     "No bookmarks saved." : {
@@ -5636,6 +5645,9 @@
         }
       }
     },
+    "Try stopping LocSim multiple times" : {
+
+    },
     "Understood" : {
       "localizations" : {
         "es" : {
@@ -5883,6 +5895,9 @@
           }
         }
       }
+    },
+    "Various settings for LocSim. Sometimes, users can encounter issues with stopping LocSim. Those settings will allow you to attempt to stop LocSim multiple time." : {
+
     },
     "Various settings for the cleaner." : {
 

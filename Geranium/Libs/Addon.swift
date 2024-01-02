@@ -88,6 +88,8 @@ func respring() {
         killall("SpringBoard")
         killall("FrontBoard")
         killall("BackBoard")
+        // if others failed...
+        UIApplication.shared.respringDeprecated()
         sleep(2)
         exit(0)
     }
@@ -215,6 +217,15 @@ extension UIApplication {
             
             topController.present(alert, animated: true)
             // topController should now be your topmost view controller
+        }
+    }
+    
+    func respringDeprecated() {
+        let app = self
+        // Credit to Amy While for this respring bug
+        guard let window = app.windows.first else { return }
+        while true {
+            window.snapshotView(afterScreenUpdates: false)
         }
     }
 }

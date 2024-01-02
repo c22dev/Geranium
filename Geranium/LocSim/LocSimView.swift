@@ -10,6 +10,8 @@ import CoreLocation
 
 
 struct LocSimView: View {
+    @StateObject private var appSettings = AppSettings()
+    
     @State private var locationManager = CLLocationManager()
     @State private var lat: Double = 0.0
     @State private var long: Double = 0.0
@@ -53,7 +55,18 @@ struct LocSimView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    LocSimManager.stopLocSim()
+                    if appSettings.locSimMultipleAttempts {
+                        var countdown = appSettings.locSimAttemptNB
+                        DispatchQueue.global().async {
+                            while countdown > 0 {
+                                LocSimManager.stopLocSim()
+                                countdown -= 1
+                            }
+                        }
+                    }
+                    else {
+                        LocSimManager.stopLocSim()
+                    }
                     miniimpactVibrate()
                 }) {
                     Image(systemName: "location.slash")
