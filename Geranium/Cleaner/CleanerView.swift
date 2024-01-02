@@ -93,7 +93,7 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
-                .transition(.scale)
+                
                 .onAppear {
                     getSizeForSafariCaches { size in
                         self.safariCacheSize = size
@@ -106,7 +106,6 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
-                .transition(.scale)
                 .onAppear {
                     getSizeForGeneralCaches { size in
                         self.GlobalCacheSize = size
@@ -120,7 +119,6 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
-                .transition(.scale)
                 .onAppear {
                     getSizeForOTA { size in
                         self.OTACacheSize = size
@@ -134,7 +132,6 @@ struct CleanerView: View {
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
-                .transition(.scale)
                 .onAppear {
                     getSizeForAppLeftover { size in
                         self.leftOverCacheSize = size
