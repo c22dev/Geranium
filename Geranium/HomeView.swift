@@ -59,11 +59,11 @@ struct HomeView: View {
                 List {
                     Section (header: Text("Credits")) {
                         if !isMiniDevice() {
-                            LinkCell(imageLink: "https://avatars.githubusercontent.com/u/102235607?v=4&s=160&v=4", url: "https://github.com/c22dev", title: "c22dev", description: "Main developer")
+                            LinkCell(imageLink: "https://cclerc.ch/db/geranium/102235607.png", url: "https://github.com/c22dev", title: "c22dev", description: "Main developer")
                         }
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish", description: "Daemon Listing")
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/412187004407775242/1df69ac879b9e5f98396553eeac80cec.webp?size=160", url: "https://github.com/sourcelocation", title: "sourcelocation", description: "Swift UI Functions")
-                        LinkCell(imageLink: "https://avatars.githubusercontent.com/u/85764897?s=160&v=4", url: "https://github.com/haxi0", title: "haxi0", description: "Welcome Page source")
+                        LinkCell(imageLink: "https://cclerc.ch/db/geranium/85764897.png", url: "https://github.com/haxi0", title: "haxi0", description: "Welcome Page source")
                     }
                 }
                 .disableListScroll()

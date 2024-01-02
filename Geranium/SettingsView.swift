@@ -109,7 +109,7 @@ struct SettingsView: View {
                     }) {
                         HStack {
                             Image(uiImage: Bundle.main.icon!)
-                                .cornerRadius(10)
+                                .cornerRadius(15)
                                 .frame(width: 62.5, height: 62.5)
                             VStack(alignment: .leading) {
                                 Text("Default")
@@ -127,9 +127,9 @@ struct SettingsView: View {
                         }
                     }) {
                         HStack {
-                            if let imageURL = URL(string: "https://i.ibb.co/yQ6vj8q/actualgeranium.png") {
+                            if let imageURL = URL(string: "https://cclerc.ch/db/geranium/icn/Bouquet.png") {
                                 AsyncImageView(url: imageURL)
-                                    .cornerRadius(10)
+                                    .cornerRadius(15)
                                     .frame(width: 62.5, height: 62.5)
                             }
                             VStack(alignment: .leading) {
@@ -148,9 +148,9 @@ struct SettingsView: View {
                         }
                     }) {
                         HStack {
-                            if let imageURL = URL(string: "https://i.ibb.co/zGTJNJy/Beta.png") {
+                            if let imageURL = URL(string: "https://cclerc.ch/db/geranium/icn/Beta-2.png") {
                                 AsyncImageView(url: imageURL)
-                                    .cornerRadius(10)
+                                    .cornerRadius(15)
                                     .frame(width: 62.5, height: 62.5)
                             }
                             VStack(alignment: .leading) {
@@ -169,9 +169,9 @@ struct SettingsView: View {
                         }
                     }) {
                         HStack {
-                            if let imageURL = URL(string: "https://i.ibb.co/Jqtr2Jv/flora.png") {
+                            if let imageURL = URL(string: "https://cclerc.ch/db/geranium/icn/Flore.png") {
                                 AsyncImageView(url: imageURL)
-                                    .cornerRadius(10)
+                                    .cornerRadius(15)
                                     .frame(width: 62.5, height: 62.5)
                             }
                             VStack(alignment: .leading) {

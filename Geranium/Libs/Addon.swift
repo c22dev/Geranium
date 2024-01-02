@@ -379,7 +379,7 @@ func isMiniDevice() -> Bool {
     let screenSize = String(format: "%0.1f", diagonal)
     let screensize = Float(screenSize) ?? 0.0
     
-    if screensize > 5.5, UIDevice.current.userInterfaceIdiom != .pad {
+    if screensize >= 5.5, UIDevice.current.userInterfaceIdiom != .pad {
         return false
     }
     else {
