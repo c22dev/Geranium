@@ -55,12 +55,7 @@ struct SettingsView: View {
                             MinimCal = "\(appSettings.minimSizeC)"
                         }
                         .onChange(of: MinimCal) { newValue in
-                            if MinimCal == "" {
-                                appSettings.minimSizeC = 50.0
-                            }
-                            else {
-                                appSettings.minimSizeC = Double(MinimCal) ?? 50.0
-                            }
+                            appSettings.minimSizeC = Double(MinimCal) ?? 50.0
                         }
                     }
                 }
@@ -80,12 +75,7 @@ struct SettingsView: View {
                             LocSimTries = "\(appSettings.locSimAttemptNB)"
                         }
                         .onChange(of: LocSimTries) { newValue in
-                            if LocSimTries == "" {
-                                appSettings.locSimAttemptNB = 1
-                            }
-                            else {
-                                appSettings.locSimAttemptNB = Int(LocSimTries) ?? 1
-                            }
+                            appSettings.locSimAttemptNB = Int(LocSimTries) ?? 1
                         }
                     }
                 }

@@ -28,6 +28,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Cleaner", systemImage: "trash.fill")
                 }
+                .animation(.easeInOut)
             SuperviseView()
                 .tabItem {
                     Label("Superviser", systemImage: "checkmark.seal.fill")
