@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct CleanerView: View {
+    @StateObject private var appSettings = AppSettings()
     // View Settings
     @State var defaultView: Bool = true
     @State var progressView: Bool = false
@@ -19,6 +20,7 @@ struct CleanerView: View {
     @State var leftoverCaches = false
     
     // Sizes
+    @State private var isLowSize: Bool = false
     @State private var safariCacheSize: Double = 0
     @State private var GlobalCacheSize: Double = 0
     @State private var OTACacheSize: Double = 0
@@ -64,6 +66,11 @@ struct CleanerView: View {
                         UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nApps Leftover Caches: \(truelyEnabled(leftoverCaches))\n Are you sure you want to permanently delete those files ? \(draftWarning(isEnabled: leftoverCaches))", onOK: {
                             print("")
                             withAnimation {
+                                var sizetotal = (safariCacheSize + GlobalCacheSize + OTACacheSize + leftOverCacheSize) / (1024 * 1024)
+                                if sizetotal < appSettings.minimSizeC {
+                                    isLowSize = true
+                                }
+                                
                                 defaultView.toggle()
                                 progressView.toggle()
                                 wannaReboot = false
@@ -118,6 +125,7 @@ struct CleanerView: View {
                 Toggle(isOn: $otaCaches) {
                     Image(systemName: "restart.circle")
                     Text("OTA Update Caches")
+                    Text("> " + String(format: "%.2f MB", OTACacheSize / (1024 * 1024)))
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
@@ -160,6 +168,13 @@ struct CleanerView: View {
                     .foregroundStyle(.green)
                 Button("Exit", action: {
                     withAnimation {
+                        if !appSettings.keepCheckBoxesC {
+                            safari = false
+                            appCaches = false
+                            otaCaches = false
+                            leftoverCaches = false
+                        }
+                        isLowSize = false
                         successDetected.toggle()
                         resultView.toggle()
                         defaultView.toggle()
@@ -189,6 +204,13 @@ struct CleanerView: View {
                 
                 Button("Try again", action: {
                     withAnimation {
+                        if !appSettings.keepCheckBoxesC {
+                            safari = false
+                            appCaches = false
+                            otaCaches = false
+                            leftoverCaches = false
+                        }
+                        isLowSize = false
                         errorDetected.toggle()
                         resultView.toggle()
                         defaultView.toggle()
@@ -212,7 +234,7 @@ struct CleanerView: View {
         }
     }
     func performCleanup() {
-        cleanProcess(safari: safari, appCaches: appCaches, otaCaches: otaCaches, leftOverCaches:
+        cleanProcess(lowSize: isLowSize, safari: safari, appCaches: appCaches, otaCaches: otaCaches, leftOverCaches:
                         leftoverCaches) { progressHandler in
             progressAmount = progressHandler
             if (progressAmount >= 0.9) {
@@ -223,10 +245,12 @@ struct CleanerView: View {
                 }
             }
             if (progressAmount < -5) {
-                progressAmount = 0
-                progressView.toggle()
-                errorDetected.toggle()
-                resultView.toggle()
+                withAnimation {
+                    progressAmount = 0
+                    progressView.toggle()
+                    errorDetected.toggle()
+                    resultView.toggle()
+                }
             }
         }
     }

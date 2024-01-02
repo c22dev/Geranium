@@ -357,10 +357,21 @@ func disableListScroll() -> some View {
 }}
 
 func isMiniDevice() -> Bool {
-    if getDeviceCode() != "iPhone14,6", getDeviceCode() != "iPhone12,8", #available(iOS 16.0, *), getDeviceCode() != "iPhone13,1", getDeviceCode() != "iPhone14,4", getDeviceCode() != "iPhone10,1", getDeviceCode() != "iPhone10,4", getDeviceCode() != "iPhone10,2", getDeviceCode() != "iPhone10,5" {
+    let scale = UIScreen.main.scale
+
+    let ppi = scale * ((UIDevice.current.userInterfaceIdiom == .pad) ? 132 : 163);
+    let width = UIScreen.main.bounds.size.width * scale
+    let height = UIScreen.main.bounds.size.height * scale
+    let horizontal = width / ppi, vertical = height / ppi;
+    let diagonal = sqrt(pow(horizontal, 2) + pow(vertical, 2))
+
+    let screenSize = String(format: "%0.1f", diagonal)
+    let screensize = Float(screenSize) ?? 0.0
+    
+    if screensize > 5.5, UIDevice.current.userInterfaceIdiom != .pad {
         return false
     }
     else {
-        return false
+        return true
     }
 }

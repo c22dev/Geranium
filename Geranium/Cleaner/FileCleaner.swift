@@ -7,7 +7,7 @@
 
 import Foundation
 
-func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, leftOverCaches: Bool, progressHandler: @escaping (Double) -> Void) {
+func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCaches: Bool, leftOverCaches: Bool, progressHandler: @escaping (Double) -> Void) {
     print("in the func")
     var safariCleanedUp = false
     var appCleanedUp = false
@@ -17,100 +17,97 @@ func cleanProcess(safari: Bool, appCaches: Bool, otaCaches: Bool, leftOverCaches
     print(safari, appCaches, otaCaches)
     
     DispatchQueue.global().async {
-        let totalProgressSteps = 9
-
-        func updateProgress(currentStep: Int) {
-            let progress = Double(currentStep) / Double(totalProgressSteps)
-            progressHandler(progress)
+        func updateProgress(currentStep: Double) {
+            progressHandler(currentStep)
             miniimpactVibrate()
         }
-
-        for step in 1...totalProgressSteps {
-            if safari, !safariCleanedUp {
-                print("safari")
-                RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariCachePath))
-                if RHResult != "0" {
-                    progressHandler(-99)
-                    return
-                }
-                updateProgress(currentStep: step)
-
-                RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariImgCachePath))
-                if RHResult != "0" {
-                    progressHandler(-99)
-                    return
-                } else {
-                    safariCleanedUp = true
-                    updateProgress(currentStep: step + 2)
-                }
-            } else {
-                updateProgress(currentStep: step + 2)
+        if lowSize {
+            usleep(500000)
+        }
+        if safari, !safariCleanedUp {
+            print("safari")
+            RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariCachePath))
+            if RHResult != "0" {
+                updateProgress(currentStep: -99)
+                return
             }
-
-            if appCaches, !appCleanedUp {
-                print("appcaches")
-                let paths = [
-                    logCachesPath,
-                    logmobileCachesPath,
-                    tmpCachesPath,
-                    phototmpCachePath,
-                    logsCachesPath,
-                    globalCachesPath,
-                    mailmessdat,
-                    mailattach,
-                    deletedVideos,
-                    deletedPhotos,
-                    photoOther
-                ]
-
-                for path in paths {
-                    RHResult = deleteContentsOfDirectory(atPath: path)
-                    if RHResult != "0" {
-                        progressHandler(-99)
-                        return
-                    } else {
-                        updateProgress(currentStep: step + 3)
-                    }
-                }
-                appCleanedUp = true
-                updateProgress(currentStep: step + 4)
-            } else {
-                updateProgress(currentStep: step + 4)
-            }
-
-            if otaCaches, !otaCleanedUp {
-                print("otacaches")
-                RHResult = deleteContentsOfDirectory(atPath: OTAPath)
-                if RHResult != "0" {
-                    progressHandler(-99)
-                    return
-                } else {
-                    updateProgress(currentStep: step + 5)
-                }
-                otaCleanedUp = true
-                updateProgress(currentStep: step + 6)
-            } else {
-                updateProgress(currentStep: step + 6)
-            }
+            updateProgress(currentStep: 0.1)
             
-            if leftOverCaches, !leftCleanedUp {
-                let paths = [leftovYT, leftovTikTok, leftovTwitter, leftovSpotify]
-                print("leftOv")
-                for path in paths {
-                    RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(path))
-                    if RHResult != "0" {
-                        progressHandler(-99)
-                        return
-                    } else {
-                        updateProgress(currentStep: step + 8)
-                    }
+            RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(safariImgCachePath))
+            if RHResult != "0" {
+                updateProgress(currentStep: -99)
+                return
+            } else {
+                safariCleanedUp = true
+                updateProgress(currentStep: 0.1)
+            }
+        } else {
+            updateProgress(currentStep: 0.2)
+        }
+        
+        if appCaches, !appCleanedUp {
+            print("appcaches")
+            let paths = [
+                logCachesPath,
+                logmobileCachesPath,
+                tmpCachesPath,
+                phototmpCachePath,
+                logsCachesPath,
+                globalCachesPath,
+                mailmessdat,
+                mailattach,
+                deletedVideos,
+                deletedPhotos,
+                photoOther
+            ]
+            
+            for path in paths {
+                RHResult = deleteContentsOfDirectory(atPath: path)
+                if RHResult != "0" {
+                    updateProgress(currentStep: -99)
+                    return
+                } else {
+                    updateProgress(currentStep: 0.3)
                 }
-                leftCleanedUp = true
-                updateProgress(currentStep: step + 9)
             }
-            else {
-                updateProgress(currentStep: step + 9)
+            appCleanedUp = true
+            updateProgress(currentStep: 0.4)
+        } else {
+            updateProgress(currentStep: 0.5)
+        }
+        
+        if otaCaches, !otaCleanedUp {
+            print("otacaches")
+            RHResult = deleteContentsOfDirectory(atPath: OTAPath)
+            if RHResult != "0" {
+                updateProgress(currentStep: -99)
+                return
+            } else {
+                updateProgress(currentStep: 0.6)
             }
+            otaCleanedUp = true
+            updateProgress(currentStep: 0.6)
+        } else {
+            updateProgress(currentStep: 0.6)
+        }
+        
+        if leftOverCaches, !leftCleanedUp {
+            let paths = [leftovYT, leftovTikTok, leftovTwitter, leftovSpotify]
+            print("leftOv")
+            for path in paths {
+                RHResult = deleteContentsOfDirectory(atPath: removeFilePrefix(path))
+                if RHResult != "0" {
+                    progressHandler(-99)
+                    return
+                } else {
+                    updateProgress(currentStep: 0.8)
+                }
+            }
+            leftCleanedUp = true
+            updateProgress(currentStep: 0.9)
+        }
+        else {
+            updateProgress(currentStep: 0.9)
         }
     }
 }

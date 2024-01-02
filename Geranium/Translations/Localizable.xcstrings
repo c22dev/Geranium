@@ -45,6 +45,12 @@
             "value" : ""
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -92,6 +98,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@"
@@ -315,6 +327,9 @@
         }
       }
     },
+    "50.0 MB" : {
+
+    },
     "Alphabetical" : {
       "localizations" : {
         "es" : {
@@ -456,10 +471,66 @@
       }
     },
     "App Icon" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Icon"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Icône de l'app"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Иконка приложения"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App-ikon"
+          }
+        }
+      }
     },
     "Apps Leftover Caches" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cachés sobrantes de aplicaciones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caches restants d'apps"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 남은 캐시"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставшиеся кэши приложений"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Överblivna cacheminnen i appar"
+          }
+        }
+      }
     },
     "Battery Usage Data" : {
       "extractionState" : "stale",
@@ -533,7 +604,38 @@
       }
     },
     "Beta" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бета"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        }
+      }
     },
     "Bookmarks" : {
       "localizations" : {
@@ -606,7 +708,39 @@
       }
     },
     "Bouquet" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquez"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquet"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Букет"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquet"
+          }
+        }
+      }
     },
     "By adding some rules to iOS internals, this software prevents the daemon from launching when you boot your phone. The app lists every running daemon, and you can swipe to the left to remove one of them." : {
       "localizations" : {
@@ -679,22 +813,184 @@
       }
     },
     "by c22dev" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "por c22dev"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "par c22dev"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "от c22dev"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "av c22dev"
+          }
+        }
+      }
     },
     "by PhucDo" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "por PhucDo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "par PhucDo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "от PhucDo"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "av PhucDo"
+          }
+        }
+      }
     },
     "Bye ScreenTime !" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Adiós ScreenTime !"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Au revoir Temps d'Écran !"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " 스크린타임 제거 !"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прощай Экранное Время!"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hej då ScreenTime!"
+          }
+        }
+      }
     },
     "ByeTime" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        }
+      }
     },
     "ByeTime allows you to completly disable Screen Time, iCloud or not." : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime le permite desactivar completamente el Tiempo de Pantalla, iCloud o no."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime vous permet de complètement désactiver Temps d'Écran, iCloud ou non."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime разрешает вам окончательно выключить Экранное Время, даже если у вас iCloud."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med ByeTime kan du helt inaktivera skärmtid, iCloud eller inte."
+          }
+        }
+      }
     },
     "ByeTime Settings" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración de ByeTime"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres ByeTime"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки ByeTime"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime Inställningar"
+          }
+        }
+      }
     },
     "Bypass App Update Pop Up" : {
       "localizations" : {
@@ -880,6 +1176,12 @@
             "value" : "Очистить !"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ren !"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -944,6 +1246,12 @@
             "value" : "Очиститель"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renare"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -963,6 +1271,9 @@
           }
         }
       }
+    },
+    "Cleaner Settings" : {
+
     },
     "Credits" : {
       "localizations" : {
@@ -1042,6 +1353,12 @@
             "value" : "Daemons"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1067,6 +1384,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daemons"
@@ -1122,6 +1445,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "디버그 정보"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация об откладке"
           }
         },
         "sv" : {
@@ -1188,6 +1517,12 @@
             "value" : "디버그 장비"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отладочные материалы"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1215,7 +1550,32 @@
       }
     },
     "Default" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por defecto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Par Défaut"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "По умолчанию"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default"
+          }
+        }
+      }
     },
     "Deleting... %@" : {
       "localizations" : {
@@ -1358,10 +1718,60 @@
       }
     },
     "Disable Homed" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar Homed"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver Homed"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключить Homed"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inaktivera Homed"
+          }
+        }
+      }
     },
     "Disable Screen Time Agent" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar Screen Time Agent"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver Screen Time Agent"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключить Агента Экранного Времени"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inaktivera agenten för skärmtid"
+          }
+        }
+      }
     },
     "Disable update pop-up" : {
       "localizations" : {
@@ -1434,7 +1844,32 @@
       }
     },
     "Disable Usage Tracking Agent" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar el agente de seguimiento de uso"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver Usage Tracking Agent"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключение Агента Отслеживания Использования"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inaktivera agent för spårning av användning"
+          }
+        }
+      }
     },
     "Disabled Daemons Manager" : {
       "localizations" : {
@@ -1472,6 +1907,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "데몬 매니저 비활상화"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Менеджер выключенных системных процессов"
           }
         },
         "sv" : {
@@ -1536,6 +1977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "시스템 데몬을 비활성화할 경우 기기가 부트루프할 수 있습니다. 이에 발생하는 문제에 대해 책임지지 않습니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ВЫКЛЮЧАТЬ СИСТЕМНЫЕ ПРОЦЕССЫ ОПАСНО. ТВОЕ УСТРОЙСТВО МОЖЕТ ПОПАСТЬ В БЕСКОНЕЧНУЮ ЗАГРУЗКУ. ДЕЙСТВУЙТЕ С ОСТОРОЖНОСТЬЮ. Я НЕ НЕСУ ОТВЕТСТВЕННОСТИ ЗА ЛЮБУЮ ПРОБЛЕМУ НА ВАШЕМ УСТРОЙСТВЕ."
           }
         },
         "sv" : {
@@ -1603,6 +2050,12 @@
             "value" : "기기가 부트루프할 수 있기 때문에, 시스템 데몬을 비활성화하는 것을 권장하지 않습니다. 비활성화함으로써 발생하는 문제에 대해 책임지지 않습니다."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ВЫКЛЮЧАТЬ СИСТЕМНЫЕ ПРОЦЕССЫ НЕ РЕКОМЕНДУЕТСЯ. ТВОЕ УСТРОЙСТВО МОЖЕТ ПОПАСТЬ В БЕСКОНЕЧНУЮ ЗАГРУЗКУ. ДЕЙСТВУЙТЕ С ОСТОРОЖНОСТЬЮ. Я НЕ НЕСУ ОТВЕТСТВЕННОСТИ ЗА ЛЮБУЮ ПРОБЛЕМУ НА ВАШЕМ УСТРОЙСТВЕ."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1665,6 +2118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "취소"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть"
           }
         },
         "sv" : {
@@ -2178,7 +2637,32 @@
       }
     },
     "Flore" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Флора"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
+          }
+        }
+      }
     },
     "General Caches" : {
       "localizations" : {
@@ -2253,6 +2737,12 @@
     "Geranium" : {
       "localizations" : {
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geranium"
@@ -2386,6 +2876,12 @@
             "value" : "Inicio"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2408,6 +2904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "홈"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Главная"
           }
         },
         "sv" : {
@@ -2437,10 +2939,60 @@
       }
     },
     "Homed" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        }
+      }
     },
     "Homed is in charge of HomeKit accessories and products, for instance HomePods, connected light bulbs and other, that you are managing from the 'Home' app on your phone. Don't disable this if you are using those accessories." : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed se encarga de los accesorios y productos HomeKit, por ejemplo HomePods, bombillas conectadas y otros, que estás gestionando desde la app 'Home' de tu teléfono. No lo desactives si utilizas esos accesorios."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed est responsable des accessoires et produits HomeKit, tels que les HomePods, les lumières connectées et autres que vous contrôlez depuis l'appli Home sur votre téléphone. Ne désactivez pas cette fonctionnalité si vous utilisez ces accessoires."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed отвечает за аксессуары и продукты HomeKit, например HomePods, подключенные лампочки и другие, которыми вы управляете из приложения \"Дом\" на своем телефоне. Не отключайте эту функцию, если вы используете эти аксессуары."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed ansvarar för HomeKit-tillbehör och produkter, t.ex. HomePods, anslutna glödlampor och annat, som du hanterar från appen \"Home\" på din telefon. Inaktivera inte detta om du använder dessa tillbehör."
+          }
+        }
+      }
     },
     "If you want to enable auto-update, you need to turn on Magnifier URL Scheme in TrollStore." : {
       "localizations" : {
@@ -2548,6 +3100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "설정을 되돌리고 싶다면, 비활성화된 데몬을 전환할 수 있는 관리자(적용 아이콘 옆의 목록 아이콘)로 이동해야 합니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если ты хочешь вернуть любое из твоих решений, ты должен зайти в менеджер (иконка в списке после иконки применения), где ты можешь включать выключенные системные процессы."
           }
         },
         "sv" : {
@@ -2785,6 +3343,9 @@
           }
         }
       }
+    },
+    "Keep selection after cleaning" : {
+
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
@@ -3206,6 +3767,9 @@
         }
       }
     },
+    "Minimal Size:" : {
+
+    },
     "No bookmarks saved." : {
       "localizations" : {
         "es" : {
@@ -3242,6 +3806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "저장된 북마크가 없습니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет сохраненных закладок."
           }
         },
         "sv" : {
@@ -3306,6 +3876,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "안내"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предупреждение"
           }
         },
         "sv" : {
@@ -3474,6 +4050,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Por favor, copie su UUID y envíelo a un desarrollador."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, copie su UUID y envíelo a un desarrollador responsable."
           }
         },
         "fr" : {
@@ -3667,7 +4249,32 @@
       }
     },
     "Reboot" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reiniciar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redémarrer"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перезагрузка"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omstart"
+          }
+        }
+      }
     },
     "Rebuild Icon Cache" : {
       "extractionState" : "stale",
@@ -3743,6 +4350,12 @@
     "Respring" : {
       "localizations" : {
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Respring"
@@ -4079,10 +4692,60 @@
       }
     },
     "Screen Time Agent" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Агент Экранного Времени"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skärmtid Agent"
+          }
+        }
+      }
     },
     "Screen Time Agent is responsible for managing all of ScreenTime preferences. Disabling this process only might at best disable Screen Time partially." : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent es el responsable de gestionar todas las preferencias de ScreenTime. Desactivar este proceso sólo podría, en el mejor de los casos, desactivar Screen Time parcialmente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent se charge de gérer toutes les préférences Temps d'Écran. Désactiver uniquement ce processus ne permettra qu'une désactivation partielle de Temps d'Écran."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Агент Экранного Времени отвечает за все настройки Экранного Времени. Выключение этого процесса может в лучшем случае частично отключить Экранное Время."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent ansvarar för hanteringen av alla ScreenTime-inställningar. Om endast denna process inaktiveras kan Screen Time i bästa fall inaktiveras delvis"
+          }
+        }
+      }
     },
     "Search a currently running daemon..." : {
       "localizations" : {
@@ -4364,6 +5027,9 @@
         }
       }
     },
+    "Suika" : {
+
+    },
     "Supervise" : {
       "localizations" : {
         "es" : {
@@ -4406,6 +5072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супервайз"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supervise"
           }
         },
         "vi" : {
@@ -4458,6 +5130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Супервайзер"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Superviser"
           }
         },
         "vi" : {
@@ -4574,6 +5252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "현재 비활성화된 모든 데몬의 목록입니다. 바꾸지 않은 것을 바꾸지 마십시오. 토글된 것은 비활성화된 것입니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это список всех выключенных системных процессов прямо сейчас. Не изменяйте вещи которые вы не изменяли. Те которые переключены это те которые выключены."
           }
         },
         "sv" : {
@@ -5030,6 +5714,12 @@
             "value" : "Quitar supervisión"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin supervisión"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5058,6 +5748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выключить Супервайз"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unsupervise"
           }
         },
         "vi" : {
@@ -5133,9 +5829,62 @@
       }
     },
     "Usage Tracking Agent" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agente de seguimiento de uso"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agent"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Агент Отслеживания Использования"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agent för spårning av användning"
+          }
+        }
+      }
     },
     "Usage Tracking Agent monitors and reports usage budgets set by Health, Parental Controls (= Screen Time) or Device Management. Disabling this might also disable some other features on your iPhone." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El Agente de Seguimiento de Uso monitoriza e informa de los presupuestos de uso establecidos por Salud, Control Parental (= Tiempo de Pantalla) o Gestión de Dispositivos. Si lo desactiva, es posible que también desactive otras funciones de su iPhone."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agent visionne et reporte les usages définis par Santé, Contrôle Parental (Temps d'Écran) ou la gestion d'appareil. Désactiver cela pourrais alterer certaines fonctionnalités de votre appareil."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Агент Отслеживания Использования отслеживает и сообщает о бюджетах использования, установленных функциями \"Здоровье\", \"Родительский контроль\" (тоже самое что и экранное время) или \"Управление устройством\". Выключение этой функции может привести к выключению некоторых других функций на вашем iPhone."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agent övervakar och rapporterar användningsbudgetar som fastställts av Hälsa, Föräldrakontroll (= Skärmtid) eller Enhetshantering. Om du inaktiverar detta kan du också inaktivera vissa andra funktioner på din iPhone"
+          }
+        }
+      }
+    },
+    "Various settings for the cleaner." : {
 
     },
     "WARNING" : {
@@ -5286,6 +6035,12 @@
             "value" : "Bienvenido al programa de pruebas beta de Geranium"
           }
         },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido al programa de pruebas beta de Geranium"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5308,6 +6063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geranium 베타 테스트 프로그램에 오신 것을 환영합니다."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать в программу бета тестирования Geranium"
           }
         },
         "sv" : {
@@ -5541,11 +6302,42 @@
       }
     },
     "You can choose and define a custom icon proposed by the community." : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puedes elegir y definir un icono personalizado propuesto por la comunidad."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous pouvez choisir et définir un icône personnalisé proposé par la communauté."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы можете выбрать и определить собственную иконку, предложенный сообществом."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan välja och definiera en egen ikon som föreslagits av communityt."
+          }
+        }
+      }
     },
     "You might want to quit and go back in the app." : {
       "localizations" : {
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puede que quieras salir y volver a la aplicación."
+          }
+        },
+        "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Puede que quieras salir y volver a la aplicación."

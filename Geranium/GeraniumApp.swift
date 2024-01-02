@@ -10,20 +10,17 @@ import SwiftUI
 @main
 struct GeraniumApp: App {
     @State var isInBetaProgram = false // MARK: change this value if the build isn't Beta
-    @AppStorage("TSBypass") var tsBypass: Bool = false
-    @AppStorage("UPDBypass") var updBypass: Bool = false
-    @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
-    @AppStorage("isFirstRun") var isFirstRun: Bool = true
+    @StateObject private var appSettings = AppSettings()
     @Environment(\.dismiss) var dismiss
     var body: some Scene {
         WindowGroup {
-            ContentView(tsBypass: $tsBypass, updBypass: $updBypass, loggingAllowed: $loggingAllowed)
+            ContentView()
                 .onAppear {
-                    if checkSandbox(), !tsBypass, !isFirstRun, !isInBetaProgram{
+                    if checkSandbox(), !appSettings.tsBypass, !appSettings.isFirstRun, isInBetaProgram{
                         UIApplication.shared.alert(title:"Geranium wasn't installed with TrollStore", body:"Unable to create test file. The app cannot work without the correct entitlements. Please use TrollStore to install it.", withButton:true)
                     }
                     
-                    if !updBypass, let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, let url = URL(string: "https://api.github.com/repos/c22dev/Geranium/releases/latest") {
+                    if !appSettings.updBypass, let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, let url = URL(string: "https://api.github.com/repos/c22dev/Geranium/releases/latest") {
                         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                             guard let data = data else { return }
                             if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
@@ -41,14 +38,14 @@ struct GeraniumApp: App {
                     sendLog(RootHelper.loadMCM())
                     #endif
                 }
-                .sheet(isPresented: $isFirstRun) {
+                .sheet(isPresented: $appSettings.isFirstRun) {
                     if #available(iOS 16.0, *) {
                         NavigationStack {
-                            WelcomeView(loggingAllowed: $loggingAllowed, updBypass: $updBypass)
+                            WelcomeView(loggingAllowed: $appSettings.loggingAllowed, updBypass: $appSettings.updBypass)
                         }
                     } else {
                         NavigationView {
-                            WelcomeView(loggingAllowed: $loggingAllowed, updBypass: $updBypass)
+                            WelcomeView(loggingAllowed: $appSettings.loggingAllowed, updBypass: $appSettings.updBypass)
                         }
                     }
                 }
@@ -57,4 +54,13 @@ struct GeraniumApp: App {
                 }
         }
     }
+}
+
+class AppSettings: ObservableObject {
+    @AppStorage("TSBypass") var tsBypass: Bool = false
+    @AppStorage("UPDBypass") var updBypass: Bool = false
+    @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
+    @AppStorage("isFirstRun") var isFirstRun: Bool = true
+    @AppStorage("minimSizeC") var minimSizeC: Double = 50.0
+    @AppStorage("keepCheckBoxesC") var keepCheckBoxesC: Bool = true
 }

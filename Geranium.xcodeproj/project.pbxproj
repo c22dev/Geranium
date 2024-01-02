@@ -30,9 +30,9 @@
 		79C28EF92B3F5ED800050A42 /* ByeTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */; };
 		79C28EFC2B3F61F300050A42 /* userspaceReboot.c in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EFB2B3F61F200050A42 /* userspaceReboot.c */; };
 		79C28F6F2B3FA32300050A42 /* XPC.apinotes in Resources */ = {isa = PBXBuildFile; fileRef = 79C28F6D2B3FA32300050A42 /* XPC.apinotes */; };
+		79D06AC32B4360AB001DF870 /* Beta.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D06AC22B4360AB001DF870 /* Beta.png */; };
 		79D7891D2B41BDE700FEBD32 /* Bouquet.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D7891C2B41BDE700FEBD32 /* Bouquet.png */; };
 		79D7891F2B41BEA600FEBD32 /* Flore.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D7891E2B41BEA600FEBD32 /* Flore.png */; };
-		79D789212B41BEDE00FEBD32 /* Beta.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D789202B41BEDE00FEBD32 /* Beta.png */; };
 		79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF26982B31C90C005D81D2 /* WelcomeView.swift */; };
 		FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */; };
 		FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D62B265FEA00FC7287 /* ContentView.swift */; };
@@ -101,9 +101,9 @@
 		79C28F6E2B3FA32300050A42 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		79C28F702B3FA35600050A42 /* launch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = launch.h; sourceTree = "<group>"; };
 		79C28F712B3FA38900050A42 /* bootstrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bootstrap.h; sourceTree = "<group>"; };
+		79D06AC22B4360AB001DF870 /* Beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Beta.png; path = ../../../../../Downloads/Beta.png; sourceTree = "<group>"; };
 		79D7891C2B41BDE700FEBD32 /* Bouquet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bouquet.png; sourceTree = "<group>"; };
 		79D7891E2B41BEA600FEBD32 /* Flore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flore.png; sourceTree = "<group>"; };
-		79D789202B41BEDE00FEBD32 /* Beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Beta.png; path = ../../../../../Downloads/Beta.png; sourceTree = "<group>"; };
 		79DF26982B31C90C005D81D2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		FAA456D12B265FEA00FC7287 /* Geranium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geranium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumApp.swift; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 		79D789072B40930A00FEBD32 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				79D789202B41BEDE00FEBD32 /* Beta.png */,
+				79D06AC22B4360AB001DF870 /* Beta.png */,
 				79D7891E2B41BEA600FEBD32 /* Flore.png */,
 				79D7891C2B41BDE700FEBD32 /* Bouquet.png */,
 			);
@@ -475,7 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C28F6F2B3FA32300050A42 /* XPC.apinotes in Resources */,
-				79D789212B41BEDE00FEBD32 /* Beta.png in Resources */,
+				79D06AC32B4360AB001DF870 /* Beta.png in Resources */,
 				FAA456DC2B265FEC00FC7287 /* Preview Assets.xcassets in Resources */,
 				FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */,
 				790301C12B377EA70044E30A /* Localizable.xcstrings in Resources */,

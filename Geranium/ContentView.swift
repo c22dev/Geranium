@@ -8,12 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var tsBypass: Bool
-    @Binding var updBypass: Bool
-    @Binding var loggingAllowed: Bool
     var body: some View {
         TabView {
-            HomeView(tsBypass: $tsBypass, updBypass: $updBypass, loggingAllowed: $loggingAllowed)
+            HomeView()
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }

@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Binding var DebugStuff: Bool
-    @Binding var tsBypass: Bool
-    @Binding var updBypass: Bool
-    @Binding var loggingAllowed: Bool
+    @State var DebugStuff: Bool = false
+    @State var MinimCal: String = ""
+    @StateObject private var appSettings = AppSettings()
     var body: some View {
         NavigationView {
             List {
@@ -22,6 +21,7 @@ struct SettingsView: View {
                         }
                     }
                 }
+                
                 Section(header: Label("Debug Stuff", systemImage: "chevron.left.forwardslash.chevron.right"), footer: Text("This setting allows you to see experimental values from some app variables.")) {
                     Toggle(isOn: $DebugStuff) {
                         Text("Debug Info")
@@ -37,105 +37,129 @@ struct SettingsView: View {
                         Text("Safari Cache Path : \(removeFilePrefix(safariCachePath))")
                     }
                 }
+                
+                Section(header: Label("Cleaner Settings", systemImage: "trash"), footer: Text("Various settings for the cleaner.")) {
+                    Toggle(isOn: $appSettings.keepCheckBoxesC) {
+                        Text("Keep selection after cleaning")
+                    }
+                    if DebugStuff {
+                        HStack {
+                            Text("Minimal Size:")
+                            Spacer()
+                            TextField("50.0 MB", text: $MinimCal)
+                                .keyboardType(.decimalPad)
+                                .multilineTextAlignment(.trailing)
+                        }
+                        .onAppear {
+                            var MinimCal = "\(appSettings.minimSizeC)"
+                        }
+                        .onChange(of: MinimCal) { newValue in
+                            if MinimCal == "" {
+                                appSettings.minimSizeC = 50.0
+                            }
+                            else {
+                                appSettings.minimSizeC = Double(MinimCal) ?? 50.0
+                            }
+                        }
+                    }
+                }
                 Section(header: Label("Startup Settings", systemImage: "play"), footer: Text("This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas.")
                 ) {
-                    Toggle(isOn: $tsBypass) {
+                    Toggle(isOn: $appSettings.tsBypass) {
                         Text("Bypass TrollStore Pop Up")
                     }
-                    Toggle(isOn: $updBypass) {
+                    Toggle(isOn: $appSettings.updBypass) {
                         Text("Bypass App Update Pop Up")
                     }
                 }
-                if DebugStuff {
-                    Section(header: Label("App Icon", systemImage: "app"), footer: Text("You can choose and define a custom icon proposed by the community.")
-                    ) {
-                        Button(action: {
-                            UIApplication.shared.setAlternateIconName(nil) { error in
-                                if let error = error {
-                                    UIApplication.shared.alert(body:"\(error.localizedDescription)")
-                                }
+                Section(header: Label("App Icon", systemImage: "app"), footer: Text("You can choose and define a custom icon proposed by the community.")
+                ) {
+                    Button(action: {
+                        UIApplication.shared.setAlternateIconName(nil) { error in
+                            if let error = error {
+                                UIApplication.shared.alert(body:"\(error.localizedDescription)")
                             }
-                        }) {
-                            HStack {
-                                Image(uiImage: Bundle.main.icon!)
+                        }
+                    }) {
+                        HStack {
+                            Image(uiImage: Bundle.main.icon!)
+                                .cornerRadius(10)
+                                .frame(width: 62.5, height: 62.5)
+                            VStack(alignment: .leading) {
+                                Text("Default")
+                                Text("by c22dev")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                    }
+                    Button(action: {
+                        UIApplication.shared.setAlternateIconName("Flore") { error in
+                            if let error = error {
+                                UIApplication.shared.alert(body:"\(error.localizedDescription)")
+                            }
+                        }
+                    }) {
+                        HStack {
+                            if let imageURL = URL(string: "https://i.ibb.co/yQ6vj8q/actualgeranium.png") {
+                                AsyncImageView(url: imageURL)
                                     .cornerRadius(10)
                                     .frame(width: 62.5, height: 62.5)
-                                VStack(alignment: .leading) {
-                                    Text("Default")
-                                    Text("by c22dev")
-                                        .font(.footnote)
-                                        .foregroundColor(.secondary)
-                                }
+                            }
+                            VStack(alignment: .leading) {
+                                Text("Flore")
+                                Text("by PhucDo")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
                             }
                         }
-                        Button(action: {
-                            UIApplication.shared.setAlternateIconName("Flore") { error in
-                                if let error = error {
-                                    UIApplication.shared.alert(body:"\(error.localizedDescription)")
-                                }
-                            }
-                        }) {
-                            HStack {
-                                if let imageURL = URL(string: "https://i.ibb.co/yQ6vj8q/actualgeranium.png") {
-                                    AsyncImageView(url: imageURL)
-                                        .cornerRadius(10)
-                                        .frame(width: 62.5, height: 62.5)
-                                }
-                                VStack(alignment: .leading) {
-                                    Text("Flore")
-                                    Text("by PhucDo")
-                                        .font(.footnote)
-                                        .foregroundColor(.secondary)
-                                }
+                    }
+                    Button(action: {
+                        UIApplication.shared.setAlternateIconName("Beta") { error in
+                            if let error = error {
+                                UIApplication.shared.alert(body:"\(error.localizedDescription)")
                             }
                         }
-                        Button(action: {
-                            UIApplication.shared.setAlternateIconName("Beta") { error in
-                                if let error = error {
-                                    UIApplication.shared.alert(body:"\(error.localizedDescription)")
-                                }
+                    }) {
+                        HStack {
+                            if let imageURL = URL(string: "https://i.ibb.co/zGTJNJy/Beta.png") {
+                                AsyncImageView(url: imageURL)
+                                    .cornerRadius(10)
+                                    .frame(width: 62.5, height: 62.5)
                             }
-                        }) {
-                            HStack {
-                                if let imageURL = URL(string: "https://i.ibb.co/zGTJNJy/Beta.png") {
-                                    AsyncImageView(url: imageURL)
-                                        .cornerRadius(10)
-                                        .frame(width: 62.5, height: 62.5)
-                                }
-                                VStack(alignment: .leading) {
-                                    Text("Beta")
-                                    Text("by c22dev")
-                                        .font(.footnote)
-                                        .foregroundColor(.secondary)
-                                }
+                            VStack(alignment: .leading) {
+                                Text("Beta")
+                                Text("by c22dev")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
                             }
                         }
-                        Button(action: {
-                            UIApplication.shared.setAlternateIconName("Bouquet") { error in
-                                if let error = error {
-                                    UIApplication.shared.alert(body:"\(error.localizedDescription)")
-                                }
+                    }
+                    Button(action: {
+                        UIApplication.shared.setAlternateIconName("Bouquet") { error in
+                            if let error = error {
+                                UIApplication.shared.alert(body:"\(error.localizedDescription)")
                             }
-                        }) {
-                            HStack {
-                                if let imageURL = URL(string: "https://i.ibb.co/Jqtr2Jv/flora.png") {
-                                    AsyncImageView(url: imageURL)
-                                        .cornerRadius(10)
-                                        .frame(width: 62.5, height: 62.5)
-                                }
-                                VStack(alignment: .leading) {
-                                    Text("Bouquet")
-                                    Text("by PhucDo")
-                                        .font(.footnote)
-                                        .foregroundColor(.secondary)
-                                }
+                        }
+                    }) {
+                        HStack {
+                            if let imageURL = URL(string: "https://i.ibb.co/Jqtr2Jv/flora.png") {
+                                AsyncImageView(url: imageURL)
+                                    .cornerRadius(10)
+                                    .frame(width: 62.5, height: 62.5)
+                            }
+                            VStack(alignment: .leading) {
+                                Text("Suika")
+                                Text("by PhucDo")
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
                             }
                         }
                     }
                 }
                 Section(header: Label("Logging Settings", systemImage: "cloud"), footer: Text("We collect some logs that are uploaded to our server for fixing bugs and adressing crash logs. The logs never contains any of your personal information, just your device type and the crash log itself. We also collect measurement information to see what was the most used in the app. You can choose if you want to prevent ANY data from being sent to our server.")
                 ) {
-                    Toggle(isOn: $loggingAllowed) {
+                    Toggle(isOn: $appSettings.loggingAllowed) {
                         Text("Enable logging")
                     }
                 }
