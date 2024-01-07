@@ -105,11 +105,12 @@ struct DaemonView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    //MARK: Probably the WORST EVER WAY to define a daemon's bundle ID. I'll try over objc s0n
+                    //MARK: Only works for installed apps (not actual processes, so what's the point really)
                     for process in toDisable {
-                        processBundle = getDaemonBundleFromPath(path: process)
-                        UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can undo this action before you reboot by going to the manager icon.", onOK: {
-                            daemonManagement(key: "com.apple.\(process)", value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
+                        processBundle = bundleIdentifier(forProcessName: process) ?? isComApple(process) ?? "com.apple.\(process)"
+                        print(processBundle)
+                        UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can still undo this action after by going to the manager icon.", onOK: {
+                            daemonManagement(key: processBundle, value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
                         }, noCancel: false)
                     }
                     if toDisable == [] {
@@ -178,6 +179,7 @@ struct SearchBar: View {
         HStack {
             TextField("Search a currently running daemon...", text: $text)
                 .disableAutocorrection(true)
+                .autocapitalization(.none)
                 .padding(8)
                 .background(Color(.systemGray5))
                 .cornerRadius(8)
