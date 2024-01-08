@@ -258,7 +258,26 @@
       }
     },
     "3" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3"
+          }
+        }
+      }
     },
     "3. Enable URL Scheme" : {
       "localizations" : {
@@ -331,7 +350,26 @@
       }
     },
     "50.0 MB" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50.0 MB"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50.0 MB"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50.0 MB"
+          }
+        }
+      }
     },
     "Alphabetical" : {
       "localizations" : {
@@ -487,6 +525,18 @@
             "value" : "Icône de l'app"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Icona app"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリアイコン"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -497,6 +547,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "App-ikon"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biểu tượng ứng dụng"
           }
         }
       }
@@ -515,6 +571,18 @@
             "value" : "Caches restants d'apps"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cache residue delle applicazioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリの残りキャッシュ"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -531,6 +599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Överblivna cacheminnen i appar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bộ nhớ đệm còn sót lại của ứng dụng"
           }
         }
       }
@@ -620,6 +694,18 @@
             "value" : "Beta"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -633,6 +719,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beta"
@@ -725,6 +817,18 @@
             "value" : "Bouquez"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquet"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquet"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -738,6 +842,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquet"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bouquet"
@@ -829,6 +939,18 @@
             "value" : "par c22dev"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "by c22dev"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "by c22dev"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -839,6 +961,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "av c22dev"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bởi c22dev"
           }
         }
       }
@@ -857,6 +985,18 @@
             "value" : "par PhucDo"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "by PhucDo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "by PhucDo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -867,6 +1007,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "av PhucDo"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bởi PhucDo"
           }
         }
       }
@@ -883,6 +1029,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Au revoir Temps d'Écran !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bye ScreenTime !"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ScreenTimeよ、さらば！"
           }
         },
         "ko" : {
@@ -902,6 +1060,12 @@
             "state" : "translated",
             "value" : "Hej då ScreenTime!"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạm biệt ScreenTime !"
+          }
         }
       }
     },
@@ -914,6 +1078,18 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ByeTime"
@@ -932,6 +1108,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ByeTime"
@@ -953,6 +1135,18 @@
             "value" : "ByeTime vous permet de complètement désactiver Temps d'Écran, iCloud ou non."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime acconsente di disabilitare completamente lo ScreenTime, con iCloud o senza."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTimeを使用するとスクリーンタイムを完全に無効化出来ます。"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -963,6 +1157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med ByeTime kan du helt inaktivera skärmtid, iCloud eller inte."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime cho phép bạn tắt hoàn toàn Screen Time, iCloud hay không."
           }
         }
       }
@@ -981,6 +1181,18 @@
             "value" : "Paramètres ByeTime"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni ByeTime"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTimeの設定"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -991,6 +1203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ByeTime Inställningar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime Settings"
           }
         }
       }
@@ -1276,7 +1494,32 @@
       }
     },
     "Cleaner Settings" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni del pulitore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリーナー設定"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar för Cleaner"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt sạch hơn"
+          }
+        }
+      }
     },
     "Credits" : {
       "localizations" : {
@@ -1566,6 +1809,18 @@
             "value" : "Par Défaut"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1573,6 +1828,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Default"
@@ -1734,6 +1995,18 @@
             "value" : "Désactiver Homed"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabilita Homed"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homedを無効化する"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1744,6 +2017,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inaktivera Homed"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô hiệu hóa Homed"
           }
         }
       }
@@ -1762,6 +2041,18 @@
             "value" : "Désactiver Screen Time Agent"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabilita l'agente Screen Time"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agentを無効化"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1772,6 +2063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inaktivera agenten för skärmtid"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô hiệu hóa Usage Tracking Agent"
           }
         }
       }
@@ -1860,6 +2157,18 @@
             "value" : "Désactiver Usage Tracking Agent"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabilita l'utilizzo del tracking agent"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agentを無効化"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1870,6 +2179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inaktivera agent för spårning av användning"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disable Usage Tracking Agent"
           }
         }
       }
@@ -2653,6 +2968,18 @@
             "value" : "Flore"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2660,6 +2987,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flore"
@@ -2955,6 +3288,18 @@
             "value" : "Homed"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2962,6 +3307,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Homed"
@@ -2983,6 +3334,18 @@
             "value" : "Homed est responsable des accessoires et produits HomeKit, tels que les HomePods, les lumières connectées et autres que vous contrôlez depuis l'appli Home sur votre téléphone. Ne désactivez pas cette fonctionnalité si vous utilisez ces accessoires."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed è responsabile degli accessori e dei prodotti HomeKit, ad esempio HomePods, lampadine connesse e altro, che gestisci dall'app \"Home\" sul tuo telefono. Non disabilitarlo se stai utilizzando questi accessori."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HomedはたとえばHomePodsやスマート照明など、「ホーム」アプリから管理するHomekitアクセサリや製品を制御しています。これらのアクセサリを使用している場合は、無効化しないでください。"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2993,6 +3356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Homed ansvarar för HomeKit-tillbehör och produkter, t.ex. HomePods, anslutna glödlampor och annat, som du hanterar från appen \"Home\" på din telefon. Inaktivera inte detta om du använder dessa tillbehör."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed phụ trách các phụ kiện và sản phẩm HomeKit, chẳng hạn như HomePod, bóng đèn kết nối và các sản phẩm khác mà bạn đang quản lý từ ứng dụng 'Home' trên điện thoại của mình. Đừng tắt tính năng này nếu bạn đang sử dụng những phụ kiện đó."
           }
         }
       }
@@ -3348,7 +3717,26 @@
       }
     },
     "Keep selection after cleaning" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenere la selezione dopo la pulizia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "洗浄後のセレクションを保持"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giữ lựa chọn sau khi làm sạch"
+          }
+        }
+      }
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
@@ -3491,7 +3879,26 @@
       }
     },
     "LocSim Settings" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni LocSim"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSimの設定"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt LocSim"
+          }
+        }
+      }
     },
     "Log Collection" : {
       "localizations" : {
@@ -3774,10 +4181,60 @@
       }
     },
     "Minimum Attempts:" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentativi minimi:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最低試行回数："
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minsta försök:"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số lần thử tối thiểu:"
+          }
+        }
+      }
     },
     "Minimum Size:" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dimensione minima:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最小サイズ："
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minsta storlek:"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích cỡ nhỏ nhất:"
+          }
+        }
+      }
     },
     "No bookmarks saved." : {
       "localizations" : {
@@ -4271,6 +4728,18 @@
             "value" : "Redémarrer"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riavvio"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リブート"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4281,6 +4750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Omstart"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khởi động lại"
           }
         }
       }
@@ -4714,6 +5189,18 @@
             "value" : "Screen Time Agent"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agente Screen Time"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4724,6 +5211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skärmtid Agent"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent"
           }
         }
       }
@@ -4742,6 +5235,18 @@
             "value" : "Screen Time Agent se charge de gérer toutes les préférences Temps d'Écran. Désactiver uniquement ce processus ne permettra qu'une désactivation partielle de Temps d'Écran."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'agente Screen Time è responsabile della gestione di tutte le preferenze di ScreenTime. La disabilitazione di questo processo potrebbe, nella migliore delle ipotesi, disabilitare parzialmente il tempo di visualizzazione."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agentは、ScreenTimeの全ての設定を管理します。このプロセスだけを無効にしても、ScreenTImeを一部無効化される程度です。"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4752,6 +5257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Screen Time Agent ansvarar för hanteringen av alla ScreenTime-inställningar. Om endast denna process inaktiveras kan Screen Time i bästa fall inaktiveras delvis"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent chịu trách nhiệm quản lý tất cả các tùy chọn Thời gian sử dụng. Tốt nhất chỉ nên tắt quá trình này vào ban đêm để tắt một phần Thời gian sử dụng."
           }
         }
       }
@@ -5037,7 +5548,26 @@
       }
     },
     "Suika" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suika"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suika"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suika"
+          }
+        }
+      }
     },
     "Supervise" : {
       "localizations" : {
@@ -5646,7 +6176,32 @@
       }
     },
     "Try stopping LocSim multiple times" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Provare ad arrestare LocSim più volte"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSimを複数回停止してみる"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Försök att stoppa LocSim flera gånger"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy thử dừng LocSim nhiều lần"
+          }
+        }
+      }
     },
     "Understood" : {
       "localizations" : {
@@ -5854,6 +6409,18 @@
             "value" : "Usage Tracking Agent"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizzo del Tracking Agent"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agent"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5864,6 +6431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Agent för spårning av användning"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agent"
           }
         }
       }
@@ -5882,6 +6455,18 @@
             "value" : "Usage Tracking Agent visionne et reporte les usages définis par Santé, Contrôle Parental (Temps d'Écran) ou la gestion d'appareil. Désactiver cela pourrais alterer certaines fonctionnalités de votre appareil."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'utilizzo del Tracking Agent monitora e segnala i budget di utilizzo impostati da Salute, Controllo genitori (= Tempo di utilizzo) o Gestione dispositivo. Disabilitarlo potrebbe disabilitare anche alcune altre funzionalità sul tuo iPhone."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agentは、ヘルス、ペアレンタルコントロール(ScreenTime)、またはデバイス管理によって設定された利用設定を監視し、報告します。これを無効化すると、iPhoneの他の機能が利用できなくなる場合があります。"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5893,14 +6478,70 @@
             "state" : "translated",
             "value" : "Usage Tracking Agent övervakar och rapporterar användningsbudgetar som fastställts av Hälsa, Föräldrakontroll (= Skärmtid) eller Enhetshantering. Om du inaktiverar detta kan du också inaktivera vissa andra funktioner på din iPhone"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agent giám sát và báo cáo ngân sách sử dụng do Sức khỏe, Kiểm soát của phụ huynh (bằng Thời gian sử dụng) hoặc Quản lý thiết bị đặt ra. Việc tắt tính năng này cũng có thể tắt một số tính năng khác trên iPhone của bạn."
+          }
         }
       }
     },
     "Various settings for LocSim. Sometimes, users can encounter issues with stopping LocSim. Those settings will allow you to attempt to stop LocSim multiple time." : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varie impostazioni per LocSim. A volte gli utenti possono avere problemi con l'arresto di LocSim. Queste impostazioni consentono di tentare di arrestare LocSim più volte."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSimの各種設定。LocSimを停止する際に問題が発生することがあります。これらの設定により、LocSimを複数回停止させることができます。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olika inställningar för LocSim. Ibland kan användare få problem med att stoppa LocSim. Med dessa inställningar kan du försöka stoppa LocSim flera gånger."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhiều cài đặt khác nhau cho LocSim. Đôi khi, người dùng có thể gặp phải sự cố khi dừng LocSim. Những cài đặt đó sẽ cho phép bạn cố gắng dừng LocSim nhiều lần."
+          }
+        }
+      }
     },
     "Various settings for the cleaner." : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varie impostazioni per il pulitore."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリーナーの各種設定。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olika inställningar för rengöringsmedlet."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các cài đặt khác nhau cho trình dọn dẹp."
+          }
+        }
+      }
     },
     "WARNING" : {
       "localizations" : {
@@ -6330,6 +6971,18 @@
             "value" : "Vous pouvez choisir et définir un icône personnalisé proposé par la communauté."
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi scegliere e definire un'icona personalizzata proposta dalla community."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コミュニティにより作られたカスタムアイコンを選択できます。"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6340,6 +6993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du kan välja och definiera en egen ikon som föreslagits av communityt."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có thể chọn và xác định biểu tượng tùy chỉnh do cộng đồng đề xuất."
           }
         }
       }
