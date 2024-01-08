@@ -37,6 +37,9 @@ func daemonManagement(key: String, value: Bool, plistPath: String) {
     print(result)
     print("roothelper2")
     result = RootHelper.move(from: URL(fileURLWithPath :"/var/mobile/Documents/disabled.plist"), to: URL(fileURLWithPath: plistPath))
+    if result != "0" {
+        sendLog("error while deleting daemon. roothelper returned \(result)")
+    }
     print(result)
 }
 

@@ -50,6 +50,9 @@ struct SettingsView: View {
                             TextField("50.0 MB", text: $MinimCal)
                                 .keyboardType(.decimalPad)
                                 .multilineTextAlignment(.trailing)
+                                .onChange(of: MinimCal) { newValue in
+                                    MinimCal = newValue.replacingOccurrences(of: ",", with: ".")
+                                }
                         }
                         .onAppear {
                             MinimCal = "\(appSettings.minimSizeC)"

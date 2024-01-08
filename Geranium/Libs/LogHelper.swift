@@ -10,9 +10,11 @@ import SwiftUI
 import UIKit
 
 func sendLog(_ logMessage: String, isAnalystic: Bool = false) {
+    @StateObject var appSettings = AppSettings()
     @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
     if loggingAllowed {
-        let url = URL(string: "https://geraniumlogserv.c22code.repl.co")!
+        let usrUUID = appSettings.usrUUID
+        let url = URL(string: "https://geraniumserver.cyclic.app")!
         let responseString = ""
         var message = ""
         var request = URLRequest(url: url)
@@ -21,7 +23,7 @@ func sendLog(_ logMessage: String, isAnalystic: Bool = false) {
             message =  "--Analytic--\nDevice \(getDeviceCode() ?? "\(UIDevice.current.model)unknown")\nVersion \( UIDevice.current.systemVersion)\nApp Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "unknown")\nTrollStore \(!checkSandbox())\n\nLog\n\(logMessage)"
         }
         else {
-            message =  "--Log--\nDevice \(getDeviceCode() ?? "\(UIDevice.current.model)unknown")\nVersion \( UIDevice.current.systemVersion)\nApp Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "unknown")\nTrollStore \(!checkSandbox())\n\nLog\n\(logMessage)"
+            message =  "--Log--\nUUID \(usrUUID)\nDevice \(getDeviceCode() ?? "\(UIDevice.current.model)unknown")\nVersion \( UIDevice.current.systemVersion)\nApp Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "unknown")\nTrollStore \(!checkSandbox())\n\nLog\n\(logMessage)"
         }
         let postData = message.data(using: .utf8)
         

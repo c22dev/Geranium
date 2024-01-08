@@ -248,6 +248,7 @@ struct CleanerView: View {
             }
             if (progressAmount < -5) {
                 withAnimation {
+                    sendLog("Error Cleaning")
                     progressAmount = 0
                     progressView.toggle()
                     errorDetected.toggle()

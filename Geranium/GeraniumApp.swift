@@ -33,10 +33,7 @@ struct GeraniumApp: App {
                         }
                         task.resume()
                     }
-                    #if targetEnvironment(simulator)
-                    #else
-                    sendLog(RootHelper.loadMCM())
-                    #endif
+                    RootHelper.loadMCM()
                 }
                 .sheet(isPresented: $appSettings.isFirstRun) {
                     if #available(iOS 16.0, *) {
@@ -65,4 +62,5 @@ class AppSettings: ObservableObject {
     @AppStorage("keepCheckBoxesC") var keepCheckBoxesC: Bool = true
     @AppStorage("LocSimAttempts") var locSimAttemptNB: Int = 1
     @AppStorage("locSimMultipleAttempts") var locSimMultipleAttempts: Bool = false
+    @AppStorage("usrUUID") var usrUUID: String = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
 }
