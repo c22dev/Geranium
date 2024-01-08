@@ -6487,7 +6487,7 @@
         }
       }
     },
-    "Userspace Reboot" : {
+    "UUID : %@" : {
 
     },
     "Various settings for LocSim. Sometimes, users can encounter issues with stopping LocSim. Those settings will allow you to attempt to stop LocSim multiple time." : {
