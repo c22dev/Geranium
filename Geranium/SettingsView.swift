@@ -28,6 +28,7 @@ struct SettingsView: View {
                         Text("Debug Info")
                     }
                     if DebugStuff {
+                        Text("UUID : \(appSettings.usrUUID)")
                         Text("RootHelper Path : \(RootHelper.whatsthePath())")
                         if UIDevice.current.userInterfaceIdiom == .pad {
                             Text("Is the user running an iPad on iPadOS 16 : yes")
