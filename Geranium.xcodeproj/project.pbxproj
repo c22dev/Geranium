@@ -25,6 +25,7 @@
 		7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */; };
 		799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799488A52B347E2C00AFFDCF /* LocSimManager.swift */; };
 		79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */; };
+		79B92E242B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B92E232B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m */; };
 		79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA95892B30D91600380D83 /* RootHelperMan.swift */; };
 		79C28EF72B3F5C7100050A42 /* ByeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EF62B3F5C7100050A42 /* ByeTimeView.swift */; };
 		79C28EF92B3F5ED800050A42 /* ByeTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */; };
@@ -88,7 +89,6 @@
 		7930B46A2B4B26D400A5B0CB /* _LSQueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQueryResult.h; sourceTree = "<group>"; };
 		7930B46B2B4B26D400A5B0CB /* NSURL+LSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LSAdditions.h"; sourceTree = "<group>"; };
 		7930B46C2B4B26D400A5B0CB /* LSPlugInKitProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInKitProxy.h; sourceTree = "<group>"; };
-		7930B4712B4B3D6100A5B0CB /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LSApplicationProxy+AltList.m"; path = "../../../../../../../Downloads/LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
 		793E3D6E2B37AA1300A72671 /* BetaChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaChecker.swift; sourceTree = "<group>"; };
 		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
@@ -99,6 +99,7 @@
 		799488A52B347E2C00AFFDCF /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
 		799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
 		79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		79B92E232B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
 		79BA95892B30D91600380D83 /* RootHelperMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelperMan.swift; sourceTree = "<group>"; };
 		79C28EF62B3F5C7100050A42 /* ByeTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeTimeView.swift; sourceTree = "<group>"; };
 		79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeTimeHelper.swift; sourceTree = "<group>"; };
@@ -206,8 +207,8 @@
 			children = (
 				7930B4612B4B26D400A5B0CB /* MobileCoreServices */,
 				7930B45F2B4B269B00A5B0CB /* CoreServices.h */,
-				7930B4712B4B3D6100A5B0CB /* LSApplicationProxy+AltList.m */,
 				7930B4602B4B26A300A5B0CB /* LSApplicationProxy+AltList.h */,
+				79B92E232B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m */,
 			);
 			path = LSApp;
 			sourceTree = "<group>";
@@ -571,6 +572,7 @@
 				79C28EF72B3F5C7100050A42 /* ByeTimeView.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
 				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
+				79B92E242B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
 				7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
