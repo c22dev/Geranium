@@ -15,7 +15,6 @@
 		7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791820992B31F109007EEC24 /* LogHelper.swift */; };
 		792845532B2C67910021E1FD /* FileCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845522B2C67910021E1FD /* FileCleaner.swift */; };
 		7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792845592B2C80A40021E1FD /* DaemonDisabler.swift */; };
-		7930B45E2B4B269500A5B0CB /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7930B45D2B4B269500A5B0CB /* LSApplicationProxy+AltList.m */; };
 		7930B46D2B4B2AD800A5B0CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7930B4592B4B267F00A5B0CB /* MobileCoreServices.framework */; };
 		7930B46E2B4B2ADD00A5B0CB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790301BC2B3774F90044E30A /* CoreServices.framework */; };
 		793E3D6F2B37AA1300A72671 /* BetaChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E3D6E2B37AA1300A72671 /* BetaChecker.swift */; };
@@ -76,7 +75,6 @@
 		792845522B2C67910021E1FD /* FileCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCleaner.swift; sourceTree = "<group>"; };
 		792845592B2C80A40021E1FD /* DaemonDisabler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonDisabler.swift; sourceTree = "<group>"; };
 		7930B4592B4B267F00A5B0CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		7930B45D2B4B269500A5B0CB /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LSApplicationProxy+AltList.m"; path = "../../../../../../Downloads/LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
 		7930B45F2B4B269B00A5B0CB /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		7930B4602B4B26A300A5B0CB /* LSApplicationProxy+AltList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSApplicationProxy+AltList.h"; sourceTree = "<group>"; };
 		7930B4622B4B26D400A5B0CB /* LSOpenOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSOpenOperation.h; sourceTree = "<group>"; };
@@ -90,6 +88,7 @@
 		7930B46A2B4B26D400A5B0CB /* _LSQueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQueryResult.h; sourceTree = "<group>"; };
 		7930B46B2B4B26D400A5B0CB /* NSURL+LSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LSAdditions.h"; sourceTree = "<group>"; };
 		7930B46C2B4B26D400A5B0CB /* LSPlugInKitProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInKitProxy.h; sourceTree = "<group>"; };
+		7930B4712B4B3D6100A5B0CB /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LSApplicationProxy+AltList.m"; path = "../../../../../../../Downloads/LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
 		793E3D6E2B37AA1300A72671 /* BetaChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaChecker.swift; sourceTree = "<group>"; };
 		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
@@ -202,14 +201,22 @@
 			path = MobileCoreServices;
 			sourceTree = "<group>";
 		};
-		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
+		7930B46F2B4B3D4B00A5B0CB /* LSApp */ = {
 			isa = PBXGroup;
 			children = (
 				7930B4612B4B26D400A5B0CB /* MobileCoreServices */,
-				795019B82B2B5055008EEC91 /* main.m */,
-				7930B45D2B4B269500A5B0CB /* LSApplicationProxy+AltList.m */,
 				7930B45F2B4B269B00A5B0CB /* CoreServices.h */,
+				7930B4712B4B3D6100A5B0CB /* LSApplicationProxy+AltList.m */,
 				7930B4602B4B26A300A5B0CB /* LSApplicationProxy+AltList.h */,
+			);
+			path = LSApp;
+			sourceTree = "<group>";
+		};
+		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
+			isa = PBXGroup;
+			children = (
+				795019B82B2B5055008EEC91 /* main.m */,
+				7930B46F2B4B3D4B00A5B0CB /* LSApp */,
 			);
 			path = SwiftProcessViewer;
 			sourceTree = "<group>";
@@ -564,7 +571,6 @@
 				79C28EF72B3F5C7100050A42 /* ByeTimeView.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
 				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
-				7930B45E2B4B269500A5B0CB /* LSApplicationProxy+AltList.m in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
 				7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
