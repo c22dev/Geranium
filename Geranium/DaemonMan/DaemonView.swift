@@ -42,6 +42,10 @@ struct DaemonView: View {
                         Button(role: .destructive) {
                             labelForDaemon = getLabel(fileName)
                             toDisable.remove(at: existingIndex)
+                            updateDaemonFiles()
+                            if isAlphabeticalOrder {
+                                daemonFiles.sort()
+                            }
                         } label: {
                             Label("Enable", systemImage: "hand.thumbsup")
                         }
@@ -51,11 +55,16 @@ struct DaemonView: View {
                         Button(role: .destructive) {
                             labelForDaemon = getLabel(fileName)
                             toDisable.append(labelForDaemon ?? fileName)
+                            updateDaemonFiles()
+                            if isAlphabeticalOrder {
+                                daemonFiles.sort()
+                            }
                         } label: {
                             Label("Disable", systemImage: "hand.thumbsdown")
                         }
                     }
                 }
+                .animation(.easeInOut)
             }
         }
         .toolbar{
@@ -84,13 +93,11 @@ struct DaemonView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    for process in toDisable {
-                        UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can still undo this action after by going to the manager icon.", onOK: {
-                            daemonManagement(key: process, value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
-                        }, noCancel: false)
-                    }
                     if toDisable == [] {
-                        UIApplication.shared.alert(title: "You didn't select any daemon", body: "Please swipe a running daemon to the left to disable it.")
+                        UIApplication.shared.alert(title: "You didn't select any daemon", body: "Please swipe to the left on a daemon to disable it.")
+                    }
+                    else {
+                        processNextDaemon()
                     }
                 }) {
                     Image(systemName: "checkmark")
@@ -102,6 +109,13 @@ struct DaemonView: View {
         }
         .onAppear {
             updateDaemonFiles()
+        }
+        .onChange(of: isAlphabeticalOrder) { newValue in
+            if newValue {
+                daemonFiles.sort()
+            } else {
+                updateDaemonFiles()
+            }
         }
         .sheet(isPresented: $isDaemonFirstRun) {
             if #available(iOS 16.0, *) {
@@ -129,6 +143,7 @@ struct DaemonView: View {
             UIApplication.shared.alert(body: "error reading LaunchDaemons directory: \(error)")
         }
     }
+    
     private func getLabel(_ fileName: String) -> String? {
         let plistURL = URL(fileURLWithPath: "/System/Library/LaunchDaemons/\(fileName).plist")
         do {
@@ -141,6 +156,24 @@ struct DaemonView: View {
             UIApplication.shared.alert(body: "Error reading plist: \(error)")
         }
         return nil
+    }
+    
+    private func processNextDaemon() {
+        guard let nextDaemon = toDisable.first else {
+            UIApplication.shared.confirmAlert(title: "Done.", body: "Successfully disabled selected daemons. Do you want to reboot your device now ?", onOK: {
+                rebootUSR()
+            }, noCancel: false, yes: true)
+            return
+        }
+
+        UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(nextDaemon) ?", body: "You can still undo this action after by going to the manager icon.", onOK: {
+            daemonManagement(key: nextDaemon, value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
+            toDisable.removeFirst()
+            processNextDaemon()
+        }, noCancel: false, onCancel: {
+            toDisable.removeFirst()
+            processNextDaemon()
+        }, yes: true)
     }
 }
 

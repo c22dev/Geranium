@@ -164,11 +164,13 @@ extension UIApplication {
             self.present(alert: currentUIAlertController!)
         }
     }
-    func confirmAlert(title: String = "Error", body: String, onOK: @escaping () -> (), noCancel: Bool, yes: Bool = false) {
+    func confirmAlert(title: String = "Error", body: String, onOK: @escaping () -> (), noCancel: Bool, onCancel: (() -> ())? = nil, yes: Bool = false) {
         DispatchQueue.main.async {
             currentUIAlertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
             if !noCancel {
-                currentUIAlertController?.addAction(.init(title: "Cancel", style: .cancel))
+                currentUIAlertController?.addAction(.init(title: "Cancel", style: .cancel, handler: { _ in
+                    onCancel?()
+                }))
             }
             if !yes {
                 currentUIAlertController?.addAction(.init(title: "OK", style: noCancel ? .cancel : .default, handler: { _ in

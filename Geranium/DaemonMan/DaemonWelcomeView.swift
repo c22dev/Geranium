@@ -24,6 +24,14 @@ struct DaemonWelcomeView: View {
                 Text("If you want to revert any of your choice, you should go into the manager (list icon next to the apply icon), where you can toggle disabled daemons.")
                     .foregroundStyle(.green)
             }
+            Section(header: Text("More info")) {
+                Button("A list of daemons and what they do") {
+                    UIApplication.shared.open(URL(string: "https://www.reddit.com/r/jailbreak/comments/10v7j59/tutorial_list_of_ios_daemons_and_what_they_do/")!)
+                }
+                Button("A list of daemons you could disable") {
+                    UIApplication.shared.open(URL(string: "https://www.reddit.com/r/jailbreak/comments/10v7j59/comment/j8s1lgj/")!)
+                }
+            }
         }
         .navigationTitle("Notice")
         .navigationBarItems(trailing: Button("Understood") {

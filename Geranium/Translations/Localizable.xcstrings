@@ -371,6 +371,12 @@
         }
       }
     },
+    "A list of daemons and what they do" : {
+
+    },
+    "A list of daemons you could disable" : {
+
+    },
     "Alphabetical" : {
       "localizations" : {
         "es" : {
@@ -4239,6 +4245,9 @@
         }
       }
     },
+    "More info" : {
+
+    },
     "No bookmarks saved." : {
       "localizations" : {
         "es" : {
@@ -5348,7 +5357,7 @@
         }
       }
     },
-    "Search a daemon..." : {
+    "Search for a daemon..." : {
 
     },
     "Settings" : {
@@ -5770,6 +5779,7 @@
       }
     },
     "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -5838,6 +5848,9 @@
           }
         }
       }
+    },
+    "This is a list of all the currently disabled daemons. Swipe to the right to enable back the daemon." : {
+
     },
     "This setting allows you to see experimental values from some app variables." : {
       "localizations" : {

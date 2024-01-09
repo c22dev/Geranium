@@ -34,9 +34,14 @@ struct CleanerView: View {
     
     var body: some View {
         if UIDevice.current.userInterfaceIdiom == .pad {
-            // Here we remove NavigationStack for iPads. Why ? Cause pressing "Exit" button with NavigationStack would make a blank screen
-            // TODO: Fix .toolbar for iPads
-            cleanerViewMain()
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    cleanerViewMain()
+                }
+            }
+            else {
+                cleanerViewMain()
+            }
         } else {
             NavigationView {
                 cleanerViewMain()
