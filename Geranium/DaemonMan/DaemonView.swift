@@ -7,62 +7,41 @@
 
 import SwiftUI
 
-struct ProcessItem: Identifiable {
-    let id = UUID()
-    let pid: String
-    let procName: String
-    let procPath: String
-}
-
 struct DaemonView: View {
     @State private var searchText = ""
-    @State private var processes: [ProcessItem] = []
-    @State private var timer: Timer?
+    @State private var daemonFiles: [String] = []
+    @State private var labelForDaemon: String?
     @State private var toDisable: [String] = []
     @State private var manageSheet: Bool = false
-    @State private var processBundle: String = ""
     @State private var isAlphabeticalOrder: Bool = false
     @AppStorage("isDaemonFirstRun") var isDaemonFirstRun: Bool = true
-
-    var filteredProcesses: [ProcessItem] {
-        let sortedProcesses = isAlphabeticalOrder ? processes.sorted { $0.procName < $1.procName } : processes
-        return sortedProcesses.filter {
-            searchText.isEmpty || $0.procName.localizedCaseInsensitiveContains(searchText)
-        }
-    }
-
-    init() {
-        self.processes = []
-    }
+    
     var body: some View {
-            if #available(iOS 16.0, *) {
-                NavigationStack {
-                    DaemonMainView()
-                }
-            } else {
-                NavigationView {
-                    DaemonMainView()
-                }
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                DaemonMainView()
+            }
+        } else {
+            NavigationView {
+                DaemonMainView()
             }
         }
+    }
     @ViewBuilder
     private func DaemonMainView() -> some View {
         SearchBar(text: $searchText)
         List {
-            ForEach(filteredProcesses) { process in
+            ForEach(daemonFiles.filter { searchText.isEmpty || $0.localizedCaseInsensitiveContains(searchText) }, id: \.self) { fileName in
                 HStack {
-                    Text(process.procName)
-                        .foregroundColor(toDisable.contains(process.procName) ? .red : .primary)
+                    Text(fileName)
+                        .foregroundColor(toDisable.contains(getLabel(fileName) ?? fileName) ? .red : .primary)
                     Spacer()
-                    Text("PID: \(process.pid)")
-                        .font(.caption)
-                        .foregroundColor(.gray)
                 }
                 .swipeActions {
-                    if let existingIndex = toDisable.firstIndex(of: process.procName) {
+                    if let existingIndex = toDisable.firstIndex(of: fileName) {
                         Button(role: .destructive) {
+                            labelForDaemon = getLabel(fileName)
                             toDisable.remove(at: existingIndex)
-                            updateProcesses()
                         } label: {
                             Label("Enable", systemImage: "hand.thumbsup")
                         }
@@ -70,8 +49,8 @@ struct DaemonView: View {
                     }
                     else {
                         Button(role: .destructive) {
-                            toDisable.append(process.procName)
-                            updateProcesses()
+                            labelForDaemon = getLabel(fileName)
+                            toDisable.append(labelForDaemon ?? fileName)
                         } label: {
                             Label("Disable", systemImage: "hand.thumbsdown")
                         }
@@ -105,12 +84,9 @@ struct DaemonView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    //MARK: Only works for installed apps (not actual processes, so what's the point really)
                     for process in toDisable {
-                        processBundle = bundleIdentifier(forProcessName: process) ?? isComApple(process) ?? "com.apple.\(process)"
-                        print(processBundle)
                         UIApplication.shared.confirmAlert(title: "Are you sure you want to disable \(process) ?", body: "You can still undo this action after by going to the manager icon.", onOK: {
-                            daemonManagement(key: processBundle, value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
+                            daemonManagement(key: process, value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
                         }, noCancel: false)
                     }
                     if toDisable == [] {
@@ -125,10 +101,7 @@ struct DaemonView: View {
             }
         }
         .onAppear {
-            startTimer()
-        }
-        .onDisappear {
-            stopTimer()
+            updateDaemonFiles()
         }
         .sheet(isPresented: $isDaemonFirstRun) {
             if #available(iOS 16.0, *) {
@@ -145,30 +118,29 @@ struct DaemonView: View {
             CurrentlyDisabledDaemonView()
         }
     }
-
-    private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
-            updateProcesses()
+    
+    private func updateDaemonFiles() {
+        let launchDaemonsURL = URL(fileURLWithPath: "/System/Library/LaunchDaemons/")
+        do {
+            let fileManager = FileManager.default
+            let files = try fileManager.contentsOfDirectory(atPath: launchDaemonsURL.path)
+            daemonFiles = files.map { URL(fileURLWithPath: $0).deletingPathExtension().lastPathComponent }
+        } catch {
+            UIApplication.shared.alert(body: "error reading LaunchDaemons directory: \(error)")
         }
-        updateProcesses()
     }
-
-    private func stopTimer() {
-        timer?.invalidate()
-        timer = nil
-    }
-
-    private func updateProcesses() {
-        let rawProcesses = sysctl_ps()
-        self.processes = rawProcesses?.compactMap { rawProcess in
-            guard let dict = rawProcess as? NSDictionary,
-                  let pid = dict["pid"] as? String,
-                  let procPath = dict["proc_path"] as? String,
-                  let procName = dict["proc_name"] as? String else {
-                return nil
+    private func getLabel(_ fileName: String) -> String? {
+        let plistURL = URL(fileURLWithPath: "/System/Library/LaunchDaemons/\(fileName).plist")
+        do {
+            let data = try Data(contentsOf: plistURL)
+            let plist = try PropertyListSerialization.propertyList(from: data, format: nil)
+            if let dict = plist as? [String: Any], let label = dict["Label"] as? String {
+                return label
             }
-            return ProcessItem(pid: pid, procName: procName, procPath: procPath)
-        } ?? []
+        } catch {
+            UIApplication.shared.alert(body: "Error reading plist: \(error)")
+        }
+        return nil
     }
 }
 
@@ -177,7 +149,7 @@ struct SearchBar: View {
 
     var body: some View {
         HStack {
-            TextField("Search a currently running daemon...", text: $text)
+            TextField("Search for a daemon...", text: $text)
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
                 .padding(8)

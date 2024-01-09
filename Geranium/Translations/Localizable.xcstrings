@@ -1841,6 +1841,9 @@
         }
       }
     },
+    "Delete currently disabled daemon list, and start-over. iOS will generate the file back from scratch next reboot." : {
+
+    },
     "Deleting... %@" : {
       "localizations" : {
         "es" : {
@@ -4447,6 +4450,7 @@
       }
     },
     "PID: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -4830,6 +4834,9 @@
           }
         }
       }
+    },
+    "Reset" : {
+
     },
     "Respring" : {
       "localizations" : {
@@ -5267,7 +5274,11 @@
         }
       }
     },
+    "Screwed up ?" : {
+
+    },
     "Search a currently running daemon..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -5336,6 +5347,9 @@
           }
         }
       }
+    },
+    "Search a daemon..." : {
+
     },
     "Settings" : {
       "localizations" : {

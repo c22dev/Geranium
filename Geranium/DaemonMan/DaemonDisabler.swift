@@ -42,37 +42,3 @@ func daemonManagement(key: String, value: Bool, plistPath: String) {
     }
     print(result)
 }
-
-func bundleIdentifier(forProcessName processName: String) -> String? {
-    let workspace = NSClassFromString("LSApplicationWorkspace") as AnyObject
-    let selector = NSSelectorFromString("defaultWorkspace")
-    let applicationWorkspace = workspace.perform(selector).takeUnretainedValue()
-    let selectorAllInstalledApplications = NSSelectorFromString("atl_allInstalledApplications")
-    let installedApplications = applicationWorkspace.perform(selectorAllInstalledApplications).takeUnretainedValue() as! [AnyObject]
-    for appProxy in installedApplications {
-        let selectorBundleIdentifier = NSSelectorFromString("atl_bundleIdentifier")
-        let bundleIdentifier = appProxy.perform(selectorBundleIdentifier).takeUnretainedValue() as? String
-
-        if let bundleIdentifier = bundleIdentifier {
-            let selectorLocalizedName = NSSelectorFromString("atl_fastDisplayName")
-            let localizedName = appProxy.perform(selectorLocalizedName).takeUnretainedValue() as? String
-
-            if let localizedName = localizedName, localizedName.lowercased() == processName.lowercased() {
-                print("bundle id found for \(processName): \(bundleIdentifier)")
-                return bundleIdentifier
-            }
-        }
-    }
-
-    print("not found for \(processName)")
-    return nil
-}
-
-
-func isComApple(_ input: String) -> String? {
-    if input.hasPrefix("com.apple.") {
-        return input
-    } else {
-        return nil
-    }
-}

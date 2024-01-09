@@ -7,6 +7,4 @@
 
 #import "LocSim/LocSimPrivateHeaders.h"
 #import "TSUtil.h"
-#import "delecture.h"
-#import "LSApplicationProxy+AltList.h"
 int userspaceReboot(void);

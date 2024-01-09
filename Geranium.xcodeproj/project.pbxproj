@@ -18,20 +18,18 @@
 		7930B46D2B4B2AD800A5B0CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7930B4592B4B267F00A5B0CB /* MobileCoreServices.framework */; };
 		7930B46E2B4B2ADD00A5B0CB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790301BC2B3774F90044E30A /* CoreServices.framework */; };
 		793E3D6F2B37AA1300A72671 /* BetaChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E3D6E2B37AA1300A72671 /* BetaChecker.swift */; };
-		795019B92B2B5055008EEC91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795019B82B2B5055008EEC91 /* main.m */; };
+		7956C4542B4DF122004D3A1A /* Beta.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956C4532B4DF122004D3A1A /* Beta.png */; };
 		7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD022B347EEA00FBAB8D /* LocSimView.swift */; };
 		7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD052B3486B100FBAB8D /* CustomMapView.swift */; };
 		7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD072B34894400FBAB8D /* BookMarkSlider.swift */; };
 		7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD092B348A0200FBAB8D /* BookMarkHelper.swift */; };
 		799488A62B347E2C00AFFDCF /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799488A52B347E2C00AFFDCF /* LocSimManager.swift */; };
 		79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */; };
-		79B92E242B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B92E232B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m */; };
 		79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA95892B30D91600380D83 /* RootHelperMan.swift */; };
 		79C28EF72B3F5C7100050A42 /* ByeTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EF62B3F5C7100050A42 /* ByeTimeView.swift */; };
 		79C28EF92B3F5ED800050A42 /* ByeTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */; };
 		79C28EFC2B3F61F300050A42 /* userspaceReboot.c in Sources */ = {isa = PBXBuildFile; fileRef = 79C28EFB2B3F61F200050A42 /* userspaceReboot.c */; };
 		79C28F6F2B3FA32300050A42 /* XPC.apinotes in Resources */ = {isa = PBXBuildFile; fileRef = 79C28F6D2B3FA32300050A42 /* XPC.apinotes */; };
-		79D06AC32B4360AB001DF870 /* Beta.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D06AC22B4360AB001DF870 /* Beta.png */; };
 		79D7891D2B41BDE700FEBD32 /* Bouquet.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D7891C2B41BDE700FEBD32 /* Bouquet.png */; };
 		79D7891F2B41BEA600FEBD32 /* Flore.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D7891E2B41BEA600FEBD32 /* Flore.png */; };
 		79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF26982B31C90C005D81D2 /* WelcomeView.swift */; };
@@ -76,22 +74,8 @@
 		792845522B2C67910021E1FD /* FileCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCleaner.swift; sourceTree = "<group>"; };
 		792845592B2C80A40021E1FD /* DaemonDisabler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonDisabler.swift; sourceTree = "<group>"; };
 		7930B4592B4B267F00A5B0CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		7930B45F2B4B269B00A5B0CB /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
-		7930B4602B4B26A300A5B0CB /* LSApplicationProxy+AltList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSApplicationProxy+AltList.h"; sourceTree = "<group>"; };
-		7930B4622B4B26D400A5B0CB /* LSOpenOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSOpenOperation.h; sourceTree = "<group>"; };
-		7930B4632B4B26D400A5B0CB /* LSDocumentProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDocumentProxy.h; sourceTree = "<group>"; };
-		7930B4642B4B26D400A5B0CB /* LSAppLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAppLink.h; sourceTree = "<group>"; };
-		7930B4652B4B26D400A5B0CB /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
-		7930B4662B4B26D400A5B0CB /* NSString+LSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LSAdditions.h"; sourceTree = "<group>"; };
-		7930B4672B4B26D400A5B0CB /* LSResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResourceProxy.h; sourceTree = "<group>"; };
-		7930B4682B4B26D400A5B0CB /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
-		7930B4692B4B26D400A5B0CB /* LSBundleProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBundleProxy.h; sourceTree = "<group>"; };
-		7930B46A2B4B26D400A5B0CB /* _LSQueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LSQueryResult.h; sourceTree = "<group>"; };
-		7930B46B2B4B26D400A5B0CB /* NSURL+LSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LSAdditions.h"; sourceTree = "<group>"; };
-		7930B46C2B4B26D400A5B0CB /* LSPlugInKitProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSPlugInKitProxy.h; sourceTree = "<group>"; };
 		793E3D6E2B37AA1300A72671 /* BetaChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaChecker.swift; sourceTree = "<group>"; };
-		795019B82B2B5055008EEC91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		795019BA2B2B54A6008EEC91 /* delecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delecture.h; sourceTree = "<group>"; };
+		7956C4532B4DF122004D3A1A /* Beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beta.png; sourceTree = "<group>"; };
 		7989FD022B347EEA00FBAB8D /* LocSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocSimView.swift; sourceTree = "<group>"; };
 		7989FD052B3486B100FBAB8D /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 		7989FD072B34894400FBAB8D /* BookMarkSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkSlider.swift; sourceTree = "<group>"; };
@@ -99,7 +83,6 @@
 		799488A52B347E2C00AFFDCF /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
 		799488A72B347E2F00AFFDCF /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
 		79AEFBBC2B2CBC6B0074EC34 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		79B92E232B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
 		79BA95892B30D91600380D83 /* RootHelperMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelperMan.swift; sourceTree = "<group>"; };
 		79C28EF62B3F5C7100050A42 /* ByeTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeTimeView.swift; sourceTree = "<group>"; };
 		79C28EF82B3F5ED800050A42 /* ByeTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeTimeHelper.swift; sourceTree = "<group>"; };
@@ -117,7 +100,6 @@
 		79C28F6E2B3FA32300050A42 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		79C28F702B3FA35600050A42 /* launch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = launch.h; sourceTree = "<group>"; };
 		79C28F712B3FA38900050A42 /* bootstrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bootstrap.h; sourceTree = "<group>"; };
-		79D06AC22B4360AB001DF870 /* Beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Beta.png; path = ../../../../../Downloads/Beta.png; sourceTree = "<group>"; };
 		79D7891C2B41BDE700FEBD32 /* Bouquet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bouquet.png; sourceTree = "<group>"; };
 		79D7891E2B41BEA600FEBD32 /* Flore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flore.png; sourceTree = "<group>"; };
 		79DF26982B31C90C005D81D2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -184,44 +166,6 @@
 			path = Translations;
 			sourceTree = "<group>";
 		};
-		7930B4612B4B26D400A5B0CB /* MobileCoreServices */ = {
-			isa = PBXGroup;
-			children = (
-				7930B4622B4B26D400A5B0CB /* LSOpenOperation.h */,
-				7930B4632B4B26D400A5B0CB /* LSDocumentProxy.h */,
-				7930B4642B4B26D400A5B0CB /* LSAppLink.h */,
-				7930B4652B4B26D400A5B0CB /* LSApplicationProxy.h */,
-				7930B4662B4B26D400A5B0CB /* NSString+LSAdditions.h */,
-				7930B4672B4B26D400A5B0CB /* LSResourceProxy.h */,
-				7930B4682B4B26D400A5B0CB /* LSApplicationWorkspace.h */,
-				7930B4692B4B26D400A5B0CB /* LSBundleProxy.h */,
-				7930B46A2B4B26D400A5B0CB /* _LSQueryResult.h */,
-				7930B46B2B4B26D400A5B0CB /* NSURL+LSAdditions.h */,
-				7930B46C2B4B26D400A5B0CB /* LSPlugInKitProxy.h */,
-			);
-			path = MobileCoreServices;
-			sourceTree = "<group>";
-		};
-		7930B46F2B4B3D4B00A5B0CB /* LSApp */ = {
-			isa = PBXGroup;
-			children = (
-				7930B4612B4B26D400A5B0CB /* MobileCoreServices */,
-				7930B45F2B4B269B00A5B0CB /* CoreServices.h */,
-				7930B4602B4B26A300A5B0CB /* LSApplicationProxy+AltList.h */,
-				79B92E232B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m */,
-			);
-			path = LSApp;
-			sourceTree = "<group>";
-		};
-		795019B72B2B5016008EEC91 /* SwiftProcessViewer */ = {
-			isa = PBXGroup;
-			children = (
-				795019B82B2B5055008EEC91 /* main.m */,
-				7930B46F2B4B3D4B00A5B0CB /* LSApp */,
-			);
-			path = SwiftProcessViewer;
-			sourceTree = "<group>";
-		};
 		7989FD0B2B348A8600FBAB8D /* BookMark */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,7 +228,7 @@
 		79D789072B40930A00FEBD32 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				79D06AC22B4360AB001DF870 /* Beta.png */,
+				7956C4532B4DF122004D3A1A /* Beta.png */,
 				79D7891E2B41BEA600FEBD32 /* Flore.png */,
 				79D7891C2B41BDE700FEBD32 /* Bouquet.png */,
 			);
@@ -346,11 +290,9 @@
 			isa = PBXGroup;
 			children = (
 				FAA457222B26654700FC7287 /* Addon.swift */,
-				795019BA2B2B54A6008EEC91 /* delecture.h */,
 				791820992B31F109007EEC24 /* LogHelper.swift */,
 				79C28EFA2B3F61C600050A42 /* userspaceReboot */,
 				79BA95892B30D91600380D83 /* RootHelperMan.swift */,
-				795019B72B2B5016008EEC91 /* SwiftProcessViewer */,
 				FAA4570E2B2661D200FC7287 /* TrollStore */,
 			);
 			path = Libs;
@@ -522,12 +464,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C28F6F2B3FA32300050A42 /* XPC.apinotes in Resources */,
-				79D06AC32B4360AB001DF870 /* Beta.png in Resources */,
 				FAA456DC2B265FEC00FC7287 /* Preview Assets.xcassets in Resources */,
 				FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */,
 				790301C12B377EA70044E30A /* Localizable.xcstrings in Resources */,
 				79D7891F2B41BEA600FEBD32 /* Flore.png in Resources */,
 				79D7891D2B41BDE700FEBD32 /* Bouquet.png in Resources */,
+				7956C4542B4DF122004D3A1A /* Beta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,11 +514,9 @@
 				79C28EF72B3F5C7100050A42 /* ByeTimeView.swift in Sources */,
 				FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */,
 				7918209A2B31F109007EEC24 /* LogHelper.swift in Sources */,
-				79B92E242B4BD4FC009B4CC1 /* LSApplicationProxy+AltList.m in Sources */,
 				7928455A2B2C80A40021E1FD /* DaemonDisabler.swift in Sources */,
 				7989FD0A2B348A0200FBAB8D /* BookMarkHelper.swift in Sources */,
 				FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */,
-				795019B92B2B5055008EEC91 /* main.m in Sources */,
 				79AEFBBD2B2CBC6B0074EC34 /* ProgressBar.swift in Sources */,
 				79BA958A2B30D91600380D83 /* RootHelperMan.swift in Sources */,
 				FAA457302B2666F300FC7287 /* CleanerView.swift in Sources */,

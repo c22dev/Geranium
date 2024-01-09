@@ -11,7 +11,7 @@ struct CurrentlyDisabledDaemonView: View {
     let plistPath = "/var/mobile/Documents/disabled.plist"
     @Environment(\.dismiss) var dismiss
     @State private var data: [String: Bool] = [:]
-    
+    @State private var result: String = ""
     var body: some View {
         NavigationView {
             List {
@@ -23,6 +23,13 @@ struct CurrentlyDisabledDaemonView: View {
                                         )) {
                                             Text(key)
                                         }
+                    }
+                }
+                Section(header: Text("Screwed up ?"), footer: Text("Delete currently disabled daemon list, and start-over. iOS will generate the file back from scratch next reboot.")) {
+                    Button("Reset") {
+                        result = RootHelper.copy(from: URL(fileURLWithPath : "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath : "/var/mobile/Documents/disabled.gerackup"))
+                        result = RootHelper.removeItem(at: URL(fileURLWithPath : "/var/db/com.apple.xpc.launchd/disabled.plist"))
+                        result = RootHelper.removeItem(at: URL(fileURLWithPath : "/var/db/com.apple.xpc.launchd/disabled.migrated"))
                     }
                 }
             }
