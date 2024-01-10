@@ -14,6 +14,10 @@ struct DaemonView: View {
     @State private var toDisable: [String] = []
     @State private var manageSheet: Bool = false
     @State private var isAlphabeticalOrder: Bool = false
+    @State private var isEditing = false
+    @State private var selectedItems: Set<String> = Set()
+    @State private var initialcount: Int = 0
+    @State private var cancelCount: Int = 0
     @AppStorage("isDaemonFirstRun") var isDaemonFirstRun: Bool = true
     
     var body: some View {
@@ -33,14 +37,23 @@ struct DaemonView: View {
         List {
             ForEach(daemonFiles.filter { searchText.isEmpty || $0.localizedCaseInsensitiveContains(searchText) }, id: \.self) { fileName in
                 HStack {
+                    if isEditing {
+                        Image(systemName: selectedItems.contains(getLabel(fileName) ?? fileName) ? "checkmark.circle.fill" : "circle")
+                            .foregroundColor(selectedItems.contains(getLabel(fileName) ?? fileName) ? .accentColor : .gray)
+                            .onTapGesture {
+                                toggleSelection(for: getLabel(fileName) ?? fileName)
+                                toDisable = Array(selectedItems)
+                            }
+                    }
+                    
                     Text(fileName)
                         .foregroundColor(toDisable.contains(getLabel(fileName) ?? fileName) ? .red : .primary)
+                    
                     Spacer()
                 }
                 .swipeActions {
-                    if let existingIndex = toDisable.firstIndex(of: fileName) {
+                    if let existingIndex = toDisable.firstIndex(of: getLabel(fileName) ?? fileName) {
                         Button(role: .destructive) {
-                            labelForDaemon = getLabel(fileName)
                             toDisable.remove(at: existingIndex)
                             updateDaemonFiles()
                             if isAlphabeticalOrder {
@@ -53,8 +66,7 @@ struct DaemonView: View {
                     }
                     else {
                         Button(role: .destructive) {
-                            labelForDaemon = getLabel(fileName)
-                            toDisable.append(labelForDaemon ?? fileName)
+                            toDisable.append(getLabel(fileName) ?? fileName)
                             updateDaemonFiles()
                             if isAlphabeticalOrder {
                                 daemonFiles.sort()
@@ -74,36 +86,65 @@ struct DaemonView: View {
                     .bold()
             }
             ToolbarItem(placement: .navigationBarTrailing) {
-                Toggle(isOn: $isAlphabeticalOrder) {
-                    Label("Alphabetical", systemImage: "textformat")
-                }
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    var error = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
-                    print(error)
-                    error = RootHelper.setPermission(url: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
-                    manageSheet.toggle()
-                }) {
-                    Image(systemName: "list.bullet")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24, height: 24)
-                }
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    if toDisable == [] {
-                        UIApplication.shared.alert(title: "You didn't select any daemon", body: "Please swipe to the left on a daemon to disable it.")
+                    if isEditing {
+                        selectedItems.removeAll()
+                        isEditing = false
                     }
                     else {
-                        processNextDaemon()
+                        selectedItems = Set(toDisable)
+                        withAnimation {
+                            isEditing.toggle()
+                        }
                     }
                 }) {
-                    Image(systemName: "checkmark")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24, height: 24)
+                    if isEditing {
+                        Text("Done")
+                            .bold()
+                    } else {
+                        Image(systemName: "pencil")
+                    }
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                if !isEditing {
+                    Toggle(isOn: $isAlphabeticalOrder) {
+                        Label("Alphabetical", systemImage: "textformat")
+                    }
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                if !isEditing {
+                    Button(action: {
+                        var error = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                        print(error)
+                        error = RootHelper.setPermission(url: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                        manageSheet.toggle()
+                    }) {
+                        Image(systemName: "list.bullet")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                    }
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                if !isEditing {
+                    Button(action: {
+                        if toDisable == [] {
+                            UIApplication.shared.alert(title: "You didn't select any daemon", body: "Please swipe to the left on a daemon to disable it.")
+                        }
+                        else {
+                            initialcount = toDisable.count
+                            cancelCount = 0
+                            processNextDaemon()
+                        }
+                    }) {
+                        Image(systemName: "checkmark")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                    }
                 }
             }
         }
@@ -158,11 +199,23 @@ struct DaemonView: View {
         return nil
     }
     
+    private func toggleSelection(for SfileName: String) {
+        if selectedItems.contains(SfileName) {
+            selectedItems.remove(SfileName)
+        } else {
+            selectedItems.insert(SfileName)
+        }
+    }
+    
     private func processNextDaemon() {
+        print(initialcount)
         guard let nextDaemon = toDisable.first else {
-            UIApplication.shared.confirmAlert(title: "Done.", body: "Successfully disabled selected daemons. Do you want to reboot your device now ?", onOK: {
-                rebootUSR()
-            }, noCancel: false, yes: true)
+            if cancelCount != initialcount {
+                UIApplication.shared.confirmAlert(title: "Done.", body: "Successfully disabled selected daemons. Do you want to reboot your device now ?", onOK: {
+                    rebootUSR()
+                }, noCancel: false, yes: true)
+            }
+            initialcount = 0
             return
         }
 
@@ -171,8 +224,10 @@ struct DaemonView: View {
             toDisable.removeFirst()
             processNextDaemon()
         }, noCancel: false, onCancel: {
+            cancelCount += 1
             toDisable.removeFirst()
             processNextDaemon()
+            print(cancelCount)
         }, yes: true)
     }
 }
@@ -192,6 +247,11 @@ struct SearchBar: View {
         }
         .padding(.top, 8)
         .padding(.bottom, 4)
+        .onAppear {
+            withAnimation {
+                UITextField.appearance().clearButtonMode = .whileEditing
+            }
+        }
     }
 }
 
