@@ -38,18 +38,21 @@ struct DaemonView: View {
             ForEach(daemonFiles.filter { searchText.isEmpty || $0.localizedCaseInsensitiveContains(searchText) }, id: \.self) { fileName in
                 HStack {
                     if isEditing {
-                        Image(systemName: selectedItems.contains(getLabel(fileName) ?? fileName) ? "checkmark.circle.fill" : "circle")
-                            .foregroundColor(selectedItems.contains(getLabel(fileName) ?? fileName) ? .accentColor : .gray)
-                            .onTapGesture {
-                                toggleSelection(for: getLabel(fileName) ?? fileName)
-                                toDisable = Array(selectedItems)
-                            }
+                            Image(systemName: selectedItems.contains(getLabel(fileName) ?? fileName) ? "checkmark.circle.fill" : "circle")
+                                .foregroundColor(selectedItems.contains(getLabel(fileName) ?? fileName) ? .accentColor : .gray)
                     }
-                    
-                    Text(fileName)
-                        .foregroundColor(toDisable.contains(getLabel(fileName) ?? fileName) ? .red : .primary)
-                    
+                        Text(fileName)
+                            .lineLimit(1)
+                            .truncationMode(.tail)
+                            .foregroundColor(toDisable.contains(getLabel(fileName) ?? fileName) ? .red : .primary)
                     Spacer()
+                }
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    if isEditing {
+                        toggleSelection(for: getLabel(fileName) ?? fileName)
+                        toDisable = Array(selectedItems)
+                    }
                 }
                 .swipeActions {
                     if let existingIndex = toDisable.firstIndex(of: getLabel(fileName) ?? fileName) {
