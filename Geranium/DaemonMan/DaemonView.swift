@@ -55,7 +55,6 @@ struct DaemonView: View {
                     if let existingIndex = toDisable.firstIndex(of: getLabel(fileName) ?? fileName) {
                         Button(role: .destructive) {
                             toDisable.remove(at: existingIndex)
-                            updateDaemonFiles()
                             if isAlphabeticalOrder {
                                 daemonFiles.sort()
                             }
@@ -67,7 +66,6 @@ struct DaemonView: View {
                     else {
                         Button(role: .destructive) {
                             toDisable.append(getLabel(fileName) ?? fileName)
-                            updateDaemonFiles()
                             if isAlphabeticalOrder {
                                 daemonFiles.sort()
                             }
@@ -89,7 +87,9 @@ struct DaemonView: View {
                 Button(action: {
                     if isEditing {
                         selectedItems.removeAll()
-                        isEditing = false
+                        withAnimation {
+                            isEditing = false
+                        }
                     }
                     else {
                         selectedItems = Set(toDisable)
