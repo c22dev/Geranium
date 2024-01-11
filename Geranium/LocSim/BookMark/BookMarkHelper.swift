@@ -22,7 +22,6 @@ func BookMarkSave(lat: Double, long: Double, name: String) -> Bool {
 func BookMarkRetrieve() -> [[String: Any]] {
     let sharedUserDefaults = UserDefaults(suiteName: sharedUserDefaultsSuiteName)
     if let bookmarks = sharedUserDefaults?.array(forKey: "bookmarks") as? [[String: Any]] {
-        print(bookmarks)
         return bookmarks
     } else {
         return []

@@ -38,9 +38,7 @@ class ActionViewController: UIViewController {
                                 let longitudeDouble = Double(longitude) {
                                 DispatchQueue.main.async {
                                     let bookmarkName = self.textField.text
-                                    print("Latitude: \(latitudeDouble), Longitude: \(longitudeDouble)")
-                                    print(bookmarkName!)
-                                    print(self.BookMarkSave(lat: latitudeDouble, long: longitudeDouble, name: bookmarkName ?? ""))
+                                    self.BookMarkSave(lat: latitudeDouble, long: longitudeDouble, name: bookmarkName ?? "")
                                     self.done()
                                 }
                             }
@@ -64,7 +62,6 @@ class ActionViewController: UIViewController {
         let bookmark: [String: Any] = ["name": name, "lat": lat, "long": long]
         var bookmarks = BookMarkRetrieve()
         bookmarks.append(bookmark)
-        print(bookmarks)
         let sharedUserDefaults = UserDefaults(suiteName: sharedUserDefaultsSuiteName)
         sharedUserDefaults?.set(bookmarks, forKey: "bookmarks")
 
