@@ -8,16 +8,21 @@
 import Foundation
 import SwiftUI
 
+let sharedUserDefaultsSuiteName = "group.live.cclerc.geraniumBookmarks"
+
 func BookMarkSave(lat: Double, long: Double, name: String) -> Bool {
     let bookmark: [String: Any] = ["name": name, "lat": lat, "long": long]
     var bookmarks = BookMarkRetrieve()
     bookmarks.append(bookmark)
-    UserDefaults.standard.set(bookmarks, forKey: "bookmarks")
+    let sharedUserDefaults = UserDefaults(suiteName: sharedUserDefaultsSuiteName)
+    sharedUserDefaults?.set(bookmarks, forKey: "bookmarks")
     return true
 }
 
 func BookMarkRetrieve() -> [[String: Any]] {
-    if let bookmarks = UserDefaults.standard.array(forKey: "bookmarks") as? [[String: Any]] {
+    let sharedUserDefaults = UserDefaults(suiteName: sharedUserDefaultsSuiteName)
+    if let bookmarks = sharedUserDefaults?.array(forKey: "bookmarks") as? [[String: Any]] {
+        print(bookmarks)
         return bookmarks
     } else {
         return []

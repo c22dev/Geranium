@@ -23,7 +23,6 @@ struct ContentView: View {
                 .tabItem {
                     Label("LocSim", systemImage: "mappin")
                 }
-            // TODO: Find Battery Usage path
             CleanerView()
                 .tabItem {
                     Label("Cleaner", systemImage: "trash.fill")

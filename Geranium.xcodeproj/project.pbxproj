@@ -19,6 +19,11 @@
 		7930B46E2B4B2ADD00A5B0CB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790301BC2B3774F90044E30A /* CoreServices.framework */; };
 		793E3D6F2B37AA1300A72671 /* BetaChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E3D6E2B37AA1300A72671 /* BetaChecker.swift */; };
 		7956C4542B4DF122004D3A1A /* Beta.png in Resources */ = {isa = PBXBuildFile; fileRef = 7956C4532B4DF122004D3A1A /* Beta.png */; };
+		796072E02B4F4FAE00737B5D /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796072DF2B4F4FAE00737B5D /* UniformTypeIdentifiers.framework */; };
+		796072E32B4F4FAE00737B5D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796072E22B4F4FAE00737B5D /* Media.xcassets */; };
+		796072E52B4F4FAE00737B5D /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796072E42B4F4FAE00737B5D /* ActionViewController.swift */; };
+		796072E82B4F4FAE00737B5D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796072E62B4F4FAE00737B5D /* MainInterface.storyboard */; };
+		796072EC2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 796072DE2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD022B347EEA00FBAB8D /* LocSimView.swift */; };
 		7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD052B3486B100FBAB8D /* CustomMapView.swift */; };
 		7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD072B34894400FBAB8D /* BookMarkSlider.swift */; };
@@ -46,6 +51,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		796072EA2B4F4FAE00737B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA456C92B265FEA00FC7287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796072DD2B4F4FAE00737B5D;
+			remoteInfo = "Bookmark Location in Geranium";
+		};
 		FAA456E22B265FED00FC7287 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAA456C92B265FEA00FC7287 /* Project object */;
@@ -62,6 +74,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		796072ED2B4F4FAE00737B5D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				796072EC2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		790301BA2B37747A0044E30A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		790301BC2B3774F90044E30A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -76,6 +102,14 @@
 		7930B4592B4B267F00A5B0CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		793E3D6E2B37AA1300A72671 /* BetaChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaChecker.swift; sourceTree = "<group>"; };
 		7956C4532B4DF122004D3A1A /* Beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beta.png; sourceTree = "<group>"; };
+		796072DE2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bookmark Location in Geranium.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		796072DF2B4F4FAE00737B5D /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		796072E22B4F4FAE00737B5D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		796072E42B4F4FAE00737B5D /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		796072E72B4F4FAE00737B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		796072E92B4F4FAE00737B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796072F12B4F5A7A00737B5D /* Geranium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Geranium.entitlements; sourceTree = "<group>"; };
+		796072F22B4F616B00737B5D /* Bookmark Location in Geranium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bookmark Location in Geranium.entitlements"; sourceTree = "<group>"; };
 		7989FD022B347EEA00FBAB8D /* LocSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocSimView.swift; sourceTree = "<group>"; };
 		7989FD052B3486B100FBAB8D /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 		7989FD072B34894400FBAB8D /* BookMarkSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkSlider.swift; sourceTree = "<group>"; };
@@ -122,6 +156,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		796072DB2B4F4FAE00737B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796072E02B4F4FAE00737B5D /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAA456CE2B265FEA00FC7287 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +196,7 @@
 				7930B4592B4B267F00A5B0CB /* MobileCoreServices.framework */,
 				790301BC2B3774F90044E30A /* CoreServices.framework */,
 				790301BA2B37747A0044E30A /* Foundation.framework */,
+				796072DF2B4F4FAE00737B5D /* UniformTypeIdentifiers.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +207,18 @@
 				790301C02B377EA70044E30A /* Localizable.xcstrings */,
 			);
 			path = Translations;
+			sourceTree = "<group>";
+		};
+		796072E12B4F4FAE00737B5D /* Bookmark Location in Geranium */ = {
+			isa = PBXGroup;
+			children = (
+				796072F22B4F616B00737B5D /* Bookmark Location in Geranium.entitlements */,
+				796072E22B4F4FAE00737B5D /* Media.xcassets */,
+				796072E42B4F4FAE00737B5D /* ActionViewController.swift */,
+				796072E62B4F4FAE00737B5D /* MainInterface.storyboard */,
+				796072E92B4F4FAE00737B5D /* Info.plist */,
+			);
+			path = "Bookmark Location in Geranium";
 			sourceTree = "<group>";
 		};
 		7989FD0B2B348A8600FBAB8D /* BookMark */ = {
@@ -239,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA456D32B265FEA00FC7287 /* Geranium */,
+				796072E12B4F4FAE00737B5D /* Bookmark Location in Geranium */,
 				FAA456D22B265FEA00FC7287 /* Products */,
 				790301B92B37747A0044E30A /* Frameworks */,
 			);
@@ -250,6 +306,7 @@
 				FAA456D12B265FEA00FC7287 /* Geranium.app */,
 				FAA456E12B265FED00FC7287 /* GeraniumTests.xctest */,
 				FAA456EB2B265FED00FC7287 /* GeraniumUITests.xctest */,
+				796072DE2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +314,7 @@
 		FAA456D32B265FEA00FC7287 /* Geranium */ = {
 			isa = PBXGroup;
 			children = (
+				796072F12B4F5A7A00737B5D /* Geranium.entitlements */,
 				FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */,
 				FAA457042B2660AC00FC7287 /* Geranium-Bringing-Header.h */,
 				FAA457052B2661AD00FC7287 /* Libs */,
@@ -341,6 +399,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		796072DD2B4F4FAE00737B5D /* Bookmark Location in Geranium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796072F02B4F4FAE00737B5D /* Build configuration list for PBXNativeTarget "Bookmark Location in Geranium" */;
+			buildPhases = (
+				796072DA2B4F4FAE00737B5D /* Sources */,
+				796072DB2B4F4FAE00737B5D /* Frameworks */,
+				796072DC2B4F4FAE00737B5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bookmark Location in Geranium";
+			productName = "Bookmark Location in Geranium";
+			productReference = 796072DE2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FAA456D02B265FEA00FC7287 /* Geranium */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA456F52B265FED00FC7287 /* Build configuration list for PBXNativeTarget "Geranium" */;
@@ -348,10 +423,12 @@
 				FAA456CD2B265FEA00FC7287 /* Sources */,
 				FAA456CE2B265FEA00FC7287 /* Frameworks */,
 				FAA456CF2B265FEA00FC7287 /* Resources */,
+				796072ED2B4F4FAE00737B5D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				796072EB2B4F4FAE00737B5D /* PBXTargetDependency */,
 			);
 			name = Geranium;
 			packageProductDependencies = (
@@ -403,9 +480,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					796072DD2B4F4FAE00737B5D = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					FAA456D02B265FEA00FC7287 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -454,11 +534,21 @@
 				FAA456D02B265FEA00FC7287 /* Geranium */,
 				FAA456E02B265FED00FC7287 /* GeraniumTests */,
 				FAA456EA2B265FED00FC7287 /* GeraniumUITests */,
+				796072DD2B4F4FAE00737B5D /* Bookmark Location in Geranium */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		796072DC2B4F4FAE00737B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796072E32B4F4FAE00737B5D /* Media.xcassets in Resources */,
+				796072E82B4F4FAE00737B5D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAA456CF2B265FEA00FC7287 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,6 +580,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		796072DA2B4F4FAE00737B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796072E52B4F4FAE00737B5D /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAA456CD2B265FEA00FC7287 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,6 +639,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		796072EB2B4F4FAE00737B5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796072DD2B4F4FAE00737B5D /* Bookmark Location in Geranium */;
+			targetProxy = 796072EA2B4F4FAE00737B5D /* PBXContainerItemProxy */;
+		};
 		FAA456E32B265FED00FC7287 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FAA456D02B265FEA00FC7287 /* Geranium */;
@@ -553,7 +656,74 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		796072E62B4F4FAE00737B5D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796072E72B4F4FAE00737B5D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		796072EE2B4F4FAE00737B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bookmark Location in Geranium/Bookmark Location in Geranium.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G89J82G2A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookmark Location in Geranium/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Location in Geranium";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.geranium.Bookmark-Location-in-Geranium";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		796072EF2B4F4FAE00737B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bookmark Location in Geranium/Bookmark Location in Geranium.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G89J82G2A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bookmark Location in Geranium/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Location in Geranium";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.geranium.Bookmark-Location-in-Geranium";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FAA456F32B265FED00FC7287 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -678,8 +848,10 @@
 		FAA456F62B265FED00FC7287 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Geranium/Geranium.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Geranium/Preview Content\"";
@@ -714,8 +886,10 @@
 		FAA456F72B265FED00FC7287 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Geranium/Geranium.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Geranium/Preview Content\"";
@@ -826,6 +1000,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		796072F02B4F4FAE00737B5D /* Build configuration list for PBXNativeTarget "Bookmark Location in Geranium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796072EE2B4F4FAE00737B5D /* Debug */,
+				796072EF2B4F4FAE00737B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAA456CC2B265FEA00FC7287 /* Build configuration list for PBXProject "Geranium" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

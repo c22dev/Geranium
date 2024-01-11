@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-// TODO: test app on iPadOS 15 iPads
 @main
 struct GeraniumApp: App {
-    @State var isInBetaProgram = false // MARK: change this value if the build isn't Beta
+    @State var isInBetaProgram = false // MARK: change this value if the build is Beta
     @StateObject private var appSettings = AppSettings()
     @Environment(\.dismiss) var dismiss
     var body: some Scene {
