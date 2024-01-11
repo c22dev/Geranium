@@ -115,10 +115,11 @@ struct BookMarkSlider: View {
         bookmarks.remove(atOffsets: offsets)
         updateBookmarks()
     }
-    
+    let sharedUserDefaultsSuiteName = "group.live.cclerc.geraniumBookmarks"
     private func updateBookmarks() {
-        UserDefaults.standard.set(bookmarks.map { ["name": $0.name, "lat": $0.lat, "long": $0.long] }, forKey: "bookmarks")
-        UserDefaults.standard.synchronize()
+        let sharedUserDefaults = UserDefaults(suiteName: sharedUserDefaultsSuiteName)
+        sharedUserDefaults?.set(bookmarks.map { ["name": $0.name, "lat": $0.lat, "long": $0.long] }, forKey: "bookmarks")
+        sharedUserDefaults?.synchronize()
     }
     
     func close() {

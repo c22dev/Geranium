@@ -44,14 +44,17 @@ struct SuperviseView: View {
                     }
                     catch {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        errorVibrate()
                         UIApplication.shared.confirmAlert(title: "Error", body: "The app encountered an error while writing to file. Respring anyway ?", onOK: {respring()}, noCancel: false, yes: true)
                     }
                     if !organisation_name.isEmpty {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        successVibrate()
                         UIApplication.shared.confirmAlert(title: "Done !", body: "Your device is now supervised with the custon name \(organisation_name). Please respring now.", onOK: {respring()}, noCancel: true)
                     }
                     else {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        successVibrate()
                         UIApplication.shared.confirmAlert(title: "Done !", body: "Your device is now supervised. Please respring now.", onOK: {respring()}, noCancel: true)
                     }
                 })

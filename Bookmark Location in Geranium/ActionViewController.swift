@@ -64,7 +64,7 @@ class ActionViewController: UIViewController {
         bookmarks.append(bookmark)
         let sharedUserDefaults = UserDefaults(suiteName: sharedUserDefaultsSuiteName)
         sharedUserDefaults?.set(bookmarks, forKey: "bookmarks")
-
+        successVibrate()
         return true
     }
 
@@ -78,16 +78,8 @@ class ActionViewController: UIViewController {
     }
 }
 
-extension UIViewController {
-    func showAlert(title: String, message: String, completion: (() -> Void)? = nil) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            completion?()
-        }
-        
-        alertController.addAction(okAction)
-        
-        present(alertController, animated: true, completion: nil)
-    }
+// shortened vibrate object
+func successVibrate() {
+    let generator = UINotificationFeedbackGenerator()
+    generator.notificationOccurred(.success)
 }

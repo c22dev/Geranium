@@ -16,6 +16,7 @@ func BookMarkSave(lat: Double, long: Double, name: String) -> Bool {
     bookmarks.append(bookmark)
     let sharedUserDefaults = UserDefaults(suiteName: sharedUserDefaultsSuiteName)
     sharedUserDefaults?.set(bookmarks, forKey: "bookmarks")
+    successVibrate()
     return true
 }
 

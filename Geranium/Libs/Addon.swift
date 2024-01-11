@@ -388,3 +388,11 @@ func isMiniDevice() -> Bool {
         return true
     }
 }
+
+// https://stackoverflow.com/a/56444424
+func betterExit() {
+    UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+    Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
+        exit(0)
+    }
+}

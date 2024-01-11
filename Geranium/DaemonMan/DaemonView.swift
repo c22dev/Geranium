@@ -52,6 +52,7 @@ struct DaemonView: View {
                     if isEditing {
                         toggleSelection(for: getLabel(fileName) ?? fileName)
                         toDisable = Array(selectedItems)
+                        miniimpactVibrate()
                     }
                 }
                 .swipeActions {
