@@ -27,18 +27,18 @@ class ActionViewController: UIViewController {
         if let sharedItems = extensionContext?.inputItems as? [NSExtensionItem],
            let firstItem = sharedItems.first,
            let attachments = firstItem.attachments {
-
+            
             for provider in attachments {
-                if provider.hasItemConformingToTypeIdentifier(kUTTypeURL as String) {
-                    provider.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil, completionHandler: { (url, error) in
+                if provider.hasItemConformingToTypeIdentifier(UTType.url.identifier as String) {
+                    provider.loadItem(forTypeIdentifier: UTType.url.identifier as String, options: nil, completionHandler: { (url, error) in
                         if let url = url as? URL {
                             if let latitude = self.getParameter(from: url, key: "ll")?.components(separatedBy: ",").first,
-                                let longitude = self.getParameter(from: url, key: "ll")?.components(separatedBy: ",").last,
-                                let latitudeDouble = Double(latitude),
-                                let longitudeDouble = Double(longitude) {
+                               let longitude = self.getParameter(from: url, key: "ll")?.components(separatedBy: ",").last,
+                               let latitudeDouble = Double(latitude),
+                               let longitudeDouble = Double(longitude) {
                                 DispatchQueue.main.async {
                                     let bookmarkName = self.textField.text
-                                    self.BookMarkSave(lat: latitudeDouble, long: longitudeDouble, name: bookmarkName ?? "")
+                                    print(self.BookMarkSave(lat: latitudeDouble, long: longitudeDouble, name: bookmarkName ?? ""))
                                     self.done()
                                 }
                             }
@@ -47,7 +47,6 @@ class ActionViewController: UIViewController {
                 }
             }
         }
-
         dismiss(animated: true) {
         }
     }
