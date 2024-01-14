@@ -11,7 +11,41 @@ struct SettingsView: View {
     @State var DebugStuff: Bool = false
     @State var MinimCal: String = ""
     @State var LocSimTries: String = ""
+    @State var localisation: String = {
+        if let languages = UserDefaults.standard.array(forKey: "AppleLanguages") as? [String],
+           let firstLanguage = languages.first {
+            return firstLanguage
+        } else {
+            return Locale.current.languageCode ?? "en"
+        }
+    }()
     @StateObject private var appSettings = AppSettings()
+    
+    let languageMapping: [String: String] = [
+        // i made catgpt work for me on this one
+                "ca": "Catalan",
+                "cs": "Czech",
+                "de": "German",
+                "el": "Greek",
+                "en": "English",
+                "es": "Spanish",
+                "es-419": "Spanish (Latin America)",
+                "fi": "Finnish",
+                "fr": "French",
+                "it": "Italian",
+                "ja": "Japanese",
+                "ko": "Korean",
+                "ru": "Russian",
+                "sk": "Slovak",
+                "sr": "Serbian",
+                "sv": "Swedish",
+                "vi": "Vietnamese",
+                "zh-Hans": "Chinese (Simplified)",
+                "zh-Hant": "Chinese (Traditional)",
+    ]
+    var sortedLocalisalist: [String] {
+        Bundle.main.localizations.sorted()
+    }
     var body: some View {
         NavigationView {
             List {
@@ -22,6 +56,20 @@ struct SettingsView: View {
                         }
                     }
                 }
+                
+                Section(header: Label("App Language", systemImage: "magnifyingglass"), footer: Text("Here you can choose in what language you want the app to be. The app will automatically exit to apply changes ; feel free to launch it again.")) {
+                    Picker("Language", selection: $localisation) {
+                        ForEach(sortedLocalisalist, id: \.self) { abbreviation in
+                            Text(languageMapping[abbreviation] ?? abbreviation)
+                                .tag(abbreviation)
+                        }
+                    }
+                    .onChange(of: localisation) { newValue in
+                        UserDefaults.standard.set([newValue], forKey: "AppleLanguages")
+                        exitGracefully()
+                    }
+                }
+                
                 
                 Section(header: Label("Debug Stuff", systemImage: "chevron.left.forwardslash.chevron.right"), footer: Text("This setting allows you to see experimental values from some app variables.")) {
                     Toggle(isOn: $DebugStuff) {

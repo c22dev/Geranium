@@ -643,6 +643,9 @@
         }
       }
     },
+    "App Language" : {
+
+    },
     "Apps Leftover Caches" : {
       "localizations" : {
         "es-419" : {
@@ -3546,6 +3549,9 @@
         }
       }
     },
+    "Here you can choose in what language you want the app to be. The app will automatically exit to apply changes ; feel free to launch it again." : {
+
+    },
     "Hi ! SE 1 User" : {
       "localizations" : {
         "es" : {
@@ -4227,6 +4233,9 @@
           }
         }
       }
+    },
+    "Language" : {
+
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
