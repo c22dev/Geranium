@@ -8,36 +8,51 @@
    </p>
    <h1> Geranium </h1>
       <p>LocSim, Daemon Manager, Cleaner and Superviser for TrollStore</p>
-      <img src="https://github.com/c22dev/Geranium/assets/102235607/1f0968dc-81bc-45e1-99ce-bdeb17c2a03d" width=150px>
+      <img src="https://github.com/c22dev/Geranium/assets/102235607/ea95158f-1101-496b-b868-c3901db97543" width=150px>
 </div>
 
 <h6 align="center"> by c22dev </h6>
 
 ## Installation
-To install Geranium, you must have [TrollStore](https://github.com/opa334/TrollStore) 1.3 or later, and a device on iOS 15 or later (if TrollStore supports it). Download the latest release from the release tab, and open it in TrollStore. Then, follow the setup process !
+To install Geranium, you must have [TrollStore](https://github.com/opa334/TrollStore) 1.3 or later, and a device on iOS 15 or later (if TrollStore supports it). Download the latest release from the release tab, and open it in TrollStore. Then, follow the setup process ! If you are on TrollStore 2.0.9, please udpate to latest version from TrollStore app, otherwise this app won't work.
 
 ## Features
 - **Simulate fake locations + bookmarks**
 <img src="https://github.com/c22dev/Geranium/assets/102235607/a42ace92-028f-482f-9a66-6c4295a7fcba" width=150px>
 <img src="https://github.com/c22dev/Geranium/assets/102235607/c45d3553-1c5b-418b-b836-69d47330d489" width=150px>
 <img src="https://github.com/c22dev/Geranium/assets/102235607/bcd7f1bf-e684-4eee-964e-449aeae7f5fa" width=150px>
+<img src="https://github.com/c22dev/Geranium/assets/102235607/35a8c0c9-50cd-484b-bfd4-0290c0c50714" width=150px>
+<img src="https://github.com/c22dev/Geranium/assets/102235607/557b7da6-a181-4b2f-80a1-3e84f79b144f" width=150px>
 
-You can also import your old bookmarks from Mika's LocSim !
+
+
+You can also import your old bookmarks from Mika's LocSim (by going into bookmarks tab), and save new bookmarks from Apple Maps !
 
 - **Clean your iDevice like never before**
-<img src="https://github.com/c22dev/Geranium/assets/102235607/6c784124-1e14-4e76-84f6-64f6b6396dc1" width=150px>
+
+<img src="https://github.com/c22dev/Geranium/assets/102235607/dc1d1818-8248-4c7a-95d7-615b00f280a4" width=150px>
 <img src="https://github.com/c22dev/Geranium/assets/102235607/a187c43b-38fd-4a91-a7b2-194de9bab67a" width=150px>
 
-Tired of the "Other" category taking up all of your space on your iDevice, well, you found the solution ! 
+Tired of the "Other" category taking up all of your space on your iDevice, well, you found the solution ! Some users have cleaned more than 16Gb of storage with this tool !
+Please note that those screenshots aren't accurate because they were took on a simulator that didn't have the cleaned directories. Calculated sizes aren't always accurate.
+
 
 - **Manage daemons**
 
-<img src="https://github.com/c22dev/Geranium/assets/102235607/7f6ec057-338f-4c02-b794-ea45bc387084" width=150px>
-<img src="https://github.com/c22dev/Geranium/assets/102235607/1906e527-06d8-4ad7-acff-47361a44de48" width=150px>
-<img src="https://github.com/c22dev/Geranium/assets/102235607/6b85172c-65f1-45c7-bd86-2e45b60560d9" width=150px>
-<img src="https://github.com/c22dev/Geranium/assets/102235607/786758cd-9eb6-477b-b1cf-150acf654524" width=150px>
+<img src="https://github.com/c22dev/Geranium/assets/102235607/977b1592-be87-42b1-84ad-5a9f6408279c" width=150px>
+<img src="https://github.com/c22dev/Geranium/assets/102235607/6ad3858d-36fc-415d-bae7-8624e19d178d" width=150px>
+<img src="https://github.com/c22dev/Geranium/assets/102235607/84508dae-1cc3-495f-a7b1-1f6244a133f3" width=150px>
+<img src="https://github.com/c22dev/Geranium/assets/102235607/408fcfcb-8abd-4d1c-bedc-01e1a8051127" width=150px>
+
 
 Not using HomeKit and other Apple stuff, and want to optimize your phone performances to the best ? Here you can choose what you want to use !
+
+- **Disable ScreenTime**
+
+<img src="https://github.com/c22dev/Geranium/assets/102235607/c0795578-1a87-45e5-a914-1200249ec705" width=150px>
+
+Forgot your screentime password ? Here you can say goodbye to Screen Time on your iOS device ! It also works with iCloud ScreenTimes. 
+Disclaimer : don't use this if your parents manage your Screen Time, if you get caught it would probably make it worse for you. I am not responsible in case you get told off.
 
 - **Supervise your device**
 
