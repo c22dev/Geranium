@@ -41,7 +41,6 @@ Please note that those screenshots aren't accurate because they were took on a s
 
 <img src="https://github.com/c22dev/Geranium/assets/102235607/977b1592-be87-42b1-84ad-5a9f6408279c" width=150px>
 <img src="https://github.com/c22dev/Geranium/assets/102235607/6ad3858d-36fc-415d-bae7-8624e19d178d" width=150px>
-<img src="https://github.com/c22dev/Geranium/assets/102235607/84508dae-1cc3-495f-a7b1-1f6244a133f3" width=150px>
 <img src="https://github.com/c22dev/Geranium/assets/102235607/408fcfcb-8abd-4d1c-bedc-01e1a8051127" width=150px>
 
 
