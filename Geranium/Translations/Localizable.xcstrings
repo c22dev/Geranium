@@ -161,6 +161,12 @@
             "value" : "1. Откройте TrollStore"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Otvorte TrollStore"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -231,6 +237,12 @@
             "value" : "2. Зайдите в настройки"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Choďte do Nastavení"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -259,6 +271,12 @@
     },
     "3" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -266,6 +284,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3"
+          }
+        },
+        "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "3"
@@ -323,6 +347,12 @@
             "value" : "3. Включите URL Scheme"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Zapnite URL Schému"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -351,6 +381,12 @@
     },
     "50.0 MB" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50.0MB"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -358,6 +394,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50.0 MB"
+          }
+        },
+        "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "50.0 MB"
@@ -372,10 +414,24 @@
       }
     },
     "A list of daemons and what they do" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une liste de daemons et leur utilité"
+          }
+        }
+      }
     },
     "A list of daemons you could disable" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une liste des daemons que vous pouvez désactiver"
+          }
+        }
+      }
     },
     "Alphabetical" : {
       "localizations" : {
@@ -419,6 +475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Алфавитный"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alphabetical"
           }
         },
         "sv" : {
@@ -491,6 +553,12 @@
             "value" : "Произошла ошибка с RootHelper."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastala chyba s RootHelperom."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -543,10 +611,22 @@
             "value" : "アプリアイコン"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 아이콘"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Иконка приложения"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikona Aplikácie"
           }
         },
         "sv" : {
@@ -599,6 +679,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оставшиеся кэши приложений"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zvyšné Caches Aplikácií"
           }
         },
         "sv" : {
@@ -660,6 +746,12 @@
             "value" : "Данные об использовании батареи"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dáta o Spotrebe Batérie"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -715,13 +807,19 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Beta"
+            "value" : "베타"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Бета"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
           }
         },
         "sv" : {
@@ -782,6 +880,12 @@
             "value" : "Закладки"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Záložky"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -838,13 +942,19 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bouquet"
+            "value" : "부케"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Букет"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouquet"
           }
         },
         "sv" : {
@@ -905,6 +1015,12 @@
             "value" : "Добавляя определенные правила к внутренним компонентам iOS, это программное обеспечение предотвращает запуск определенных процессов при включении устройства. Приложение отображает каждый запущенный демон, и вы можете провести пальцем влево, чтобы удалить его."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pridaním niekoľkých pravidiel do vnútorných častí systému iOS, tento softvér zabraňuje spusteniu daemon po zapnutí telefónu. V tejto aplikácií sú uvedené všetky spustené daemons. Potiadnutím doľava ich individuálne môžete odstrániť."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -957,10 +1073,22 @@
             "value" : "by c22dev"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제작자 : c22dev"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "от c22dev"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "od c22dev"
           }
         },
         "sv" : {
@@ -1003,10 +1131,22 @@
             "value" : "by PhucDo"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제작자 : PhucDo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "от PhucDo"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "od PhucDo"
           }
         },
         "sv" : {
@@ -1061,6 +1201,12 @@
             "value" : "Прощай Экранное Время!"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbohom, Čas pred obrazovkou!"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1104,10 +1250,16 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ByeTime"
+            "value" : " 스크린타임 제거"
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime"
+          }
+        },
+        "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ByeTime"
@@ -1153,10 +1305,22 @@
             "value" : "ByeTimeを使用するとスクリーンタイムを完全に無効化出来ます。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " ByeTime을 사용하면 스크린 타임, iCloud를 완전히 비활성화할 수 있습니다."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ByeTime разрешает вам окончательно выключить Экранное Время, даже если у вас iCloud."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime vám umožňuje úplne vypnúť Čas pred obrazovkou, iCloud alebo nie."
           }
         },
         "sv" : {
@@ -1199,10 +1363,22 @@
             "value" : "ByeTimeの設定"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " 스크린타임 제거 설정"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настройки ByeTime"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenia ByeTime"
           }
         },
         "sv" : {
@@ -1261,6 +1437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обход всплывающего окна обновления приложения"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnúť Oznámenia o Aktualizáciach Aplikácie"
           }
         },
         "sv" : {
@@ -1333,6 +1515,12 @@
             "value" : "Обход всплывающего окна TrollStore"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnúť Upozornenie o Nesprávnej Inštalácii"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1401,6 +1589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Очистить !"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyčistiť!"
           }
         },
         "sv" : {
@@ -1473,6 +1667,12 @@
             "value" : "Очиститель"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nástroj na Čistenie"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1501,6 +1701,12 @@
     },
     "Cleaner Settings" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres du Nettoyeur"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1511,6 +1717,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "クリーナー設定"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenia Nástroju na Čistenie"
           }
         },
         "sv" : {
@@ -1569,6 +1781,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Благодарности"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titulky"
           }
         },
         "sv" : {
@@ -1641,6 +1859,12 @@
             "value" : "Daemons"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemons"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1703,6 +1927,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Информация об откладке"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug Informácie"
           }
         },
         "sv" : {
@@ -1775,6 +2005,12 @@
             "value" : "Отладочные материалы"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veci na Debugovanie"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1827,10 +2063,22 @@
             "value" : "Default"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일반"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "По умолчанию"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Predvolené"
           }
         },
         "sv" : {
@@ -1848,7 +2096,14 @@
       }
     },
     "Delete currently disabled daemon list, and start-over. iOS will generate the file back from scratch next reboot." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer les daemons désactivés actuellement, et recommencez. iOS générera le fichier depuis 0 lors du prochain redémarrage."
+          }
+        }
+      }
     },
     "Deleting... %@" : {
       "localizations" : {
@@ -1892,6 +2147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удаление… %@"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vymazáva sa... %@"
           }
         },
         "sv" : {
@@ -1964,6 +2225,12 @@
             "value" : "Деактивировать"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnúť"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2016,10 +2283,22 @@
             "value" : "Homedを無効化する"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed 비활성화"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выключить Homed"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnúť Homed Daemon"
           }
         },
         "sv" : {
@@ -2062,10 +2341,22 @@
             "value" : "Screen Time Agentを無効化"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "스크린타임 작용 비활성화 "
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выключить Агента Экранного Времени"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnúť \"Agent\" Času pred obrazovkou"
           }
         },
         "sv" : {
@@ -2126,6 +2417,12 @@
             "value" : "Выключить всплывающие окна обновления"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnúť oznámenia o aktualizáciách"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2178,10 +2475,22 @@
             "value" : "Usage Tracking Agentを無効化"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용 추적 대리 비활성화"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выключение Агента Отслеживания Использования"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnúť \"Agent\" na Sledovanie používania"
           }
         },
         "sv" : {
@@ -2240,6 +2549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Менеджер выключенных системных процессов"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Správca Vypnutých Daemons"
           }
         },
         "sv" : {
@@ -2310,6 +2625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ВЫКЛЮЧАТЬ СИСТЕМНЫЕ ПРОЦЕССЫ ОПАСНО. ТВОЕ УСТРОЙСТВО МОЖЕТ ПОПАСТЬ В БЕСКОНЕЧНУЮ ЗАГРУЗКУ. ДЕЙСТВУЙТЕ С ОСТОРОЖНОСТЬЮ. Я НЕ НЕСУ ОТВЕТСТВЕННОСТИ ЗА ЛЮБУЮ ПРОБЛЕМУ НА ВАШЕМ УСТРОЙСТВЕ."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VYPÝNANIE SYSTÉMOVÝCH DAEMONS JE NEBEZPEČNÉ. MÔŽE TO VAŠE ZARIADENIE DOSTAŤ DO BOOTLOOPU. POKRAČUJTE NA VLASNTÚ ZODPOVEDNOSŤ. NIE SOM ZODPOVENDNÝ ZA ŽIADNE PROBLÉMY NA VAŠOM ZARIADENÍ."
           }
         },
         "sv" : {
@@ -2453,6 +2774,12 @@
             "value" : "Закрыть"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zavrieť"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2474,7 +2801,20 @@
       }
     },
     "Done" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hotovo"
+          }
+        }
+      }
     },
     "Done !" : {
       "localizations" : {
@@ -2518,6 +2858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Завершено !"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hotovo!"
           }
         },
         "sv" : {
@@ -2590,6 +2936,12 @@
             "value" : "Включить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapnúť"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2658,6 +3010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Включить сбор логов"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapnúť ukladanie log (záznamových) súborov"
           }
         },
         "sv" : {
@@ -2730,6 +3088,12 @@
             "value" : "Включить ведение логов"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapnúť logging (záznamy)"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2798,6 +3162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Введите название организации…"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zadajte názov organizácie..."
           }
         },
         "sv" : {
@@ -2870,6 +3240,12 @@
             "value" : "Ошибка !"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastala Chyba!"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2940,6 +3316,12 @@
             "value" : "Выйти"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukončiť"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2992,10 +3374,22 @@
             "value" : "Flore"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Флора"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flore"
           }
         },
         "sv" : {
@@ -3054,6 +3448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Основные кэши"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všeobecné Caches"
           }
         },
         "sv" : {
@@ -3190,6 +3590,12 @@
             "value" : "Привет ! Пользователь SE 1"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vitaj, používateľ iPhone SE 1!"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3260,6 +3666,12 @@
             "value" : "Главная"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domov"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3312,7 +3724,19 @@
             "value" : "Homed"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed"
+          }
+        },
+        "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Homed"
@@ -3358,10 +3782,22 @@
             "value" : "HomedはたとえばHomePodsやスマート照明など、「ホーム」アプリから管理するHomekitアクセサリや製品を制御しています。これらのアクセサリを使用している場合は、無効化しないでください。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed는  '홈' 앱에서 관리하는 HomePods, 연결된 전구 등 HomeKit 액세서리 및 제품을 담당합니다. 그 액세서리를 사용하고 있다면 비활성화하지 마세요."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Homed отвечает за аксессуары и продукты HomeKit, например HomePods, подключенные лампочки и другие, которыми вы управляете из приложения \"Дом\" на своем телефоне. Не отключайте эту функцию, если вы используете эти аксессуары."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed (daemon) má na starosti príslušenstvo a produkty HomeKit, napríklad HomePods, pripojené žiarovky a ďalšie, ktoré spravujete z aplikácie „Domov“. Nevypínajte Homed, ak využívate tieto funkcie."
           }
         },
         "sv" : {
@@ -3420,6 +3856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Если ты хочешь включить авто-обновление, тебе нужно включить Magnifier URL Scheme в TrollStore."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ak chcete zapnúť automatické aktualizácie, musíte zapnúť URL Schému aplikácie \"Lupa\" v TrollStore."
           }
         },
         "sv" : {
@@ -3492,6 +3934,12 @@
             "value" : "Если ты хочешь вернуть любое из твоих решений, ты должен зайти в менеджер (иконка в списке после иконки применения), где ты можешь включать выключенные системные процессы."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ak chcete vrátiť ktorékoľvek z vašich nastavení, prejdite do manažéra (ikona zoznamu vedľa ikony použiť), kde môžete ovládať vypnuté daemony."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3560,6 +4008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пользователь использует iPad на iPadOS 16: нет"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je tento používateľ na iPadOS 16? : nie"
           }
         },
         "sv" : {
@@ -3632,6 +4086,12 @@
             "value" : "Пользователь использует iPad на iPadOS 16: да"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je tento používateľ na iPadOS 16? : áno"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3702,6 +4162,12 @@
             "value" : "Выглядит так как будто ты используешь приложение на iPhone SE 2016 (1-е поколение). Ты можешь столкнуться с серьезными проблемами интерфейса. Пожалуйста, извините меня заранее."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyzerá, že aplikáciu používate na iPhone SE 2016 (1. gen.). Môžete naraziť na vážne problémy s UI (používateľským rozhraním). Vopred sa ospravedlňujem."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3730,6 +4196,12 @@
     },
     "Keep selection after cleaning" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garder la selection après le nettoyage"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3740,6 +4212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "洗浄後のセレクションを保持"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ponechať výber po vyčistení"
           }
         },
         "vi" : {
@@ -3798,6 +4276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Широта: %1$lf Долгота: %2$lf"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zemepisná šírka: %1$lfZemepisná dĺžka: %2$lf"
           }
         },
         "sv" : {
@@ -3870,6 +4354,12 @@
             "value" : "LocSim"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3892,6 +4382,12 @@
     },
     "LocSim Settings" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres LocSim"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3902,6 +4398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "LocSimの設定"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenia LocSim"
           }
         },
         "vi" : {
@@ -3954,6 +4456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Коллекция логов"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukladanie Log (záznamových) Súborov"
           }
         },
         "sv" : {
@@ -4026,6 +4534,12 @@
             "value" : "Настройки логов"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenia Loggingu (záznamov)"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4094,6 +4608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сделано c22dev"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vytvoril c22dev"
           }
         },
         "sv" : {
@@ -4166,6 +4686,12 @@
             "value" : "Управлять"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spravovať"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4194,6 +4720,12 @@
     },
     "Minimum Attempts:" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essais Minimums:"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4204,6 +4736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "最低試行回数："
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum Pokusov:"
           }
         },
         "sv" : {
@@ -4222,6 +4760,12 @@
     },
     "Minimum Size:" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taille minimum:"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4232,6 +4776,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "最小サイズ："
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximálna Veľkosť:"
           }
         },
         "sv" : {
@@ -4249,7 +4799,14 @@
       }
     },
     "More info" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus d'information"
+          }
+        }
+      }
     },
     "No bookmarks saved." : {
       "localizations" : {
@@ -4293,6 +4850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нет сохраненных закладок."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie sú uložené žiadne záložky."
           }
         },
         "sv" : {
@@ -4365,6 +4928,12 @@
             "value" : "Предупреждение"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornenie"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4433,6 +5002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кэши OTA обновлений"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caches OTA Aktualizácií"
           }
         },
         "sv" : {
@@ -4506,6 +5081,12 @@
             "value" : "PID: %@"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PID: %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4570,6 +5151,12 @@
             "value" : "Пожалуйста, скопируйте свой UUID и отправьте его ответственному разработчику."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prosím, skopírujte svoj UUID a pošlite ho vývojárovi."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4632,6 +5219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пожалуйста, обратите внимание"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vezmite prosím na vedomie"
           }
         },
         "sv" : {
@@ -4704,6 +5297,12 @@
             "value" : "Цель"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Účel"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4760,6 +5359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Перезагрузка"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reštartovať"
           }
         },
         "sv" : {
@@ -4821,6 +5426,12 @@
             "value" : "Восстановить кэш иконок"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnoviť Cache Ikon"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4848,7 +5459,14 @@
       }
     },
     "Reset" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réinitialiser"
+          }
+        }
+      }
     },
     "Respring" : {
       "localizations" : {
@@ -4889,6 +5507,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Respring"
+          }
+        },
+        "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Respring"
@@ -4956,6 +5580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Путь RootHelper : %@"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umiestnenie RootHelpera : %@"
           }
         },
         "sv" : {
@@ -5028,6 +5658,12 @@
             "value" : "Путь кэша Safari : %@"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umiestnenie Safari Cache : %@"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5096,6 +5732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кэши Safari"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caches prehliadača Safari"
           }
         },
         "sv" : {
@@ -5168,6 +5810,12 @@
             "value" : "Сохранить"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uložiť"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5220,10 +5868,22 @@
             "value" : "Screen Time Agent"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "스크린 타임 대리"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Агент Экранного Времени"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Agent\" Času pred obrazovkou"
           }
         },
         "sv" : {
@@ -5266,10 +5926,22 @@
             "value" : "Screen Time Agentは、ScreenTimeの全ての設定を管理します。このプロセスだけを無効にしても、ScreenTImeを一部無効化される程度です。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent는 모든 스크린 타임 기본 설정을 관리합니다. 이 프로세스를 비활성화하면 스크린 타임이 부분적으로만 비활성화될 수 있습니다."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Агент Экранного Времени отвечает за все настройки Экранного Времени. Выключение этого процесса может в лучшем случае частично отключить Экранное Время."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Agent\" Času pred obrazovkou je zodpovedný za správu všetkých preferencií Času pred obrazovkou. Vypnutie tohto procesu môže prinajlepšom vypnúť Čas pred obrazovkou iba čiastočne."
           }
         },
         "sv" : {
@@ -5287,7 +5959,20 @@
       }
     },
     "Screwed up ?" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foutu ?"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenia"
+          }
+        }
+      }
     },
     "Search a currently running daemon..." : {
       "extractionState" : "stale",
@@ -5361,7 +6046,20 @@
       }
     },
     "Search for a daemon..." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher un daemom..."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyhľadať spustenú daemon..."
+          }
+        }
+      }
     },
     "Settings" : {
       "localizations" : {
@@ -5405,6 +6103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настройки"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenia"
           }
         },
         "sv" : {
@@ -5477,6 +6181,12 @@
             "value" : "Установщик"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začiatočné Nastavenie"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5547,6 +6257,12 @@
             "value" : "Настройки запуска"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nastavenia Spustenia"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5575,6 +6291,12 @@
     },
     "Suika" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suika"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5582,6 +6304,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suika"
+          }
+        },
+        "sk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suika"
@@ -5755,6 +6483,12 @@
             "value" : "Спасибо всем этим прекрасным переводчикам !"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ďakujem všetkým úžasným prekladateľom!"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5826,6 +6560,12 @@
             "value" : "Это список всех выключенных системных процессов прямо сейчас. Не изменяйте вещи которые вы не изменяли. Те которые переключены это те которые выключены."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toto je zoznam všetkých momentálne vypnutých Daemons. Nemeňte veci, ktorými si nie ste istý. Tie \"zapnuté\" deamony sú vypnuté."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5853,7 +6593,14 @@
       }
     },
     "This is a list of all the currently disabled daemons. Swipe to the right to enable back the daemon." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ceci est une liste de tous les daemons actuellement désactivés. Glissez vers la droite pour le réactiver."
+          }
+        }
+      }
     },
     "This setting allows you to see experimental values from some app variables." : {
       "localizations" : {
@@ -5897,6 +6644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Это настройка разрешит тебе видеть экспериментальные значения из нескольких переменных приложения."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toto nastavenie vám umožňuje zobraziť experimentálne hodnoty z niektorých premenných hodnôt aplikácie."
           }
         },
         "sv" : {
@@ -5969,6 +6722,12 @@
             "value" : "Это будет персонализировать всплывающие окна при запуске приложения. Полезно для откладки на симуляторе или для бета-версий."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toto nastavenie vám umožňuje prispôsobiť si upozornenia aplikácie pri zapínaní. Užitočné pre debugovanie v Simulátore alebo pre beta verzie aplikácie."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6037,6 +6796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Чтобы добавить закладку, выделите любую локацию а затем тапните на кнопку +."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ak chcete pridať záložku, vyberte vlastnú lokáciu a potom stlačte tlačidlo +."
           }
         },
         "sv" : {
@@ -6109,6 +6874,12 @@
             "value" : "Переводчики"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prekladatelia"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6179,6 +6950,12 @@
             "value" : "Попробуйте еще раз"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skúste znova"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6207,6 +6984,12 @@
     },
     "Try stopping LocSim multiple times" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essayer d'arrêter le LocSim plusieurs fois"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6217,6 +7000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "LocSimを複数回停止してみる"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skúste vypnúť LocSim niekoľko krát"
           }
         },
         "sv" : {
@@ -6275,6 +7064,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Понял"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozumiem"
           }
         },
         "sv" : {
@@ -6338,7 +7133,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unsupervise"
+            "value" : "기기 감독 비활성화"
           }
         },
         "ru" : {
@@ -6405,6 +7200,12 @@
             "value" : "Предупреждения об обновлении"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upozornenia o Aktualizáciach"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6451,10 +7252,22 @@
             "value" : "Usage Tracking Agent"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "추적 사용 대리"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Агент Отслеживания Использования"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Agent\" na Sledovanie používania"
           }
         },
         "sv" : {
@@ -6497,10 +7310,22 @@
             "value" : "Usage Tracking Agentは、ヘルス、ペアレンタルコントロール(ScreenTime)、またはデバイス管理によって設定された利用設定を監視し、報告します。これを無効化すると、iPhoneの他の機能が利用できなくなる場合があります。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용 추적 대리는 건강, 유해 콘텐츠 차단(= 스크린 타임) 또는 장치 관리에 의해 설정된 사용 축적을  모니터링하고 보고합니다. 이것을 비활성화하면 iPhone의 다른 기능도 비활성화할 수 있습니다."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Агент Отслеживания Использования отслеживает и сообщает о бюджетах использования, установленных функциями \"Здоровье\", \"Родительский контроль\" (тоже самое что и экранное время) или \"Управление устройством\". Выключение этой функции может привести к выключению некоторых других функций на вашем iPhone."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Agent\" na Sledovanie používania monitoruje a nahlasuje dáta používania nastavené v aplikácii Zdravie, Rodičovská kontrola (= Čas pred obrazovkou) alebo Správa zariadenia. Vypnutie tohto môže tiež znefunkčniť niektoré ďalšie funkcie na vašom zariadení."
           }
         },
         "sv" : {
@@ -6518,10 +7343,29 @@
       }
     },
     "UUID : %@" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UUID : %@"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UUID : %@"
+          }
+        }
+      }
     },
     "Various settings for LocSim. Sometimes, users can encounter issues with stopping LocSim. Those settings will allow you to attempt to stop LocSim multiple time." : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plusieurs paramètres pour le LocSim. Quelques fois, les utilisateurs peuvent rencontrer des problèmes lors de l'arrêt du LocSim. Ces paramètres vous permettent d'essayer de stopper le LocSim plusieurs fois d'affilée."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6532,6 +7376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "LocSimの各種設定。LocSimを停止する際に問題が発生することがあります。これらの設定により、LocSimを複数回停止させることができます。"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rôzne nastavenia pre LocSim. Niekedy môžu používatelia naraziť na problémy so vypnutím LocSim. Tieto nastavenia vám umožnia niekoľkokrát sa pokúsiť vypnúť LocSim."
           }
         },
         "sv" : {
@@ -6550,6 +7400,12 @@
     },
     "Various settings for the cleaner." : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plusieurs paramètres pour le nettoyeur."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6560,6 +7416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "クリーナーの各種設定。"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rôzne nastavenia pre Nástroj na Čistenie"
           }
         },
         "sv" : {
@@ -6618,6 +7480,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ПРЕДУПРЕЖДЕНИЕ"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UPOZORNENIE"
           }
         },
         "sv" : {
@@ -6690,6 +7558,12 @@
             "value" : "Мы собираем некоторые логи которые загружаются на наш сервер для фикса багов и  изучения краш логов. Логи никогда не содержат любую вашу личную информацию, ваше устройство просто пишет краш лог само. Мы также собираем информацию о том что вы использовали чаще всего чтобы увидеть что наиболее используемое в приложении. Вы можете выбрать, хотите ли вы запретить отправку ЛЮБЫХ данных на наш сервер."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbierame niekoľko log súborov, ktoré sú nahrávané na náš server na opravu chýb a riešenie problémov. Log súbory nikdy neobsahujú žiadne vaše osobné informácie, iba typ vášho zariadenia a samotný súbor log zlyhania. Zhromažďujeme tiež informácie, aby sme zistili, čo bolo v aplikácii najpoužívanejšie. Môžete si vybrať, či chcete zabrániť odosielaniu AKÝCHKOĽVEK údajov na náš server."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6760,6 +7634,12 @@
             "value" : "Добро пожаловать в программу бета тестирования Geranium"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vitajte v Geranium Beta skušobnom programe"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6822,6 +7702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добро пожаловать в Geranium - toolbox для TrollStore, позволяющий отключать определенные процессы, симулировать твою локацию, очищать лишнее место на твоем телефоне и много еще чего. Мы должны настроить несколько вещей прежде ты сможешь использовать приложение. Это займет только минуту. Ты также сможешь поменять настройки позже"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vitajte v Geranium, aplikácií s nástrojmi pre TrollStore, ktorá vám umožnuje vypnúť niektoré daemons, simulovať vašu polohu, uvoľnit úložisko telefónu a iné. Pred použitím aplikácie musíme nakonfigurovať niekoľko vecí. Bude to trvať len minútu. Tieto nastavenia budete môcť zmeniť aj neskôr."
           }
         },
         "sv" : {
@@ -6894,6 +7780,12 @@
             "value" : "Добро пожаловать!"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vitajte!"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6964,6 +7856,12 @@
             "value" : "Когда новое обновление будет опубликовано, ты получишь всплывающее окно при запуске приложения, которое спросит тебя хочешь ли ты установить обновление. Вы можете запретить это."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keď je zverejnená nová aktualizácia, pri spustení aplikácie sa zobrazí upozornenie s otázkou, či chcete aktualizovať. Môžete zabrániť zobrazovaniu tohoto upozornenia."
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7016,10 +7914,22 @@
             "value" : "コミュニティにより作られたカスタムアイコンを選択できます。"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "커뮤니티가 제안한 사용자 지정 아이콘을 선택하고 정의할 수 있습니다."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы можете выбрать и определить собственную иконку, предложенный сообществом."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Môžete si vybrať a definovať vlastnú ikonu navrhnutú komunitou."
           }
         },
         "sv" : {
@@ -7078,6 +7988,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ты может быть захочешь выйти и вернуться обратно в приложение."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zvážte reštartovanie aplikácie."
           }
         },
         "sv" : {
