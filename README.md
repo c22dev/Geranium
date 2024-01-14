@@ -14,7 +14,7 @@
 <h6 align="center"> by c22dev </h6>
 
 ## Installation
-To install Geranium, you must have [TrollStore](https://github.com/opa334/TrollStore) 1.3 or later, and a device on iOS 15 or later (if TrollStore supports it). Download the latest release from the release tab, and open it in TrollStore. Then, follow the setup process ! If you are on TrollStore 2.0.9, please udpate to latest version from TrollStore app, otherwise this app won't work. Please note that Geranium won't work on anything bellow iOS/iPadOS 15.0. Sorry, iOS 14 users ! I might add support soon but this is not planned for now.
+To install Geranium, you must have [TrollStore](https://github.com/opa334/TrollStore) 1.3 or later, and a device on iOS 15 or later (if TrollStore supports it). Download the latest release from the release tab, and open it in TrollStore. Then, follow the setup process ! If you are on TrollStore 2.0.9, please udpate to latest version from TrollStore app, otherwise this app won't work.
 
 ## Features
 - **Simulate fake locations + bookmarks**
