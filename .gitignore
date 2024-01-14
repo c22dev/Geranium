@@ -6,3 +6,4 @@ Geranium.xcodeproj/project.xcworkspace/xcuserdata/cclerc.xcuserdatad/UserInterfa
 **/.DS_Store
 build/*
 build/
+*.entitlements
