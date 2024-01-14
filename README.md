@@ -73,7 +73,7 @@ Want to supervise your device with a custom organization name but don't have a c
 - [Loy64](https://twitter.com/loy64_) - 🇦🇱 Albanian / 🇮🇹 Italian - Answers faster than light
 - [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - Was locked out of translator group :(
 - [Speedyfriend67](https://twitter.com/speedyfriend67) - 🇰🇷 Korean - Actually speedrunned the translation
-- [Spy_G](https://twitter.com/IshanSharm33634) - 🇸🇪 Swedish - Funny nickname
+- [Spy_G](https://twitter.com/spy_g_) - 🇸🇪 Swedish - Funny nickname
 - [Straight Tamago](https://twitter.com/straight_tamago) - 🇯🇵 Japenese - Lovely friend that always helps in code !
 - [ting0441](https://twitter.com/Ting2021) - 🇨🇳 Chinese (Simplified) - UI Bug Reporter
 - [ur.za](https://twitter.com/ChromiumCandy) - 🇯🇵 Japenese - Helped for cleaning terms
