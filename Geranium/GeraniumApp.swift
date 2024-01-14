@@ -25,7 +25,7 @@ struct GeraniumApp: App {
                             if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                                 if (json["tag_name"] as? String)?.replacingOccurrences(of: "v", with: "").compare(version, options: .numeric) == .orderedDescending {
                                     UIApplication.shared.confirmAlert(title: "Update available", body: "Geranium \(json["tag_name"] as? String ?? "update") is available, do you want to install it (you might need to enable Magnifier URL Scheme in TrollStore Settings)?", onOK: {
-                                        UIApplication.shared.open(URL(string: "apple-magnifier://install?url=https://github.com/c22dev/Geranium/releases/download/\(json["tag_name"] as? String ?? "1.0")/Geranium.tipa")!)
+                                        UIApplication.shared.open(URL(string: "apple-magnifier://install?url=https://github.com/c22dev/Geranium/releases/download/\(json["tag_name"] as? String ?? version)/Geranium.tipa")!)
                                     }, noCancel: false)
                                 }
                             }
