@@ -69,7 +69,7 @@ Want to supervise your device with a custom organization name but don't have a c
 - [CySxL](https://twitter.com/CySxL) - 🇨🇳 Chinese (Traditional) - Here from the beginning, even if on iOS 14, thanks !
 - [Defflix](https://twitter.com/Defflix19) - 🇨🇿/🇸🇰 Czech & Slovak - But also one of my greatest friend in the jailbreak community :)
 - [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (Latin America) - Also bug hunter
-- [LeonardoIz](https://twitter.com/penetranteinc) - 🇪🇸 Spanish / 🇮🇹 Italian / Catalan - Casually speak 3 languages
+- [LeonardoIz](https://twitter.com/leonardoizzo_) - 🇪🇸 Spanish / 🇮🇹 Italian / Catalan - Casually speak 3 languages
 - [Loy64](https://twitter.com/loy64_) - 🇦🇱 Albanian / 🇮🇹 Italian - Answers faster than light
 - [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - Was locked out of translator group :(
 - [Speedyfriend67](https://twitter.com/speedyfriend67) - 🇰🇷 Korean - Actually speedrunned the translation
