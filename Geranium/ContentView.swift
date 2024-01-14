@@ -14,7 +14,6 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
-            // TODO: Stability improvements
             DaemonView()
                 .tabItem {
                     Label("Daemons", systemImage: "flag.fill")
