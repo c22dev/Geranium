@@ -5967,7 +5967,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Screen Time Agent"
+            "value" : "Trợ lý Thời gian sử dụng"
           }
         }
       }
@@ -6042,6 +6042,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavenia"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có gì đó bị hỏng ?"
           }
         }
       }
@@ -6130,11 +6136,24 @@
             "state" : "translated",
             "value" : "Vyhľadať spustenú daemon..."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm một daemon..."
+          }
         }
       }
     },
     "Set language to English" : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuyển ngôn ngữ sang Tiếng Anh"
+          }
+        }
+      }
     },
     "Settings" : {
       "localizations" : {
@@ -6674,6 +6693,12 @@
             "state" : "translated",
             "value" : "Ceci est une liste de tous les daemons actuellement désactivés. Glissez vers la droite pour le réactiver."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đây là danh sách những daemon bị tắt. Vuối sang phải để bật lại."
+          }
         }
       }
     },
@@ -6888,7 +6913,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Để thêm dấu trang, hãy chọn vị trí tùy chỉnh rồi nhấn vào nút +."
+            "value" : "Để thêm dấu trang, hãy chọn vị trí bất kì rồi nhấn vào nút +."
           }
         },
         "zh-Hans" : {
@@ -7354,7 +7379,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Usage Tracking Agent"
+            "value" : "Trình theo dõi việc sử dụng"
           }
         }
       }
@@ -7412,7 +7437,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Usage Tracking Agent giám sát và báo cáo ngân sách sử dụng do Sức khỏe, Kiểm soát của phụ huynh (bằng Thời gian sử dụng) hoặc Quản lý thiết bị đặt ra. Việc tắt tính năng này cũng có thể tắt một số tính năng khác trên iPhone của bạn."
+            "value" : "Trình theo dõi sử dụng giám sát và báo cáo ngân sách sử dụng do Sức khỏe, Kiểm soát của phụ huynh (bằng Thời gian sử dụng) hoặc Quản lý thiết bị đặt ra. Việc tắt tính năng này cũng có thể tắt một số tính năng khác trên iPhone của bạn."
           }
         }
       }
@@ -7946,7 +7971,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Khi một bản cập nhật mới được xuất bản, bạn sẽ nhận được một thông báo bật lên khi khởi chạy ứng dụng để xác định rằng bạn có muốn cập nhật hay không. Bạn có thể ngăn điều này xảy ra."
+            "value" : "Khi một bản cập nhật mới được xuất bản, bạn sẽ nhận được một thông báo khi khởi chạy ứng dụng để xác định rằng bạn có muốn cập nhật hay không. Bạn có thể ngăn điều này xảy ra."
           }
         },
         "zh-Hans" : {
