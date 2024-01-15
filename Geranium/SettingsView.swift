@@ -64,6 +64,7 @@ struct SettingsView: View {
                                 .tag(abbreviation)
                         }
                     }
+                    .pickerStyle(.menu)
                     .onChange(of: localisation) { newValue in
                         UserDefaults.standard.set([newValue], forKey: "AppleLanguages")
                         exitGracefully()
@@ -76,6 +77,9 @@ struct SettingsView: View {
                         Text("Debug Info")
                     }
                     if DebugStuff {
+                        Button("Set language to English") {
+                            UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
+                        }
                         Text("UUID : \(appSettings.usrUUID)")
                         Text("RootHelper Path : \(RootHelper.whatsthePath())")
                         if UIDevice.current.userInterfaceIdiom == .pad {
