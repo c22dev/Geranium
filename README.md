@@ -71,7 +71,7 @@ Want to supervise your device with a custom organization name but don't have a c
 - [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (Latin America) - Also bug hunter
 - [LeonardoIz](https://twitter.com/leonardoizzo_) - 🇪🇸 Spanish / 🇮🇹 Italian / Catalan - Casually speak 3 languages
 - [Loy64](https://twitter.com/loy64_) - 🇦🇱 Albanian / 🇮🇹 Italian - Answers faster than light
-- [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - Was locked out of translator group :(
+- [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - But also an amazing icon designer !
 - [Speedyfriend67](https://twitter.com/speedyfriend67) - 🇰🇷 Korean - Actually speedrunned the translation
 - [Spy_G](https://twitter.com/spy_g_) - 🇸🇪 Swedish - Funny nickname
 - [Straight Tamago](https://twitter.com/straight_tamago) - 🇯🇵 Japenese - Lovely friend that always helps in code !
