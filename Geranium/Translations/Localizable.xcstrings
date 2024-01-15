@@ -2129,6 +2129,9 @@
         }
       }
     },
+    "Default Tab" : {
+
+    },
     "Delete currently disabled daemon list, and start-over. iOS will generate the file back from scratch next reboot." : {
       "localizations" : {
         "fr" : {
@@ -2296,6 +2299,9 @@
           }
         }
       }
+    },
+    "Disable Familycircled" : {
+
     },
     "Disable Homed" : {
       "localizations" : {
@@ -3393,6 +3399,12 @@
           }
         }
       }
+    },
+    "Familycircled" : {
+
+    },
+    "Familycircled is in charge of iCloud Family system. This includes family subscriptions, so if you disable this you won't be able to use them. However, this can help preventing ScreenTime from working." : {
+
     },
     "Flore" : {
       "localizations" : {
@@ -6145,12 +6157,12 @@
         }
       }
     },
-    "Set language to English" : {
+    "Set language to Default" : {
       "localizations" : {
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Chuyển ngôn ngữ sang Tiếng Anh"
+            "value" : "Chuyển ngôn ngữ về mặc định"
           }
         }
       }
@@ -6778,7 +6790,11 @@
         }
       }
     },
+    "This will personalize app start-up settings. Useful for debugging on Simulator or for betas." : {
+
+    },
     "This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas." : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {

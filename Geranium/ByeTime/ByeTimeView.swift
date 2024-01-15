@@ -32,11 +32,11 @@ struct ByeTimeView: View {
                         Text("Disable Homed")
                     }
                 }
-//                Section(header: Label("Familycircled", systemImage: "figure.and.child.holdinghands"), footer: Text("Familycircled is in charge of iCloud Family system. This includes subscriptions, so if you disable this you won't be able to use them. However, this can help preventing ScreenTime from working.")) {
-//                    Toggle(isOn: $familycircled) {
-//                        Text("Disable Familycircled")
-//                    }
-//                }
+                Section(header: Label("Familycircled", systemImage: "figure.and.child.holdinghands"), footer: Text("Familycircled is in charge of iCloud Family system. This includes family subscriptions, so if you disable this you won't be able to use them. However, this can help preventing ScreenTime from working.")) {
+                    Toggle(isOn: $familycircled) {
+                        Text("Disable Familycircled")
+                    }
+                }
             }
             Button("Bye ScreenTime !", action : {
                 UIApplication.shared.confirmAlert(title: "You are about to disable those daemons.", body: "This will delete Screen Time Preferences files and prevent the following daemoms from starting up with iOS. Are you sure you want to continue ?", onOK: {

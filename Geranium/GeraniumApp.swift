@@ -62,4 +62,15 @@ class AppSettings: ObservableObject {
     @AppStorage("LocSimAttempts") var locSimAttemptNB: Int = 1
     @AppStorage("locSimMultipleAttempts") var locSimMultipleAttempts: Bool = false
     @AppStorage("usrUUID") var usrUUID: String = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
+    @AppStorage("languageCode") var languageCode: String = ""
+    @AppStorage("defaultTab") var defaultTab: Int = 1 
 }
+
+var langaugee: String = {
+    if AppSettings().languageCode.isEmpty {
+        return "\(Locale.current.languageCode ?? "en-US")"
+    }
+    else {
+        return "\(Locale.current.languageCode ?? "en")-\(AppSettings().languageCode)"
+    }
+}()
