@@ -25,7 +25,7 @@ struct SettingsView: View {
         // i made catgpt work for me on this one
                 "zh-Hans": "Chinese (Simplified)", //
                 "zh-Hant": "Chinese (Traditional)", //
-                "en": "English",
+                "en-US": "English",
                 "es": "Spanish", //
                 "es-419": "Spanish (Latin America)", //
                 "fr": "French", //
@@ -73,7 +73,7 @@ struct SettingsView: View {
                     }
                     if DebugStuff {
                         Button("Set language to English") {
-                            UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
+                            UserDefaults.standard.set(["en-US"], forKey: "AppleLanguages")
                             exitGracefully()
                         }
                         Text("UUID : \(appSettings.usrUUID)")
