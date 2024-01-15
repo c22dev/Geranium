@@ -51,7 +51,7 @@ struct SettingsView: View {
     
     // Open Tab
     let defaultTabList: [Int: String] = [
-                1: "Hone", //
+                1: "Home", //
                 2: "Daemons", //
                 3: "LocSim", //
                 4: "Cleaner",
