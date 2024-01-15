@@ -4917,6 +4917,9 @@
         }
       }
     },
+    "No custom paths saved." : {
+
+    },
     "Notice" : {
       "localizations" : {
         "es" : {
@@ -5068,6 +5071,9 @@
           }
         }
       }
+    },
+    "Path: %@" : {
+
     },
     "PID: %@" : {
       "extractionState" : "stale",
@@ -6869,6 +6875,9 @@
           }
         }
       }
+    },
+    "To add a path to be cleaned, please tap the + button." : {
+
     },
     "Translators" : {
       "localizations" : {

@@ -120,7 +120,8 @@ struct DaemonView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 if !isEditing {
                     Button(action: {
-                        var error = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                        var error = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                        error = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
                         print(error)
                         error = RootHelper.setPermission(url: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
                         manageSheet.toggle()
@@ -175,6 +176,9 @@ struct DaemonView: View {
         }
         .sheet(isPresented:$manageSheet) {
             CurrentlyDisabledDaemonView()
+                .onDisappear{
+                   var result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                }
         }
     }
     

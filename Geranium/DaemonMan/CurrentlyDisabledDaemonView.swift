@@ -29,6 +29,7 @@ struct CurrentlyDisabledDaemonView: View {
                 }
                 Section(header: Text("Screwed up ?"), footer: Text("Delete currently disabled daemon list, and start-over. iOS will generate the file back from scratch next reboot.")) {
                     Button("Reset") {
+                        result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
                         result = RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.gerackup"))
                         result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
                         result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.migrated"))
@@ -37,6 +38,7 @@ struct CurrentlyDisabledDaemonView: View {
                     }
                 }
             }
+            .interactiveDismissDisabled()
             .navigationBarTitle("Manage")
             .navigationBarItems(trailing:
                 Button("Save") {

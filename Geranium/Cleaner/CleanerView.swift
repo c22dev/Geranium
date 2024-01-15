@@ -12,6 +12,7 @@ struct CleanerView: View {
     @State var progressView: Bool = false
     @State var resultView: Bool = false
     @State var wannaReboot: Bool = false
+    @State var customPathSheet: Bool = false
     
     // User Selection
     @State var safari = false
@@ -238,6 +239,21 @@ struct CleanerView: View {
                         .bold()
                 }
             }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    customPathSheet.toggle()
+                }) {
+                    if defaultView {
+                        Image(systemName: "folder.badge.plus")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $customPathSheet) {
+            CustomPaths()
         }
     }
     func performCleanup() {
