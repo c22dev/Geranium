@@ -21,6 +21,9 @@ struct ContentView: View {
                     Label("Daemons", systemImage: "flag.fill")
                 }
                 .tag(2)
+                .onAppear {
+                    RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+                }
             LocSimView()
                 .tabItem {
                     Label("LocSim", systemImage: "mappin")

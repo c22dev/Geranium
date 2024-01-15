@@ -220,6 +220,7 @@ struct DaemonView: View {
             if cancelCount != initialcount {
                 UIApplication.shared.alert(title: "Done.", body: "Successfully disabled selected daemons. Please manually reboot your device now.", withButton: false)
             }
+            RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
             initialcount = 0
             cancelCount = 0
             return
