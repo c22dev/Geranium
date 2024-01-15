@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State var defaultTab = AppSettings().defaultTab
     @State var DebugStuff: Bool = false
     @State var MinimCal: String = ""
     @State var LocSimTries: String = ""
     @State var localisation: String = {
-        if let languages = UserDefaults.standard.array(forKey: "AppleLanguages") as? [String],
+        if langaugee != "" {
+            return langaugee
+        }
+        else if let languages = UserDefaults.standard.array(forKey: "AppleLanguages") as? [String],
            let firstLanguage = languages.first {
-            return Locale.current.languageCode ?? "en"
+                return "\(Locale.current.languageCode ?? "en-GB")"
         } else {
-            return "en"
+            return "en-GB"
         }
     }()
     @StateObject private var appSettings = AppSettings()
     
+    // Custom language
+    @State var appCodeLanguage = langaugee
     let languageMapping: [String: String] = [
         // i made catgpt work for me on this one
                 "zh-Hans": "Chinese (Simplified)", //
@@ -41,6 +47,18 @@ struct SettingsView: View {
     var sortedLocalisalist: [String] {
         languageMapping.keys.sorted()
     }
+    
+    
+    // Open Tab
+    let defaultTabList: [Int: String] = [
+                1: "Hone", //
+                2: "Daemons", //
+                3: "LocSim", //
+                4: "Cleaner",
+                5: "Superviser", //
+    ]
+    
+    
     var body: some View {
         NavigationView {
             List {
@@ -61,8 +79,24 @@ struct SettingsView: View {
                     }
                     .pickerStyle(.menu)
                     .onChange(of: localisation) { newValue in
-                        UserDefaults.standard.set([newValue], forKey: "AppleLanguages")
+                        if localisation.contains("en-GB") || localisation.contains("zh") || localisation.contains("es-419"){
+                            let parts = localisation.components(separatedBy: "-")
+                            if let appCodeLanguage = parts.last {
+                                print("set custom region: \(appCodeLanguage)")
+                                appSettings.languageCode = appCodeLanguage
+                                UserDefaults.standard.set(["\(localisation)"], forKey: "AppleLanguages")
+                            }
+                        }
+                        else {
+                            print(localisation)
+                            appSettings.languageCode = ""
+                            UserDefaults.standard.set(["\(newValue)"], forKey: "AppleLanguages")
+                        }
                         exitGracefully()
+                    }
+                    .onAppear {
+                        print(langaugee)
+                        appSettings.languageCode = ""
                     }
                 }
                 
@@ -72,7 +106,8 @@ struct SettingsView: View {
                         Text("Debug Info")
                     }
                     if DebugStuff {
-                        Button("Set language to English") {
+                        Text(localisation)
+                        Button("Set language to Default") {
                             UserDefaults.standard.set(["Base"], forKey: "AppleLanguages")
                             exitGracefully()
                         }
@@ -131,8 +166,21 @@ struct SettingsView: View {
                         }
                     }
                 }
-                Section(header: Label("Startup Settings", systemImage: "play"), footer: Text("This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas.")
+                Section(header: Label("Startup Settings", systemImage: "play"), footer: Text("This will personalize app start-up settings. Useful for debugging on Simulator or for betas.")
                 ) {
+                    Picker("Default Tab", selection: $defaultTab) {
+                        ForEach(Array(defaultTabList.keys).sorted(), id: \.self) { key in
+                            Text(defaultTabList[key] ?? "")
+                                .tag(key)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    .onChange(of: defaultTab) { newValue in
+                        print(defaultTab)
+                        appSettings.defaultTab = defaultTab
+                        print(appSettings.defaultTab)
+                        exitGracefully()
+                    }
                     Toggle(isOn: $appSettings.tsBypass) {
                         Text("Bypass TrollStore Pop Up")
                     }

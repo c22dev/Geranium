@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 let STPath = URL(fileURLWithPath: "/var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist")
 let STString = "/var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist"
@@ -79,8 +80,6 @@ func DisableScreenTime(screentimeagentd: Bool, usagetrackingd: Bool, homed: Bool
     if familycircled {
         daemonManagement(key: "com.apple.familycircled", value: true, plistPath: "/var/db/com.apple.xpc.launchd/disabled.plist")
     }
-    // UserSpace Reboot
     successVibrate()
-    sleep(3)
-    rebootUSR()
+    UIApplication.shared.alert(title:"Done !", body:"Please manually reboot your device", withButton: false)
 }

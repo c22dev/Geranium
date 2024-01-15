@@ -33,6 +33,7 @@ struct CurrentlyDisabledDaemonView: View {
                         result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
                         result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.migrated"))
                         data = [:]
+                        UIApplication.shared.alert(title:"Done !", body:"Please manually reboot your device", withButton: false)
                     }
                 }
             }
