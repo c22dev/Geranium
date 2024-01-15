@@ -79,6 +79,7 @@ struct SettingsView: View {
                     if DebugStuff {
                         Button("Set language to English") {
                             UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
+                            exitGracefully()
                         }
                         Text("UUID : \(appSettings.usrUUID)")
                         Text("RootHelper Path : \(RootHelper.whatsthePath())")
