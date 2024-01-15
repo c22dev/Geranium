@@ -25,7 +25,8 @@ struct SettingsView: View {
         // i made catgpt work for me on this one
                 "zh-Hans": "Chinese (Simplified)", //
                 "zh-Hant": "Chinese (Traditional)", //
-                "en-US": "English",
+                "Base": "English", //
+                "en-GB": "English (GB)",
                 "es": "Spanish", //
                 "es-419": "Spanish (Latin America)", //
                 "fr": "French", //
@@ -35,8 +36,7 @@ struct SettingsView: View {
                 "ru": "Russian", //
                 "sk": "Slovak", //
                 "sv": "Swedish", //
-                "vi": "Vietnamese",
-                "Default": "Default"//
+                "vi": "Vietnamese", //
     ]
     var sortedLocalisalist: [String] {
         languageMapping.keys.sorted()
@@ -73,7 +73,7 @@ struct SettingsView: View {
                     }
                     if DebugStuff {
                         Button("Set language to English") {
-                            UserDefaults.standard.set(["en-US"], forKey: "AppleLanguages")
+                            UserDefaults.standard.set(["Base"], forKey: "AppleLanguages")
                             exitGracefully()
                         }
                         Text("UUID : \(appSettings.usrUUID)")

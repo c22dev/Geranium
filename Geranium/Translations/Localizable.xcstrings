@@ -119,6 +119,12 @@
     },
     "1. Open TrollStore" : {
       "localizations" : {
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Open TrollStore"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -195,6 +201,12 @@
     },
     "2. Go to Settings" : {
       "localizations" : {
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Go to Settings"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
