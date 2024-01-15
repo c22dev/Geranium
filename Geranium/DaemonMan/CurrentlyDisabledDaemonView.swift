@@ -58,9 +58,9 @@ struct CurrentlyDisabledDaemonView: View {
     }
     private func saveIt() {
         (data as NSDictionary).write(toFile: plistPath, atomically: true)
-        var result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
         print(result)
         result = RootHelper.move(from: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"), to: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
+        var result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
         print(result)
     }
     

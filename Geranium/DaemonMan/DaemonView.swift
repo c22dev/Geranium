@@ -176,9 +176,6 @@ struct DaemonView: View {
         }
         .sheet(isPresented:$manageSheet) {
             CurrentlyDisabledDaemonView()
-                .onDisappear{
-                   var result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
-                }
         }
     }
     
