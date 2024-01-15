@@ -3593,7 +3593,14 @@
       }
     },
     "Here you can choose in what language you want the app to be. The app will automatically exit to apply changes ; feel free to launch it again." : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tại đây bác có thể chọn ngôn ngữ cho ứng dụng. Ứng dụng sẽ tự thoát để áp dụng thay đổi đó ; bạn có thể mở nó lại tuỳ thích."
+          }
+        }
+      }
     },
     "Hi ! SE 1 User" : {
       "localizations" : {
@@ -3998,7 +4005,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nếu bạn muốn hoàn tác bất kỳ lựa chọn nào, bạn nên vào trình quản lý (biểu tượng danh sách bên cạnh biểu tượng áp dụng), nơi bạn có thể chuyển đổi các daemons bị vô hiệu hóa."
+            "value" : "Nếu bạn muốn hoàn tác bất kỳ lựa chọn nào, bạn nên vào trình quản lý (biểu tượng danh sách bên cạnh biểu tượng áp dụng), nơi bạn có thể chuyển đổi các daemon bị vô hiệu hóa."
           }
         },
         "zh-Hans" : {
@@ -4278,7 +4285,14 @@
       }
     },
     "Language" : {
-
+      "localizations" : {
+        "vi": {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngôn ngữ"
+          }
+        }
+      }
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
@@ -4856,6 +4870,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus d'information"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm thông tin"
           }
         }
       }
