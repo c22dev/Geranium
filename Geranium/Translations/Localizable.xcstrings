@@ -264,7 +264,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "2. Đi đến Cài đặt"
+            "value" : "2. Mở Cài đặt"
           }
         },
         "zh-Hans" : {
@@ -432,6 +432,12 @@
             "state" : "translated",
             "value" : "Une liste de daemons et leur utilité"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách các daemon và việc chúng làm"
+          }
         }
       }
     },
@@ -441,6 +447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une liste des daemons que vous pouvez désactiver"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách các daemon bạn có thể tắt"
           }
         }
       }
@@ -656,7 +668,14 @@
       }
     },
     "App Language" : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit": {
+            "state" : "translated",
+            "value" : "Ngôn ngữ ứng dụng"
+          }
+        }
+      }
     },
     "Apps Leftover Caches" : {
       "localizations" : {
@@ -1405,7 +1424,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ByeTime Settings"
+            "value" : "Cài đặt ByeTime"
           }
         }
       }
@@ -1813,7 +1832,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tín dụng"
+            "value" : "Cảm ơn tới"
           }
         },
         "zh-Hans" : {
@@ -2105,7 +2124,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Default"
+            "value" : "Mặc định"
           }
         }
       }
@@ -2119,6 +2138,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer les daemons désactivés actuellement, et recommencez. iOS générera le fichier depuis 0 lors du prochain redémarrage."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xoá danh sách những daemon bị tắt, và bắt đầu từ đầu. iOS sẽ tạo lại tệp từ đầu sau khởi động lại."
           }
         }
       }
@@ -2453,7 +2478,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vô hiệu hoá thông báo cập nhật"
+            "value" : "Tắt thông báo cập nhật"
           }
         },
         "zh-Hans" : {
@@ -2523,7 +2548,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Disable Usage Tracking Agent"
+            "value" : "Tắt trình theo dõi mức sử dụng"
           }
         }
       }
@@ -2833,6 +2858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotovo"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã xong"
           }
         }
       }
@@ -3574,7 +3605,14 @@
       }
     },
     "Here you can choose in what language you want the app to be. The app will automatically exit to apply changes ; feel free to launch it again." : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tại đây bác có thể chọn ngôn ngữ cho ứng dụng. Ứng dụng sẽ tự thoát để áp dụng thay đổi đó ; bạn có thể mở nó lại tuỳ thích."
+          }
+        }
+      }
     },
     "Hi ! SE 1 User" : {
       "localizations" : {
@@ -3979,7 +4017,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nếu bạn muốn hoàn tác bất kỳ lựa chọn nào, bạn nên vào trình quản lý (biểu tượng danh sách bên cạnh biểu tượng áp dụng), nơi bạn có thể chuyển đổi các daemons bị vô hiệu hóa."
+            "value" : "Nếu bạn muốn hoàn tác bất kỳ lựa chọn nào, bạn nên vào trình quản lý (biểu tượng danh sách bên cạnh biểu tượng áp dụng), nơi bạn có thể chuyển đổi các daemon bị vô hiệu hóa."
           }
         },
         "zh-Hans" : {
@@ -4259,7 +4297,14 @@
       }
     },
     "Language" : {
-
+      "localizations" : {
+        "vi": {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngôn ngữ"
+          }
+        }
+      }
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
@@ -4837,6 +4882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus d'information"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm thông tin"
           }
         }
       }
@@ -5934,7 +5985,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Screen Time Agent"
+            "value" : "Trợ lý Thời gian sử dụng"
           }
         }
       }
@@ -6009,6 +6060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavenia"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có gì đó bị hỏng ?"
           }
         }
       }
@@ -6097,11 +6154,24 @@
             "state" : "translated",
             "value" : "Vyhľadať spustenú daemon..."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm một daemon..."
+          }
         }
       }
     },
     "Set language to Default" : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuyển ngôn ngữ về mặc định"
+          }
+        }
+      }
     },
     "Settings" : {
       "localizations" : {
@@ -6641,6 +6711,12 @@
             "state" : "translated",
             "value" : "Ceci est une liste de tous les daemons actuellement désactivés. Glissez vers la droite pour le réactiver."
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đây là danh sách những daemon bị tắt. Vuối sang phải để bật lại."
+          }
         }
       }
     },
@@ -6859,7 +6935,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Để thêm dấu trang, hãy chọn vị trí tùy chỉnh rồi nhấn vào nút +."
+            "value" : "Để thêm dấu trang, hãy chọn vị trí bất kì rồi nhấn vào nút +."
           }
         },
         "zh-Hans" : {
@@ -7328,7 +7404,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Usage Tracking Agent"
+            "value" : "Trình theo dõi việc sử dụng"
           }
         }
       }
@@ -7386,7 +7462,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Usage Tracking Agent giám sát và báo cáo ngân sách sử dụng do Sức khỏe, Kiểm soát của phụ huynh (bằng Thời gian sử dụng) hoặc Quản lý thiết bị đặt ra. Việc tắt tính năng này cũng có thể tắt một số tính năng khác trên iPhone của bạn."
+            "value" : "Trình theo dõi sử dụng giám sát và báo cáo ngân sách sử dụng do Sức khỏe, Kiểm soát của phụ huynh (bằng Thời gian sử dụng) hoặc Quản lý thiết bị đặt ra. Việc tắt tính năng này cũng có thể tắt một số tính năng khác trên iPhone của bạn."
           }
         }
       }
@@ -7920,7 +7996,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Khi một bản cập nhật mới được xuất bản, bạn sẽ nhận được một thông báo bật lên khi khởi chạy ứng dụng để xác định rằng bạn có muốn cập nhật hay không. Bạn có thể ngăn điều này xảy ra."
+            "value" : "Khi một bản cập nhật mới được xuất bản, bạn sẽ nhận được một thông báo khi khởi chạy ứng dụng để xác định rằng bạn có muốn cập nhật hay không. Bạn có thể ngăn điều này xảy ra."
           }
         },
         "zh-Hans" : {
