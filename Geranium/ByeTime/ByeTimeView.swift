@@ -12,6 +12,7 @@ struct ByeTimeView: View {
     @State var ScreenTimeAgent: Bool = true
     @State var usagetrackingd: Bool = true
     @State var homed: Bool = false
+    @State var familycircled: Bool = false
     var body: some View {
         VStack {
             List {
@@ -31,11 +32,16 @@ struct ByeTimeView: View {
                         Text("Disable Homed")
                     }
                 }
+//                Section(header: Label("Familycircled", systemImage: "figure.and.child.holdinghands"), footer: Text("Familycircled is in charge of iCloud Family system. This includes subscriptions, so if you disable this you won't be able to use them. However, this can help preventing ScreenTime from working.")) {
+//                    Toggle(isOn: $familycircled) {
+//                        Text("Disable Familycircled")
+//                    }
+//                }
             }
             Button("Bye ScreenTime !", action : {
                 UIApplication.shared.confirmAlert(title: "You are about to disable those daemons.", body: "This will delete Screen Time Preferences files and prevent the following daemoms from starting up with iOS. Are you sure you want to continue ?", onOK: {
                     UIApplication.shared.alert(title: "Removing Screen Time...", body: "Your device will reboot.", animated: false, withButton: false)
-                    DisableScreenTime(screentimeagentd: ScreenTimeAgent, usagetrackingd: usagetrackingd, homed: homed)
+                    DisableScreenTime(screentimeagentd: ScreenTimeAgent, usagetrackingd: usagetrackingd, homed: homed, familycircled: familycircled)
                 }, noCancel: false, yes: true)
             })
             .padding(10)

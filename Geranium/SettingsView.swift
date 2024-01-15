@@ -14,37 +14,32 @@ struct SettingsView: View {
     @State var localisation: String = {
         if let languages = UserDefaults.standard.array(forKey: "AppleLanguages") as? [String],
            let firstLanguage = languages.first {
-            return firstLanguage
-        } else {
             return Locale.current.languageCode ?? "en"
+        } else {
+            return "en"
         }
     }()
     @StateObject private var appSettings = AppSettings()
     
     let languageMapping: [String: String] = [
         // i made catgpt work for me on this one
-                "ca": "Catalan",
-                "cs": "Czech",
-                "de": "German",
-                "el": "Greek",
+                "zh-Hans": "Chinese (Simplified)", //
+                "zh-Hant": "Chinese (Traditional)", //
                 "en": "English",
-                "es": "Spanish",
-                "es-419": "Spanish (Latin America)",
-                "fi": "Finnish",
-                "fr": "French",
-                "it": "Italian",
-                "ja": "Japanese",
-                "ko": "Korean",
-                "ru": "Russian",
-                "sk": "Slovak",
-                "sr": "Serbian",
-                "sv": "Swedish",
+                "es": "Spanish", //
+                "es-419": "Spanish (Latin America)", //
+                "fr": "French", //
+                "it": "Italian", //
+                "ja": "Japanese", //
+                "ko": "Korean", //
+                "ru": "Russian", //
+                "sk": "Slovak", //
+                "sv": "Swedish", //
                 "vi": "Vietnamese",
-                "zh-Hans": "Chinese (Simplified)",
-                "zh-Hant": "Chinese (Traditional)",
+                "Default": "Default"//
     ]
     var sortedLocalisalist: [String] {
-        Bundle.main.localizations.sorted()
+        languageMapping.keys.sorted()
     }
     var body: some View {
         NavigationView {
