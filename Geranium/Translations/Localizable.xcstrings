@@ -264,7 +264,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "2. Đi đến Cài đặt"
+            "value" : "2. Mở Cài đặt"
           }
         },
         "zh-Hans" : {
@@ -432,6 +432,12 @@
             "state" : "translated",
             "value" : "Une liste de daemons et leur utilité"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách các daemon và việc chúng làm"
+          }
         }
       }
     },
@@ -441,6 +447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une liste des daemons que vous pouvez désactiver"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danh sách các daemon bạn có thể tắt"
           }
         }
       }
@@ -656,7 +668,14 @@
       }
     },
     "App Language" : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit": {
+            "state" : "translated",
+            "value" : "Ngôn ngữ ứng dụng"
+          }
+        }
+      }
     },
     "Apps Leftover Caches" : {
       "localizations" : {
@@ -1405,7 +1424,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ByeTime Settings"
+            "value" : "Cài đặt ByeTime"
           }
         }
       }
@@ -1813,7 +1832,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tín dụng"
+            "value" : "Cảm ơn tới"
           }
         },
         "zh-Hans" : {
@@ -2105,7 +2124,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Default"
+            "value" : "Mặc định"
           }
         }
       }
@@ -2116,6 +2135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer les daemons désactivés actuellement, et recommencez. iOS générera le fichier depuis 0 lors du prochain redémarrage."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xoá danh sách những daemon bị tắt, và bắt đầu từ đầu. iOS sẽ tạo lại tệp từ đầu sau khởi động lại."
           }
         }
       }
@@ -2447,7 +2472,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vô hiệu hoá thông báo cập nhật"
+            "value" : "Tắt thông báo cập nhật"
           }
         },
         "zh-Hans" : {
@@ -2517,7 +2542,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Disable Usage Tracking Agent"
+            "value" : "Tắt trình theo dõi mức sử dụng"
           }
         }
       }
@@ -2827,6 +2852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotovo"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã xong"
           }
         }
       }

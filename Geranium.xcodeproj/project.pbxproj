@@ -91,7 +91,7 @@
 /* Begin PBXFileReference section */
 		790301BA2B37747A0044E30A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		790301BC2B3774F90044E30A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		790301C02B377EA70044E30A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		790301C02B377EA70044E30A /* Localizable.xcstrings */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; tabWidth = 2; };
 		790301C42B3794480044E30A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		790301C62B3794FF0044E30A /* DaemonWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaemonWelcomeView.swift; sourceTree = "<group>"; };
 		7916D9E32B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentlyDisabledDaemonView.swift; sourceTree = "<group>"; };
