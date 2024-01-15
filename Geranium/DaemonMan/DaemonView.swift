@@ -214,9 +214,7 @@ struct DaemonView: View {
     private func processNextDaemon() {
         guard let nextDaemon = toDisable.first else {
             if cancelCount != initialcount {
-                UIApplication.shared.confirmAlert(title: "Done.", body: "Successfully disabled selected daemons. Do you want to reboot your device now ?", onOK: {
-                    rebootUSR()
-                }, noCancel: false, yes: true)
+                UIApplication.shared.alert(title: "Done.", body: "Successfully disabled selected daemons. Please manually reboot your device now.", withButton: false)
             }
             initialcount = 0
             cancelCount = 0

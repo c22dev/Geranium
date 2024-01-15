@@ -40,7 +40,7 @@ struct ByeTimeView: View {
             }
             Button("Bye ScreenTime !", action : {
                 UIApplication.shared.confirmAlert(title: "You are about to disable those daemons.", body: "This will delete Screen Time Preferences files and prevent the following daemoms from starting up with iOS. Are you sure you want to continue ?", onOK: {
-                    UIApplication.shared.alert(title: "Removing Screen Time...", body: "Your device will reboot.", animated: false, withButton: false)
+                    UIApplication.shared.alert(title: "Removing Screen Time...", body: "Your device will reboot, but I'd recommend you do a manual reboot after the first automatic one.", animated: false, withButton: false)
                     DisableScreenTime(screentimeagentd: ScreenTimeAgent, usagetrackingd: usagetrackingd, homed: homed, familycircled: familycircled)
                 }, noCancel: false, yes: true)
             })
