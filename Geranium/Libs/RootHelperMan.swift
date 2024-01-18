@@ -39,6 +39,10 @@ class RootHelper {
         let code = spawnRoot(rootHelperPath, ["permissionset", url.path, ""], nil, nil)
         return String(code)
     }
+    static func setDaemonPermission(url: URL) -> String {
+        let code = spawnRoot(rootHelperPath, ["daemonperm", url.path, ""], nil, nil)
+        return String(code)
+    }
     static func rebuildIconCache() -> String {
         let code = spawnRoot(rootHelperPath, ["rebuildiconcache", "", ""], nil, nil)
         return String(code)

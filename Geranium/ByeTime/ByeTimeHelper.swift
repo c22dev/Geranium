@@ -127,6 +127,7 @@ func doStuff() {
     RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
     RootHelper.move(from: URL(fileURLWithPath :"/var/mobile/Documents/disabled.plist"), to: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
     RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+    RootHelper.setDaemonPermission(url: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
     UIApplication.shared.alert(title:"Done !", body:"Please manually reboot your device", withButton: false)
 }
 
