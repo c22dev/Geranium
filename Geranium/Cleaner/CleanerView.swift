@@ -239,18 +239,18 @@ struct CleanerView: View {
                         .bold()
                 }
             }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    customPathSheet.toggle()
-                }) {
-                    if defaultView {
-                        Image(systemName: "folder.badge.plus")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 24, height: 24)
-                    }
-                }
-            }
+            //            ToolbarItem(placement: .navigationBarTrailing) {
+            //                Button(action: {
+            //                    customPathSheet.toggle()
+            //                }) {
+            //                    if defaultView {
+            //                        Image(systemName: "folder.badge.plus")
+            //                            .resizable()
+            //                            .aspectRatio(contentMode: .fit)
+            //                            .frame(width: 24, height: 24)
+            //                    }
+            //                }
+            //            }
         }
         .sheet(isPresented: $customPathSheet) {
             CustomPaths()
