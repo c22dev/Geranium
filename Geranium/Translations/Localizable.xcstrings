@@ -457,6 +457,9 @@
         }
       }
     },
+    "Add a New Path" : {
+
+    },
     "Alphabetical" : {
       "localizations" : {
         "es" : {
@@ -670,7 +673,7 @@
     "App Language" : {
       "localizations" : {
         "vi" : {
-          "stringUnit": {
+          "stringUnit" : {
             "state" : "translated",
             "value" : "Ngôn ngữ ứng dụng"
           }
@@ -1581,6 +1584,9 @@
         }
       }
     },
+    "Cancel" : {
+
+    },
     "Clean !" : {
       "localizations" : {
         "es" : {
@@ -1848,6 +1854,9 @@
           }
         }
       }
+    },
+    "Custom Paths" : {
+
     },
     "Daemons" : {
       "localizations" : {
@@ -3248,6 +3257,9 @@
         }
       }
     },
+    "Enter path name" : {
+
+    },
     "Error !" : {
       "localizations" : {
         "es" : {
@@ -4298,7 +4310,7 @@
     },
     "Language" : {
       "localizations" : {
-        "vi": {
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngôn ngữ"
@@ -4968,9 +4980,6 @@
         }
       }
     },
-    "No custom paths saved." : {
-
-    },
     "Notice" : {
       "localizations" : {
         "es" : {
@@ -5122,9 +5131,6 @@
           }
         }
       }
-    },
-    "Path: %@" : {
-
     },
     "PID: %@" : {
       "extractionState" : "stale",
@@ -6951,9 +6957,6 @@
           }
         }
       }
-    },
-    "To add a path to be cleaned, please tap the + button." : {
-
     },
     "Translators" : {
       "localizations" : {

@@ -9,7 +9,6 @@ import Foundation
 
 func daemonManagement(key: String, value: Bool, plistPath: String) {
     var result = ""
-    result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
     // copy plist
     var error = RootHelper.copy(from: URL(fileURLWithPath: plistPath), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
     print(error)
@@ -40,6 +39,5 @@ func daemonManagement(key: String, value: Bool, plistPath: String) {
     if result != "0" {
         sendLog("error while deleting daemon. roothelper returned \(result)")
     }
-    result = RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
     print(result)
 }

@@ -7,105 +7,75 @@
 
 import SwiftUI
 
-struct CustomPath: Identifiable {
-    var id = UUID()
-    var name: String
-    var path: String
-}
-
-
 struct CustomPaths: View {
-    @State private var customPaths: [CustomPath] = PathsRetrieve().map {
-        CustomPath(name: $0["name"] as! String, path: $0["path"] as! String)
-    }
-    @State private var result: String = ""
+    @State private var paths: [String] = UserDefaults.standard.stringArray(forKey: "savedPaths") ?? []
+    @State private var newPathName = ""
+    @State private var isAddingPath = false
+
     var body: some View {
         NavigationView {
             List {
-                ForEach(customPaths) { path in
-                    Button(action: {
-                        print("my")
-                    }) {
-                        VStack(alignment: .leading) {
-                            Text("\(path.name)")
-                                .font(.headline)
-                                .foregroundColor(.primary)
-                            Text("Path: \(path.path)")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        }
-                    }
-                    .contentShape(Rectangle())
+                ForEach(paths, id: \.self) { path in
+                    Text(path)
                 }
-                .onDelete(perform: deletePathk)
+                .onDelete(perform: deletePaths)
             }
-            .toolbar {
-//                ToolbarItem(placement: .navigationBarLeading) {
-//                    Text("Custom Paths")
-//                        .font(.title2)
-//                        .bold()
-//                }
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    Button(action: {
-//                        UIApplication.shared.TextFieldAlert(title: "Enter path name", textFieldPlaceHolder: "Example...", completion: { enteredText in
-//                        })
-//                        }) {
-//                            Image(systemName: "plus")
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fit)
-//                                .frame(width: 24, height: 24)
-//                        }
-//                    }
-//                }
-            }
-            .overlay(
-                    Group {
-                        if customPaths.isEmpty {
-                            VStack {
-                                Text("No custom paths saved.")
-                                    .foregroundColor(.secondary)
-                                    .font(.title)
-                                    .padding()
-                                    .multilineTextAlignment(.center)
-                                Text("To add a path to be cleaned, please tap the + button.")
-                                    .foregroundColor(.secondary)
-                                    .font(.footnote)
-                                    .multilineTextAlignment(.center)
-                            }
-                        }
+            .navigationTitle("Custom Paths")
+            .navigationBarItems(trailing: Button(action: {
+                isAddingPath.toggle()
+            }) {
+                Image(systemName: "plus")
+            })
+        }
+        .sheet(isPresented: $isAddingPath) {
+            addPathView()
+        }
+    }
+
+    func deletePaths(at offsets: IndexSet) {
+        paths.remove(atOffsets: offsets)
+        savePaths()
+    }
+
+    func savePaths() {
+        UserDefaults.standard.set(paths, forKey: "savedPaths")
+    }
+
+    @ViewBuilder
+    func addPathView() -> some View {
+        VStack {
+            Text("Add a New Path")
+                .font(.headline)
+                .padding()
+
+            TextField("Enter path name", text: $newPathName)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            HStack {
+                Spacer()
+                Button("Cancel") {
+                    isAddingPath.toggle()
+                }
+                .padding()
+
+                Button("Save") {
+                    if !newPathName.isEmpty {
+                        paths.append(newPathName)
+                        savePaths()
+                        isAddingPath.toggle()
                     }
-                    , alignment: .center
-                )
+                }
+                .padding()
+                .disabled(newPathName.isEmpty)
+            }
         }
-    }
-    private func deletePathk(at offsets: IndexSet) {
-            customPaths.remove(atOffsets: offsets)
-            updatePaths()
-        }
-    private func updatePaths() {
-        let sharedUserDefaults = UserDefaults(suiteName: "customPaths")
-        sharedUserDefaults?.set(customPaths.map { ["name": $0.name, "path": $0.path] }, forKey: "customPaths")
-        sharedUserDefaults?.synchronize()
+        .padding()
     }
 }
 
-
-
-func PathSave(path: String, name: String) -> Bool {
-    let path: [String: Any] = ["name": name, "path": path]
-    var paths = PathsRetrieve()
-    paths.append(path)
-    let sharedUserDefaults = UserDefaults(suiteName: "customPaths")
-    sharedUserDefaults?.set(paths, forKey: "customPaths")
-    successVibrate()
-    return true
-}
-
-func PathsRetrieve() -> [[String: Any]] {
-    let sharedUserDefaults = UserDefaults(suiteName: "customPaths")
-    if let paths = sharedUserDefaults?.array(forKey: "customPaths") as? [[String: Any]] {
-        return paths
-    } else {
-        return []
+struct CustomPaths_Previews: PreviewProvider {
+    static var previews: some View {
+        CustomPaths()
     }
 }

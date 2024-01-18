@@ -215,9 +215,12 @@ struct DaemonView: View {
     private func processNextDaemon() {
         guard let nextDaemon = toDisable.first else {
             if cancelCount != initialcount {
+                RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
                 UIApplication.shared.alert(title: "Done.", body: "Successfully disabled selected daemons. Please manually reboot your device now.", withButton: false)
             }
-            RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+            else {
+                RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+            }
             initialcount = 0
             cancelCount = 0
             return
