@@ -92,7 +92,9 @@ struct SettingsView: View {
                             appSettings.languageCode = ""
                             UserDefaults.standard.set(["\(newValue)"], forKey: "AppleLanguages")
                         }
-                        exitGracefully()
+                        UIApplication.shared.confirmAlert(title: "You need to quit the app to apply changes.", body: "You might want to open it back.", onOK: {
+                            exitGracefully()
+                        }, noCancel: true)
                     }
                     .onAppear {
                         print(langaugee)
@@ -106,10 +108,12 @@ struct SettingsView: View {
                         Text("Debug Info")
                     }
                     if DebugStuff {
-                        Text(localisation)
+                        Text("Language set to : \(localisation)")
                         Button("Set language to Default") {
                             UserDefaults.standard.set(["Base"], forKey: "AppleLanguages")
-                            exitGracefully()
+                            UIApplication.shared.confirmAlert(title: "You need to quit the app to apply changes.", body: "You might want to open it back.", onOK: {
+                                exitGracefully()
+                            }, noCancel: true)
                         }
                         Text("UUID : \(appSettings.usrUUID)")
                         Text("RootHelper Path : \(RootHelper.whatsthePath())")
@@ -179,7 +183,9 @@ struct SettingsView: View {
                         print(defaultTab)
                         appSettings.defaultTab = defaultTab
                         print(appSettings.defaultTab)
-                        exitGracefully()
+                        UIApplication.shared.confirmAlert(title: "You need to quit the app to apply changes.", body: "You might want to open it back.", onOK: {
+                            exitGracefully()
+                        }, noCancel: true)
                     }
                     Toggle(isOn: $appSettings.tsBypass) {
                         Text("Bypass TrollStore Pop Up")
@@ -293,7 +299,6 @@ struct SettingsView: View {
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/607904288882294795/76b2725a7e4f0b1fa18bc2fe4938a846.webp?size=160", url: "https://twitter.com/spy_g_", title: "Spy_G", description: "🇸🇪 Swedish")
                     LinkCell(imageLink: "https://cclerc.ch/db/geranium/dTiW9yol-2.jpg", url: "https://twitter.com/straight_tamago", title: "Straight Tamago", description: "🇯🇵 Japanese")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/1183594247929208874/2bfce82426459ce7f55aeb736fd95a9f.webp?size=160", url: "https://twitter.com/Ting2021", title: "ting0441", description: "🇨🇳 Chinese (Simplified)")
-                    LinkCell(imageLink: "https://cdn.discordapp.com/avatars/795556607445696533/6ab9334b128bfda2eb9f16461f0a6e09.webp?size=160", url: "https://twitter.com/ChromiumCandy", title: "ur.za", description: "🇯🇵 Japanese")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/259867085453131778/685ffaefba4fce61d633f5f5434b7647.webp?size=160", url: "https://twitter.com/Alz971", title: "W$D$B", description: "🇮🇹 Italian")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/709644128685916185/51c2ef8ff5c774f27662753208fa0f67.webp?size=160", url: "https://twitter.com/yyyyyy_public", title: "yyyywaiwai", description: "🇯🇵 Japanese")
                 }

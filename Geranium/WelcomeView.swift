@@ -27,6 +27,11 @@ struct WelcomeView: View {
                 Toggle(isOn: $loggingAllowed) {
                     Text("Enable log collection")
                 }
+                .onChange(of: loggingAllowed) { newValue in
+                    if !loggingAllowed {
+                        UIApplication.shared.alert(title: "Warning", body: "Disabling logging might make things more difficult for developers if you have an issue.")
+                    }
+                }
             }
             
             Section(header: Text("Update Warnings")) {

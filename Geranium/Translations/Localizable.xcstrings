@@ -1779,6 +1779,9 @@
         }
       }
     },
+    "Clear" : {
+
+    },
     "Credits" : {
       "localizations" : {
         "es" : {
@@ -4320,6 +4323,9 @@
           }
         }
       }
+    },
+    "Language set to : %@" : {
+
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {

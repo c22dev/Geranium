@@ -186,3 +186,12 @@ func draftWarning(isEnabled: Bool = false)-> String {
         return ""
     }
 }
+func customTest(isEnabled: Bool = false)-> String {
+    var paths: [String] = UserDefaults.standard.stringArray(forKey: "savedPaths") ?? []
+    if !paths.isEmpty{
+        return "\nCustom Paths: Enabled"
+    }
+    else {
+        return ""
+    }
+}

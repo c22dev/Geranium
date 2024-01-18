@@ -16,7 +16,9 @@ struct CustomPaths: View {
         NavigationView {
             List {
                 ForEach(paths, id: \.self) { path in
-                    Text(path)
+                    withAnimation {
+                        Text(path)
+                    }
                 }
                 .onDelete(perform: deletePaths)
             }
@@ -25,6 +27,20 @@ struct CustomPaths: View {
                     Text("Custom Paths")
                         .font(.title2)
                         .bold()
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        UIApplication.shared.confirmAlert(title: "Are you sure you want to erase all your custom paths ?", body: "This won't clean them but will erase them from your list.", onOK: {
+                            paths = []
+                            savePaths()
+                        }, noCancel: false)
+                    }) {
+                        if !paths.isEmpty {
+                            withAnimation {
+                                Text("Clear")
+                            }
+                        }
+                    }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
