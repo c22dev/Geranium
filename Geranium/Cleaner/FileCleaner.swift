@@ -7,12 +7,13 @@
 
 import Foundation
 
-func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCaches: Bool, leftOverCaches: Bool, progressHandler: @escaping (Double) -> Void) {
+func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCaches: Bool, leftOverCaches: Bool, custompathselect: Bool, progressHandler: @escaping (Double) -> Void) {
     print("in the func")
     var safariCleanedUp = false
     var appCleanedUp = false
     var otaCleanedUp = false
     var leftCleanedUp = false
+    var customCleanedUp = false
     var RHResult = ""
     print(safari, appCaches, otaCaches)
     
@@ -90,7 +91,23 @@ func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCache
         } else {
             updateProgress(currentStep: 0.6)
         }
-        
+        if custompathselect, !customCleanedUp {
+            print("custom")
+            var paths: [String] = UserDefaults.standard.stringArray(forKey: "savedPaths") ?? []
+            for path in paths {
+                RHResult = deleteContentsOfDirectory(atPath: path)
+                if RHResult != "0" {
+                    updateProgress(currentStep: -99)
+                    return
+                } else {
+                    updateProgress(currentStep: 0.7)
+                }
+            }
+            customCleanedUp = true
+            updateProgress(currentStep: 0.7)
+        } else {
+            updateProgress(currentStep: 0.8)
+        }
         if leftOverCaches, !leftCleanedUp {
             let paths = [leftovYT, leftovTikTok, leftovTwitter, leftovSpotify]
             print("leftOv")

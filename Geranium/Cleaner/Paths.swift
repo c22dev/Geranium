@@ -161,6 +161,23 @@ func getSizeForAppLeftover(completion: @escaping (Double) -> Void) {
     }
 }
 
+func getSizeForCustom(completion: @escaping (Double) -> Void) {
+    var customPathSize: Double = 0
+    var paths: [String] = UserDefaults.standard.stringArray(forKey: "savedPaths") ?? []
+    var remainingPaths = paths.count
+    
+    for path in paths {
+        calculateDirectorySizeAsync(url: URL(fileURLWithPath: path)) { size in
+            customPathSize += size
+            remainingPaths -= 1
+            
+            if remainingPaths == 0 {
+                completion(customPathSize)
+            }
+        }
+    }
+}
+
 func draftWarning(isEnabled: Bool = false)-> String {
     if isEnabled {
         return "\nThe options you selected will clean your Drafts in some apps (e.g. TikTok)"

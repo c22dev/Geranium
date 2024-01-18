@@ -4983,6 +4983,9 @@
         }
       }
     },
+    "No paths saved." : {
+
+    },
     "Notice" : {
       "localizations" : {
         "es" : {
@@ -6960,6 +6963,9 @@
           }
         }
       }
+    },
+    "To add a path, tap the + button." : {
+
     },
     "Translators" : {
       "localizations" : {

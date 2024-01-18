@@ -20,16 +20,51 @@ struct CustomPaths: View {
                 }
                 .onDelete(perform: deletePaths)
             }
-            .navigationTitle("Custom Paths")
-            .navigationBarItems(trailing: Button(action: {
-                isAddingPath.toggle()
-            }) {
-                Image(systemName: "plus")
-            })
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Custom Paths")
+                        .font(.title2)
+                        .bold()
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        UIApplication.shared.TextFieldAlert(title: "Enter a path you want to add to your list :", textFieldPlaceHolder: "/var/mobile/DCIM/") { chemin in
+                            if chemin == ""{
+                                UIApplication.shared.alert(title:"Empty text.", body: "Please enter a path.")
+                            }
+                            else {
+                                paths.append(chemin ?? "")
+                                savePaths()
+                                isAddingPath.toggle()
+                            }
+                        }
+                    }) {
+                        Image(systemName: "plus")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                    }
+                }
+            }
         }
-        .sheet(isPresented: $isAddingPath) {
-            addPathView()
-        }
+        .overlay(
+            Group {
+                if paths.isEmpty {
+                    VStack {
+                        Text("No paths saved.")
+                            .foregroundColor(.secondary)
+                            .font(.title)
+                            .padding()
+                            .multilineTextAlignment(.center)
+                        Text("To add a path, tap the + button.")
+                            .foregroundColor(.secondary)
+                            .font(.footnote)
+                            .multilineTextAlignment(.center)
+                    }
+                }
+            }
+            , alignment: .center
+        )
     }
 
     func deletePaths(at offsets: IndexSet) {

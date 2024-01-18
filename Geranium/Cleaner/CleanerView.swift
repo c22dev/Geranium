@@ -7,6 +7,7 @@ import SwiftUI
 
 struct CleanerView: View {
     @StateObject private var appSettings = AppSettings()
+    @State private var customPaths: [String] = UserDefaults.standard.stringArray(forKey: "savedPaths") ?? []
     // View Settings
     @State var defaultView: Bool = true
     @State var progressView: Bool = false
@@ -19,6 +20,7 @@ struct CleanerView: View {
     @State var appCaches = false
     @State var otaCaches = false
     @State var leftoverCaches = false
+    @State var custompathselect = false
     
     // Sizes
     @State private var isLowSize: Bool = false
@@ -26,6 +28,7 @@ struct CleanerView: View {
     @State private var GlobalCacheSize: Double = 0
     @State private var OTACacheSize: Double = 0
     @State private var leftOverCacheSize: Double = 0
+    @State private var customPathsSize: Double = 0
     
     // Results
     @State private var progressAmount:CGFloat = 0
@@ -56,7 +59,7 @@ struct CleanerView: View {
             // Default View if nothing is being done
             if defaultView {
                 // check if smth is selected
-                if safari || appCaches || otaCaches || leftoverCaches {
+                if safari || appCaches || otaCaches || leftoverCaches || custompathselect {
                     Button("Clean !", action: {
                         UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nApps Leftover Caches: \(truelyEnabled(leftoverCaches))\n Are you sure you want to permanently delete those files ? \(draftWarning(isEnabled: leftoverCaches))", onOK: {
                             print("")
@@ -143,6 +146,20 @@ struct CleanerView: View {
                         self.leftOverCacheSize = size
                     }
                 }
+                if !customPaths.isEmpty {
+                    Toggle(isOn: $custompathselect) {
+                        Image(systemName: "folder")
+                        Text("Custom Paths")
+                        Text("> " + String(format: "%.2f MB", customPathsSize / (1024 * 1024)))
+                    }
+                    .toggleStyle(checkboxiOS())
+                    .padding(2)
+                    .onAppear {
+                        getSizeForCustom { size in
+                            self.customPathsSize = size
+                        }
+                    }
+                }
                 if wannaReboot {
                     Button("Reboot", action: {
                         rebootUSR()
@@ -179,6 +196,7 @@ struct CleanerView: View {
                             appCaches = false
                             otaCaches = false
                             leftoverCaches = false
+                            custompathselect = false
                         }
                         isLowSize = false
                         successDetected.toggle()
@@ -216,6 +234,7 @@ struct CleanerView: View {
                             appCaches = false
                             otaCaches = false
                             leftoverCaches = false
+                            custompathselect = false
                         }
                         isLowSize = false
                         errorDetected.toggle()
@@ -239,26 +258,31 @@ struct CleanerView: View {
                         .bold()
                 }
             }
-            //            ToolbarItem(placement: .navigationBarTrailing) {
-            //                Button(action: {
-            //                    customPathSheet.toggle()
-            //                }) {
-            //                    if defaultView {
-            //                        Image(systemName: "folder.badge.plus")
-            //                            .resizable()
-            //                            .aspectRatio(contentMode: .fit)
-            //                            .frame(width: 24, height: 24)
-            //                    }
-            //                }
-            //            }
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                customPathSheet.toggle()
+                            }) {
+                                if defaultView {
+                                    Image(systemName: "folder.badge.plus")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 24, height: 24)
+                                }
+                            }
+                        }
         }
         .sheet(isPresented: $customPathSheet) {
             CustomPaths()
+                .onDisappear {
+                    UIApplication.shared.confirmAlert(title: "You need to quit the app to apply changes.", body: "You might want to open it back right after to continue.", onOK: {
+                        exitGracefully()
+                    }, noCancel: true)
+                }
         }
     }
     func performCleanup() {
         cleanProcess(lowSize: isLowSize, safari: safari, appCaches: appCaches, otaCaches: otaCaches, leftOverCaches:
-                        leftoverCaches) { progressHandler in
+                        leftoverCaches, custompathselect: custompathselect) { progressHandler in
             progressAmount = progressHandler
             if (progressAmount >= 0.9) {
                 withAnimation {
