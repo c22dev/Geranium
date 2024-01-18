@@ -83,3 +83,77 @@ func DisableScreenTime(screentimeagentd: Bool, usagetrackingd: Bool, homed: Bool
     successVibrate()
     UIApplication.shared.alert(title:"Done !", body:"Please manually reboot your device", withButton: false)
 }
+
+
+func enableBack() {
+    var canIProceed = false
+    if !FileManager.default.fileExists(atPath: STBckPath) {
+        UIApplication.shared.confirmAlert(title: "Backup file not found.", body: "Do you want to look for other backup files (Cowabunga or TrollBox) ?", onOK: {
+            try? FileManager.default.removeItem(atPath: STString)
+            if FileManager.default.fileExists(atPath: "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist") {
+                try? FileManager.default.copyItem(atPath: "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist", toPath: STString)
+                doStuff()
+            }
+            else if FileManager.default.fileExists(atPath: "/var/mobile/Library/Preferences/.BACKUP_com.apple.ScreenTimeAgent.plist") {
+                try? FileManager.default.copyItem(atPath: "/var/mobile/Library/Preferences/.BACKUP_com.apple.ScreenTimeAgent.plist", toPath: STString)
+                doStuff()
+            }
+            else {
+                UIApplication.shared.confirmAlert(title: "Backup file still not found.", body: "No backup file found. Are you sure you want to proceed ? Old preferences might not be restored.", onOK: {
+                    doStuff()
+                }, noCancel: false, onCancel: {
+                    canIProceed = false
+                    return
+                })
+            }
+        }, noCancel: false, onCancel: {
+            canIProceed = false
+        })
+    }
+    else {
+        try? FileManager.default.removeItem(atPath: STString)
+        try? FileManager.default.copyItem(atPath: STBckPath, toPath: STString)
+        doStuff()
+    }
+}
+
+func doStuff() {
+    let entriesToRemove = ["com.apple.familycircled", "com.apple.UsageTrackingAgent", "com.apple.ScreenTimeAgent", "com.apple.homed"]
+    RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+    RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+    var plist = try? readPlist(atPath: "/var/mobile/Documents/disabled.plist")
+    removeEntriesFromPlistArray(plist!, entriesToRemove: entriesToRemove, arrayKey: "YourArrayKey")
+    try? writePlist(plist!, toPath: "/var/mobile/Documents/disabled.plist")
+    RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
+    RootHelper.move(from: URL(fileURLWithPath :"/var/mobile/Documents/disabled.plist"), to: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
+    RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
+    UIApplication.shared.alert(title:"Done !", body:"Please manually reboot your device", withButton: false)
+}
+
+func readPlist(atPath path: String) throws -> NSMutableDictionary {
+    guard let data = FileManager.default.contents(atPath: path) else {
+        throw NSError(domain: "com.example.plistreader", code: 1, userInfo: [NSLocalizedDescriptionKey: "Failed to read plist file at path \(path)"])
+    }
+
+    guard let plist = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? NSMutableDictionary else {
+        throw NSError(domain: "com.example.plistreader", code: 2, userInfo: [NSLocalizedDescriptionKey: "Failed to parse plist data"])
+    }
+
+    return plist
+}
+
+func removeEntriesFromPlistArray(_ plist: NSMutableDictionary, entriesToRemove: [String], arrayKey: String) {
+    guard var array = plist[arrayKey] as? [String] else {
+        print("Array not found in plist for key: \(arrayKey)")
+        return
+    }
+
+    array = array.filter { !entriesToRemove.contains($0) }
+    plist[arrayKey] = array
+}
+
+func writePlist(_ plist: NSMutableDictionary, toPath path: String) throws {
+    let data = try PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0)
+
+    try data.write(to: URL(fileURLWithPath: path), options: .atomic)
+}

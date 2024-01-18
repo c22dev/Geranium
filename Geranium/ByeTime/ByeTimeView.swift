@@ -48,6 +48,15 @@ struct ByeTimeView: View {
             .background(Color.accentColor)
             .cornerRadius(8)
             .foregroundColor(.black)
+            Button("Enable ScreenTime", action : {
+                UIApplication.shared.confirmAlert(title: "You are about to enable back ScreenTime.", body: "This will revert any ScreenTime backup you made and logging will be put back on.", onOK: {
+                    enableBack()
+                }, noCancel: false, yes: true)
+            })
+            .padding(10)
+            .background(Color.accentColor)
+            .cornerRadius(8)
+            .foregroundColor(.black)
         }
     }
 }
