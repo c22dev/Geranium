@@ -67,6 +67,17 @@ Requirements : A Mac having Xcode installed (it can also be a Hackintosh).
 5. Done ! Your `tipa` file will be located in `build` directory.
 
 If you have any issue with building the app, contact me on Discord.
+
+## Contributing
+If you are contributing for the app itself, those bellow instructions don't apply to you.
+### Misc
+Feel free to open a Pull Request on this Github, but please note I won't merge any typo change (will change it by myself).
+## Translations
+If you want to submit a new translation, contact me on Discord.
+If it's already existing feel free to edit it.
+## Icon
+You can use the icon.sketch file. Please send an icon in 1024x1024.
+
 ## Credits
 ### Code-wise
 - [BomberFish](https://github.com/bomberfish) & [Fiore](https://github.com/donato-fiore) for their amazing work in daemon listing - And thanks bomberfish for those amazing memes
