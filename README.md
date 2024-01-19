@@ -48,14 +48,12 @@ Please note that those screenshots aren't accurate because they were took on a s
 Not using HomeKit and other Apple stuff, and want to optimize your phone performances to the best ? Here you can choose what you want to use !
 
 - **Disable ScreenTime**
-
-<img src="https://github.com/c22dev/Geranium/assets/102235607/c0795578-1a87-45e5-a914-1200249ec705" width=150px>
+<img src="https://github.com/c22dev/Geranium/assets/102235607/d6aeb889-6d32-4923-a8ff-c43db7b37fbb" width=150px>
 
 Forgot your screentime password ? Here you can say goodbye to Screen Time on your iOS device ! It also works with iCloud ScreenTimes. 
 Disclaimer : don't use this if your parents manage your Screen Time, if you get caught it would probably make it worse for you. I am not responsible in case you get told off.
 
 - **Supervise your device**
-
 <img src="https://github.com/c22dev/Geranium/assets/102235607/415e4de8-b701-4046-914f-38c44671f8da" width=150px>
 
 Want to supervise your device with a custom organization name but don't have a computer, here you are ! We also have a great collection of supervised profiles.
