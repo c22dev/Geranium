@@ -1,0 +1,6 @@
+[submodule "Geranium-RH"]
+	path = Geranium-RH
+	url = https://github.com/c22dev/Geranium-RH
+[submodule "RootHelper"]
+	path = RootHelper
+	url = https://github.com/c22dev/Geranium-RH
