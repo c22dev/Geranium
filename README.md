@@ -72,10 +72,10 @@ If you have any issue with building the app, contact me on Discord.
 If you are contributing for the app itself, those bellow instructions don't apply to you.
 ### Misc
 Feel free to open a Pull Request on this Github, but please note I won't merge any typo change (will change it by myself).
-## Translations
+### Translations
 If you want to submit a new translation, contact me on Discord.
 If it's already existing feel free to edit it.
-## Icon
+### Icon
 You can use the icon.sketch file. Please send an icon in 1024x1024.
 
 ## Credits
