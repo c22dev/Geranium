@@ -7,4 +7,3 @@
 
 #import "LocSim/LocSimPrivateHeaders.h"
 #import "TSUtil.h"
-int userspaceReboot(void);

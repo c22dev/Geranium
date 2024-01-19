@@ -160,15 +160,6 @@ struct CleanerView: View {
                         }
                     }
                 }
-                if wannaReboot {
-                    Button("Reboot", action: {
-                        rebootUSR()
-                    })
-                    .font(.headline.bold())
-                    .foregroundColor(Color.accentColor)
-                    .transition(.scale)
-                    .padding(.top, 10)
-                }
             }
             // View being in progress
             else if progressView {
