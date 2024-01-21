@@ -57,6 +57,26 @@ Disclaimer : don't use this if your parents manage your Screen Time, if you get 
 <img src="https://github.com/c22dev/Geranium/assets/102235607/415e4de8-b701-4046-914f-38c44671f8da" width=150px>
 
 Want to supervise your device with a custom organization name but don't have a computer, here you are ! We also have a great collection of supervised profiles.
+## Build Instructions
+Requirements : A Mac having Xcode installed (it can also be a Hackintosh).
+1. Clone this repository :
+   ```git clone https://github.com/c22dev/Geranium/```
+2. [Install Theos and it's requirements](https://theos.dev/docs/installation-macos)
+3. Make sure you have [Homebrew](https://brew.sh) installed.
+4. Run ```./ipabuild.sh```
+5. Done ! Your `tipa` file will be located in `build` directory.
+
+If you have any issue with building the app, contact me on Discord.
+
+## Contributing
+If you are contributing for the app itself, those bellow instructions don't apply to you.
+### Misc
+Feel free to open a Pull Request on this Github, but please note I won't merge any typo change (will change it by myself).
+### Translations
+If you want to submit a new translation, contact me on Discord.
+If it's already existing feel free to edit it.
+### Icon
+You can use the icon.sketch file. Please send an icon in 1024x1024.
 
 ## Credits
 ### Code-wise
@@ -74,6 +94,5 @@ Want to supervise your device with a custom organization name but don't have a c
 - [Spy_G](https://twitter.com/spy_g_) - 🇸🇪 Swedish - Funny nickname
 - [Straight Tamago](https://twitter.com/straight_tamago) - 🇯🇵 Japenese - Lovely friend that always helps in code !
 - [ting0441](https://twitter.com/Ting2021) - 🇨🇳 Chinese (Simplified) - UI Bug Reporter
-- [ur.za](https://twitter.com/ChromiumCandy) - 🇯🇵 Japenese - Helped for cleaning terms
 - [W$D$B](https://twitter.com/Alz971) - 🇮🇹 Italian - First to accomplish 100% in translation
 - [yyyywaiwai](https://twitter.com/yyyyyy_public) - 🇯🇵 Japenese - Reviewer but also filled the gaps !
