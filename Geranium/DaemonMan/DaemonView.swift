@@ -21,9 +21,17 @@ struct DaemonView: View {
     @AppStorage("isDaemonFirstRun") var isDaemonFirstRun: Bool = true
     
     var body: some View {
-        if #available(iOS 16.0, *) {
-            NavigationStack {
-                DaemonMainView()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    DaemonMainView()
+                }
+            }
+            // This is probably useless.
+            else {
+                NavigationView {
+                    DaemonMainView()
+                }
             }
         } else {
             NavigationView {
@@ -33,7 +41,6 @@ struct DaemonView: View {
     }
     @ViewBuilder
     private func DaemonMainView() -> some View {
-        SearchBar(text: $searchText)
         List {
             ForEach(daemonFiles.filter { searchText.isEmpty || $0.localizedCaseInsensitiveContains(searchText) }, id: \.self) { fileName in
                 HStack {
@@ -81,6 +88,7 @@ struct DaemonView: View {
                 .animation(.easeInOut)
             }
         }
+        .searchable(text: $searchText)
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading) {
                 Text("Daemons")
@@ -237,27 +245,3 @@ struct DaemonView: View {
         }, yes: true)
     }
 }
-
-struct SearchBar: View {
-    @Binding var text: String
-
-    var body: some View {
-        HStack {
-            TextField("Search for a daemon...", text: $text)
-                .disableAutocorrection(true)
-                .autocapitalization(.none)
-                .padding(8)
-                .background(Color(.systemGray5))
-                .cornerRadius(8)
-                .padding(.horizontal, 15)
-        }
-        .padding(.top, 8)
-        .padding(.bottom, 4)
-        .onAppear {
-            withAnimation {
-                UITextField.appearance().clearButtonMode = .whileEditing
-            }
-        }
-    }
-}
-

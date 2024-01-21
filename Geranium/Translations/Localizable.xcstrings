@@ -6161,6 +6161,7 @@
       }
     },
     "Search for a daemon..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
