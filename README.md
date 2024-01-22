@@ -59,14 +59,14 @@ Disclaimer : don't use this if your parents manage your Screen Time, if you get 
 Want to supervise your device with a custom organization name but don't have a computer, here you are ! We also have a great collection of supervised profiles.
 ## Build Instructions
 Requirements : A Mac having Xcode installed (it can also be a Hackintosh).
-1. Clone this repository :
+1. Clone this repository (make sure you don't download it as zip but clone it!):
    ```git clone https://github.com/c22dev/Geranium/```
 2. [Install Theos and it's requirements](https://theos.dev/docs/installation-macos)
 3. Make sure you have [Homebrew](https://brew.sh) installed.
 4. Run ```./ipabuild.sh```
 5. Done ! Your `tipa` file will be located in `build` directory.
 
-If you have any issue with building the app, contact me on Discord.
+If you have any issue with building the app, contact me on Discord, or use the commit labeled to latest release.
 
 ## Contributing
 If you are contributing for the app itself, those bellow instructions don't apply to you.
