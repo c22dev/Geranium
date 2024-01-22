@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertKit
 
 struct Bookmark: Identifiable {
     var id = UUID()
@@ -32,6 +33,12 @@ struct BookMarkSlider: View {
                     Button(action: {
                         close()
                         LocSimManager.startLocSim(location: .init(latitude: bookmark.lat, longitude: bookmark.long))
+                        AlertKitAPI.present(
+                            title: "Started !",
+                            icon: .done,
+                            style: .iOS17AppleMusic,
+                            haptic: .success
+                        )
                     }) {
                         VStack(alignment: .leading) {
                             Text("\(bookmark.name)")
@@ -68,6 +75,12 @@ struct BookMarkSlider: View {
                                     bookmarks = BookMarkRetrieve().map {
                                         Bookmark(name: $0["name"] as! String, lat: $0["lat"] as! Double, long: $0["long"] as! Double)
                                     }
+                                    AlertKitAPI.present(
+                                        title: "Added !",
+                                        icon: .done,
+                                        style: .iOS17AppleMusic,
+                                        haptic: .success
+                                    )
                                 })
                             }, noCancel: false)
                         }
@@ -114,6 +127,12 @@ struct BookMarkSlider: View {
     private func deleteBookmark(at offsets: IndexSet) {
         bookmarks.remove(atOffsets: offsets)
         updateBookmarks()
+        AlertKitAPI.present(
+            title: "Deleted !",
+            icon: .done,
+            style: .iOS17AppleMusic,
+            haptic: .success
+        )
     }
     let sharedUserDefaultsSuiteName = "group.live.cclerc.geraniumBookmarks"
     private func updateBookmarks() {

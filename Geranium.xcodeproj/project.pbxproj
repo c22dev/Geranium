@@ -24,6 +24,7 @@
 		796072E52B4F4FAE00737B5D /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796072E42B4F4FAE00737B5D /* ActionViewController.swift */; };
 		796072E82B4F4FAE00737B5D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796072E62B4F4FAE00737B5D /* MainInterface.storyboard */; };
 		796072EC2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 796072DE2B4F4FAE00737B5D /* Bookmark Location in Geranium.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7969F91A2B5E57DE0010DBE5 /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7969F9192B5E57DE0010DBE5 /* AlertKit */; };
 		7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD022B347EEA00FBAB8D /* LocSimView.swift */; };
 		7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD052B3486B100FBAB8D /* CustomMapView.swift */; };
 		7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989FD072B34894400FBAB8D /* BookMarkSlider.swift */; };
@@ -156,6 +157,7 @@
 			files = (
 				7930B46D2B4B2AD800A5B0CB /* MobileCoreServices.framework in Frameworks */,
 				7930B46E2B4B2ADD00A5B0CB /* CoreServices.framework in Frameworks */,
+				7969F91A2B5E57DE0010DBE5 /* AlertKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +391,7 @@
 			);
 			name = Geranium;
 			packageProductDependencies = (
+				7969F9192B5E57DE0010DBE5 /* AlertKit */,
 			);
 			productName = Geranium;
 			productReference = FAA456D12B265FEA00FC7287 /* Geranium.app */;
@@ -484,6 +487,7 @@
 			);
 			mainGroup = FAA456C82B265FEA00FC7287;
 			packageReferences = (
+				7969F9182B5E57DE0010DBE5 /* XCRemoteSwiftPackageReference "AlertKit" */,
 			);
 			productRefGroup = FAA456D22B265FEA00FC7287 /* Products */;
 			projectDirPath = "";
@@ -1005,6 +1009,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7969F9182B5E57DE0010DBE5 /* XCRemoteSwiftPackageReference "AlertKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparrowcode/AlertKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7969F9192B5E57DE0010DBE5 /* AlertKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7969F9182B5E57DE0010DBE5 /* XCRemoteSwiftPackageReference "AlertKit" */;
+			productName = AlertKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAA456C92B265FEA00FC7287 /* Project object */;
 }

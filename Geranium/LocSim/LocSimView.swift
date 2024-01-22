@@ -7,7 +7,7 @@
 
 import SwiftUI
 import CoreLocation
-
+import AlertKit
 
 struct LocSimView: View {
     @StateObject private var appSettings = AppSettings()
@@ -44,7 +44,12 @@ struct LocSimView: View {
                 lat = coordinate.coordinate.latitude
                 long = coordinate.coordinate.longitude
                 LocSimManager.startLocSim(location: .init(latitude: lat, longitude: long))
-                miniimpactVibrate()
+                AlertKitAPI.present(
+                    title: "Started !",
+                    icon: .done,
+                    style: .iOS17AppleMusic,
+                    haptic: .success
+                )
             }
         }
         .toolbar{
@@ -67,7 +72,12 @@ struct LocSimView: View {
                     else {
                         LocSimManager.stopLocSim()
                     }
-                    miniimpactVibrate()
+                    AlertKitAPI.present(
+                        title: "Stopped !",
+                        icon: .done,
+                        style: .iOS17AppleMusic,
+                        haptic: .success
+                    )
                 }) {
                     Image(systemName: "location.slash")
                         .resizable()

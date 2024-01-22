@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertKit
 
 struct DaemonView: View {
     @State private var searchText = ""
@@ -108,6 +109,12 @@ struct DaemonView: View {
                         withAnimation {
                             isEditing.toggle()
                         }
+                        AlertKitAPI.present(
+                            title: "Selected",
+                            icon: .done,
+                            style: .iOS17AppleMusic,
+                            haptic: .success
+                        )
                     }
                 }) {
                     if isEditing {
@@ -145,7 +152,12 @@ struct DaemonView: View {
                 if !isEditing {
                     Button(action: {
                         if toDisable == [] {
-                            UIApplication.shared.alert(title: "You didn't select any daemon", body: "Please swipe to the left on a daemon to disable it.")
+                            AlertKitAPI.present(
+                                title: "No Daemon Selected !",
+                                icon: .error,
+                                style: .iOS17AppleMusic,
+                                haptic: .error
+                            )
                         }
                         else {
                             initialcount = toDisable.count
@@ -184,6 +196,14 @@ struct DaemonView: View {
         }
         .sheet(isPresented:$manageSheet) {
             CurrentlyDisabledDaemonView()
+                .onDisappear {
+                    AlertKitAPI.present(
+                        title: "Saved !",
+                        icon: .done,
+                        style: .iOS17AppleMusic,
+                        haptic: .success
+                    )
+                }
         }
     }
     

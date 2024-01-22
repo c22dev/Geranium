@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertKit
 
 struct SettingsView: View {
     @State var defaultTab = AppSettings().defaultTab
@@ -190,8 +191,32 @@ struct SettingsView: View {
                     Toggle(isOn: $appSettings.tsBypass) {
                         Text("Bypass TrollStore Pop Up")
                     }
+                    .onChange(of: appSettings.tsBypass) { newValue in
+                        AlertKitAPI.present(
+                            title: "Saved !",
+                            icon: .done,
+                            style: .iOS17AppleMusic,
+                            haptic: .success
+                        )
+                    }
                     Toggle(isOn: $appSettings.updBypass) {
                         Text("Bypass App Update Pop Up")
+                    }
+                    .onChange(of: appSettings.updBypass) { newValue in
+                        AlertKitAPI.present(
+                            title: "Saved !",
+                            icon: .done,
+                            style: .iOS17AppleMusic,
+                            haptic: .success
+                        )
+                    }
+                    .onChange(of: appSettings.tsBypass) { newValue in
+                        AlertKitAPI.present(
+                            title: "Saved !",
+                            icon: .done,
+                            style: .iOS17AppleMusic,
+                            haptic: .success
+                        )
                     }
                 }
                 Section(header: Label("App Icon", systemImage: "app"), footer: Text("You can choose and define a custom icon proposed by the community.")
@@ -283,6 +308,24 @@ struct SettingsView: View {
                 ) {
                     Toggle(isOn: $appSettings.loggingAllowed) {
                         Text("Enable logging")
+                    }
+                    .onChange(of: appSettings.loggingAllowed) { newValue in
+                        if newValue {
+                            AlertKitAPI.present(
+                                title: "Enabled !",
+                                icon: .done,
+                                style: .iOS17AppleMusic,
+                                haptic: .success
+                            )
+                        }
+                        else {
+                            AlertKitAPI.present(
+                                title: "Disabled !",
+                                icon: .done,
+                                style: .iOS17AppleMusic,
+                                haptic: .success
+                            )
+                        }
                     }
                 }
                 Section (header: Label("Translators", systemImage: "pencil"), footer: Text("Thanks to all those amazing translators !")) {
