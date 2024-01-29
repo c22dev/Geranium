@@ -3845,7 +3845,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "嗨！iPhone SE 1代（2016）使用者"
+            "value" : "嗨！iPhone SE 第1代（2016）使用者"
           }
         }
       }
@@ -4120,7 +4120,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請至 TrollStore 中啟用 Magnifier URL Scheme 以自動更新此應用程式。"
+            "value" : "請至 TrollStore 中啟用 Magnifier URL Scheme 以啟用此應用程式之自動更新功能。"
           }
         }
       }
