@@ -2541,7 +2541,7 @@
        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停止監測螢幕時間"
+            "value" : "停用螢幕使用時間"
           }
         }
       }
@@ -3309,7 +3309,7 @@
        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "啟用螢幕時間"
+            "value" : "啟用螢幕使用時間"
           }
         }
     },
@@ -3556,7 +3556,7 @@
        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Familycircled 為負責 iCloud 線上家庭管理系統之進程。這也包括家庭付費計畫，若停用此進程將無法使用。但停用此進程可幫助停用螢幕時間管控。"
+            "value" : "Familycircled 為負責 iCloud 線上家庭管理系統之進程。這也包括家庭付費計畫，若停用此進程將無法使用。但停用此進程可幫助停用螢幕使用時間。"
           }
         }
     },
@@ -4196,7 +4196,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您想要恢復已做更動，請至右上方的「清單」按鈕（於打勾按鈕的左側）內，便可以管理您已停用的進程。"
+            "value" : "若欲回復更動，請點擊清單按鈕（於打勾圖示左側）便可管理已停用進程。"
           }
         }
       }
@@ -4272,7 +4272,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "當前使用者正在使用iPadOS 16：否"
+            "value" : "是否正在執行 iPadOS 16：否"
           }
         }
       }
@@ -4348,7 +4348,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "當前使用者正在使用iPadOS 16：是"
+            "value" : "是否正在執行 iPadOS 16：是"
           }
         }
       }
@@ -4424,7 +4424,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您使用的是iPhone SE 2016(一代)，您可能會遇到一些介面上的小問題，非常抱歉。"
+            "value" : "若您正在使用 iPhone SE 第一代（2016）可能會遇到介面瑕疵。"
           }
         }
       }
@@ -4474,7 +4474,12 @@
       }
     },
     "Language set to : %@" : {
-
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "語言已更改為%@"
+          }
+        }
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
@@ -4553,7 +4558,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "緯度: %1$lf 經度: %2$lf"
+            "value" : "緯度：%1$lf 經度：%2$lf"
           }
         }
       }
@@ -4659,6 +4664,12 @@
             "state" : "translated",
             "value" : "Cài đặt LocSim"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim 設定"
+          }
         }
       }
     },
@@ -4733,7 +4744,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Log紀錄收集"
+            "value" : "日誌收集"
           }
         }
       }
@@ -4809,7 +4820,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "記錄收集設定"
+            "value" : "日誌設定"
           }
         }
       }
@@ -4885,7 +4896,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "c22dev 傾心製作❤️"
+            "value" : "由 c22dev 傾心製作 ❤️"
           }
         }
       }
@@ -5003,6 +5014,12 @@
             "state" : "translated",
             "value" : "Số lần thử tối thiểu:"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最低嘗試次數："
+          }
         }
       }
     },
@@ -5043,6 +5060,12 @@
             "state" : "translated",
             "value" : "Kích cỡ nhỏ nhất:"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大小最小值："
+          }
         }
       }
     },
@@ -5058,6 +5081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm thông tin"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於"
           }
         }
       }
@@ -5133,13 +5162,18 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "未有已儲存的地點"
+            "value" : "未標記任何地點"
           }
         }
       }
     },
     "No paths saved." : {
-
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未儲存路徑"
+          }
+        }
     },
     "Notice" : {
       "localizations" : {
@@ -5288,7 +5322,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "OTA更新緩存"
+            "value" : "OTA 更新暫存"
           }
         }
       }
@@ -5359,7 +5393,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PID: %@"
+            "value" : "PID：%@"
           }
         }
       }
@@ -5429,7 +5463,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請複製您的UUID並傳送給開發者其中之一"
+            "value" : "請複製您的 UUID 並傳送給開發者"
           }
         }
       }
@@ -5505,7 +5539,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請謹記"
+            "value" : "請注意"
           }
         }
       }
@@ -5636,6 +5670,12 @@
             "state" : "translated",
             "value" : "Khởi động lại"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新啟動"
+          }
         }
       }
     },
@@ -5711,7 +5751,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重建圖標緩存"
+            "value" : "重建圖示暫存"
           }
         }
       }
@@ -5791,7 +5831,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重新載入主畫面"
+            "value" : "重新啟動主畫面"
           }
         }
       }
@@ -5867,7 +5907,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RootHelper 路徑 : %@"
+            "value" : "RootHelper 路徑：%@"
           }
         }
       }
@@ -5943,7 +5983,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Safari 緩存 路徑 : %@"
+            "value" : "Safari 路徑：%@"
           }
         }
       }
@@ -6019,7 +6059,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Safari 緩存"
+            "value" : "Safari 快取"
           }
         }
       }
@@ -6095,7 +6135,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "維護"
+            "value" : "套用"
           }
         }
       }
@@ -6155,6 +6195,12 @@
             "state" : "translated",
             "value" : "Trợ lý Thời gian sử dụng"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "螢幕使用時間"
+          }
         }
       }
     },
@@ -6212,6 +6258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Screen Time Agent chịu trách nhiệm quản lý tất cả các tùy chọn Thời gian sử dụng. Tốt nhất chỉ nên tắt quá trình này vào ban đêm để tắt một phần Thời gian sử dụng."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
           }
         }
       }
