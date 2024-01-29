@@ -114,6 +114,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -194,7 +200,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1. 打開您的TrollStore app"
+            "value" : "1. 開啟 TrollStore"
           }
         }
       }
@@ -276,7 +282,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "2. 點擊右下角的Settings頁籤"
+            "value" : "2. 前往設定"
           }
         }
       }
@@ -386,7 +392,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "3. 將URL Scheme Enabled的開關設為：開啟"
+            "value" : "3. 開啟 URL Scheme Enabled"
           }
         }
       }
@@ -438,6 +444,12 @@
             "state" : "translated",
             "value" : "Danh sách các daemon và việc chúng làm"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS 的進程清單以及其實際用途"
+          }
         }
       }
     },
@@ -454,11 +466,22 @@
             "state" : "translated",
             "value" : "Danh sách các daemon bạn có thể tắt"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可安全停用的進程"
+          }
         }
       }
     },
     "Add a New Path" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增新路徑"
+          }
+        }
     },
     "Alphabetical" : {
       "localizations" : {
@@ -531,7 +554,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "依照字母順序排列"
+            "value" : "依字母順序排列"
           }
         }
       }
@@ -607,7 +630,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RootHelper花生錯誤了!!"
+            "value" : "RootHelper 發生錯誤"
           }
         }
       }
@@ -667,6 +690,12 @@
             "state" : "translated",
             "value" : "Biểu tượng ứng dụng"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "應用程式圖示"
+          }
         }
       }
     },
@@ -676,6 +705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngôn ngữ ứng dụng"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "語言"
           }
         }
       }
@@ -734,6 +769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bộ nhớ đệm còn sót lại của ứng dụng"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "應用程式快取"
           }
         }
       }
@@ -1006,6 +1047,12 @@
             "value" : "Bouquet"
           }
         }
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : 花束""
+          }
+        }
       }
     },
     "By adding some rules to iOS internals, this software prevents the daemon from launching when you boot your phone. The app lists every running daemon, and you can swipe to the left to remove one of them." : {
@@ -1079,7 +1126,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "藉由在iOS內部加入一些規則，此軟體能夠避免特定進程(Daemon)在開機時自動執行。下方列出了所有正在運行的進程，您可以從右向左滑來停用。"
+            "value" : "此軟體能新增規則以防止特定進程（Daemon）在開機時自動執行。下方列出了所有進程。向左滑動文字以停用。"
           }
         }
       }
@@ -1197,6 +1244,12 @@
             "state" : "translated",
             "value" : "bởi PhucDo"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繪者：PhucDo"
+          }
         }
       }
     },
@@ -1254,6 +1307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tạm biệt ScreenTime !"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟螢幕使用時間說掰掰！"
           }
         }
       }
@@ -1429,6 +1488,12 @@
             "state" : "translated",
             "value" : "Cài đặt ByeTime"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByTime 設定"
+          }
         }
       }
     },
@@ -1503,7 +1568,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停用當App有新版本時的提示"
+            "value" : "停用應用程式更新提示"
           }
         }
       }
@@ -1579,13 +1644,18 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停止提示此App並非由TrollStore安裝"
+            "value" : "停止「此應用程式中並非由 TrollStore 安裝」之警告"
           }
         }
       }
     },
     "Cancel" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
     },
     "Clean !" : {
       "localizations" : {
@@ -1776,11 +1846,22 @@
             "state" : "translated",
             "value" : "Cài đặt sạch hơn"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理器設定"
+          }
         }
       }
     },
     "Clear" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理"
+          }
+        }
     },
     "Credits" : {
       "localizations" : {
@@ -1859,7 +1940,12 @@
       }
     },
     "Custom Paths" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自訂路徑"
+          }
+        }
     },
     "Daemons" : {
       "localizations" : {
@@ -2138,6 +2224,12 @@
             "state" : "translated",
             "value" : "Mặc định"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預設"
+          }
         }
       }
     },
@@ -2156,6 +2248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xoá danh sách những daemon bị tắt, và bắt đầu từ đầu. iOS sẽ tạo lại tệp từ đầu sau khởi động lại."
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將進程停用清單規則檔案刪除，此設定將在下次重新啟動時自動生成預設規則檔案"
           }
         }
       }
@@ -2313,7 +2411,12 @@
       }
     },
     "Disable Familycircled" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用 Familycircled"
+          }
+        }
     },
     "Disable Homed" : {
       "localizations" : {
@@ -2369,6 +2472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vô hiệu hóa Homed"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用 Homed"
           }
         }
       }
@@ -2427,6 +2536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vô hiệu hóa Usage Tracking Agent"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止監測螢幕時間"
           }
         }
       }
@@ -2502,7 +2617,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停用當App有新版本時的提示"
+            "value" : "停用應用程式更新彈出式提示視窗"
           }
         }
       }
@@ -2561,6 +2676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tắt trình theo dõi mức sử dụng"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止監測數據使用量"
           }
         }
       }
@@ -2712,7 +2833,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "⚠️停用系統進程非常危險⚠️\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
+            "value" : "⚠️停用系統進程非常危險⚠️\n錯誤的使用將會造成重開機循環（Bootloop），請萬分小心。\n本應用程式開發者對於使用者行為所造成的後果不負任何責任。"
           }
         }
       }
@@ -2783,7 +2904,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您並非進階使用者，強烈建議您不要停用任何進程。\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
+            "value" : "若您並非高階使用者，強烈建議不要停用任何進程。\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
           }
         }
       }
@@ -2853,7 +2974,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "取消"
+            "value" : "關閉"
           }
         }
       }
@@ -3103,7 +3224,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "啟用收集Log紀錄"
+            "value" : "啟用日誌收集"
           }
         }
       }
@@ -3179,13 +3300,18 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "啟用Log紀錄"
+            "value" : "記錄日誌"
           }
         }
       }
     },
     "Enable ScreenTime" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用螢幕時間"
+          }
+        }
     },
     "Enter organisation name..." : {
       "localizations" : {
@@ -3258,13 +3384,18 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在此輸入客製化機構名稱..."
+            "value" : "組織名稱"
           }
         }
       }
     },
     "Enter path name" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入路徑名稱"
+          }
+        }
     },
     "Error !" : {
       "localizations" : {
@@ -3422,7 +3553,12 @@
 
     },
     "Familycircled is in charge of iCloud Family system. This includes family subscriptions, so if you disable this you won't be able to use them. However, this can help preventing ScreenTime from working." : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familycircled 為負責 iCloud 線上家庭管理系統之進程。這也包括家庭付費計畫，若停用此進程將無法使用。但停用此進程可幫助停用螢幕時間管控。"
+          }
+        }
     },
     "Flore" : {
       "localizations" : {
@@ -3553,7 +3689,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常規緩存"
+            "value" : "一般暫存"
           }
         }
       }
@@ -3629,6 +3765,12 @@
             "state" : "translated",
             "value" : "Tại đây bác có thể chọn ngôn ngữ cho ứng dụng. Ứng dụng sẽ tự thoát để áp dụng thay đổi đó ; bạn có thể mở nó lại tuỳ thích."
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可在此選擇語言，更改語言後將自動重新啟動此應用程式以套用設定"
+          }
         }
       }
     },
@@ -3703,7 +3845,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "嗨！我是SE 1代(2016)的使用者"
+            "value" : "嗨！iPhone SE 1代（2016）使用者"
           }
         }
       }
@@ -3898,6 +4040,13 @@
             "value" : "Homed phụ trách các phụ kiện và sản phẩm HomeKit, chẳng hạn như HomePod, bóng đèn kết nối và các sản phẩm khác mà bạn đang quản lý từ ứng dụng 'Home' trên điện thoại của mình. Đừng tắt tính năng này nếu bạn đang sử dụng những phụ kiện đó."
           }
         }
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed 進程負責 HomeKit 配件，包括 HomePods、已連結的智慧燈泡等等從「家庭」應用程式中管理的配件。若欲使用這些配件，請勿停用此進程"
+          }
+        },
+
       }
     },
     "If you want to enable auto-update, you need to turn on Magnifier URL Scheme in TrollStore." : {
@@ -3971,7 +4120,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您想要啟用自動更新本App，請至TrollStore中啟用Magnifier URL Scheme。"
+            "value" : "請至 TrollStore 中啟用 Magnifier URL Scheme 以自動更新此應用程式。"
           }
         }
       }
