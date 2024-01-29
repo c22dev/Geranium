@@ -122,7 +122,7 @@ func doStuff() {
     RootHelper.removeItem(at: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
     RootHelper.copy(from: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"), to: URL(fileURLWithPath: "/var/mobile/Documents/disabled.plist"))
     var plist = try? readPlist(atPath: "/var/mobile/Documents/disabled.plist")
-    removeEntriesFromPlistArray(plist!, entriesToRemove: entriesToRemove, arrayKey: "YourArrayKey")
+    removeEntriesFromPlistArray(plist!, entriesToRemove: entriesToRemove, arrayKey: "")
     try? writePlist(plist!, toPath: "/var/mobile/Documents/disabled.plist")
     RootHelper.removeItem(at: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
     RootHelper.move(from: URL(fileURLWithPath :"/var/mobile/Documents/disabled.plist"), to: URL(fileURLWithPath: "/var/db/com.apple.xpc.launchd/disabled.plist"))
