@@ -4120,7 +4120,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請至 TrollStore 中啟用 Magnifier URL Scheme 以啟用此應用程式之自動更新功能。"
+            "value" : "請至 TrollStore 啟用 Magnifier URL Scheme 以開啟自動更新功能。"
           }
         }
       }
@@ -5064,7 +5064,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "大小最小值："
+            "value" : "最小值："
           }
         }
       }
@@ -6199,7 +6199,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "螢幕使用時間"
+            "value" : "螢幕使用時間監測器"
           }
         }
       }
@@ -6263,7 +6263,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : ""
+            "value" : "螢幕使用時間監測器僅負責管理所有螢幕時間設定。停用此進程無法完全停用螢幕時間"
           }
         }
       }
@@ -6286,6 +6286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Có gì đó bị hỏng ?"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : 搞砸進程設定？"
           }
         }
       }
@@ -6356,7 +6362,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "點此搜尋正在運行的進程..."
+            "value" : "搜尋正在執行的進程..."
           }
         }
       }
@@ -6381,6 +6387,12 @@
             "state" : "translated",
             "value" : "Tìm một daemon..."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜尋進程..."
+          }
         }
       }
     },
@@ -6390,6 +6402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chuyển ngôn ngữ về mặc định"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用預設語言"
           }
         }
       }
@@ -6712,6 +6730,12 @@
             "value" : "Supervise"
           }
         }
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "監管"
+          }
+        }
       }
     },
     "Superviser" : {
@@ -6768,6 +6792,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Superviser"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "機構名稱"
           }
         }
       }
@@ -6837,13 +6867,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "感谢我们所有的贡献者！"
+            "value" : "感谢所有翻译者！"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "感謝所有絕讚的翻譯者！"
+            "value" : "感謝所有翻譯者！"
           }
         }
       }
