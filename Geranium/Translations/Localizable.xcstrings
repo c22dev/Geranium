@@ -1584,6 +1584,12 @@
         }
       }
     },
+    "Calculate Cleaning Size" : {
+
+    },
+    "Calculate File Size" : {
+
+    },
     "Cancel" : {
 
     },
@@ -1738,6 +1744,9 @@
           }
         }
       }
+    },
+    "Cleaner File Sizes" : {
+
     },
     "Cleaner Settings" : {
       "localizations" : {
@@ -6754,6 +6763,9 @@
           }
         }
       }
+    },
+    "This is an issue that might incorrectly set permissions when calculating file sizes for your device." : {
+
     },
     "This setting allows you to see experimental values from some app variables." : {
       "localizations" : {

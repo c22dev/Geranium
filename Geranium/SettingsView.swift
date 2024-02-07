@@ -132,6 +132,9 @@ struct SettingsView: View {
                     Toggle(isOn: $appSettings.keepCheckBoxesC) {
                         Text("Keep selection after cleaning")
                     }
+                    Toggle(isOn: $appSettings.getSizes) {
+                        Text("Calculate Cleaning Size")
+                    }
                     if DebugStuff {
                         HStack {
                             Text("Minimum Size:")
