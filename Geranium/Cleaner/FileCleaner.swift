@@ -52,7 +52,6 @@ func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCache
             var paths = [
                 logCachesPath,
                 logmobileCachesPath,
-                tmpCachesPath,
                 phototmpCachePath,
                 logsCachesPath,
                 globalCachesPath,
