@@ -64,7 +64,7 @@ class AppSettings: ObservableObject {
     @AppStorage("usrUUID") var usrUUID: String = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
     @AppStorage("languageCode") var languageCode: String = ""
     @AppStorage("defaultTab") var defaultTab: Int = 1 
-    @AppStorage("firstCleanerTime") var firstCleanerTime: Bool = false
+    @AppStorage("firstCleanerTime") var firstCleanerTime: Bool = true
     @AppStorage("tmpClean") var tmpClean: Bool = true
 }
 
