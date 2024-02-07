@@ -163,6 +163,29 @@ extension UIApplication {
         }
     }
     
+    func yesoubiennon(title: String = "Error", body: String, onOK: @escaping () -> (), noCancel: Bool, onCancel: (() -> ())? = nil, yes: Bool) {
+        DispatchQueue.main.async {
+            currentUIAlertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
+            if !noCancel {
+                currentUIAlertController?.addAction(.init(title: "No", style: .cancel, handler: { _ in
+                    onCancel?()
+                }))
+            }
+            if !yes {
+                currentUIAlertController?.addAction(.init(title: "OK", style: noCancel ? .cancel : .default, handler: { _ in
+                    onOK()
+                }))
+            }
+            if yes {
+                currentUIAlertController?.addAction(.init(title: "Yes", style: noCancel ? .cancel : .default, handler: { _ in
+                    onOK()
+                }))
+            }
+            self.present(alert: currentUIAlertController!)
+        }
+    }
+    
+    
     func TextFieldAlert(title: String, textFieldPlaceHolder: String, completion: @escaping (String?) -> Void) {
         let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         alertController.addTextField { (textField) in
