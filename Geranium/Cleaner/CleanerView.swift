@@ -62,15 +62,6 @@ struct CleanerView: View {
                 if safari || appCaches || otaCaches || leftoverCaches || custompathselect {
                     Button("Clean !", action: {
                         UIApplication.shared.confirmAlert(title: "Selected options", body: "Safari Caches: \(truelyEnabled(safari))\nGeneral Caches: \(truelyEnabled(appCaches))\nOTA Update Caches: \(truelyEnabled(otaCaches))\nApps Leftover Caches: \(truelyEnabled(leftoverCaches))\(customTest(isEnabled: custompathselect))\n Are you sure you want to permanently delete those files ? \(draftWarning(isEnabled: leftoverCaches))", onOK: {
-                            
-                            if ProcessInfo().operatingSystemVersion.majorVersion == 15, appSettings.firstCleanerTime {
-                                appSettings.firstCleanerTime = false
-                                UIApplication.shared.yesoubiennon(title: "⚠️ You are on iOS 15 ⚠️", body: "Cleaning on iOS 15 might break notifications, and some app permissions. Do you want to enable measures that will keep your phone safe ? You might not get everything completly cleaned up. Pressing yes on iOS 15 will keep your device safe.", onOK: {
-                                    appSettings.tmpClean = false
-                                }, noCancel: false, onCancel: {
-                                    appSettings.tmpClean = true
-                                }, yes: true)
-                            }
                             print("")
                             withAnimation {
                                 var sizetotal = (safariCacheSize + GlobalCacheSize + OTACacheSize + leftOverCacheSize) / (1024 * 1024)
@@ -113,6 +104,14 @@ struct CleanerView: View {
                 .padding(2)
                 
                 .onAppear {
+                    if ProcessInfo().operatingSystemVersion.majorVersion == 15, appSettings.firstCleanerTime {
+                        appSettings.firstCleanerTime = false
+                        UIApplication.shared.yesoubiennon(title: "⚠️ You are on iOS 15 ⚠️", body: "Cleaning on iOS 15 might break notifications, and some app permissions. Do you want to enable measures that will keep your phone safe ? You might not get everything completly cleaned up. Pressing yes on iOS 15 will keep your device safe.", onOK: {
+                            appSettings.tmpClean = false
+                        }, noCancel: false, onCancel: {
+                            appSettings.tmpClean = true
+                        }, yes: true)
+                    }
                     getSizeForSafariCaches { size in
                         self.safariCacheSize = size
                     }
