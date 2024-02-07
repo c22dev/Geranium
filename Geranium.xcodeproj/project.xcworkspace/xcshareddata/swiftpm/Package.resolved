@@ -1,4 +1,5 @@
 {
+  "originHash" : "3685d775c781caf98179581cad228856352348b6d5c7679825386e193f54f37b",
   "pins" : [
     {
       "identity" : "alertkit",
@@ -10,5 +11,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
