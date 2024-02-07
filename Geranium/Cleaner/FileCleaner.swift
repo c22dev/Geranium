@@ -62,7 +62,7 @@ func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCache
                 deletedPhotos,
                 photoOther
             ]
-            if !appSettings.tmpClean {
+            if appSettings.tmpClean {
                 paths.append(tmpCachesPath)
             }
             
