@@ -9,6 +9,7 @@ import Foundation
 
 func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCaches: Bool, leftOverCaches: Bool, custompathselect: Bool, progressHandler: @escaping (Double) -> Void) {
     print("in the func")
+    var appSettings = AppSettings()
     var safariCleanedUp = false
     var appCleanedUp = false
     var otaCleanedUp = false
@@ -48,10 +49,9 @@ func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCache
         
         if appCaches, !appCleanedUp {
             print("appcaches")
-            let paths = [
+            var paths = [
                 logCachesPath,
                 logmobileCachesPath,
-                tmpCachesPath,
                 phototmpCachePath,
                 logsCachesPath,
                 globalCachesPath,
@@ -61,6 +61,9 @@ func cleanProcess(lowSize: Bool = false, safari: Bool, appCaches: Bool, otaCache
                 deletedPhotos,
                 photoOther
             ]
+            if appSettings.tmpClean {
+                paths.append(tmpCachesPath)
+            }
             
             for path in paths {
                 RHResult = deleteContentsOfDirectory(atPath: path)

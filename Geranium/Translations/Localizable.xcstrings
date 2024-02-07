@@ -3397,6 +3397,9 @@
           }
         }
     },
+    "Enter your coordinates" : {
+
+    },
     "Error !" : {
       "localizations" : {
         "es" : {
@@ -4481,6 +4484,9 @@
           }
         }
     },
+    "Latitude" : {
+
+    },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
         "en" : {
@@ -4824,6 +4830,9 @@
           }
         }
       }
+    },
+    "Longitude" : {
+
     },
     "made by c22dev" : {
       "localizations" : {
@@ -5250,6 +5259,9 @@
           }
         }
       }
+    },
+    "OK" : {
+
     },
     "OTA Update Caches" : {
       "localizations" : {
@@ -6877,6 +6889,9 @@
           }
         }
       }
+    },
+    "The location will be simulated on device\nPro tip: Press wherever on the map to move there." : {
+
     },
     "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
       "extractionState" : "stale",

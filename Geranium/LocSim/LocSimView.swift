@@ -17,6 +17,9 @@ struct LocSimView: View {
     @State private var long: Double = 0.0
     @State private var tappedCoordinate: EquatableCoordinate? = nil
     @State private var bookmarkSheetTggle: Bool = false
+    @State private var appliedCust: Bool = false
+    @State private var latTemp = ""
+    @State private var longTemp = ""
     var body: some View {
             if #available(iOS 16.0, *) {
                 NavigationStack {
@@ -60,6 +63,16 @@ struct LocSimView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
+                    appliedCust.toggle()
+                }) {
+                    Image(systemName: "mappin")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
                     if appSettings.locSimMultipleAttempts {
                         var countdown = appSettings.locSimAttemptNB
                         DispatchQueue.global().async {
@@ -96,8 +109,23 @@ struct LocSimView: View {
                 }
             }
         }
+        .alert("Enter your coordinates", isPresented: $appliedCust) {
+            TextField("Latitude", text: $latTemp)
+            TextField("Longitude", text: $longTemp)
+            Button("OK", action: submit)
+        } message: {
+            Text("The location will be simulated on device\nPro tip: Press wherever on the map to move there.")
+        }
         .sheet(isPresented: $bookmarkSheetTggle) {
             BookMarkSlider(lat: $lat, long: $long)
+        }
+    }
+    func submit() {
+        if !latTemp.isEmpty, !longTemp.isEmpty {
+            LocSimManager.startLocSim(location: .init(latitude: Double(latTemp) ?? 0.0, longitude: Double(longTemp) ?? 0.0))
+        }
+        else {
+            UIApplication.shared.alert(body: "Those are empty coordinates mate !")
         }
     }
 }
