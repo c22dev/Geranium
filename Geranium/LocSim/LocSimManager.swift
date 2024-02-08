@@ -73,3 +73,40 @@ extension LocationModel: CLLocationManagerDelegate {
         self.authorisationStatus = status
     }
 }
+
+
+func extractCoordinates(from url: String) -> (latitude: Double, longitude: Double)? {
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
+    
+    if url.contains("maps.google") {
+        // Extracting coordinates from Google Maps link
+        if let range = url.range(of: #"@([-+]?\d*\.\d+),([-+]?\d*\.\d+)"#, options: .regularExpression) {
+            let coordinates = url[range]
+                .dropFirst()
+                .split(separator: ",")
+                .map { Double($0)! }
+            if coordinates.count == 2 {
+                latitude = coordinates[0]
+                longitude = coordinates[1]
+            }
+        }
+    } else if url.contains("maps.apple") {
+        // Extracting coordinates from Apple Maps link
+        if let range = url.range(of: #"&ll=([-+]?\d*\.\d+),([-+]?\d*\.\d+)&"#, options: .regularExpression) {
+            let coordinates = url[range]
+                .dropFirst(4)
+                .dropLast(1)
+                .split(separator: ",")
+                .map { Double($0)! }
+            if coordinates.count == 2 {
+                latitude = coordinates[0]
+                longitude = coordinates[1]
+            }
+        }
+    } else {
+        return nil // Unsupported URL
+    }
+    
+    return (latitude, longitude)
+}

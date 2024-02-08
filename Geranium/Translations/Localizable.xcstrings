@@ -3278,6 +3278,9 @@
     "Enter your coordinates" : {
 
     },
+    "Enter your URL here..." : {
+
+    },
     "Error !" : {
       "localizations" : {
         "es" : {

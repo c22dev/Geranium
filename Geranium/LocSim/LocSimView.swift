@@ -20,6 +20,8 @@ struct LocSimView: View {
     @State private var appliedCust: Bool = false
     @State private var latTemp = ""
     @State private var longTemp = ""
+    @State private var stringTemp = ""
+    @State private var urldetected = false
     var body: some View {
             if #available(iOS 16.0, *) {
                 NavigationStack {
@@ -39,6 +41,7 @@ struct LocSimView: View {
                         CLLocationManager().requestAlwaysAuthorization()
                     }
             }
+            .ignoresSafeArea(.keyboard)
         .onAppear {
             LocationModel().requestAuthorisation()
         }
@@ -110,8 +113,25 @@ struct LocSimView: View {
             }
         }
         .alert("Enter your coordinates", isPresented: $appliedCust) {
-            TextField("Latitude", text: $latTemp)
-            TextField("Longitude", text: $longTemp)
+            if let url = UIPasteboard.general.string {
+                if url.contains("maps.google") || url.contains("maps.apple") {
+                    TextField("Enter your URL here...", text: $stringTemp)
+                        .onChange(of: stringTemp) { newValue in
+                            var coordinates = extractCoordinates(from: stringTemp)
+                            lat = coordinates!.latitude
+                            long = coordinates!.longitude
+                            urldetected = true
+                        }
+                }
+                else {
+                    TextField("Latitude", text: $latTemp)
+                    TextField("Longitude", text: $longTemp)
+                }
+            }
+            else {
+                TextField("Latitude", text: $latTemp)
+                TextField("Longitude", text: $longTemp)
+            }
             Button("OK", action: submit)
         } message: {
             Text("The location will be simulated on device\nPro tip: Press wherever on the map to move there.")
@@ -121,8 +141,24 @@ struct LocSimView: View {
         }
     }
     func submit() {
-        if !latTemp.isEmpty, !longTemp.isEmpty {
+        if !latTemp.isEmpty, !longTemp.isEmpty, !urldetected {
             LocSimManager.startLocSim(location: .init(latitude: Double(latTemp) ?? 0.0, longitude: Double(longTemp) ?? 0.0))
+            AlertKitAPI.present(
+                title: "Started !",
+                icon: .done,
+                style: .iOS17AppleMusic,
+                haptic: .success
+            )
+        }
+        if urldetected {
+            LocSimManager.startLocSim(location: .init(latitude: lat, longitude: long))
+            urldetected = false
+            AlertKitAPI.present(
+                title: "Started !",
+                icon: .done,
+                style: .iOS17AppleMusic,
+                haptic: .success
+            )
         }
         else {
             UIApplication.shared.alert(body: "Those are empty coordinates mate !")

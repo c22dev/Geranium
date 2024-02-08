@@ -135,6 +135,12 @@ struct SettingsView: View {
                     Toggle(isOn: $appSettings.getSizes) {
                         Text("Calculate Cleaning Size")
                     }
+                    .onChange(of: appSettings.getSizes) { newValue in
+                        UIApplication.shared.confirmAlert(title: "You need to quit the app to apply changes.", body: "You might want to open it back.", onOK: {
+                            exitGracefully()
+                        }, noCancel: true)
+                    }
+                    
                     if DebugStuff {
                         HStack {
                             Text("Minimum Size:")
