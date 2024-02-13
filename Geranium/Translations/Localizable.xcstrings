@@ -114,6 +114,12 @@
             "state" : "translated",
             "value" : "%@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
         }
       }
     },
@@ -194,7 +200,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1. 打開您的TrollStore app"
+            "value" : "1. 開啟 TrollStore"
           }
         }
       }
@@ -276,7 +282,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "2. 點擊右下角的Settings頁籤"
+            "value" : "2. 前往設定"
           }
         }
       }
@@ -386,7 +392,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "3. 將URL Scheme Enabled的開關設為：開啟"
+            "value" : "3. 開啟 URL Scheme Enabled"
           }
         }
       }
@@ -438,6 +444,12 @@
             "state" : "translated",
             "value" : "Danh sách các daemon và việc chúng làm"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS 的進程清單以及其實際用途"
+          }
         }
       }
     },
@@ -454,11 +466,22 @@
             "state" : "translated",
             "value" : "Danh sách các daemon bạn có thể tắt"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可安全停用的進程"
+          }
         }
       }
     },
     "Add a New Path" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增新路徑"
+          }
+        }
     },
     "Alphabetical" : {
       "localizations" : {
@@ -531,7 +554,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "依照字母順序排列"
+            "value" : "依字母順序排列"
           }
         }
       }
@@ -607,7 +630,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RootHelper花生錯誤了!!"
+            "value" : "RootHelper 發生錯誤"
           }
         }
       }
@@ -667,6 +690,12 @@
             "state" : "translated",
             "value" : "Biểu tượng ứng dụng"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "應用程式圖示"
+          }
         }
       }
     },
@@ -676,6 +705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngôn ngữ ứng dụng"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "語言"
           }
         }
       }
@@ -734,6 +769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bộ nhớ đệm còn sót lại của ứng dụng"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "應用程式快取"
           }
         }
       }
@@ -1005,6 +1046,12 @@
             "state" : "translated",
             "value" : "Bouquet"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : 花束""
+          }
         }
       }
     },
@@ -1079,7 +1126,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "藉由在iOS內部加入一些規則，此軟體能夠避免特定進程(Daemon)在開機時自動執行。下方列出了所有正在運行的進程，您可以從右向左滑來停用。"
+            "value" : "此軟體能新增規則以防止特定進程（Daemon）在開機時自動執行。下方列出了所有進程。向左滑動文字以停用。"
           }
         }
       }
@@ -1197,6 +1244,12 @@
             "state" : "translated",
             "value" : "bởi PhucDo"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繪者：PhucDo"
+          }
         }
       }
     },
@@ -1254,6 +1307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tạm biệt ScreenTime !"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟螢幕使用時間說掰掰！"
           }
         }
       }
@@ -1429,6 +1488,12 @@
             "state" : "translated",
             "value" : "Cài đặt ByeTime"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByTime 設定"
+          }
         }
       }
     },
@@ -1503,7 +1568,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停用當App有新版本時的提示"
+            "value" : "停用應用程式更新提示"
           }
         }
       }
@@ -1579,7 +1644,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停止提示此App並非由TrollStore安裝"
+            "value" : "停止「此應用程式中並非由 TrollStore 安裝」之警告"
           }
         }
       }
@@ -1591,7 +1656,12 @@
 
     },
     "Cancel" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
     },
     "Clean !" : {
       "localizations" : {
@@ -1785,11 +1855,22 @@
             "state" : "translated",
             "value" : "Cài đặt sạch hơn"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理器設定"
+          }
         }
       }
     },
     "Clear" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理"
+          }
+        }
     },
     "Credits" : {
       "localizations" : {
@@ -1868,7 +1949,12 @@
       }
     },
     "Custom Paths" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自訂路徑"
+          }
+        }
     },
     "Daemons" : {
       "localizations" : {
@@ -2147,6 +2233,12 @@
             "state" : "translated",
             "value" : "Mặc định"
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預設"
+          }
         }
       }
     },
@@ -2165,6 +2257,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xoá danh sách những daemon bị tắt, và bắt đầu từ đầu. iOS sẽ tạo lại tệp từ đầu sau khởi động lại."
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將進程停用清單規則檔案刪除，此設定將在下次重新啟動時自動生成預設規則檔案"
           }
         }
       }
@@ -2322,7 +2420,12 @@
       }
     },
     "Disable Familycircled" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用 Familycircled"
+          }
+        }
     },
     "Disable Homed" : {
       "localizations" : {
@@ -2378,6 +2481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vô hiệu hóa Homed"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用 Homed"
           }
         }
       }
@@ -2436,6 +2545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vô hiệu hóa Usage Tracking Agent"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用螢幕使用時間"
           }
         }
       }
@@ -2511,7 +2626,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停用當App有新版本時的提示"
+            "value" : "停用應用程式更新彈出式提示視窗"
           }
         }
       }
@@ -2570,6 +2685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tắt trình theo dõi mức sử dụng"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止監測數據使用量"
           }
         }
       }
@@ -2721,7 +2842,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "⚠️停用系統進程非常危險⚠️\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
+            "value" : "⚠️停用系統進程非常危險⚠️\n錯誤的使用將會造成重開機循環（Bootloop），請萬分小心。\n本應用程式開發者對於使用者行為所造成的後果不負任何責任。"
           }
         }
       }
@@ -2792,7 +2913,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您並非進階使用者，強烈建議您不要停用任何進程。\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
+            "value" : "若您並非高階使用者，強烈建議不要停用任何進程。\n錯誤的使用將會造成重開機循環(Bootloop)，請萬分小心。\n本App開發者對於使用者行為所造成的後果不負任何責任。"
           }
         }
       }
@@ -2862,7 +2983,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "取消"
+            "value" : "關閉"
           }
         }
       }
@@ -3112,7 +3233,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "啟用收集Log紀錄"
+            "value" : "啟用日誌收集"
           }
         }
       }
@@ -3188,13 +3309,18 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "啟用Log紀錄"
+            "value" : "記錄日誌"
           }
         }
       }
     },
     "Enable ScreenTime" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟用螢幕使用時間"
+          }
+        }
     },
     "Enter organisation name..." : {
       "localizations" : {
@@ -3267,13 +3393,18 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在此輸入客製化機構名稱..."
+            "value" : "組織名稱"
           }
         }
       }
     },
     "Enter path name" : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入路徑名稱"
+          }
+        }
     },
     "Enter your coordinates" : {
 
@@ -3437,7 +3568,12 @@
 
     },
     "Familycircled is in charge of iCloud Family system. This includes family subscriptions, so if you disable this you won't be able to use them. However, this can help preventing ScreenTime from working." : {
-
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familycircled 為負責 iCloud 線上家庭管理系統之進程。這也包括家庭付費計畫，若停用此進程將無法使用。但停用此進程可幫助停用螢幕使用時間。"
+          }
+        }
     },
     "Flore" : {
       "localizations" : {
@@ -3568,7 +3704,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常規緩存"
+            "value" : "一般暫存"
           }
         }
       }
@@ -3644,6 +3780,12 @@
             "state" : "translated",
             "value" : "Tại đây bác có thể chọn ngôn ngữ cho ứng dụng. Ứng dụng sẽ tự thoát để áp dụng thay đổi đó ; bạn có thể mở nó lại tuỳ thích."
           }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可在此選擇語言，更改語言後將自動重新啟動此應用程式以套用設定"
+          }
         }
       }
     },
@@ -3718,7 +3860,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "嗨！我是SE 1代(2016)的使用者"
+            "value" : "嗨！iPhone SE 第1代（2016）使用者"
           }
         }
       }
@@ -3913,6 +4055,13 @@
             "value" : "Homed phụ trách các phụ kiện và sản phẩm HomeKit, chẳng hạn như HomePod, bóng đèn kết nối và các sản phẩm khác mà bạn đang quản lý từ ứng dụng 'Home' trên điện thoại của mình. Đừng tắt tính năng này nếu bạn đang sử dụng những phụ kiện đó."
           }
         }
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homed 進程負責 HomeKit 配件，包括 HomePods、已連結的智慧燈泡等等從「家庭」應用程式中管理的配件。若欲使用這些配件，請勿停用此進程"
+          }
+        },
+
       }
     },
     "If you want to enable auto-update, you need to turn on Magnifier URL Scheme in TrollStore." : {
@@ -3986,7 +4135,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您想要啟用自動更新本App，請至TrollStore中啟用Magnifier URL Scheme。"
+            "value" : "請至 TrollStore 啟用 Magnifier URL Scheme 以開啟自動更新功能。"
           }
         }
       }
@@ -4062,7 +4211,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您想要恢復已做更動，請至右上方的「清單」按鈕（於打勾按鈕的左側）內，便可以管理您已停用的進程。"
+            "value" : "若欲回復更動，請點擊清單按鈕（於打勾圖示左側）便可管理已停用進程。"
           }
         }
       }
@@ -4138,7 +4287,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "當前使用者正在使用iPadOS 16：否"
+            "value" : "是否正在執行 iPadOS 16：否"
           }
         }
       }
@@ -4214,7 +4363,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "當前使用者正在使用iPadOS 16：是"
+            "value" : "是否正在執行 iPadOS 16：是"
           }
         }
       }
@@ -4290,7 +4439,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "若您使用的是iPhone SE 2016(一代)，您可能會遇到一些介面上的小問題，非常抱歉。"
+            "value" : "若您正在使用 iPhone SE 第一代（2016）可能會遇到介面瑕疵。"
           }
         }
       }
@@ -4340,7 +4489,12 @@
       }
     },
     "Language set to : %@" : {
-
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "語言已更改為%@"
+          }
+        }
     },
     "Latitude" : {
 
@@ -4422,7 +4576,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "緯度: %1$lf 經度: %2$lf"
+            "value" : "緯度：%1$lf 經度：%2$lf"
           }
         }
       }
@@ -4528,6 +4682,12 @@
             "state" : "translated",
             "value" : "Cài đặt LocSim"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim 設定"
+          }
         }
       }
     },
@@ -4602,7 +4762,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Log紀錄收集"
+            "value" : "日誌收集"
           }
         }
       }
@@ -4678,7 +4838,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "記錄收集設定"
+            "value" : "日誌設定"
           }
         }
       }
@@ -4757,7 +4917,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "c22dev 傾心製作❤️"
+            "value" : "由 c22dev 傾心製作 ❤️"
           }
         }
       }
@@ -4875,6 +5035,12 @@
             "state" : "translated",
             "value" : "Số lần thử tối thiểu:"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最低嘗試次數："
+          }
         }
       }
     },
@@ -4915,6 +5081,12 @@
             "state" : "translated",
             "value" : "Kích cỡ nhỏ nhất:"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最小值："
+          }
         }
       }
     },
@@ -4930,6 +5102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm thông tin"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於"
           }
         }
       }
@@ -5005,13 +5183,18 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "未有已儲存的地點"
+            "value" : "未標記任何地點"
           }
         }
       }
     },
     "No paths saved." : {
-
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未儲存路徑"
+          }
+        }
     },
     "Notice" : {
       "localizations" : {
@@ -5163,7 +5346,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "OTA更新緩存"
+            "value" : "OTA 更新暫存"
           }
         }
       }
@@ -5234,7 +5417,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PID: %@"
+            "value" : "PID：%@"
           }
         }
       }
@@ -5304,7 +5487,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請複製您的UUID並傳送給開發者其中之一"
+            "value" : "請複製您的 UUID 並傳送給開發者"
           }
         }
       }
@@ -5380,7 +5563,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請謹記"
+            "value" : "請注意"
           }
         }
       }
@@ -5511,6 +5694,12 @@
             "state" : "translated",
             "value" : "Khởi động lại"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新啟動"
+          }
         }
       }
     },
@@ -5586,7 +5775,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重建圖標緩存"
+            "value" : "重建圖示暫存"
           }
         }
       }
@@ -5666,7 +5855,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重新載入主畫面"
+            "value" : "重新啟動主畫面"
           }
         }
       }
@@ -5742,7 +5931,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RootHelper 路徑 : %@"
+            "value" : "RootHelper 路徑：%@"
           }
         }
       }
@@ -5818,7 +6007,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Safari 緩存 路徑 : %@"
+            "value" : "Safari 路徑：%@"
           }
         }
       }
@@ -5894,7 +6083,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Safari 緩存"
+            "value" : "Safari 快取"
           }
         }
       }
@@ -5970,7 +6159,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "維護"
+            "value" : "套用"
           }
         }
       }
@@ -6030,6 +6219,12 @@
             "state" : "translated",
             "value" : "Trợ lý Thời gian sử dụng"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "螢幕使用時間監測器"
+          }
         }
       }
     },
@@ -6088,6 +6283,12 @@
             "state" : "translated",
             "value" : "Screen Time Agent chịu trách nhiệm quản lý tất cả các tùy chọn Thời gian sử dụng. Tốt nhất chỉ nên tắt quá trình này vào ban đêm để tắt một phần Thời gian sử dụng."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "螢幕使用時間監測器僅負責管理所有螢幕時間設定。停用此進程無法完全停用螢幕時間"
+          }
         }
       }
     },
@@ -6109,6 +6310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Có gì đó bị hỏng ?"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : 搞砸進程設定？"
           }
         }
       }
@@ -6179,7 +6386,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "點此搜尋正在運行的進程..."
+            "value" : "搜尋正在執行的進程..."
           }
         }
       }
@@ -6204,6 +6411,12 @@
             "state" : "translated",
             "value" : "Tìm một daemon..."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜尋進程..."
+          }
         }
       }
     },
@@ -6213,6 +6426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chuyển ngôn ngữ về mặc định"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用預設語言"
           }
         }
       }
@@ -6535,6 +6754,12 @@
             "value" : "Supervise"
           }
         }
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "監管"
+          }
+        }
       }
     },
     "Superviser" : {
@@ -6591,6 +6816,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Superviser"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "機構名稱"
           }
         }
       }
@@ -6660,13 +6891,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "感谢我们所有的贡献者！"
+            "value" : "感谢所有翻译者！"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "感謝所有絕讚的翻譯者！"
+            "value" : "感謝所有翻譯者！"
           }
         }
       }
@@ -7906,7 +8137,8 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "歡迎使用 Geranium：一個 TrollStore 的工具箱。Geranium 可讓您停用某些進程、模擬您的定位、清理手機儲存空間等。\n\n在您使用應用程式之前，我們需要先設置一些東西。這只需要一分鐘。您稍後仍然可以更改這些設定。"
+            "value" : "歡迎使用 Geranium：TrollStore 工具箱。Geranium 可停用進程、模擬位置、清理手機儲存空間等。\n\n在使用應用程式前需要先設定一些東西。這
+需要一段時間。稍後仍可更改這些設定。"
           }
         }
       }
@@ -8058,7 +8290,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "當有更新發佈時，您將在應用程式啟動時收到一個詢問您是否要更新App的彈窗。您可以停用此彈窗功能。"
+            "value" : "此可停用應用程式更新彈出式視窗提示"
           }
         }
       }
@@ -8118,7 +8350,12 @@
             "state" : "translated",
             "value" : "Bạn có thể chọn và xác định biểu tượng tùy chỉnh do cộng đồng đề xuất."
           }
-        }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您可挑選並自訂社群發布的圖示"
+          }
       }
     },
     "You might want to quit and go back in the app." : {
@@ -8186,7 +8423,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請關閉後再開啟此App一次。"
+            "value" : "請重新啟動此應用程式。"
           }
         }
       }
