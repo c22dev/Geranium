@@ -8137,7 +8137,8 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "歡迎使用 Geranium：一個 TrollStore 的工具箱。Geranium 可讓您停用某些進程、模擬您的定位、清理手機儲存空間等。\n\n在您使用應用程式之前，我們需要先設置一些東西。這只需要一分鐘。您稍後仍然可以更改這些設定。"
+            "value" : "歡迎使用 Geranium：TrollStore 工具箱。Geranium 可停用進程、模擬位置、清理手機儲存空間等。\n\n在使用應用程式前需要先設定一些東西。這
+需要一段時間。稍後仍可更改這些設定。"
           }
         }
       }
@@ -8289,7 +8290,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "當有更新發佈時，您將在應用程式啟動時收到一個詢問您是否要更新App的彈窗。您可以停用此彈窗功能。"
+            "value" : "此可停用應用程式更新彈出式視窗提示"
           }
         }
       }
@@ -8349,7 +8350,12 @@
             "state" : "translated",
             "value" : "Bạn có thể chọn và xác định biểu tượng tùy chỉnh do cộng đồng đề xuất."
           }
-        }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您可挑選並自訂社群發布的圖示"
+          }
       }
     },
     "You might want to quit and go back in the app." : {
@@ -8417,7 +8423,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請關閉後再開啟此App一次。"
+            "value" : "請重新啟動此應用程式。"
           }
         }
       }
