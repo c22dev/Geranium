@@ -66,6 +66,7 @@ class AppSettings: ObservableObject {
     @AppStorage("defaultTab") var defaultTab: Int = 1 
     @AppStorage("firstCleanerTime") var firstCleanerTime: Bool = true
     @AppStorage("tmpClean") var tmpClean: Bool = true
+    @AppStorage("getSizes") var getSizes: Bool = false
 }
 
 var langaugee: String = {

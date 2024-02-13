@@ -14,6 +14,7 @@ struct CleanerView: View {
     @State var resultView: Bool = false
     @State var wannaReboot: Bool = false
     @State var customPathSheet: Bool = false
+    @State var shouldIGetSizes = AppSettings().getSizes
     
     // User Selection
     @State var safari = false
@@ -65,7 +66,7 @@ struct CleanerView: View {
                             print("")
                             withAnimation {
                                 var sizetotal = (safariCacheSize + GlobalCacheSize + OTACacheSize + leftOverCacheSize) / (1024 * 1024)
-                                if sizetotal < appSettings.minimSizeC {
+                                if sizetotal < appSettings.minimSizeC, shouldIGetSizes {
                                     isLowSize = true
                                 }
                                 
@@ -98,7 +99,9 @@ struct CleanerView: View {
                 Toggle(isOn: $safari) {
                     Image(systemName: "safari")
                     Text("Safari Caches")
-                    Text("> "+String(format: "%.2f MB", safariCacheSize / (1024 * 1024)))
+                    if shouldIGetSizes {
+                        Text("> "+String(format: "%.2f MB", safariCacheSize / (1024 * 1024)))
+                    }
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
@@ -112,59 +115,77 @@ struct CleanerView: View {
                             appSettings.tmpClean = true
                         }, yes: true)
                     }
-                    getSizeForSafariCaches { size in
-                        self.safariCacheSize = size
+                    if shouldIGetSizes {
+                        getSizeForSafariCaches { size in
+                            self.safariCacheSize = size
+                        }
                     }
                 }
                 Toggle(isOn: $appCaches) {
                     Image(systemName: "app.dashed")
                     Text("General Caches")
-                    Text("> " + String(format: "%.2f MB", GlobalCacheSize / (1024 * 1024)))
+                    if shouldIGetSizes {
+                        Text("> " + String(format: "%.2f MB", GlobalCacheSize / (1024 * 1024)))
+                    }
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
                 .onAppear {
-                    getSizeForGeneralCaches { size in
-                        self.GlobalCacheSize = size
+                    if shouldIGetSizes {
+                        getSizeForGeneralCaches { size in
+                            self.GlobalCacheSize = size
+                        }
                     }
                 }
                 
                 Toggle(isOn: $otaCaches) {
                     Image(systemName: "restart.circle")
                     Text("OTA Update Caches")
-                    Text("> " + String(format: "%.2f MB", OTACacheSize / (1024 * 1024)))
+                    if shouldIGetSizes {
+                        Text("> " + String(format: "%.2f MB", OTACacheSize / (1024 * 1024)))
+                    }
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
                 .onAppear {
-                    getSizeForOTA { size in
-                        self.OTACacheSize = size
+                    if shouldIGetSizes {
+                        getSizeForOTA { size in
+                            self.OTACacheSize = size
+                        }
                     }
                 }
                 
                 Toggle(isOn: $leftoverCaches) {
                     Image(systemName: "app.badge.checkmark")
                     Text("Apps Leftover Caches")
-                    Text("> " + String(format: "%.2f MB", leftOverCacheSize / (1024 * 1024)))
+                    if shouldIGetSizes {
+                        Text("> " + String(format: "%.2f MB", leftOverCacheSize / (1024 * 1024)))
+                    }
                 }
                 .toggleStyle(checkboxiOS())
                 .padding(2)
                 .onAppear {
-                    getSizeForAppLeftover { size in
-                        self.leftOverCacheSize = size
+                    if shouldIGetSizes {
+                        getSizeForAppLeftover { size in
+                            self.leftOverCacheSize = size
+                        }
                     }
                 }
                 if !customPaths.isEmpty {
                     Toggle(isOn: $custompathselect) {
                         Image(systemName: "folder")
                         Text("Custom Paths")
-                        Text("> " + String(format: "%.2f MB", customPathsSize / (1024 * 1024)))
+                        if shouldIGetSizes {
+                            Text("> " + String(format: "%.2f MB", customPathsSize / (1024 * 1024)))
+                        }
                     }
                     .toggleStyle(checkboxiOS())
                     .padding(2)
                     .onAppear {
-                        getSizeForCustom { size in
-                            self.customPathsSize = size
+                        if shouldIGetSizes {
+                            getSizeForCustom { size in
+                                self.customPathsSize = size
+                            }
                         }
                     }
                 }

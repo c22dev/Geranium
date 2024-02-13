@@ -12,6 +12,7 @@ struct WelcomeView: View {
     @Environment(\.dismiss) var dismiss
     @Binding var loggingAllowed: Bool
     @Binding var updBypass: Bool
+    @StateObject private var appSettings = AppSettings()
     var body: some View {
         List {
             Section(header: Text("Setup")) {
@@ -38,6 +39,13 @@ struct WelcomeView: View {
                 Text("When a new update is published, you will receive a pop-up on app launch asking you if you want to update. You can prevent this from hapenning")
                 Toggle(isOn: $updBypass) {
                     Text("Disable update pop-up")
+                }
+            }
+            
+            Section(header: Text("Cleaner File Sizes")) {
+                Text("This is an issue that might incorrectly set permissions when calculating file sizes for your device.")
+                Toggle(isOn: $appSettings.getSizes) {
+                    Text("Calculate File Size")
                 }
             }
             if !updBypass {
