@@ -14,6 +14,7 @@ struct CleanerView: View {
     @State var resultView: Bool = false
     @State var wannaReboot: Bool = false
     @State var customPathSheet: Bool = false
+    @State var needHelpWithMyNotifs: Bool = false
     @State var shouldIGetSizes = AppSettings().getSizes
     
     // User Selection
@@ -278,18 +279,30 @@ struct CleanerView: View {
                         .bold()
                 }
             }
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button(action: {
-                                customPathSheet.toggle()
-                            }) {
-                                if defaultView {
-                                    Image(systemName: "folder.badge.plus")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 24, height: 24)
-                                }
-                            }
-                        }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    needHelpWithMyNotifs.toggle()
+                }) {
+                    if defaultView, ProcessInfo().operatingSystemVersion.majorVersion == 15 {
+                        Image(systemName: "bell.badge")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                    }
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    customPathSheet.toggle()
+                }) {
+                    if defaultView {
+                        Image(systemName: "folder.badge.plus")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                    }
+                }
+            }
         }
         .sheet(isPresented: $customPathSheet) {
             CustomPaths()
@@ -298,6 +311,9 @@ struct CleanerView: View {
                         exitGracefully()
                     }, noCancel: true)
                 }
+        }
+        .sheet(isPresented: $needHelpWithMyNotifs) {
+            NotifHelp()
         }
     }
     func performCleanup() {

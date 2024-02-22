@@ -38,6 +38,7 @@
 		79D7891D2B41BDE700FEBD32 /* Bouquet.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D7891C2B41BDE700FEBD32 /* Bouquet.png */; };
 		79D7891F2B41BEA600FEBD32 /* Flore.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D7891E2B41BEA600FEBD32 /* Flore.png */; };
 		79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF26982B31C90C005D81D2 /* WelcomeView.swift */; };
+		79FDECC92B878F4700B2DFB0 /* NotifHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDECC82B878F4700B2DFB0 /* NotifHelp.swift */; };
 		FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */; };
 		FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D62B265FEA00FC7287 /* ContentView.swift */; };
 		FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA456D82B265FEC00FC7287 /* Assets.xcassets */; };
@@ -124,6 +125,7 @@
 		79D7891C2B41BDE700FEBD32 /* Bouquet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bouquet.png; sourceTree = "<group>"; };
 		79D7891E2B41BEA600FEBD32 /* Flore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flore.png; sourceTree = "<group>"; };
 		79DF26982B31C90C005D81D2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		79FDECC82B878F4700B2DFB0 /* NotifHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifHelp.swift; sourceTree = "<group>"; };
 		FAA456D12B265FEA00FC7287 /* Geranium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geranium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumApp.swift; sourceTree = "<group>"; };
 		FAA456D62B265FEA00FC7287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA4572F2B2666F300FC7287 /* CleanerView.swift */,
+				79FDECC82B878F4700B2DFB0 /* NotifHelp.swift */,
 				792845522B2C67910021E1FD /* FileCleaner.swift */,
 				799D42452B553AF1001867E0 /* CustomPaths.swift */,
 				7916D9E52B34FC06008E88F2 /* Paths.swift */,
@@ -556,6 +559,7 @@
 				793E3D6F2B37AA1300A72671 /* BetaChecker.swift in Sources */,
 				7989FD082B34894400FBAB8D /* BookMarkSlider.swift in Sources */,
 				7916D9E62B34FC06008E88F2 /* Paths.swift in Sources */,
+				79FDECC92B878F4700B2DFB0 /* NotifHelp.swift in Sources */,
 				7916D9E42B34D9C4008E88F2 /* CurrentlyDisabledDaemonView.swift in Sources */,
 				FAA457122B2661E300FC7287 /* TSUtil.m in Sources */,
 				7989FD062B3486B100FBAB8D /* CustomMapView.swift in Sources */,
