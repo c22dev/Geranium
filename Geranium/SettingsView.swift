@@ -140,6 +140,14 @@ struct SettingsView: View {
                             exitGracefully()
                         }, noCancel: true)
                     }
+                    Toggle(isOn: $appSettings.tmpClean) {
+                        Text("Clean tmp folder (Disable this if on iOS 15!)")
+                    }
+                    .onChange(of: appSettings.tmpClean) { newValue in
+                        UIApplication.shared.confirmAlert(title: "You need to quit the app to apply changes.", body: "You might want to open it back.", onOK: {
+                            exitGracefully()
+                        }, noCancel: true)
+                    }
                     
                     if DebugStuff {
                         HStack {

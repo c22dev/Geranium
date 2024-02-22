@@ -1713,6 +1713,9 @@
         }
       }
     },
+    "Clean tmp folder (Disable this if on iOS 15!)" : {
+
+    },
     "Cleaner" : {
       "localizations" : {
         "es" : {
