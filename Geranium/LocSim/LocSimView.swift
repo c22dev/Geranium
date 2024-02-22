@@ -39,6 +39,7 @@ struct LocSimView: View {
                         CLLocationManager().requestAlwaysAuthorization()
                     }
             }
+            .ignoresSafeArea(.keyboard)
         .onAppear {
             LocationModel().requestAuthorisation()
         }
