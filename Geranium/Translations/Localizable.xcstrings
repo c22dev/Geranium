@@ -1713,9 +1713,6 @@
         }
       }
     },
-    "Clean tmp folder (Disable this if on iOS 15!)" : {
-
-    },
     "Cleaner" : {
       "localizations" : {
         "es" : {
@@ -6106,6 +6103,27 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Safari 緩存"
+          }
+        }
+      }
+    },
+    "Safe Clean Measures (Disable this if on iOS 15!)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesures de nettoyage sécurisé"
+          }
+        }
+      }
+    },
+    "Safe Clean Measures (Enable this if on iOS 15!)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesures de nettoyage sécurisé (Activez cela si vous êtes sur iOS 15!)"
           }
         }
       }
