@@ -349,6 +349,7 @@ struct SettingsView: View {
                     }
                 }
                 Section (header: Label("Translators", systemImage: "pencil"), footer: Text("Thanks to all those amazing translators !")) {
+                    LinkCell(imageLink: "https://github.com/olivertzeng.png?size=160", url: "https://github.com/olivertzeng", title: "Oliver Tzeng", description: "🇹🇼 Chinese (Traditional)")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/640759347240108061/79be8e2ce1557085a6cbb6e58b8d6182.webp?size=160", url: "https://twitter.com/CySxL", title: "CySxL", description: "🇹🇼 Chinese (Traditional)")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/620318902983065606/fe19b5c660b9e8535e884e0fe6c15dbe.webp?size=160", url: "https://twitter.com/Defflix19", title: "Defflix", description: "🇨🇿/🇸🇰 Czech & Slovak")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/984192641170276442/bab37f9fd7fba0b18d5134eae38b9891.webp?size=160", url: "https://twitter.com/dis667_ilya", title: "dis667", description: "🇷🇺 Russian")
