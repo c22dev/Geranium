@@ -476,12 +476,36 @@
       }
     },
     "Add a New Path" : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un nouveau chemin"
+          }
+        },
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "新增新路徑"
           }
         }
+      }
+    },
+    "Additional Help" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aide supplémentaire"
+          }
+        }
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其他幫助"
+          }
+        },
+      }
     },
     "Alphabetical" : {
       "localizations" : {
@@ -701,13 +725,19 @@
     },
     "App Language" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue de l'app"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngôn ngữ ứng dụng"
           }
         },
-       "zh-Hant" : {
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "語言"
@@ -1644,24 +1674,58 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "停止「此應用程式中並非由 TrollStore 安裝」之警告"
+            "value" : "禁用「此應用程式中並非由 TrollStore 安裝」之警告"
           }
         }
       }
     },
     "Calculate Cleaning Size" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculer la taille du nettoyage"
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計算即將清理的無用檔案大小"
+          }
+        }
+      }
     },
     "Calculate File Size" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculer la taille des fichiers"
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計算檔案大小"
+          }
+        }
+      }
     },
     "Cancel" : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        },
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "取消"
           }
         }
+      }
     },
     "Clean !" : {
       "localizations" : {
@@ -1816,7 +1880,20 @@
       }
     },
     "Cleaner File Sizes" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tailles de fichiers du nettoyeur"
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理器檔案大小"
+          }
+        }
+      }
     },
     "Cleaner Settings" : {
       "localizations" : {
@@ -1865,12 +1942,20 @@
       }
     },
     "Clear" : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer"
+          }
+        },
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "清理"
           }
         }
+      }
     },
     "Credits" : {
       "localizations" : {
@@ -1949,12 +2034,20 @@
       }
     },
     "Custom Paths" : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chemins Personnalisés"
+          }
+        }
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "自訂路徑"
           }
         }
+      }
     },
     "Daemons" : {
       "localizations" : {
@@ -2243,7 +2336,20 @@
       }
     },
     "Default Tab" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onglet par Défaut"
+          }
+        }
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預設標籤頁"
+          }
+        }
+      }
     },
     "Delete currently disabled daemon list, and start-over. iOS will generate the file back from scratch next reboot." : {
       "localizations" : {
@@ -2420,12 +2526,20 @@
       }
     },
     "Disable Familycircled" : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver Familycircled"
+          }
+        }
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "停用 Familycircled"
           }
         }
+      }
     },
     "Disable Homed" : {
       "localizations" : {
@@ -3315,12 +3429,20 @@
       }
     },
     "Enable ScreenTime" : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer ScreenTime"
+          }
+        }
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "啟用螢幕使用時間"
           }
         }
+      }
     },
     "Enter organisation name..." : {
       "localizations" : {
@@ -3399,18 +3521,36 @@
       }
     },
     "Enter path name" : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrez le nom du chemin"
+          }
+        },
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "請輸入路徑名稱"
           }
         }
+      }
     },
     "Enter your coordinates" : {
-
-    },
-    "Enter your URL here..." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrez les coordonnées"
+          }
+        }
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請輸入座標"
+          }
+        }
+      }
     },
     "Error !" : {
       "localizations" : {
@@ -3565,15 +3705,46 @@
       }
     },
     "Familycircled" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familycircled"
+          }
+        }
+      }
     },
     "Familycircled is in charge of iCloud Family system. This includes family subscriptions, so if you disable this you won't be able to use them. However, this can help preventing ScreenTime from working." : {
-       "zh-Hant" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familycircled est en charge du système Famille dans iCloud. Ceci inclus les abonnements partagés avec Famille, donc si vous désactivez cela vous ne serez peut-être plus en mesure des les utiliser. En revanche, ceci peut permettre de désactiver temps d'écran encore plus."
+          }
+        },
+       	"zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Familycircled 為負責 iCloud 線上家庭管理系統之進程。這也包括家庭付費計畫，若停用此進程將無法使用。但停用此進程可幫助停用螢幕使用時間。"
           }
         }
+      }
+    },
+    "First, you need to open Settings. The app can do it for you if you want. Then, go in **General**, scroll down, and go in **Reset**." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premièrement, vous devez ouvrir Réglages. L'application peut le faire pour vous si nécessaire. Ensuite, rendez vous dans **Général**, descendez tout en bas, et cliquez sur **Réinitialiser**."
+          }
+        }
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟設定>一般>**重置**"
+          }
+        }
+      }
     },
     "Flore" : {
       "localizations" : {
@@ -3775,6 +3946,12 @@
     },
     "Here you can choose in what language you want the app to be. The app will automatically exit to apply changes ; feel free to launch it again." : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ici vous pouvez choisir la langue de l'application. Cette dernière se fermera automatiquement pour appliquer les modifications. Vous pourrez la relancer ensuite."
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4368,6 +4545,16 @@
         }
       }
     },
+    "Issue" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Problème"
+          }
+        }
+      }
+    },
     "It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI issues. Please excuse me in advance." : {
       "localizations" : {
         "es" : {
@@ -4480,6 +4667,12 @@
     },
     "Language" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4489,15 +4682,36 @@
       }
     },
     "Language set to : %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue définie à : %@"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "語言已更改為%@"
+            "value" : "已更改語言為%@"
           }
         }
+      }
     },
     "Latitude" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitude"
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緯度"
+          }
+        }
+      }
     },
     "Latitude: %lf Longitude: %lf" : {
       "localizations" : {
@@ -4844,7 +5058,30 @@
       }
     },
     "Longitude" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longitude"
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "經度"
+          }
+        }
+      }
+    },
+    "Lost your notifications because of the cleaner ? Don't panic, here is the solution !" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous avez perdu vos notifications suite à l'utilisation du Nettoyeur ? Pas de panique, voici la solution !"
+          }
+        }
+      }
     },
     "made by c22dev" : {
       "localizations" : {
@@ -5189,12 +5426,20 @@
       }
     },
     "No paths saved." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun chemin enregistré."
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "未儲存路徑"
           }
         }
+      }
     },
     "Notice" : {
       "localizations" : {
@@ -5273,7 +5518,30 @@
       }
     },
     "OK" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "確認"
+          }
+        }
+      }
+    },
+    "Open Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir les Paramètres"
+          }
+        }
+      }
     },
     "OTA Update Caches" : {
       "localizations" : {
@@ -5487,7 +5755,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "請複製您的 UUID 並傳送給開發者"
+            "value" : "請複製此裝置之 UUID 並傳送給開發者"
           }
         }
       }
@@ -5567,6 +5835,22 @@
           }
         }
       }
+    },
+    "Press **Reset All Settings**, follow what's on your screen and you are done !" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyez sur **Réinitialiser tout**, suivez les instructions sur votre écran et voilà !"
+          }
+        }
+      },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "點擊**回復初始設定**並且依照上面的指示即完成！"
+          }
+        }
     },
     "Purpose" : {
       "localizations" : {
@@ -6088,6 +6372,39 @@
         }
       }
     },
+    "Safe Clean Measures (Disable this if on iOS 15!)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesures de nettoyage sécurisé"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全清理評估"
+          }
+        }
+      }
+    },
+    "Safe Clean Measures (Enable this if on iOS 15!)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesures de nettoyage sécurisé (Activez cela si vous êtes sur iOS 15!)"
+          }
+        }
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全清理評估（iOS 15 專用）"
+          }
+        }
+      }
+    },
     "Save" : {
       "localizations" : {
         "es" : {
@@ -6159,7 +6476,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "套用"
+            "value" : "儲存"
           }
         }
       }
@@ -6422,6 +6739,12 @@
     },
     "Set language to Default" : {
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définir le language au défaut"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6903,7 +7226,52 @@
       }
     },
     "The location will be simulated on device\nPro tip: Press wherever on the map to move there." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La localisation sera simulée sur votre appareil. Conseil : Appuyez quand vous où vous voulez sur la carte pour vous y déplacer."
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即將「傳送」此位置至裝置\n提示：點擊地圖即可傳送至點擊位置"
+          }
+        }
+      }
+    },
+    "The procedure" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La procédure"
+          }
+        },
+       "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "說明"
+          }
+        }
+      }
+    },
+    "Then, you need to press the **Reset** button (NOT the erase all contents and settings)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ensuite, vous devez appuyer sur le bouton **Réinitialiser** (PAS Effacer tout le contenu et les paramètres, mais l'autre)"
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接下來請點擊**重置**（不是**清除所有內容和設定**）"
+          }
+        }
+      }
     },
     "This is a list of all the currently disabled daemons. Don't change things you didn't changed. The toggled ones are the disabled ones." : {
       "extractionState" : "stale",
@@ -6977,7 +7345,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此為當前所有已停用的進程清單。請勿更動任何您未更動過的部分。開關為開啟者為已被您停用的進程。"
+            "value" : "此進程清單顯示進程的開啟狀態，請勿更動位更動的項目。"
           }
         }
       }
@@ -6995,11 +7363,30 @@
             "state" : "translated",
             "value" : "Đây là danh sách những daemon bị tắt. Vuối sang phải để bật lại."
           }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
         }
       }
     },
     "This is an issue that might incorrectly set permissions when calculating file sizes for your device." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ceci est un problème qui pourrait casser les permissions lors du calcul des tailles de fichier sur votre appareil."
+          },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在計算檔案大小時可能將錯誤地設定權限"
+          }
+        }
+        }
+      }
     },
     "This setting allows you to see experimental values from some app variables." : {
       "localizations" : {
@@ -7072,13 +7459,26 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "通過此設置，您可以查看某些App變數的實驗值。"
+            "value" : "此設定可查看變數的實驗值。"
           }
         }
       }
     },
     "This will personalize app start-up settings. Useful for debugging on Simulator or for betas." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ceci personnalisera les paramètres au démarrage de l'app. Utile pour débogguer sur le simulateur ou pour les betas."
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此設定將依照目前狀態改變應用程式設定。對於在模擬器或測試版上除錯很有幫助。"
+          }
+        }
+      }
     },
     "This will personalize app startup pop-ups. Useful for debugging on Simulator or for betas." : {
       "extractionState" : "stale",
@@ -7234,7 +7634,20 @@
       }
     },
     "To add a path, tap the + button." : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour ajouter un chemin, appuyez sur le bouton +."
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "點擊＋以新增路徑。"
+          }
+        }
+      }
     },
     "Translators" : {
       "localizations" : {
@@ -7801,6 +8214,12 @@
             "state" : "translated",
             "value" : "Nhiều cài đặt khác nhau cho LocSim. Đôi khi, người dùng có thể gặp phải sự cố khi dừng LocSim. Những cài đặt đó sẽ cho phép bạn cố gắng dừng LocSim nhiều lần."
           }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其他 LocSim 設定。裝置在停用 LocSim 後可能有面臨「後遺症」的風險。這些設定可讓裝置嘗試停用 LocSim 數次以解決此問題"
+          }
         }
       }
     },
@@ -7840,6 +8259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Các cài đặt khác nhau cho trình dọn dẹp."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其他清理器設定"
           }
         }
       }
@@ -8354,8 +8779,24 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "您可挑選並自訂社群發布的圖示"
+            "value" : "可挑選並自訂社群發布的圖示"
           }
+      }
+    },
+    "You might lose some unimportant data, such as WiFi passwords and preferences." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous pourriez perdre des données importante, comme par exemple des mots de passes wifi et d'autres preferences de confidentialité."
+          }
+        },
+       	"zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此將清除某些重要的 iOS 設定，例如 Wi-Fi 密碼"
+          }
+        }
       }
     },
     "You might want to quit and go back in the app." : {
