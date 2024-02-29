@@ -140,6 +140,17 @@ struct SettingsView: View {
                             exitGracefully()
                         }, noCancel: true)
                     }
+                    Toggle(isOn: Binding<Bool>(
+                        get: { !appSettings.tmpClean },
+                        set: { appSettings.tmpClean = !$0 }
+                    )) {
+                        Text("Safe Clean Measures (Enable this if on iOS 15!)")
+                    }
+                    .onChange(of: appSettings.tmpClean) { newValue in
+                        UIApplication.shared.confirmAlert(title: "You need to quit the app to apply changes.", body: "You might want to open it back.", onOK: {
+                            exitGracefully()
+                        }, noCancel: true)
+                    }
                     
                     if DebugStuff {
                         HStack {
