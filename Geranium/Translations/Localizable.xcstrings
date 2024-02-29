@@ -4565,6 +4565,16 @@
         }
       }
     },
+    "Issue" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Problème"
+          }
+        }
+      }
+    },
     "It looks like you are using the app on an iPhone SE 2016 (1st gen). You might encounter serious UI issues. Please excuse me in advance." : {
       "localizations" : {
         "es" : {
@@ -5863,6 +5873,16 @@
         }
       }
     },
+    "Press **Reset All Settings**, follow what's on your screen and you are done !" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyez sur **Réinitialiser tout**, suivez les instructions sur votre écran et voilà !"
+          }
+        }
+      }
+    },
     "Purpose" : {
       "localizations" : {
         "es" : {
@@ -6412,6 +6432,27 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "安全清理評估（iOS 15 專用）"
+          }
+        }
+      }
+    },
+    "Safe Clean Measures (Disable this if on iOS 15!)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesures de nettoyage sécurisé"
+          }
+        }
+      }
+    },
+    "Safe Clean Measures (Enable this if on iOS 15!)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesures de nettoyage sécurisé (Activez cela si vous êtes sur iOS 15!)"
           }
         }
       }
@@ -8829,6 +8870,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "此將清除某些重要的 iOS 設定，例如 Wi-Fi 密碼"
+          }
+        }
+      }
+    },
+    "You might lose some unimportant data, such as WiFi passwords and preferences." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous pourriez perdre des données importante, comme par exemple des mots de passes wifi et d'autres preferences de confidentialité."
           }
         }
       }
