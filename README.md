@@ -85,6 +85,7 @@ You can use the icon.sketch file. Please send an icon in 1024x1024.
 - [haxi0](https://github.com/haxi0) for his Welcome Page code, copied the part for the disabling. - Always funny
 ### Translators
 - [CySxL](https://twitter.com/CySxL) - 🇹🇼 Chinese (Traditional) - Here from the beginning, even if on iOS 14, thanks !
+- [Oliver Tzeng](https://github.com/olivertzeng) - 🇹🇼 Chinese (Traditional) - Fixes a lot of weird translation syntax issues, thanks!
 - [Defflix](https://twitter.com/Defflix19) - 🇨🇿/🇸🇰 Czech & Slovak - But also one of my greatest friend in the jailbreak community :)
 - [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (Latin America) - Also bug hunter
 - [LeonardoIz](https://twitter.com/leonardoizzo_) - 🇪🇸 Spanish / 🇮🇹 Italian / Catalan - Casually speak 3 languages
