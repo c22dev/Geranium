@@ -349,7 +349,6 @@ struct SettingsView: View {
                     }
                 }
                 Section (header: Label("Translators", systemImage: "pencil"), footer: Text("Thanks to all those amazing translators !")) {
-                    LinkCell(imageLink: "https://github.com/olivertzeng.png?size=160", url: "https://github.com/olivertzeng", title: "Oliver Tzeng", description: "🇹🇼 Chinese (Traditional)")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/640759347240108061/79be8e2ce1557085a6cbb6e58b8d6182.webp?size=160", url: "https://twitter.com/CySxL", title: "CySxL", description: "🇹🇼 Chinese (Traditional)")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/620318902983065606/fe19b5c660b9e8535e884e0fe6c15dbe.webp?size=160", url: "https://twitter.com/Defflix19", title: "Defflix", description: "🇨🇿/🇸🇰 Czech & Slovak")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/984192641170276442/bab37f9fd7fba0b18d5134eae38b9891.webp?size=160", url: "https://twitter.com/dis667_ilya", title: "dis667", description: "🇷🇺 Russian")
@@ -357,6 +356,7 @@ struct SettingsView: View {
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/711515258732150795/d4beb5d23d46b0387783cf8be59cdb88.webp?size=160", url: "https://twitter.com/LeonardoIzzo_", title: "LeonardoIz", description: "🇪🇸 Spanish / 🇮🇹 Italian / Catalan")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/530721708546588692/e45b6eda6c7127f418d8ec607026bad8.webp?size=160", url: "https://twitter.com/loy64_", title: "Loy64", description: "🇦🇱 Albanian / 🇮🇹 Italian")
                     LinkCell(imageLink: "https://i.ibb.co/M53ycZw/pasmoi.webp", url: "https://cclerc.ch/pasmoi.html", title: "PasMoi", description: "🇫🇷 French")
+                    LinkCell(imageLink: "https://github.com/olivertzeng.png?size=160", url: "https://github.com/olivertzeng", title: "Oliver Tzeng", description: "🇹🇼 Chinese (Traditional)")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/1090613392710062141/187241997651ee575371faa5617d4057.webp?size=160", url: "https://twitter.com/dobabaophuc", title: "Phuc Do", description: "🇻🇳 Vietnamese")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/662843309391216670/4238ed35692fc2ee1df97033b5c76bcc.webp?size=160", url: "https://twitter.com/SAUCECOMPANY_", title: "saucecompany", description: "🇰🇷 Korean")
                     LinkCell(imageLink: "https://cdn.discordapp.com/avatars/766292544765820958/377a1c00e6d6366c10e79d3dfd2f0c8a.webp?size=160", url: "https://twitter.com/speedyfriend67", title: "Speedyfriend67", description: "🇰🇷 Korean")
