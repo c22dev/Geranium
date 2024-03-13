@@ -28,6 +28,12 @@
             "state" : "translated",
             "value" : "위치 권한을 허용하면 앱 지도에 현재 위치를 표시할 수 있습니다."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允許位置服務能讓 Geranium 顯示你的位置"
+          }
         }
       }
     },
@@ -45,6 +51,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "현재 위치를 LocSim 지도에 표시할 수 있도록 합니다."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "這將允許 LocSim 顯示此裝置的位置"
           }
         }
       }
