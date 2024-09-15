@@ -75,7 +75,7 @@ struct HomeView: View {
                 Button(action: {
                     isDebugSheetOn.toggle()
                 }) {
-                    Image(systemName: "hammer")
+                    Image(systemName: "gear")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24)
