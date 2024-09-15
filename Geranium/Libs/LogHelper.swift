@@ -14,7 +14,10 @@ func sendLog(_ logMessage: String, isAnalystic: Bool = false) {
     @AppStorage("isLoggingAllowed") var loggingAllowed: Bool = true
     if loggingAllowed {
         let usrUUID = appSettings.usrUUID
-        let url = URL(string: "https://geraniumserver.cyclic.app")!
+        // I am too lazy to host this on my personal server, considering there might be a large amount of requests
+        // Server source code : https://github.com/c22dev/GeraniumServer/tree/python-rewrite
+        // If you find a way to do something you're not supposed too on this server, pls contact me @c22dev on Discord
+        let url = URL(string: "https://c22server.pythonanywhere.com/")!
         let responseString = ""
         var message = ""
         var request = URLRequest(url: url)
