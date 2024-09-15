@@ -86,7 +86,7 @@ You can use the icon.sketch file. Please send an icon in the 1024x1024 resolutio
 ### Translators
 - [CySxL](https://twitter.com/CySxL) - 🇹🇼 Chinese (Traditional) - Here from the beginning, even if on iOS 14, thanks !
 - [Defflix](https://twitter.com/Defflix19) - 🇨🇿/🇸🇰 Czech & Slovak - But also one of my greatest friend in the jailbreak community :)
-- [iammissa235](https://twitter.com/Missauios) - 🇪🇸 Spanish (Latin America) - Also bug hunter
+- [w0wbox](https://twitter.com/w0wbox) - 🇪🇸 Spanish (Latin America) - Also bug hunter
 - [LeonardoIz](https://twitter.com/leonardoizzo_) - 🇪🇸 Spanish / 🇮🇹 Italian / Catalan - Casually speak 3 languages
 - [Loy64](https://twitter.com/loy64_) - 🇦🇱 Albanian / 🇮🇹 Italian - Answers faster than light
 - [Phuc Do](https://twitter.com/dobabaophuc) - 🇻🇳 Vietnamese - But also an amazing icon designer !
