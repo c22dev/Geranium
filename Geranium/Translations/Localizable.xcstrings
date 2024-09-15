@@ -3369,6 +3369,7 @@
       }
     },
     "Enter your coordinates" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -4493,6 +4494,7 @@
       }
     },
     "Latitude" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -4841,6 +4843,7 @@
       }
     },
     "Longitude" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -5271,6 +5274,7 @@
       }
     },
     "OK" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -6907,6 +6911,7 @@
       }
     },
     "The location will be simulated on device\nPro tip: Press wherever on the map to move there." : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {

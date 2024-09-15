@@ -204,6 +204,34 @@ extension UIApplication {
         present(alert: alertController)
     }
     
+    // bad programming practices but im lazy
+    
+    func DualTextFieldAlert(title: String, message: String, textFieldPlaceHolder: String, secondTextFieldPlaceHolder: String, completion: @escaping (String?, String?) -> Void) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = textFieldPlaceHolder
+            textField.keyboardType = .decimalPad
+        }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = secondTextFieldPlaceHolder
+            textField.keyboardType = .decimalPad
+        }
+        
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            let latText = alertController.textFields?[0].text
+            let longText = alertController.textFields?[1].text
+            completion(latText, longText)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+        
+        presentDual(alertController: alertController)
+    }
+    
     func change(title: String = "Error", body: String) {
         DispatchQueue.main.async {
             currentUIAlertController?.title = title
@@ -219,6 +247,15 @@ extension UIApplication {
             
             topController.present(alert, animated: true)
             // topController should now be your topmost view controller
+        }
+    }
+    
+    func presentDual(alertController: UIAlertController) {
+        if var topController = self.windows.first?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            topController.present(alertController, animated: true)
         }
     }
     
