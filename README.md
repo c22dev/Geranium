@@ -69,14 +69,14 @@ Requirements : A Mac having Xcode installed (it can also be a Hackintosh).
 If you have any issue with building the app, contact me on Discord, or use the commit labeled to latest release.
 
 ## Contributing
-If you are contributing for the app itself, those bellow instructions doesn't apply to you.
+If you are contributing for the app itself, the instructions bellow doesn't apply to you.
 ### Misc
-Feel free to open a Pull Request on this Github, but please note I won't merge any typo change (will change it by myself).
+Feel free to open a Pull Request on this Github, but please note I won't merge any typo change (I will change it by myself).
 ### Translations
 If you want to submit a new translation, contact me on Discord.
-If it's already existing feel free to edit it.
+If it already exists, feel free to edit it !
 ### Icon
-You can use the icon.sketch file. Please send an icon in 1024x1024.
+You can use the icon.sketch file. Please send an icon in the 1024x1024 resolution, and don't round the borders.
 
 ## Credits
 ### Code-wise
