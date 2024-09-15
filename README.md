@@ -62,21 +62,21 @@ Requirements : A Mac having Xcode installed (it can also be a Hackintosh).
 1. Clone this repository (make sure you don't download it as zip but clone it!):
    ```git clone https://github.com/c22dev/Geranium/```
 2. [Install Theos and it's requirements](https://theos.dev/docs/installation-macos)
-3. Make sure you have [Homebrew](https://brew.sh) installed.
-4. Run ```./ipabuild.sh```
-5. Done ! Your `tipa` file will be located in `build` directory.
+4. Ensure you have the [iPhoneOS14.5.sdk SDK](https://github.com/theos/sdks/tree/master/iPhoneOS14.5.sdk) installed
+5. Run ```./ipabuild.sh```
+6. Done ! Your `tipa` file will be located in `build` directory.
 
 If you have any issue with building the app, contact me on Discord, or use the commit labeled to latest release.
 
 ## Contributing
-If you are contributing for the app itself, those bellow instructions don't apply to you.
+If you are contributing for the app itself, the instructions bellow doesn't apply to you.
 ### Misc
-Feel free to open a Pull Request on this Github, but please note I won't merge any typo change (will change it by myself).
+Feel free to open a Pull Request on this Github, but please note I won't merge any typo change (I will change it by myself).
 ### Translations
 If you want to submit a new translation, contact me on Discord.
-If it's already existing feel free to edit it.
+If it already exists, feel free to edit it !
 ### Icon
-You can use the icon.sketch file. Please send an icon in 1024x1024.
+You can use the icon.sketch file. Please send an icon in the 1024x1024 resolution, and don't round the borders.
 
 ## Credits
 ### Code-wise
