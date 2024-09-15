@@ -61,14 +61,16 @@ struct LocSimView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    UIApplication.shared.DualTextFieldAlert(
+                    UIApplication.shared.TextFieldAlert(
                         title: "Enter Coordinates",
                         message: "The location will be simulated on device\nPro tip: Press wherever on the map to move there.",
                         textFieldPlaceHolder: "Latitude",
                         secondTextFieldPlaceHolder: "Longitude"
                     ) { latText, longText in
-                        if let lat = Double(latText ?? ""), let long = Double(longText ?? "") {
-                            LocSimManager.startLocSim(location: .init(latitude: lat, longitude: long))
+                        if let latDouble = Double(latText ?? ""), let longDouble = Double(longText ?? "") {
+                            lat = latDouble
+                            long = longDouble
+                            LocSimManager.startLocSim(location: .init(latitude: latDouble, longitude: longDouble))
                         } else {
                             UIApplication.shared.alert(body: "Those are invalid coordinates mate !")
                         }

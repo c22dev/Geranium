@@ -110,7 +110,7 @@ struct CleanerView: View {
                 .onAppear {
                     if ProcessInfo().operatingSystemVersion.majorVersion == 15, appSettings.firstCleanerTime {
                         appSettings.firstCleanerTime = false
-                        UIApplication.shared.yesoubiennon(title: "⚠️ You are on iOS 15 ⚠️", body: "Cleaning on iOS 15 might break notifications, and some app permissions. Do you want to enable measures that will keep your phone safe ? You might not get everything completly cleaned up. Pressing yes on iOS 15 will keep your device safe.", onOK: {
+                        UIApplication.shared.confirmAlert(title: "⚠️ You are on iOS 15 ⚠️", body: "Cleaning on iOS 15 might break notifications, and some app permissions. Do you want to enable measures that will keep your phone safe ? You might not get everything completly cleaned up. Pressing yes on iOS 15 will keep your device safe.", onOK: {
                             appSettings.tmpClean = false
                         }, noCancel: false, onCancel: {
                             appSettings.tmpClean = true

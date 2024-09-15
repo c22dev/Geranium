@@ -44,14 +44,16 @@ struct CustomPaths: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        UIApplication.shared.TextFieldAlert(title: "Enter a path you want to add to your list :", textFieldPlaceHolder: "/var/mobile/DCIM/") { chemin in
-                            if chemin == ""{
-                                UIApplication.shared.alert(title:"Empty text.", body: "Please enter a path.")
-                            }
-                            else {
-                                paths.append(chemin ?? "")
+                        UIApplication.shared.TextFieldAlert(
+                            title: "Enter a path you want to add to your list:",
+                            textFieldPlaceHolder: "/var/mobile/DCIM/"
+                        ) { chemin, _ in
+                            if let chemin = chemin, !chemin.isEmpty {
+                                paths.append(chemin)
                                 savePaths()
                                 isAddingPath.toggle()
+                            } else {
+                                UIApplication.shared.alert(title: "Empty input !!", body: "Please enter a path.")
                             }
                         }
                     }) {

@@ -62,15 +62,20 @@ struct BookMarkSlider: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         if lat != 0.00 && long != 0.00 {
-                            UIApplication.shared.TextFieldAlert(title: "Enter bookmark name", textFieldPlaceHolder: "Example...", completion: { enteredText in
-                                result = BookMarkSave(lat: lat, long: long, name: enteredText ?? "Unknown")
+                            UIApplication.shared.TextFieldAlert(
+                                title: "Enter bookmark name",
+                                textFieldPlaceHolder: "Example..."
+                            ) { enteredText, _ in
+                                let bookmarkName = enteredText ?? "Unknown"
+                                result = BookMarkSave(lat: lat, long: long, name: bookmarkName)
                                 bookmarks = BookMarkRetrieve().map {
                                     Bookmark(name: $0["name"] as! String, lat: $0["lat"] as! Double, long: $0["long"] as! Double)
                                 }
-                            })
+                            }
+
                         } else {
                             UIApplication.shared.confirmAlert(title: "Your position is set to 0", body: "Are you sure you want to continue? This might be a mistake; try picking somewhere on the map", onOK: {
-                                UIApplication.shared.TextFieldAlert(title: "Enter bookmark name", textFieldPlaceHolder: "Example...", completion: { enteredText in
+                                UIApplication.shared.TextFieldAlert(title: "Enter bookmark name", textFieldPlaceHolder: "Example...", completion: { enteredText, _ in
                                     result = BookMarkSave(lat: lat, long: long, name: enteredText ?? "Unknown")
                                     bookmarks = BookMarkRetrieve().map {
                                         Bookmark(name: $0["name"] as! String, lat: $0["lat"] as! Double, long: $0["long"] as! Double)

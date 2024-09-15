@@ -149,87 +149,40 @@ extension UIApplication {
                     onCancel?()
                 }))
             }
-            if !yes {
-                currentUIAlertController?.addAction(.init(title: "OK", style: noCancel ? .cancel : .default, handler: { _ in
-                    onOK()
-                }))
-            }
-            if yes {
-                currentUIAlertController?.addAction(.init(title: "Yes", style: noCancel ? .cancel : .default, handler: { _ in
-                    onOK()
-                }))
-            }
+            
+            let okActionTitle = yes ? "Yes" : "OK"
+            currentUIAlertController?.addAction(.init(title: okActionTitle, style: noCancel ? .cancel : .default, handler: { _ in
+                onOK()
+            }))
+            
             self.present(alert: currentUIAlertController!)
         }
     }
     
-    func yesoubiennon(title: String = "Error", body: String, onOK: @escaping () -> (), noCancel: Bool, onCancel: (() -> ())? = nil, yes: Bool) {
-        DispatchQueue.main.async {
-            currentUIAlertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
-            if !noCancel {
-                currentUIAlertController?.addAction(.init(title: "No", style: .cancel, handler: { _ in
-                    onCancel?()
-                }))
-            }
-            if !yes {
-                currentUIAlertController?.addAction(.init(title: "OK", style: noCancel ? .cancel : .default, handler: { _ in
-                    onOK()
-                }))
-            }
-            if yes {
-                currentUIAlertController?.addAction(.init(title: "Yes", style: noCancel ? .cancel : .default, handler: { _ in
-                    onOK()
-                }))
-            }
-            self.present(alert: currentUIAlertController!)
-        }
-    }
-    
-    
-    func TextFieldAlert(title: String, textFieldPlaceHolder: String, completion: @escaping (String?) -> Void) {
-        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-        alertController.addTextField { (textField) in
-            textField.placeholder = textFieldPlaceHolder
-        }
-        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-            if let text = alertController.textFields?.first?.text {
-                completion(text)
-            } else {
-                completion(nil)
-            }
-        }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertController.addAction(okAction)
-        alertController.addAction(cancelAction)
-        present(alert: alertController)
-    }
-    
-    // bad programming practices but im lazy
-    
-    func DualTextFieldAlert(title: String, message: String, textFieldPlaceHolder: String, secondTextFieldPlaceHolder: String, completion: @escaping (String?, String?) -> Void) {
+    func TextFieldAlert(title: String, message: String? = nil, textFieldPlaceHolder: String, secondTextFieldPlaceHolder: String? = nil, completion: @escaping (String?, String?) -> Void) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
             textField.placeholder = textFieldPlaceHolder
-            textField.keyboardType = .decimalPad
         }
         
-        alertController.addTextField { (textField) in
-            textField.placeholder = secondTextFieldPlaceHolder
-            textField.keyboardType = .decimalPad
+        if let secondPlaceholder = secondTextFieldPlaceHolder {
+            alertController.addTextField { (textField) in
+                textField.placeholder = secondPlaceholder
+            }
         }
         
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            let latText = alertController.textFields?[0].text
-            let longText = alertController.textFields?[1].text
-            completion(latText, longText)
+            let firstText = alertController.textFields?.first?.text
+            let secondText = secondTextFieldPlaceHolder != nil ? alertController.textFields?[1].text : nil
+            completion(firstText, secondText)
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
         
-        presentDual(alertController: alertController)
+        present(alert: alertController)
     }
     
     func change(title: String = "Error", body: String) {
@@ -240,22 +193,11 @@ extension UIApplication {
     }
     
     func present(alert: UIAlertController) {
-        if var topController = self.windows[0].rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-            
-            topController.present(alert, animated: true)
-            // topController should now be your topmost view controller
-        }
-    }
-    
-    func presentDual(alertController: UIAlertController) {
         if var topController = self.windows.first?.rootViewController {
             while let presentedViewController = topController.presentedViewController {
                 topController = presentedViewController
             }
-            topController.present(alertController, animated: true)
+            topController.present(alert, animated: true)
         }
     }
     
