@@ -380,7 +380,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "3. 激活 \"URL SCHEME\"。"
+            "value" : "3. 启用 "URL-Scheme"。"
           }
         },
         "zh-Hant" : {
@@ -438,6 +438,12 @@
             "state" : "translated",
             "value" : "Danh sách các daemon và việc chúng làm"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "守护进程列表及其作用"
+          }
         }
       }
     },
@@ -454,6 +460,12 @@
             "state" : "translated",
             "value" : "Danh sách các daemon bạn có thể tắt"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可禁用的守护进程列表"
+          }
         }
       }
     },
@@ -464,6 +476,12 @@
             "state" : "translated",
             "value" : "Ajouter un nouveau chemin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加新路径"
+          }
         }
       }
     },
@@ -473,6 +491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aide supplémentaire"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更多帮助"
           }
         }
       }
@@ -542,7 +566,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按字母顺序的"
+            "value" : "按字母顺序排列"
           }
         },
         "zh-Hant" : {
@@ -618,7 +642,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RootHelper出现错误。"
+            "value" : "RootHelper发生错误。"
           }
         },
         "zh-Hant" : {
@@ -684,6 +708,12 @@
             "state" : "translated",
             "value" : "Biểu tượng ứng dụng"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用图标"
+          }
         }
       }
     },
@@ -699,6 +729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngôn ngữ ứng dụng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用语言"
           }
         }
       }
@@ -757,6 +793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bộ nhớ đệm còn sót lại của ứng dụng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用剩余缓存"
           }
         }
       }
@@ -1096,7 +1138,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "通过在iOS内部添加一些规则，该软件可以防止守护进程在您启动手机时启动。该应用程序列出了每个正在运行的守护进程，您可以向左滑动以删除其中一个。"
+            "value" : "通过在 iOS 内部添加一些规则，该软件可以防止守护进程在设备启动时运行。应用列出了所有正在运行的守护进程，您可以向左滑动以移除其中一个守护进程。"
           }
         },
         "zh-Hant" : {
@@ -1278,6 +1320,12 @@
             "state" : "translated",
             "value" : "Tạm biệt ScreenTime !"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拜拜ScreenTime！"
+          }
         }
       }
     },
@@ -1394,6 +1442,12 @@
             "state" : "translated",
             "value" : "ByeTime cho phép bạn tắt hoàn toàn Screen Time, iCloud hay không."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime允许您完全禁用屏幕使用时间（Screen Time），无论是否使用iCloud。"
+          }
         }
       }
     },
@@ -1451,6 +1505,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cài đặt ByeTime"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ByeTime设置"
           }
         }
       }
@@ -1520,7 +1580,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "旁路应用程序更新弹出窗口"
+            "value" : "禁用应用更新弹窗"
           }
         },
         "zh-Hant" : {
@@ -1596,7 +1656,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "避开 TrollStore 弹出窗口"
+            "value" : "禁用TrollStore弹窗"
           }
         },
         "zh-Hant" : {
@@ -1614,6 +1674,12 @@
             "state" : "translated",
             "value" : "Calculer la taille du nettoyage"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计算清理大小"
+          }
         }
       }
     },
@@ -1624,6 +1690,12 @@
             "state" : "translated",
             "value" : "Calculer la taille des fichiers"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计算文件大小"
+          }
         }
       }
     },
@@ -1633,6 +1705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuler"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
           }
         }
       }
@@ -1702,7 +1780,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "干净！"
+            "value" : "清理！"
           }
         },
         "zh-Hant" : {
@@ -1778,7 +1856,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "清洁工"
+            "value" : "清理"
           }
         },
         "zh-Hant" : {
@@ -1835,6 +1913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cài đặt sạch hơn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理程序设定"
           }
         }
       }
@@ -1914,7 +1998,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "学分"
+            "value" : "鸣谢"
           }
         },
         "zh-Hant" : {
@@ -1931,6 +2015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chemins Personnalisés"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义路径"
           }
         }
       }
@@ -2001,6 +2091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "進程"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "守护进程"
           }
         }
       }
@@ -2146,7 +2242,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "调试东西"
+            "value" : "调试工具"
           }
         },
         "zh-Hant" : {
@@ -2212,6 +2308,12 @@
             "state" : "translated",
             "value" : "Mặc định"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认"
+          }
         }
       }
     },
@@ -2221,6 +2323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Onglet par Défaut"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认标签页"
           }
         }
       }
@@ -2237,6 +2345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xoá danh sách những daemon bị tắt, và bắt đầu từ đầu. iOS sẽ tạo lại tệp từ đầu sau khởi động lại."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除当前禁用的守护进程列表，然后重新启动。iOS将在下次重启时从头开始生成文件"
           }
         }
       }
@@ -2306,7 +2420,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "删除... %@"
+            "value" : "正在删除... %@"
           }
         },
         "zh-Hant" : {
@@ -2516,6 +2630,12 @@
             "state" : "translated",
             "value" : "Vô hiệu hóa Usage Tracking Agent"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "禁用Screen Time Agent"
+          }
         }
       }
     },
@@ -2584,7 +2704,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "禁用更新弹出窗口"
+            "value" : "禁用更新弹窗"
           }
         },
         "zh-Hant" : {
@@ -2649,6 +2769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tắt trình theo dõi mức sử dụng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "禁用Usage Tracking Agent"
           }
         }
       }
@@ -2718,7 +2844,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "禁用守护程序管理器"
+            "value" : "管理已禁用的守护进程"
           }
         },
         "zh-Hant" : {
@@ -2865,7 +2991,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "不建议禁用系统守护系统。您可以引导您的设备。谨慎进行。对于您设备上的任何问题，我概不负责。"
+            "value" : "不建议禁用系统守护程序。此举可能会使设备进入开机引导循环。谨慎操作。我对您的设备出现的任何问题概不负责。"
           }
         },
         "zh-Hant" : {
@@ -2939,6 +3065,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "取消"
@@ -3109,7 +3241,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启动"
+            "value" : "启用"
           }
         },
         "zh-Hant" : {
@@ -3375,6 +3507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entrez les coordonnées"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "守护进程列表及其作用"
           }
         }
       }
@@ -3684,7 +3822,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "一般缓存"
+            "value" : "常规缓存"
           }
         },
         "zh-Hant" : {
@@ -3756,6 +3894,12 @@
             "state" : "translated",
             "value" : "Geranium"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geranium"
+          }
         }
       }
     },
@@ -3771,6 +3915,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tại đây bác có thể chọn ngôn ngữ cho ứng dụng. Ứng dụng sẽ tự thoát để áp dụng thay đổi đó ; bạn có thể mở nó lại tuỳ thích."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您可以在此处选择应用的语言。应用将自动退出以应用更改。"
           }
         }
       }
@@ -3916,7 +4066,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "主页"
+            "value" : "首页"
           }
         },
         "zh-Hant" : {
@@ -4108,7 +4258,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果您想启用自动更新，您需要在TrollStore中打开URLScheme方案。"
+            "value" : "若您想启用自动更新，需要在TrollStore中启用URL-Scheme。"
           }
         },
         "zh-Hant" : {
@@ -4184,7 +4334,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果您想恢复任何选择，您应该进入管理器（应用图标旁边的列表图标），在那里您可以切换禁用的守护程序。"
+            "value" : "若您想撤销改动，则需要进入管理器（位于对号按钮左侧的列表按钮），并在其中切换禁用的守护进程。"
           }
         },
         "zh-Hant" : {
@@ -4260,7 +4410,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "用户是否在iPadOS 16上运行iPad：否"
+            "value" : "用户是否正在使用iPadOS 16：否"
           }
         },
         "zh-Hant" : {
@@ -4336,7 +4486,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "用户是否在iPadOS 16上运行iPad：是的"
+            "value" : "用户是否正在使用iPadOS 16：是"
           }
         },
         "zh-Hant" : {
@@ -4422,7 +4572,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "看起来您正在iPhone SE 2016（第1代）上使用该应用程序。您可能会遇到严重的用户界面问题。请提前原谅我。"
+            "value" : "看起来您正在iPhone SE 2016（第1代）上使用该应用。可能会遇到严重的UI问题。敬请谅解。"
           }
         },
         "zh-Hant" : {
@@ -4463,6 +4613,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giữ lựa chọn sau khi làm sạch"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理后保留原设定"
           }
         }
       }
@@ -4687,6 +4843,12 @@
             "state" : "translated",
             "value" : "Cài đặt LocSim"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim设置"
+          }
         }
       }
     },
@@ -4831,7 +4993,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "日志记录设置"
+            "value" : "日志收集设置"
           }
         },
         "zh-Hant" : {
@@ -4850,6 +5012,12 @@
             "state" : "translated",
             "value" : "Longitude"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "经度"
+          }
         }
       }
     },
@@ -4859,6 +5027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous avez perdu vos notifications suite à l'utilisation du Nettoyeur ? Pas de panique, voici la solution !"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在使用清理程序后丢失了通知？别慌，这里有解决方案！"
           }
         }
       }
@@ -5052,6 +5226,12 @@
             "state" : "translated",
             "value" : "Số lần thử tối thiểu:"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最少尝试次数"
+          }
         }
       }
     },
@@ -5107,6 +5287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm thông tin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更多信息"
           }
         }
       }
@@ -5176,7 +5362,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "没有保存书签。"
+            "value" : "没有保存的书签。"
           }
         },
         "zh-Hant" : {
@@ -5262,7 +5448,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "正式通知"
+            "value" : "注意"
           }
         },
         "zh-Hant" : {
@@ -5290,6 +5476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvrir les Paramètres"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开设置"
           }
         }
       }
@@ -5508,6 +5700,12 @@
             "state" : "translated",
             "value" : "請複製您的UUID並傳送給開發者其中之一"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请复制你的UUID并发送给开发者"
+          }
         }
       }
     },
@@ -5594,6 +5792,12 @@
             "state" : "translated",
             "value" : "Appuyez sur **Réinitialiser tout**, suivez les instructions sur votre écran et voilà !"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击**重置所有设置**，然后按照屏幕上的指示进行操作，就大功告成了！"
+          }
         }
       }
     },
@@ -5662,7 +5866,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "目标"
+            "value" : "目的"
           }
         },
         "zh-Hant" : {
@@ -5722,6 +5926,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Khởi động lại"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重启"
           }
         }
       }
@@ -5810,6 +6020,12 @@
             "state" : "translated",
             "value" : "Réinitialiser"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置"
+          }
         }
       }
     },
@@ -5879,6 +6095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "重新載入主畫面"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注销"
           }
         }
       }
@@ -6119,6 +6341,12 @@
             "state" : "translated",
             "value" : "Mesures de nettoyage sécurisé"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全清理措施（在iOS15上禁用！）"
+          }
         }
       }
     },
@@ -6128,6 +6356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mesures de nettoyage sécurisé (Activez cela si vous êtes sur iOS 15!)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全清理措施（在iOS15上启用！）"
           }
         }
       }
@@ -6197,7 +6431,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "保存文件"
+            "value" : "保存"
           }
         },
         "zh-Hant" : {
@@ -6321,6 +6555,12 @@
             "state" : "translated",
             "value" : "Screen Time Agent chịu trách nhiệm quản lý tất cả các tùy chọn Thời gian sử dụng. Tốt nhất chỉ nên tắt quá trình này vào ban đêm để tắt một phần Thời gian sử dụng."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screen Time Agent管理屏幕使用时间的所有设置。禁用这个守护进程只会部分禁用屏幕使用时间"
+          }
         }
       }
     },
@@ -6437,6 +6677,12 @@
             "state" : "translated",
             "value" : "Tìm một daemon..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "寻找守护进程..."
+          }
         }
       }
     },
@@ -6452,6 +6698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chuyển ngôn ngữ về mặc định"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将语言设置为默认"
           }
         }
       }
@@ -6597,7 +6849,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "安装"
+            "value" : "配置"
           }
         },
         "zh-Hant" : {
@@ -6773,6 +7025,12 @@
             "state" : "translated",
             "value" : "Supervise"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用监管模式"
+          }
         }
       }
     },
@@ -6830,6 +7088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Superviser"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "监管"
           }
         }
       }
@@ -6899,7 +7163,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "感谢我们所有的贡献者！"
+            "value" : "感谢所有出色的译者！"
           }
         },
         "zh-Hant" : {
@@ -6917,6 +7181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La localisation sera simulée sur votre appareil. Conseil : Appuyez quand vous où vous voulez sur la carte pour vous y déplacer."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设备将模拟你的位置。提示：长按任意地图位置以移动到那里。"
           }
         }
       }
@@ -6937,6 +7207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ensuite, vous devez appuyer sur le bouton **Réinitialiser** (PAS Effacer tout le contenu et les paramètres, mais l'autre)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接下来，您需要点击**重置**按钮（不是抹掉所有内容和设置）"
           }
         }
       }
@@ -7007,7 +7283,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这是当前禁用的所有守护进程的列表。不要改变那些你没有改变的事情。被切换的是被禁用的。"
+            "value" : "这是当前所有被禁用的守护进程的列表。请勿更改您原本没有更改的部分。那些是在系统中被禁用的进程。"
           }
         },
         "zh-Hant" : {
@@ -7031,6 +7307,12 @@
             "state" : "translated",
             "value" : "Đây là danh sách những daemon bị tắt. Vuối sang phải để bật lại."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此列表包含当前已禁用的所有守护进程。右滑即可重新启用。"
+          }
         }
       }
     },
@@ -7040,6 +7322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceci est un problème qui pourrait casser les permissions lors du calcul des tailles de fichier sur votre appareil."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这是一个在计算设备文件大小时可能会错误设置权限的问题。"
           }
         }
       }
@@ -7109,7 +7397,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此设置允许您从某些应用程序变量中查看实验值。"
+            "value" : "此设置允许您查看来自某些应用变量的实验值。"
           }
         },
         "zh-Hant" : {
@@ -7196,7 +7484,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这将个性化应用程序启动弹出窗口。适用于模拟器或测试版的调试。"
+            "value" : "这将个性化应用启动弹窗。对于在模拟器或测试版上的的调试很有帮助。"
           }
         },
         "zh-Hant" : {
@@ -7272,7 +7560,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "要添加书签，请选择一个自定义位置，然后点击+按钮。"
+            "value" : "要添加书签，请选择要添加的位置，然后点击+按钮。"
           }
         },
         "zh-Hant" : {
@@ -7289,6 +7577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pour ajouter un chemin, appuyez sur le bouton +."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要添加路径，请点击 + 按钮。"
           }
         }
       }
@@ -7358,7 +7652,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "翻译人员"
+            "value" : "翻译者"
           }
         },
         "zh-Hant" : {
@@ -7434,7 +7728,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "再试一次"
+            "value" : "重试"
           }
         },
         "zh-Hant" : {
@@ -7481,6 +7775,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hãy thử dừng LocSim nhiều lần"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尝试多次停止LocSim"
           }
         }
       }
@@ -7550,7 +7850,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "理解"
+            "value" : "了解"
           }
         },
         "zh-Hant" : {
@@ -7615,6 +7915,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unsupervise"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停用监管模式"
           }
         }
       }
@@ -7685,6 +7991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "升級警示"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新警告"
           }
         }
       }
@@ -7802,6 +8114,12 @@
             "state" : "translated",
             "value" : "Trình theo dõi sử dụng giám sát và báo cáo ngân sách sử dụng do Sức khỏe, Kiểm soát của phụ huynh (bằng Thời gian sử dụng) hoặc Quản lý thiết bị đặt ra. Việc tắt tính năng này cũng có thể tắt một số tính năng khác trên iPhone của bạn."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usage Tracking Agent追踪并报告来自健康、家长控制（=屏幕使用时间）或设备管理设置的使用情况。禁用它也可能会影响iPhone上的其他一些功能"
+          }
         }
       }
     },
@@ -7858,6 +8176,12 @@
             "state" : "translated",
             "value" : "Nhiều cài đặt khác nhau cho LocSim. Đôi khi, người dùng có thể gặp phải sự cố khi dừng LocSim. Những cài đặt đó sẽ cho phép bạn cố gắng dừng LocSim nhiều lần."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim的各种设置。有时用户可能在停止LocSim时遇到问题。这些设置允许您尝试连续多次停止LocSim。"
+          }
         }
       }
     },
@@ -7897,6 +8221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Các cài đặt khác nhau cho trình dọn dẹp."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清理程序的各种设置"
           }
         }
       }
@@ -8042,7 +8372,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "我们收集一些上传到服务器的日志，用于修复错误和处理崩溃日志。日志从不包含您的任何个人信息，只包含您的设备类型和崩溃日志本身。我们还收集测量信息，以查看应用程序中最常用的内容。您可以选择是否要阻止任何数据发送到我们的服务器。"
+            "value" : "我们收集一些上传到服务器的日志，用于修复错误和处理崩溃日志。日志绝不包含您的任何个人信息，只包含您的设备类型和崩溃日志本身。我们还收集测量信息，以查看应用程序中最常用的内容。您可以选择是否要阻止任何数据发送到我们的服务器。"
           }
         },
         "zh-Hant" : {
@@ -8120,6 +8450,12 @@
             "state" : "translated",
             "value" : "歡迎使用 Geranium(天竺葵) Beta 計畫"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "欢迎来到Geranium Beta测试项目"
+          }
         }
       }
     },
@@ -8188,7 +8524,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "欢迎来到Geranium，这是一个TrollStore的工具箱，允许您禁用一些守护进程，模拟您的位置，清理手机的存储空间等。在您使用该应用程序之前，我们需要配置一些东西。这只需要一分钟。以后可以随时更改。"
+            "value" : "欢迎使用 Geranium，这是一个 TrollStore 的工具箱，允许您禁用一些守护进程、模拟您的位置、清理手机存储等。在您使用该应用之前，我们需要配置一些内容。这只需要一分钟。您稍后仍然可以更改这些设置"
           }
         },
         "zh-Hant" : {
@@ -8340,7 +8676,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "当发布新的更新时，您将在应用程序启动时收到一个弹出窗口，询问您是否要更新。你可以防止这种情况发生"
+            "value" : "当更新发布时，您将在应用启动时收到一个询问您是否要更新的弹窗。您可以选择将其停用"
           }
         },
         "zh-Hant" : {
@@ -8406,6 +8742,12 @@
             "state" : "translated",
             "value" : "Bạn có thể chọn và xác định biểu tượng tùy chỉnh do cộng đồng đề xuất."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你可以选择和设置社区提出的自定义图标。"
+          }
         }
       }
     },
@@ -8415,6 +8757,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous pourriez perdre des données importante, comme par exemple des mots de passes wifi et d'autres preferences de confidentialité."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您可能会丢失一些不重要的数据，例如Wi-Fi密码和其他隐私偏好设置”。"
           }
         }
       }
@@ -8485,6 +8833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請關閉後再開啟此App一次。"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请尝试关闭应用再重新打开"
           }
         }
       }
