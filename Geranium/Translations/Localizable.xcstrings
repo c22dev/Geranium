@@ -307,6 +307,12 @@
             "value" : "3"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -417,6 +423,12 @@
             "value" : "50.0 MB"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50.0 MB"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -431,6 +443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une liste de daemons et leur utilité"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En lista över daemons och vad de gör"
           }
         },
         "vi" : {
@@ -449,6 +467,12 @@
             "value" : "Une liste des daemons que vous pouvez désactiver"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En lista över daemons som du kan inaktivera"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -464,6 +488,12 @@
             "state" : "translated",
             "value" : "Ajouter un nouveau chemin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till en ny sökväg"
+          }
         }
       }
     },
@@ -473,6 +503,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aide supplémentaire"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extra hjälp"
           }
         }
       }
@@ -693,6 +729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Langue de l'app"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App språk"
           }
         },
         "vi" : {
@@ -1614,6 +1656,12 @@
             "state" : "translated",
             "value" : "Calculer la taille du nettoyage"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beräkna rengöringsstorlek"
+          }
         }
       }
     },
@@ -1624,6 +1672,12 @@
             "state" : "translated",
             "value" : "Calculer la taille des fichiers"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beräkna filstorlek"
+          }
         }
       }
     },
@@ -1633,6 +1687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuler"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
           }
         }
       }
@@ -1796,6 +1856,12 @@
             "state" : "translated",
             "value" : "Tailles de fichiers du nettoyeur"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renare filstorlekar"
+          }
         }
       }
     },
@@ -1845,6 +1911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Effacer"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "klar"
           }
         }
       }
@@ -1931,6 +2003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chemins Personnalisés"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anpassade stigar"
           }
         }
       }
@@ -2222,6 +2300,12 @@
             "state" : "translated",
             "value" : "Onglet par Défaut"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardflik"
+          }
         }
       }
     },
@@ -2231,6 +2315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer les daemons désactivés actuellement, et recommencez. iOS générera le fichier depuis 0 lors du prochain redémarrage."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bort den aktuella inaktiverade demonlistan och starta om. iOS kommer att generera filen från början igen vid nästa omstart."
           }
         },
         "vi" : {
@@ -2399,6 +2489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désactiver Familycircled"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inaktivera Familycircled"
           }
         }
       }
@@ -2960,6 +3056,12 @@
             "value" : "Hotovo"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klar"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3279,6 +3381,12 @@
             "state" : "translated",
             "value" : "Activer ScreenTime"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivera ScreenTime"
+          }
         }
       }
     },
@@ -3365,6 +3473,12 @@
             "state" : "translated",
             "value" : "Entrez le nom du chemin"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ange sökvägsnamn"
+          }
         }
       }
     },
@@ -3375,6 +3489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entrez les coordonnées"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ange dina koordinater"
           }
         }
       }
@@ -3538,6 +3658,12 @@
             "state" : "translated",
             "value" : "Familycircled"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familjecirklad"
+          }
         }
       }
     },
@@ -3548,6 +3674,12 @@
             "state" : "translated",
             "value" : "Familycircled est en charge du système Famille dans iCloud. Ceci inclus les abonnements partagés avec Famille, donc si vous désactivez cela vous ne serez peut-être plus en mesure des les utiliser. En revanche, ceci peut permettre de désactiver temps d'écran encore plus."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Familycircled är ansvarig för iCloud Family-systemet. Detta inkluderar familjeabonnemang, så om du inaktiverar detta kommer du inte att kunna använda dem. Detta kan dock hjälpa till att förhindra att ScreenTime fungerar."
+          }
         }
       }
     },
@@ -3557,6 +3689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Premièrement, vous devez ouvrir Réglages. L'application peut le faire pour vous si nécessaire. Ensuite, rendez vous dans **Général**, descendez tout en bas, et cliquez sur **Réinitialiser**."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Först måste du öppna Inställningar. Appen kan göra det åt dig om du vill. Gå sedan in i **Allmänt**, bläddra ner och gå in i **Återställ**."
           }
         }
       }
@@ -3765,6 +3903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ici vous pouvez choisir la langue de l'application. Cette dernière se fermera automatiquement pour appliquer les modifications. Vous pourrez la relancer ensuite."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Här kan du välja vilket språk du vill att appen ska vara på. Appen kommer automatiskt att avslutas för att tillämpa ändringarna; starta den gärna igen."
           }
         },
         "vi" : {
@@ -4354,6 +4498,12 @@
             "state" : "translated",
             "value" : "Problème"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utgåva"
+          }
         }
       }
     },
@@ -4459,6 +4609,12 @@
             "value" : "Ponechať výber po vyčistení"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behåll urvalet efter rengöring"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4473,6 +4629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Langue"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Språk"
           }
         },
         "vi" : {
@@ -4490,6 +4652,12 @@
             "state" : "translated",
             "value" : "Langue définie à : %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Språk inställt på : %@"
+          }
         }
       }
     },
@@ -4500,6 +4668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Latitude"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latitud"
           }
         }
       }
@@ -4682,6 +4856,12 @@
             "value" : "Nastavenia LocSim"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LocSim Inställningar"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4850,6 +5030,12 @@
             "state" : "translated",
             "value" : "Longitude"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Längd"
+          }
         }
       }
     },
@@ -4859,6 +5045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous avez perdu vos notifications suite à l'utilisation du Nettoyeur ? Pas de panique, voici la solution !"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förlorade dina meddelanden på grund av rengöringsmedlet ? Få inte panik, här är lösningen!"
           }
         }
       }
@@ -5103,6 +5295,12 @@
             "value" : "Plus d'information"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mer information"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5194,6 +5392,12 @@
             "state" : "translated",
             "value" : "Aucun chemin enregistré."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga sökvägar sparade."
+          }
         }
       }
     },
@@ -5281,6 +5485,12 @@
             "state" : "translated",
             "value" : "OK"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
         }
       }
     },
@@ -5290,6 +5500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ouvrir les Paramètres"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppna inställningar"
           }
         }
       }
@@ -5594,6 +5810,12 @@
             "state" : "translated",
             "value" : "Appuyez sur **Réinitialiser tout**, suivez les instructions sur votre écran et voilà !"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck på **Återställ alla inställningar**, följ anvisningarna på skärmen och du är klar!"
+          }
         }
       }
     },
@@ -5809,6 +6031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réinitialiser"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställning"
           }
         }
       }
@@ -6119,6 +6347,12 @@
             "state" : "translated",
             "value" : "Mesures de nettoyage sécurisé"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säkra rena åtgärder (avaktivera detta om du använder iOS 15!)"
+          }
         }
       }
     },
@@ -6128,6 +6362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mesures de nettoyage sécurisé (Activez cela si vous êtes sur iOS 15!)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safe Clean Measures (Aktivera detta om du använder iOS 15!)"
           }
         }
       }
@@ -6338,6 +6578,12 @@
             "value" : "Nastavenia"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skruvade upp?"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6432,6 +6678,12 @@
             "value" : "Vyhľadať spustenú daemon..."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sök efter en daemon..."
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6446,6 +6698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Définir le language au défaut"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ställ in språk till Standard"
           }
         },
         "vi" : {
@@ -6710,6 +6968,12 @@
             "value" : "Suika"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suika"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6918,6 +7182,12 @@
             "state" : "translated",
             "value" : "La localisation sera simulée sur votre appareil. Conseil : Appuyez quand vous où vous voulez sur la carte pour vous y déplacer."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Platsen kommer att simuleras på enheten\nProffstips: Tryck var som helst på kartan för att flytta dit."
+          }
         }
       }
     },
@@ -6928,6 +7198,12 @@
             "state" : "translated",
             "value" : "La procédure"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förfarandet"
+          }
         }
       }
     },
@@ -6937,6 +7213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ensuite, vous devez appuyer sur le bouton **Réinitialiser** (PAS Effacer tout le contenu et les paramètres, mais l'autre)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Därefter måste du trycka på **Reset**-knappen (INTE för att radera allt innehåll och alla inställningar)"
           }
         }
       }
@@ -7026,6 +7308,12 @@
             "value" : "Ceci est une liste de tous les daemons actuellement désactivés. Glissez vers la droite pour le réactiver."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det här är en lista över alla inaktiverade daemoner för närvarande. Svep åt höger för att återaktivera daemon."
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7040,6 +7328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceci est un problème qui pourrait casser les permissions lors du calcul des tailles de fichier sur votre appareil."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det här är ett problem som kan leda till felaktigt inställda behörigheter vid beräkning av filstorlekar för din enhet."
           }
         }
       }
@@ -7126,6 +7420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceci personnalisera les paramètres au démarrage de l'app. Utile pour débogguer sur le simulateur ou pour les betas."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detta anpassar appens startinställningar. Användbart för felsökning i Simulator eller för betaversioner."
           }
         }
       }
@@ -7289,6 +7589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pour ajouter un chemin, appuyez sur le bouton +."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du vill lägga till en sökväg trycker du på +-knappen."
           }
         }
       }
@@ -7814,6 +8120,12 @@
           }
         },
         "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UUID : %@"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "UUID : %@"
@@ -8415,6 +8727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous pourriez perdre des données importante, comme par exemple des mots de passes wifi et d'autres preferences de confidentialité."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kan förlora en del oviktiga data, t.ex. WiFi-lösenord och inställningar."
           }
         }
       }
