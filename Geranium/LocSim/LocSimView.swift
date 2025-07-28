@@ -42,15 +42,7 @@ struct LocSimView: View {
         }
         .onChange(of: tappedCoordinate) { newValue in
             if let coordinate = newValue {
-                lat = coordinate.coordinate.latitude
-                long = coordinate.coordinate.longitude
-                LocSimManager.startLocSim(location: .init(latitude: lat, longitude: long))
-                AlertKitAPI.present(
-                    title: "Started !",
-                    icon: .done,
-                    style: .iOS17AppleMusic,
-                    haptic: .success
-                )
+                startSimulation(at: coordinate.coordinate)
             }
         }
         .toolbar{
@@ -68,9 +60,9 @@ struct LocSimView: View {
                         secondTextFieldPlaceHolder: "Longitude"
                     ) { latText, longText in
                         if let latDouble = Double(latText ?? ""), let longDouble = Double(longText ?? "") {
-                            lat = latDouble
-                            long = longDouble
-                            LocSimManager.startLocSim(location: .init(latitude: latDouble, longitude: longDouble))
+                            // Standardize the use of the startSimulation function.
+                            let gcjCoordinate = CLLocationCoordinate2D(latitude: latDouble, longitude: longDouble)
+                            startSimulation(at: gcjCoordinate)
                         } else {
                             UIApplication.shared.alert(body: "Those are invalid coordinates mate !")
                         }
@@ -123,5 +115,25 @@ struct LocSimView: View {
         .sheet(isPresented: $bookmarkSheetTggle) {
             BookMarkSlider(lat: $lat, long: $long)
         }
+    }
+    
+    private func startSimulation(at gcjCoordinate: CLLocationCoordinate2D) {
+        // Convert coordinate from GCJ-02 to WGS-84
+        let wgsCoordinate = CoordTransform.gcj02ToWgs84(gcjCoordinate)
+        
+        // Update the state variables for any UI that might display them
+        self.lat = wgsCoordinate.latitude
+        self.long = wgsCoordinate.longitude
+        
+        // Start the simulation with the corrected WGS-84 coordinate
+        LocSimManager.startLocSim(location: .init(latitude: wgsCoordinate.latitude, longitude: wgsCoordinate.longitude))
+        
+        // Show success alert
+        AlertKitAPI.present(
+            title: "Started!",
+            icon: .done,
+            style: .iOS17AppleMusic,
+            haptic: .success
+        )
     }
 }
