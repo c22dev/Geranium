@@ -63,6 +63,9 @@ struct HomeView: View {
                         }
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/470637062870269952/67eb5d0a0501a96ab0a014ae89027e32.webp?size=160", url: "https://github.com/bomberfish", title: "BomberFish", description: "Daemon Listing")
                         LinkCell(imageLink: "https://cdn.discordapp.com/avatars/412187004407775242/1df69ac879b9e5f98396553eeac80cec.webp?size=160", url: "https://github.com/sourcelocation", title: "sourcelocation", description: "Swift UI Functions")
+                        if !isMiniDevice() {
+                            LinkCell(imageLink: "https://avatars.githubusercontent.com/u/53754807?v=4", url: "https://github.com/acg7878", title: "acg7878", description: "Support for LocSim in China")
+                        }
                         LinkCell(imageLink: "https://cclerc.ch/db/geranium/85764897.png", url: "https://github.com/haxi0", title: "haxi0", description: "Welcome Page source")
                     }
                 }
