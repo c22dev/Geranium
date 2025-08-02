@@ -188,7 +188,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1.打开TrollStore"
+            "value" : "1. 打开 TrollStore"
           }
         },
         "zh-Hant" : {
@@ -270,7 +270,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "2.转到设置"
+            "value" : "2. 前往“设置”"
           }
         },
         "zh-Hant" : {
@@ -386,7 +386,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "3. 激活 \"URL SCHEME\"。"
+            "value" : "3. 启用 URL Scheme"
           }
         },
         "zh-Hant" : {
@@ -578,7 +578,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "按字母顺序的"
+            "value" : "按字母排序"
           }
         },
         "zh-Hant" : {
@@ -654,7 +654,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RootHelper出现错误。"
+            "value" : "RootHelper 发生错误。"
           }
         },
         "zh-Hant" : {
@@ -869,7 +869,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "电池使用数据"
+            "value" : "电池用量数据"
           }
         },
         "zh-Hant" : {
@@ -1138,7 +1138,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "通过在iOS内部添加一些规则，该软件可以防止守护进程在您启动手机时启动。该应用程序列出了每个正在运行的守护进程，您可以向左滑动以删除其中一个。"
+            "value" : "本软件通过向 iOS 内部添加规则，来阻止守护进程在您开机时启动。应用内会列出所有正在运行的守护进程，您可以向左滑动来停用其中之一。"
           }
         },
         "zh-Hant" : {
@@ -1562,7 +1562,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "旁路应用程序更新弹出窗口"
+            "value" : "跳过应用更新弹窗"
           }
         },
         "zh-Hant" : {
@@ -1638,7 +1638,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "避开 TrollStore 弹出窗口"
+            "value" : "跳过 TrollStore 弹窗"
           }
         },
         "zh-Hant" : {
@@ -1762,7 +1762,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "干净！"
+            "value" : "清理！"
           }
         },
         "zh-Hant" : {
@@ -1838,7 +1838,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "清洁工"
+            "value" : "清理工具"
           }
         },
         "zh-Hant" : {
@@ -1986,7 +1986,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "学分"
+            "value" : "鸣谢"
           }
         },
         "zh-Hant" : {
@@ -2224,7 +2224,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "调试东西"
+            "value" : "调试选项"
           }
         },
         "zh-Hant" : {
@@ -2396,7 +2396,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "删除... %@"
+            "value" : "正在删除... %@"
           }
         },
         "zh-Hant" : {
@@ -2680,7 +2680,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "禁用更新弹出窗口"
+            "value" : "停用更新弹窗"
           }
         },
         "zh-Hant" : {
@@ -2814,7 +2814,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "禁用守护程序管理器"
+            "value" : "已停用守护进程管理器"
           }
         },
         "zh-Hant" : {
@@ -2890,7 +2890,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "禁用系统进程很危险。请谨慎操作。我对您的设备出现的任何问题概不负责。"
+            "value" : "停用系统守护进程非常危险。您的设备或将陷入循环启动。请谨慎操作。对于您设备上的任何问题，应用开发者概不负责。"
           }
         },
         "zh-Hant" : {
@@ -2961,7 +2961,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "不建议禁用系统守护系统。您可以引导您的设备。谨慎进行。对于您设备上的任何问题，我概不负责。"
+            "value" : "不建议停用系统守护进程。您的设备或将陷入循环启动。请谨慎操作。对于您设备上的任何问题，应用开发者概不负责。"
           }
         },
         "zh-Hant" : {
@@ -3211,7 +3211,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启动"
+            "value" : "启用"
           }
         },
         "zh-Hant" : {
@@ -3822,7 +3822,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "一般缓存"
+            "value" : "常规缓存"
           }
         },
         "zh-Hant" : {
@@ -3984,7 +3984,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "嗨！SE 1 用户"
+            "value" : "你好！SE 1 用户"
           }
         },
         "zh-Hant" : {
@@ -4252,7 +4252,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果您想启用自动更新，您需要在TrollStore中打开URLScheme方案。"
+            "value" : "如需启用自动更新，请在 TrollStore 中启用 URL Scheme 选项。"
           }
         },
         "zh-Hant" : {
@@ -4328,7 +4328,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如果您想恢复任何选择，您应该进入管理器（应用图标旁边的列表图标），在那里您可以切换禁用的守护程序。"
+            "value" : "如需撤销任何操作，请进入管理器（位于“应用”图标旁的列表图标），在此处可切换已停用的守护进程。"
           }
         },
         "zh-Hant" : {
@@ -4404,7 +4404,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "用户是否在iPadOS 16上运行iPad：否"
+            "value" : "用户是否在 iPadOS 16 上运行 iPad：否"
           }
         },
         "zh-Hant" : {
@@ -4480,7 +4480,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "用户是否在iPadOS 16上运行iPad：是的"
+            "value" : "用户是否在 iPadOS 16 上运行 iPad：是"
           }
         },
         "zh-Hant" : {
@@ -4572,7 +4572,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "看起来您正在iPhone SE 2016（第1代）上使用该应用程序。您可能会遇到严重的用户界面问题。请提前原谅我。"
+            "value" : "检测到您正在 iPhone SE (第一代) 上使用本应用。您可能会遇到一些界面显示问题，敬请谅解。"
           }
         },
         "zh-Hant" : {
@@ -4749,7 +4749,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "纬度：%1$lf 经度：%2$lf"
+            "value" : "纬度：%1$lf，经度：%2$lf"
           }
         },
         "zh-Hant" : {
@@ -5120,7 +5120,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "由c22dev制作"
+            "value" : "由 c22dev 制作"
           }
         },
         "zh-Hant" : {
@@ -5374,7 +5374,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "没有保存书签。"
+            "value" : "未保存任何地点。"
           }
         },
         "zh-Hant" : {
@@ -5466,7 +5466,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "正式通知"
+            "value" : "注意"
           }
         },
         "zh-Hant" : {
@@ -5575,7 +5575,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "OTA更新缓存"
+            "value" : "OTA 更新缓存"
           }
         },
         "zh-Hant" : {
@@ -5884,7 +5884,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "目标"
+            "value" : "目的"
           }
         },
         "zh-Hant" : {
@@ -6176,7 +6176,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "RootHelper路径：%@"
+            "value" : "RootHelper 路径：%@"
           }
         },
         "zh-Hant" : {
@@ -6252,7 +6252,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Safari 浏览器缓存路径：%@"
+            "value" : "Safari 缓存路径：%@"
           }
         },
         "zh-Hant" : {
@@ -6328,7 +6328,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Safari 浏览器缓存"
+            "value" : "Safari 缓存"
           }
         },
         "zh-Hant" : {
@@ -6437,7 +6437,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "保存文件"
+            "value" : "保存"
           }
         },
         "zh-Hant" : {
@@ -6652,7 +6652,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "搜索当前正在运行的守护进程..."
+            "value" : "搜索当前运行的守护进程..."
           }
         },
         "zh-Hant" : {
@@ -6855,7 +6855,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "安装"
+            "value" : "设置"
           }
         },
         "zh-Hant" : {
@@ -6931,7 +6931,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启动设置"
+            "value" : "初始设置"
           }
         },
         "zh-Hant" : {
@@ -7163,7 +7163,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "感谢我们所有的贡献者！"
+            "value" : "感谢我们所有的翻译贡献者！"
           }
         },
         "zh-Hant" : {
@@ -7289,7 +7289,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这是当前禁用的所有守护进程的列表。不要改变那些你没有改变的事情。被切换的是被禁用的。"
+            "value" : "这是当前被禁用的守护进程列表。请勿更改未曾手动修改过的选项。已开启的开关表示该守护进程已被禁用。"
           }
         },
         "zh-Hant" : {
@@ -7403,7 +7403,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此设置允许您从某些应用程序变量中查看实验值。"
+            "value" : "此项设置允许你查看某些应用变量的实验值。"
           }
         },
         "zh-Hant" : {
@@ -7496,7 +7496,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这将个性化应用程序启动弹出窗口。适用于模拟器或测试版的调试。"
+            "value" : "这将个性化应用启动时的弹窗，适用于模拟器或测试版的调试。"
           }
         },
         "zh-Hant" : {
@@ -7572,7 +7572,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "要添加书签，请选择一个自定义位置，然后点击+按钮。"
+            "value" : "要添加地点，请选择一个自定义位置，然后点击+按钮。"
           }
         },
         "zh-Hant" : {
@@ -7664,7 +7664,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "翻译人员"
+            "value" : "翻译者"
           }
         },
         "zh-Hant" : {
@@ -7856,7 +7856,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "理解"
+            "value" : "了解"
           }
         },
         "zh-Hant" : {
@@ -8354,7 +8354,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "我们收集一些上传到服务器的日志，用于修复错误和处理崩溃日志。日志从不包含您的任何个人信息，只包含您的设备类型和崩溃日志本身。我们还收集测量信息，以查看应用程序中最常用的内容。您可以选择是否要阻止任何数据发送到我们的服务器。"
+            "value" : "我们会收集一些日志并上传到服务器，用于修复错误和处理崩溃信息。这些日志绝不会包含你的任何个人信息，只包含设备类型和崩溃日志本身。此外，我们还会收集一些使用统计信息，以了解应用中哪些功能最常被使用。你可以选择完全阻止任何数据发送到我们的服务器。"
           }
         },
         "zh-Hant" : {
@@ -8500,7 +8500,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "欢迎来到Geranium，这是一个TrollStore的工具箱，允许您禁用一些守护进程，模拟您的位置，清理手机的存储空间等。在您使用该应用程序之前，我们需要配置一些东西。这只需要一分钟。以后可以随时更改。"
+            "value" : "欢迎使用 Geranium：一个 TrollStore 工具箱，支持禁用某些守护进程、模拟定位、清理手机存储空间等功能。在开始使用前，我们需要进行一些初始配置，仅需一分钟即可完成，你之后仍然可以随时更改这些设置。"
           }
         },
         "zh-Hant" : {
@@ -8652,7 +8652,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "当发布新的更新时，您将在应用程序启动时收到一个弹出窗口，询问您是否要更新。你可以防止这种情况发生"
+            "value" : "当有新版本发布，应用在启动时会弹窗询问你是否需要更新。你可以选择不再显示该弹窗。"
           }
         },
         "zh-Hant" : {
