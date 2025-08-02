@@ -39,6 +39,7 @@
 		79D7891F2B41BEA600FEBD32 /* Flore.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D7891E2B41BEA600FEBD32 /* Flore.png */; };
 		79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF26982B31C90C005D81D2 /* WelcomeView.swift */; };
 		79FDECC92B878F4700B2DFB0 /* NotifHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDECC82B878F4700B2DFB0 /* NotifHelp.swift */; };
+		F82C58042E37786D00F76DFA /* CoordTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C58032E37786D00F76DFA /* CoordTransform.swift */; };
 		FAA456D52B265FEA00FC7287 /* GeraniumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */; };
 		FAA456D72B265FEA00FC7287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA456D62B265FEA00FC7287 /* ContentView.swift */; };
 		FAA456D92B265FEC00FC7287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA456D82B265FEC00FC7287 /* Assets.xcassets */; };
@@ -126,6 +127,7 @@
 		79D7891E2B41BEA600FEBD32 /* Flore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flore.png; sourceTree = "<group>"; };
 		79DF26982B31C90C005D81D2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		79FDECC82B878F4700B2DFB0 /* NotifHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifHelp.swift; sourceTree = "<group>"; };
+		F82C58032E37786D00F76DFA /* CoordTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordTransform.swift; sourceTree = "<group>"; };
 		FAA456D12B265FEA00FC7287 /* Geranium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geranium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA456D42B265FEA00FC7287 /* GeraniumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraniumApp.swift; sourceTree = "<group>"; };
 		FAA456D62B265FEA00FC7287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		799488A42B347E1100AFFDCF /* LocSim */ = {
 			isa = PBXGroup;
 			children = (
+				F82C58032E37786D00F76DFA /* CoordTransform.swift */,
 				7989FD0B2B348A8600FBAB8D /* BookMark */,
 				7989FD052B3486B100FBAB8D /* CustomMapView.swift */,
 				799488A52B347E2C00AFFDCF /* LocSimManager.swift */,
@@ -567,6 +570,7 @@
 				FAA457292B26668900FC7287 /* DaemonView.swift in Sources */,
 				790301C72B3794FF0044E30A /* DaemonWelcomeView.swift in Sources */,
 				FAA457232B26654700FC7287 /* Addon.swift in Sources */,
+				F82C58042E37786D00F76DFA /* CoordTransform.swift in Sources */,
 				790301C52B3794480044E30A /* SettingsView.swift in Sources */,
 				79DF26992B31C90C005D81D2 /* WelcomeView.swift in Sources */,
 				7989FD032B347EEA00FBAB8D /* LocSimView.swift in Sources */,
