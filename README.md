@@ -83,6 +83,7 @@ You can use the icon.sketch file. Please send an icon in the 1024x1024 resolutio
 - [BomberFish](https://github.com/bomberfish) & [Fiore](https://github.com/donato-fiore) for their amazing work in daemon listing - And thanks bomberfish for those amazing memes
 - [sourcelocation](https://github.com/sourcelocation) for his beautiful SwiftUI extensions and functions, helped me a lot ! - My source of information in icon and video editing !
 - [haxi0](https://github.com/haxi0) for his Welcome Page code, copied the part for the disabling. - Always funny
+- [acg7878](https://github.com/acg7878) for altitude and China coordinates support in LocSim
 ### Translators
 - [CySxL](https://twitter.com/CySxL) - 🇹🇼 Chinese (Traditional) - Here from the beginning, even if on iOS 14, thanks !
 - [Defflix](https://twitter.com/Defflix19) - 🇨🇿/🇸🇰 Czech & Slovak - But also one of my greatest friend in the jailbreak community :)
