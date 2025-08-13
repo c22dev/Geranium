@@ -15,6 +15,7 @@ struct LocSimView: View {
     @State private var locationManager = CLLocationManager()
     @State private var lat: Double = 0.0
     @State private var long: Double = 0.0
+    @State private var altitude: String = "0.0"
     @State private var tappedCoordinate: EquatableCoordinate? = nil
     @State private var bookmarkSheetTggle: Bool = false
     var body: some View {
@@ -42,7 +43,8 @@ struct LocSimView: View {
         }
         .onChange(of: tappedCoordinate) { newValue in
             if let coordinate = newValue {
-                startSimulation(at: coordinate.coordinate)
+                let altitudeValue = Double(altitude) ?? 0.0
+                startSimulation(at: coordinate.coordinate, altitude: altitudeValue)
             }
         }
         .toolbar{
@@ -62,13 +64,38 @@ struct LocSimView: View {
                         if let latDouble = Double(latText ?? ""), let longDouble = Double(longText ?? "") {
                             // Standardize the use of the startSimulation function.
                             let gcjCoordinate = CLLocationCoordinate2D(latitude: latDouble, longitude: longDouble)
-                            startSimulation(at: gcjCoordinate)
+                            let altitudeValue = Double(altitude) ?? 0.0
+                            startSimulation(at: gcjCoordinate, altitude: altitudeValue)
                         } else {
                             UIApplication.shared.alert(body: "Those are invalid coordinates mate !")
                         }
                     }
                 }) {
                     Image(systemName: "mappin")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    UIApplication.shared.TextFieldAlert(
+                        title: "Set Altitude",
+                        message: "Enter the altitude in meters.",
+                        textFieldPlaceHolder: "Altitude (m)"
+                    ) { altitudeText, _ in
+                        if let altText = altitudeText, !altText.isEmpty {
+                            self.altitude = altText
+                            AlertKitAPI.present(
+                                title: "Altitude Set!",
+                                icon: .done,
+                                style: .iOS17AppleMusic,
+                                haptic: .success
+                            )
+                        }
+                    }
+                }) {
+                    Image(systemName: "mountain.2.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24)
@@ -117,18 +144,15 @@ struct LocSimView: View {
         }
     }
     
-    private func startSimulation(at gcjCoordinate: CLLocationCoordinate2D) {
-        // Convert coordinate from GCJ-02 to WGS-84
+    private func startSimulation(at gcjCoordinate: CLLocationCoordinate2D, altitude: Double) {
         let wgsCoordinate = CoordTransform.gcj02ToWgs84(gcjCoordinate)
         
-        // Update the state variables for any UI that might display them
         self.lat = wgsCoordinate.latitude
         self.long = wgsCoordinate.longitude
         
-        // Start the simulation with the corrected WGS-84 coordinate
-        LocSimManager.startLocSim(location: .init(latitude: wgsCoordinate.latitude, longitude: wgsCoordinate.longitude))
+        let location = CLLocation(coordinate: wgsCoordinate, altitude: altitude,horizontalAccuracy:5,verticalAccuracy: 5,timestamp: Date())
+        LocSimManager.startLocSim(location: location)
         
-        // Show success alert
         AlertKitAPI.present(
             title: "Started!",
             icon: .done,
@@ -136,4 +160,8 @@ struct LocSimView: View {
             haptic: .success
         )
     }
+}
+
+#Preview {
+    LocSimView()
 }
