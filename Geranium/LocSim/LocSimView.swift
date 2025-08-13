@@ -95,7 +95,7 @@ struct LocSimView: View {
                         }
                     }
                 }) {
-                    Image(systemName: "waveform.path.ecg")
+                    Image(systemName: "mountain.2.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24)
@@ -145,18 +145,14 @@ struct LocSimView: View {
     }
     
     private func startSimulation(at gcjCoordinate: CLLocationCoordinate2D, altitude: Double) {
-        // Convert coordinate from GCJ-02 to WGS-84
         let wgsCoordinate = CoordTransform.gcj02ToWgs84(gcjCoordinate)
         
-        // Update the state variables for any UI that might display them
         self.lat = wgsCoordinate.latitude
         self.long = wgsCoordinate.longitude
         
-        // Start the simulation with the corrected WGS-84 coordinate, including altitude
-        let location = CLLocation(coordinate: wgsCoordinate, altitude: altitude, horizontalAccuracy: 5, verticalAccuracy: 5, timestamp: Date())
+        let location = CLLocation(coordinate: wgsCoordinate, altitude: altitude, horizontalAccuracy: 5, verticalAccuracy: 5)
         LocSimManager.startLocSim(location: location)
         
-        // Show success alert
         AlertKitAPI.present(
             title: "Started!",
             icon: .done,
