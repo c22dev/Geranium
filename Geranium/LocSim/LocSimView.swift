@@ -150,7 +150,7 @@ struct LocSimView: View {
         self.lat = wgsCoordinate.latitude
         self.long = wgsCoordinate.longitude
         
-        let location = CLLocation(coordinate: wgsCoordinate, altitude: altitude, horizontalAccuracy: 5, verticalAccuracy: 5)
+        let location = CLLocation(coordinate: wgsCoordinate, altitude: altitude,horizontalAccuracy:5,verticalAccuracy: 5,timestamp: Date())
         LocSimManager.startLocSim(location: location)
         
         AlertKitAPI.present(
