@@ -73,7 +73,7 @@ func isDeviceEnrolled() -> Bool {
     var result = false
     let semaphore = DispatchSemaphore(value: 0)
 
-    let url = URL(string: "https://cclerc.ch/db/geranium/enrolement.txt")!
+    let url = URL(string: "<private>")!
     var request = URLRequest(url: url)
     request.cachePolicy = .reloadIgnoringLocalCacheData
 
