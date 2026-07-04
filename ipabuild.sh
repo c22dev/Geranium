@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 
 WORKING_LOCATION="$(pwd)"
 APPLICATION_NAME=Geranium
-CONFIGURATION=Debug
+CONFIGURATION=Release
 
 rm -rf build
 if [ ! -d "build" ]; then
